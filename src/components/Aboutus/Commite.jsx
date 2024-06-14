@@ -101,6 +101,7 @@ const Commite = () => {
             <td>Shri Brahmadeo Sharma</td>
             <td>Do no - 12345 , tank band , hyderabad , telagana</td>
           </tr>
+          //this entire code is for Commite
         </table>
       </div>
   )
