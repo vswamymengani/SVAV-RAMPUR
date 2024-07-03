@@ -38,11 +38,24 @@
   z-index: 1000;
   font-size: 1.2rem;
 } */
-.subtitles{
- /* margin: 10px; */
+.subtitles {
+  display: flex;
   color: blue;
   font-size: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
 }
+
+.inline-text {
+  white-space: nowrap;    /* Prevent wrapping */
+}
+
+/* .subtitles{
+ margin: 10px;
+  color: blue;
+  font-size: 20px;
+ margin-right: 80px;
+} */
 .subbar{
   color: brown;
   /* margin-top: -10px; */
@@ -53,7 +66,7 @@
 }
 .clgCode{
     color: red;
-    margin-left: 100px;
+    margin-left: 150px;
     /* margin-top: -20px; */
 }
 .section2{

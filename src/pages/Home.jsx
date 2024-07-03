@@ -94,8 +94,11 @@ const Home = () => {
                         <div style={{ display: "flex", flexDirection: "row" }}>
                         <img className='image' src={exampleImage} alt="Example4" />
                             <div style={{ flexDirection: "column", textAlign: "center" }}>
-                            <h4 className='subtitles'>SRI VIDYARANYA AVASA VIDYALAYAM(SVAV)</h4>
-                            <h4 className='subtitles'></h4>
+                            <h4 className="subtitles">
+                        <span className="inline-text">SRI VIDYARANYA AVASA VIDYALAYAM<br></br> (SVAV)</span>
+                         </h4>
+
+                            
                             <h4 className='sub1'>DAY & RESIDENTIAL</h4>
                             <h4 className='subbar'>Gobal competence with ancient wisdom</h4>
                         </div>
