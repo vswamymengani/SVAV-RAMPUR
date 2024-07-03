@@ -4,6 +4,17 @@ import exampleImage from '../assets/school logo .jpg';
 import { useNavigate } from 'react-router-dom';
 import ProfileCards from './ProfileCards';
 import Stepper from './Stepper';
+import '../components/Footer/Footer.css';
+import donationlogo from './donation.png';
+import aluminilogo from './alumini.png';
+import teacherlogo from './teacher.png';
+import clglogo from './clg.png';
+import studentlogo from './student (1).png';
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiYoutubeshorts } from "react-icons/si";
+
 
 const profile = [
     {
@@ -67,19 +78,24 @@ const Home = () => {
         navigate('Supportus');
     };
 
+    const goToClassroom = () => {
+        navigate('Classroom');
+    };
+
     const goToDonate = () => {
         navigate('Donate');
     };
 
     return (
         <div>
-            <div className='Header'>
-                <div className='section1'>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+            <div id="position">
+                <div className='Header'>
+                    <div className='section1'>
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <img className='image' src={exampleImage} alt="Example4" />
-                        <div style={{ flexDirection: "column", textAlign: "center" }}>
-                            <h4 className='subtitles'>SRI VIDYARANYA AVASA VIDYALAYAM</h4>
-                            <h4 className='subtitles'>(SVAV)</h4>
+                            <div style={{ flexDirection: "column", textAlign: "center" }}>
+                            <h4 className='subtitles'>SRI VIDYARANYA AVASA VIDYALAYAM(SVAV)</h4>
+                            <h4 className='subtitles'></h4>
                             <h4 className='sub1'>DAY & RESIDENTIAL</h4>
                             <h4 className='subbar'>Gobal competence with ancient wisdom</h4>
                         </div>
@@ -87,25 +103,25 @@ const Home = () => {
                     <b className='clgCode'>UDISE Code:  36230301739</b>
                 </div>
                 <div className='section2'>
-                    <span className="title">Online Equiry</span>
-                    <span className="title">Alumni details</span>
-                    <span className="title">Download Brochure</span>
-                    <span className="title">News Letter</span>
+                    <span className="title">Online_Enquiry</span>
+                    <span className="title">Alumni_details</span>
+                    <span className="title">Download_Brochure</span>
+                    <span className="title">News_Letter</span>
                 </div>
                 <div className='section3'>
                     <span>CONTACT NO - +91 9502116793</span>
-                    <span>MAIL ID - info@svav.ind.in</span><br />
+                    <span>MAIL ID-info@svav.ind.in</span><br />
                     <b className='code'>Proc.No. RR-GDP 007-0019</b>
                 </div>
                 <figure class="image6">
 
-                    <img class="image02" decoding='async' width="100px" height="100px" src="https://scontent.fhyd14-1.fna.fbcdn.net/v/t1.6435-9/117309673_123421515823889_7191793120636498491_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Fj7ML8xXo_0Q7kNvgHs3T9L&_nc_ht=scontent.fhyd14-1.fna&oh=00_AYBkichpHeKRDwacf0dwvlYMF3v-0dvFmcoCu4j694v4aQ&oe=66869991"></img>
+                    <img class="image02" decoding='async' width="60px" height="90px"  src="https://scontent.fhyd14-1.fna.fbcdn.net/v/t1.6435-9/117309673_123421515823889_7191793120636498491_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Fj7ML8xXo_0Q7kNvgHs3T9L&_nc_ht=scontent.fhyd14-1.fna&oh=00_AYBkichpHeKRDwacf0dwvlYMF3v-0dvFmcoCu4j694v4aQ&oe=66869991"></img>
 
                 </figure>
             </div>
-
+        
             <div class="navbar1">
-                <a href="#home">HOME</a>
+             <div id="home">HOME</div> 
                 <div class="dropdown">
                     <button class="dropbtn">ABOUT US
                         <i class="fa fa-caret-down"></i>
@@ -121,7 +137,7 @@ const Home = () => {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">CATALYTIC CLASSROOMS</a>
+                        <a href="/Classroom" onClick={goToClassroom}>CATALYTIC CLASSROOMS</a>
                         <a href="#">GAMES & SPORTS</a>
                         <a href="#">IT LAB / COMPUTER LAB</a>
                         <a href="#">MEDICAL / VAIDHYA VIBHAG  </a>
@@ -193,12 +209,12 @@ const Home = () => {
                     </div>
                 </div>
                 <div class="navbar1">
-                    <a href="#home">CONTACT US</a>
+                <div id="contactus">CONTACT US</div> 
                     <div class="dropdown">
                     </div>
                 </div>
                 <div class="navbar1">
-                    <a href="/Donate" onClick={goToDonate}>DONATE</a>
+                <div id="donate">DONATE</div> 
                     <div class="dropdown">
                     </div>
                 </div>
@@ -207,6 +223,7 @@ const Home = () => {
             <div class="color">
                 <div class="line">LATEST NEWS</div>
                 <div><marquee>Job Openings: Join our Team of teachers and admin by applying at careers@svav.ind.in or hr@svav.ind.in</marquee></div>
+            </div>
             </div>
 
             <div class="t01" >
@@ -305,32 +322,42 @@ const Home = () => {
                     <p style={{ textAlign: "justify" }}>SVAV1 Transport Management System is a convenience provided to our parents to facilitate a safe and easy commute for their children. 5 buses and 1 winger will ply in 6 routes.</p>
                 </div>
             </div>
-            <div style={{marginTop:"30px"}}>
-                <Stepper currentStep={currentStep} />
-                <div className="controls">
-                    <button onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 0))}>
-                        Previous
-                    </button>
-                    <button onClick={() => setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1))}>
-                        Next
-                    </button>
-                </div>
-            </div>
-            <div className='dprofile'>
-                {profiles.map(profile => (
-                    <ProfileCards
-                        key={profile.id}
-                        image={profile.image}
-                        name={profile.name}
-                        title={profile.class}
-                        location={profile.Subject}
-                        email={profile.Award}
-                    />
-                ))}
-            </div>
-
+        
+            <footer className="footer">
+      <div id="l3">
+      <img src={donationlogo} alt="C" className="link-icon"/>
+      DONATION
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+        <img src={aluminilogo} alt="Blogs" className="link-icon" />
+       ALUMINI
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <img src={teacherlogo} alt="A" className="link-icon" />
+        TEACHER
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+        <img src={clglogo} alt="clg" className="link-icon" />
+        SCHOOL/COLLEGE
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <img src={studentlogo} alt="student" className="link-icon" />
+       STUDENTS
+    
+    </div>
+      {/* <div className="footer-container">
+        <p> MyCompany. All Rights Reserved.</p>
+      </div> */}
+      <div id="q1">
+     < div id='a19'>
+     <h2 style={{color:'aliceblue',textAlign:'left'}}>Copyright @Srividyaranyaavasavidyalayam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <FaFacebookF color='white' size={25}/>&nbsp;&nbsp;<FaInstagramSquare size={25} />&nbsp;&nbsp;
+     <FaLinkedinIn  size={25}/>&nbsp;&nbsp;<SiYoutubeshorts size={25} />
+                 </h2>
+                  </div></div>
+    </footer>
         </div>
     )
 }
 
-export default Home
+export default Home;

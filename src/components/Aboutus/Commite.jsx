@@ -3,8 +3,9 @@ import React from 'react'
 const Commite = () => {
   return (
     <div>
-      <h1 className='c1'>Excutive Committee</h1>
-        <table border="5" cellPadding={"10px"} cellspacing="0px" length="1000px" width="1000px">
+      <center>
+      <h1 className='c1'>Executive Committee</h1>
+        <table border="5" cellPadding={"10px"} cellspacing="0px"  length="1000px" width="1000px">
           <tr>
             <td><h3>S.No </h3></td>
             <td><h3>Desigination</h3></td>
@@ -101,9 +102,13 @@ const Commite = () => {
             <td>Shri Brahmadeo Sharma</td>
             <td>Do no - 12345 , tank band , hyderabad , telagana</td>
           </tr>
-        </table>
+        </table></center>
+        <div className="i">
+          
+        </div>
       </div>
+   
   )
 }
 
-export default Commite
+export default Commite;

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import './Home.css';
 
 const ProfileCards = ({ image, name, title, location, email }) => {

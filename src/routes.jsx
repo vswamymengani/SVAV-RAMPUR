@@ -4,7 +4,9 @@ import Home from './pages/Home';
 import Supportus from './components/Aboutus/Supportus';
 import Vidhya from './components/Aboutus/Vidhya';
 import Commite from './components/Aboutus/Commite';
+import Classroom from './components/Facilities/Classroom';
 import Donate from './components/Donate/Donate';
+
 
 const routes = () => {
   return (
@@ -14,9 +16,12 @@ const routes = () => {
         <Route path='/Supportus' element={<Supportus/>}/>
         <Route path='/Vidhya' element={<Vidhya/>}/>
         <Route path='/Commite' element={<Commite/>}/>
-        <Route path='/Donate' element={<Donate/>}/>        
+        <Route path='/Classroom' element={<Classroom/>}/>
+        <Route path='/Donate' element={<Donate/>}/>    
+            
+          
       </Routes>
-  
+      
   )
 }
 

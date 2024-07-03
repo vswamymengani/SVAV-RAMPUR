@@ -1,0 +1,15 @@
+#cls{
+    color: aliceblue;
+    font-size: 30px;
+    background-color: green;
+    font-style: normal;
+    width: 19%;
+    padding: 15px;
+    margin: 60px;
+    text-align: center;
+}
+#clslogo{
+    height: 100px;
+    width: 100px;
+   background-image: url(../);
+}
