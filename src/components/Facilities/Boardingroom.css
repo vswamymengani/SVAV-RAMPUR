@@ -1,0 +1,69 @@
+/* Ensure you import this in your component file */
+#boa {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 50%;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  margin-left: 80px;
+}
+
+.boardingroom-container {
+  display: flex;
+  flex-direction: row; /* Aligns items in a row */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.boardingroom-content {
+  flex: 1; /* Makes the content take available space */
+  text-align: left; /* Aligns text to the left */
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+#boa {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#boacontents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+ margin-left: 100px;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.facility-icon {
+  margin-right: 10px;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.boardingroom-slider {
+  flex: 1; /* Makes the slider take available space */
+  max-width: 600px; /* Optional: limit the maximum width */
+  margin-right: 20px; /* Adds space between slider and content */
+}
+
+.boardingroom-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.facility-logo {
+  width: 30px;  /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px;  /* Space between logo and text */
+}

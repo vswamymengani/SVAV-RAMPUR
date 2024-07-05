@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 import exampleImage from '../assets/school logo .jpg';
 import { useNavigate } from 'react-router-dom';
-import ProfileCards from './ProfileCards';
-import Stepper from './Stepper';
 import '../components/Footer/Footer.css';
 import donationlogo from './donation.png';
 import aluminilogo from './alumini.png';
@@ -14,7 +12,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
-
+import exa from  './logocandle.png';
 
 const profile = [
     {
@@ -81,6 +79,25 @@ const Home = () => {
     const goToClassroom = () => {
         navigate('Classroom');
     };
+    const goToSportsroom = () => {
+        navigate('Sportsroom');
+    };
+    const goToLabroom = () => {
+        navigate('Labroom');
+    };
+    const goToBoardingroom= () => {
+        navigate('Boardingroom');
+    };
+    const goToOnlineenquiryform= () => {
+        navigate('Onlineenquiryform');
+    };
+    const goToCirriculum= () => {
+        navigate('Cirriculum');
+    };
+    const handleContactUsClick = () => {
+    navigate('/contact'); // This navigates to the "/contact" route
+  };
+
 
     const goToDonate = () => {
         navigate('Donate');
@@ -116,11 +133,13 @@ const Home = () => {
                     <span>MAIL ID-info@svav.ind.in</span><br />
                     <b className='code'>Proc.No. RR-GDP 007-0019</b>
                 </div>
-                <figure class="image6">
+                {/* <figure class="image6"> */}
 
-                    <img class="image02" decoding='async' width="60px" height="90px"  src="https://scontent.fhyd14-1.fna.fbcdn.net/v/t1.6435-9/117309673_123421515823889_7191793120636498491_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Fj7ML8xXo_0Q7kNvgHs3T9L&_nc_ht=scontent.fhyd14-1.fna&oh=00_AYBkichpHeKRDwacf0dwvlYMF3v-0dvFmcoCu4j694v4aQ&oe=66869991"></img>
+                     {/* <img class="image02" decoding='async' width="60px" height="90px"  src="https://scontent.fhyd14-1.fna.fbcdn.net/v/t1.6435-9/117309673_123421515823889_7191793120636498491_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Fj7ML8xXo_0Q7kNvgHs3T9L&_nc_ht=scontent.fhyd14-1.fna&oh=00_AYBkichpHeKRDwacf0dwvlYMF3v-0dvFmcoCu4j694v4aQ&oe=66869991"></img>  */}
+             {/* <img src="./logocandle.png"></img>
+                </figure> */}
 
-                </figure>
+             <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '-20px'}} />
             </div>
         
             <div class="navbar1">
@@ -141,15 +160,15 @@ const Home = () => {
                     </button>
                     <div class="dropdown-content">
                         <a href="/Classroom" onClick={goToClassroom}>CATALYTIC CLASSROOMS</a>
-                        <a href="#">GAMES & SPORTS</a>
-                        <a href="#">IT LAB / COMPUTER LAB</a>
+                        <a href="/Sportsroom" onClick={goToSportsroom}>GAMES & SPORTS</a>
+                        <a href="/Labroom" onClick={goToLabroom}>IT LAB / COMPUTER LAB</a>
                         <a href="#">MEDICAL / VAIDHYA VIBHAG  </a>
                         <a href="#">LABORATORIES</a>
                         <a href="#">LIBRARY</a>
                         <a href="#">MULTI-PURPOSE AUDITORIUM</a>
                         <a href="#">ARTS & CRAFTS</a>
                         <a href="#">TRANSPORT MANAGEMENT SYSTEM</a>
-                        <a href="#">BOARDING FACILITIES</a>
+                        <a href="/Boardingroom"  onClick={goToBoardingroom}>BOARDING FACILITIES</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -170,7 +189,7 @@ const Home = () => {
                     </button>
                     <div class="dropdown-content">
                         <a href="#">ADMISSION PROCESS</a>
-                        <a href="#">ONLINE ENQUIRY</a>
+                        <a href="/Onlineenquiryform" onClick={goToOnlineenquiryform}>ONLINE ENQUIRY FORM</a>
                         <a href="#">FEE STRUCTURE</a>
                         <a href="#">STUDENT ENROLLMENT</a>
                         <a href="#">FAQS</a>
@@ -181,7 +200,7 @@ const Home = () => {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">CURRICULUM</a>
+                        <a href="/Cirriculum" onClick={goToCirriculum}>CURRICULUM</a>
 
                         <a href="#">SVAV PHILOSOPHY</a>
                         <a href="#">SCHOOL HOUSES</a>
@@ -211,12 +230,14 @@ const Home = () => {
                         <a href="#">JOB OPENINGS</a>
                     </div>
                 </div>
-                <div class="navbar1">
-                <div id="contactus">CONTACT US</div> 
-                    <div class="dropdown">
-                    </div>
+                <div class="dropdown">
+                <button class="dropbtn" onClick={handleContactUsClick}>CONTACT US
+                <i class="fa fa-caret-down" ></i>
+                    </button>
+                    
                 </div>
-                <div class="navbar1">
+                
+                <div class="navbar3">
                 <div id="donate">DONATE</div> 
                     <div class="dropdown">
                     </div>
