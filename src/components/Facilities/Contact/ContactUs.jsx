@@ -45,27 +45,6 @@ const ContactUs = () => {
 
   return (
     <div>
-      {/* <h1 id="i1">Contact Us:</h1>
-      <div id="i2"></div>
-      <div>
-        <h2 id="i3">
-          Write To Us On:
-          <h5 id="i4">Registered Address:</h5>
-          <p id="i7">
-            &nbsp;&nbsp;&nbsp;Sri Sai Adwaita Arcade<br />
-            Bandlaguda Jagir<br />
-            Appa Junction<br />
-            Near outer ring road.
-          </p>
-          <br />
-          <h5 id="i4">Corporate Office:</h5>
-          <p id="i7">
-            &nbsp;&nbsp;&nbsp;&nbsp;Srinivasa Enclave<br />
-            Global Art workspace, Suncity, Hyderabad.
-          </p>
-        </h2>
-      </div>
-      <br /><br /> */}
 
       {/* Add the form here */}
       <div>

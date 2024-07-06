@@ -91,6 +91,9 @@ const Home = () => {
     const goToOnlineenquiryform= () => {
         navigate('Onlineenquiryform');
     };
+    const goToAdmissionProcess= () => {
+        navigate('AdmissionProcess');
+    };
     const goToCirriculum= () => {
         navigate('Cirriculum');
     };
@@ -188,7 +191,7 @@ const Home = () => {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">ADMISSION PROCESS</a>
+                        <a href="/AdmissionProcess" onClick={goToAdmissionProcess}>ADMISSION PROCESS</a>
                         <a href="/Onlineenquiryform" onClick={goToOnlineenquiryform}>ONLINE ENQUIRY FORM</a>
                         <a href="#">FEE STRUCTURE</a>
                         <a href="#">STUDENT ENROLLMENT</a>

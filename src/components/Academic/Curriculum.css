@@ -47,4 +47,123 @@
     font-weight: bold;
     color: #fff; /* Text color inside the green background */
   }
+  p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  h2{
+    margin-top: -230px;
+    display: flex;
+   justify-content: center;
+  }
+  .img-logo {
+    width: 50%; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 350px;
+    margin-top: 10px; /* Add margin if you want space between the paragraph and the image */
+  }
+  .content-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space between columns */
+    margin-top: 20px; /* Add some spacing above the rows */
+  }
   
+  content-col {
+    flex: 1; /* Take equal space */
+    margin-right: 20px; /* Add spacing between the columns */
+    padding: 20px; /* Add padding inside the box */
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for box effect */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }.content-col {
+    flex: 1; /* Take equal space */
+    margin-right: 20px; /* Add spacing between the columns */
+    padding: 10px; /* Optional: Add padding to the column */
+   
+  }
+  
+  .content-col:last-child {
+    margin-right: 0; /* Remove right margin for the last column */
+  }
+  
+  
+  .content-col:last-child {
+    margin-right: 0; /* Remove right margin for the last column */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin: 10px 0; /* Add some margin between h3 elements */
+    background-color: #fff; /* White background for the box */
+    padding: 15px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box effect */
+    display: flex; /* Align content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: relative; /* Position relative for the tick mark */
+  }
+  
+  h3::before {
+    content: "✓"; /* Tick mark */
+    color: green; /* Tick mark color */
+    margin-right: 10px; /* Space between tick and text */
+  }
+  h1{
+    color: rgb(183, 234, 31);
+    font-size: 30px;
+    background-color: green;
+    font-style: normal;
+    width: 30%;
+    padding: 15px;
+    margin: 140px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  #g2 {
+    width: 50%;
+    background-color: #fff; /* White background for the box */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box effect */
+    margin-top: 20px; /* Add some space above the box */
+  }
+  #bx{
+    margin-top: -80px;
+  }
+  #g1 {
+    margin-top: 0; /* Remove margin-top if added by default */
+  }
+  
+  h4 {
+    margin: 5px 0; /* Add margin for spacing */
+  }
+  #g3{
+    font-size: 30px;
+  }
+  .g4{
+    font-size: 22px;
+    color: green;
+    
+  }
+  /* Styling for g5 class to add bullets */
+.g5 {
+  font-size: 19px;
+  position: relative; /* Make the container position relative for the bullet */
+  padding-left: 20px; /* Add padding to the left for the bullet */
+  display: block; /* Ensure each g5 item is a block element */
+}
+
+.g5::before {
+  content: "•"; /* Bullet character */
+  color: black; /* Bullet color */
+  position: absolute; /* Position the bullet absolutely */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  line-height: 1.2; /* Adjust line-height for vertical alignment */
+}

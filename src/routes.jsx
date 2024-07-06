@@ -12,6 +12,7 @@ import Boardingroom from './components/Facilities/Boardingroom';
 import Onlineenquiryform from './components/Admission/Onlineenquiryform';
 import Contact from './components/Facilities/Contact/ContactUs';
 import Cirriculum from './components/Academic/Curriculum';
+import AdmissionProcess from './components/Admission/AdmissionProcess';
 
 
 const routes = () => {
@@ -29,6 +30,7 @@ const routes = () => {
         <Route path='/Onlineenquiryform' element={<Onlineenquiryform/>}/>
         {/* <Route path="/ContactUs" element={<ContactUs />} /> */}
         <Route path="/contact" element={<Contact />} />
+        <Route path='/AdmissionProcess' element={<AdmissionProcess/>}/>    
         <Route path="/Cirriculum" element={<Cirriculum />} />
 
         <Route path='/Donate' element={<Donate/>}/>    
