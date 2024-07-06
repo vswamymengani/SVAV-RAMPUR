@@ -13,57 +13,13 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
 import exa from  './logocandle.png';
-
-const profile = [
-    {
-        "id": 1,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggcbrkAZTmmZipRq_YG3H9mngpEw-_SFryw&s",
-        "name": "Nishmitha ",
-        "class": "Grade 11",
-        "Subject": "Science",
-        "Award": "Winner of National Science olympiad"
-    },
-    {
-        "id": 2,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1XsWDDZIJTjOB98-ALNDeWgZ3VUZnGMApsknXmkrwcOLk0dG2x5axeNw_oz0v8tq9J-U&usqp=CAU",
-        "name": "Raghunandan raja",
-        "class": "Grade 11",
-        "Subject": "Commerce",
-        "Award": "Winner of International English Olympiad"
-    },
-    {
-        "id": 3,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaCTfI_EdqlIv0lDGSnpGcbJ5QlHCTRGFjiUW9-bLhXyuztsvXskIOyE7iQTjBAAp1Pyc&usqp=CAU",
-        "name": "Aami Rajiv",
-        "class": "Grade 11",
-        "Subject": "Science",
-        "Award": "Winner of International Mathematics Olympiad"
-    },
-    {
-        "id": 4,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BNzArdoMlz39u6YeXr7qL3lAX6hEE65TDYyD_nY8af3WxTdAm4aS_gPD-RgvXQgiAT8&usqp=CAU",
-        "name": "Nishmitha",
-        "class": "Grade 11",
-        "Subject": "Science",
-        "Award": "Winner of National Science Olympiad"
-    }
-]
-const steps = [
-    'Step 1: Personal Information',
-    'Step 2: Account Details',
-    'Step 3: Confirm Information',
-    'Step 4: Complete'
-];
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import schoolCampusView from './School campus-view.jpg'; 
+import schoolCampusView1 from './School Campus-Dwaraka-1.jpg';
 
 const Home = () => {
-    const [profiles, setProfiles] = useState([]);
-    const [currentStep, setCurrentStep] = useState(0);
     const navigate = useNavigate();
-
-    useEffect(() => {
-        setProfiles(profile);
-    }, [])
-
 
     const goToVidhya = () => {
         navigate('Vidhya');
@@ -100,9 +56,7 @@ const Home = () => {
     const handleContactUsClick = () => {
     navigate('/contact'); // This navigates to the "/contact" route
   };
-
-
-    const goToDonate = () => {
+  const goToDonate = () => {
         navigate('Donate');
     };
 
@@ -136,11 +90,6 @@ const Home = () => {
                     <span>MAIL ID-info@svav.ind.in</span><br />
                     <b className='code'>Proc.No. RR-GDP 007-0019</b>
                 </div>
-                {/* <figure class="image6"> */}
-
-                     {/* <img class="image02" decoding='async' width="60px" height="90px"  src="https://scontent.fhyd14-1.fna.fbcdn.net/v/t1.6435-9/117309673_123421515823889_7191793120636498491_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Fj7ML8xXo_0Q7kNvgHs3T9L&_nc_ht=scontent.fhyd14-1.fna&oh=00_AYBkichpHeKRDwacf0dwvlYMF3v-0dvFmcoCu4j694v4aQ&oe=66869991"></img>  */}
-             {/* <img src="./logocandle.png"></img>
-                </figure> */}
 
              <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '-20px'}} />
             </div>
@@ -153,7 +102,7 @@ const Home = () => {
                     </button>
                     <div class="dropdown-content">
                         <a href="/Vidhya" onClick={goToVidhya}>Vidhya Baharathi</a>
-                        <a href="/Commite" onClick={goToCommitte}>Excutive Committee</a>
+                        <a href="/Commite" onClick={goToCommitte}>Executive Committee</a>
                         <a href="/Supportus" onClick={goToSupportus}>Support us</a>
                     </div>
                 </div>
@@ -254,27 +203,61 @@ const Home = () => {
             </div>
 
             <div class="t01" >
-                <div class="t"><h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
-                    <div class="t1">
-                        <div class="t2">
-                            <h5><b>School Objective:-</b></h5>
-                            <p style={{ textAlign: "justify" }} className="p1">In the field called Rampur School, if you sow seeds of letters, it will became a plants called students. if you water these plants by education, the flowers of success will bloom and the fruits of fame will sprout.</p>
-                                <h5><b>The opening verses of the school recited:-</b></h5>
-                               <p className='p1'> The first school was started in 1966 at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth.
-                                Rampur is a small village in the remote area of   Hajipur mandal, in Manchiryala district while the children's sanctuaries are flourishing. Sri Vidyaranya Avasa Vidyalaya was started in Rampur village with the great aim of providing education to the surrounding people and with the good intention of providing culture along with education.
-                                This idea came to the fore when the family members of Sri Kirti Seshulu Sri Malraju Rama Rao (Sri Laxman Rao, Sri Harish Rao, Sri Venkatarao, Sri Acharya) donated five acres of land for the realization of their ideas.
-                                On 19-4-1980, Shri Raudrinama year Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona Brahmananda Rao.
-                                Later 28 acres of land was donated by the family members of Hajipur resident Shri Puskuri Chokka Rao(Shri Puskuri Surya Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri chokkarao).
-                            </p>
-                            <button id="bk">KNOW MORE</button>
-                        </div>
-                        <div className='container'>
-                            <img className='image2' style={{ height: "300px" }} src='https://svis.ind.in/wp-content/uploads/2021/11/vidyaranya_panchakosha.png' />
-                        </div>
 
+    <div className="carousel-wrapper">
+      <Carousel
+        showArrows={true} // Display navigation arrows
+        showThumbs={false} // Hide thumbnail indicators
+        infiniteLoop={true} // Enable infinite looping
+        autoPlay={true} // Auto-play the slides
+        interval={1800} // Change slides every 5 seconds
+        showStatus={false} // Hide the current slide indicator
+        stopOnHover={true} // Stop auto-play on hover
+      >
+        {/* Slide 1 */}
+        <div className="carousel-slide">
+          {/* <h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1> */}
+          <div className="t1">
+            <div className="t2">
+            <h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
+              <h5><b>School Objective:</b></h5>
+              <p style={{ textAlign: "justify" }} className="p1">
+                In the field called Rampur School, if you sow seeds of letters, it will become plants called students. 
+                If you water these plants by education, the flowers of success will bloom and the fruits of fame will sprout.
+              </p>
+              <h5><b>The opening verses of the school recited:</b></h5>
+              <p className='p1'>
+                The first school was started in 1966 at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of 
+                Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the 
+                founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth. Rampur is a small 
+                village in the remote area of Hajipur mandal, in Manchiryala district while the children's sanctuaries are flourishing. Sri 
+                Vidyaranya Avasa Vidyalaya was started in Rampur village with the great aim of providing education to the surrounding people and 
+                with the good intention of providing culture along with education. This idea came to the fore when the family members of Sri Kirti 
+                Seshulu Sri Malraju Rama Rao (Sri Laxman Rao, Sri Harish Rao, Sri Venkatarao, Sri Acharya) donated five acres of land for the realization 
+                of their ideas. On 19-4-1980, Shri Raudrinama year Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona 
+                Brahmananda Rao. Later 28 acres of land was donated by the family members of Hajipur resident Shri Puskuri Chokka Rao (Shri Puskuri Surya 
+                Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri Chokkarao).
+              </p>
+              <button id="bk">KNOW MORE</button>
+            </div>
+            <div className='container'>
+              <img className='image2' style={{ height: "400px", width:"400px" }} src='https://svis.ind.in/wp-content/uploads/2021/11/vidyaranya_panchakosha.png' alt="School Image" />
+            </div>
+          </div>
+        </div>
+        
+        {/* Additional Slides */}
+        <div className="carousel-slide">
+          <img src={schoolCampusView} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+        </div>
+        <div className="carousel-slide">
+          {/* Add additional content for other slides here */}
+          <img src={schoolCampusView1} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+        </div>
 
-                    </div>
-                </div>
+        {/* Add as many slides as needed */}
+      </Carousel>
+    </div>
 
                 <div class="bar">
                     <div class="design">
@@ -372,9 +355,6 @@ const Home = () => {
        STUDENTS
     
     </div>
-      {/* <div className="footer-container">
-        <p> MyCompany. All Rights Reserved.</p>
-      </div> */}
       <div id="q1">
      < div id='a19'>
      <h2 style={{color:'aliceblue',textAlign:'left'}}>Copyright @Srividyaranyaavasavidyalayam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

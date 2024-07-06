@@ -114,7 +114,7 @@
     color: green; /* Tick mark color */
     margin-right: 10px; /* Space between tick and text */
   }
-  #g1{
+  #g1,#g12{
     color: rgb(183, 234, 31);
     font-size: 30px;
     background-color: green;
@@ -135,15 +135,20 @@
   }
   #bx{
     margin-top: -80px;
+    font-size: 25px;
+  }
+  #bx2{
+    margin-top: -80px;
+    font-size: 25px;
   }
   #g1 {
     margin-top: 0; /* Remove margin-top if added by default */
   }
+  #g12{
+    margin-top: 0; /* Remove margin-top if added by default */
+  }
   
-  /* h4 {
-    margin: 5px 0; /* Add margin for spacing */
-  /* } */ */
-  #g3{
+  #g03{
     font-size: 30px;
   }
   .g4{
@@ -151,7 +156,11 @@
     color: green;
     
   }
-  /* Styling for g5 class to add bullets */
+  .text-container13{
+  margin-left: 880px;
+  margin-top: -430px;
+  }
+
 .g5 {
   font-size: 19px;
   position: relative; /* Make the container position relative for the bullet */
@@ -166,4 +175,133 @@
   left: 0; /* Align to the left */
   top: 0; /* Align to the top */
   line-height: 1.2; /* Adjust line-height for vertical alignment */
+}
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.class-image {
+  margin-top: -490px;
+  margin-left: 840px;
+  max-width: 75%;
+  height: 420px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Curriculum.css */
+
+#bx1.class-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.image-container1 {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.class-image1 {
+  margin-left: 10px;
+  max-width: 290%;
+  height: 480px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container1 {
+  flex: 2; /* Ensure text takes up more space than image */
+  /* color: #333; */
+  margin-left: 600px;
+}
+
+/* Optional additional styles */
+#g21 {
+  margin: 20px;
+}
+
+#g11 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 20%;
+  padding: 15px;
+  margin-left: 940px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#bx1 .g31 {
+  font-size: 30px;
+}
+
+#bx1 .g41 {
+  margin-top: 10px;
+  font-size: 22px;
+    color: green;
+}
+
+#bx1 .g51 {
+
+  margin-bottom: 10px;
+  font-size: 19px;
+  position: relative; /* Make the container position relative for the bullet */
+  padding-left: 20px; /* Add padding to the left for the bullet */
+  display: block; /* Ensure each g5 item is a block element */
+}
+.g51::before {
+  content: "•"; /* Bullet character */
+  color: black; /* Bullet color */
+  position: absolute; /* Position the bullet absolutely */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  line-height: 1.2; /* Adjust line-height for vertical alignment */
+}
+ .g33 {
+  font-size: 30px;
+}
+ .g43 {
+  margin-top: 10px;
+  font-size: 22px;
+    color: green;
+}
+
+.g53 {
+
+  margin-bottom: 10px;
+  font-size: 19px;
+  position: relative; /* Make the container position relative for the bullet */
+  padding-left: 20px; /* Add padding to the left for the bullet */
+  display: block; /* Ensure each g5 item is a block element */
+}
+.g53::before {
+  content: "•"; /* Bullet character */
+  color: black; /* Bullet color */
+  position: absolute; /* Position the bullet absolutely */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  line-height: 1.2; /* Adjust line-height for vertical alignment */
+}
+.youtube-video-container {
+  text-align: center; /* Center the video on the page */
+  margin: 40px 0; /* Add some margin above and below the video */
+}
+
+.youtube-video-container iframe {
+  width: 1000px; /* Make the video responsive */
+  height: 300px; /* Adjust height automatically */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }

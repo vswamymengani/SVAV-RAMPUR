@@ -1,0 +1,17 @@
+.custom-list {
+    list-style-type: none; /* Removes the default bullets */
+    padding-left: 20px; /* Aligns custom bullets */
+  }
+  
+  .custom-list li {
+    position: relative;
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  .custom-list li::before {
+    content: '•'; /* Custom bullet character */
+    position: absolute;
+    left: -15px; /* Position bullet to the left */
+    color: black; /* Bullet color */
+  }
+  

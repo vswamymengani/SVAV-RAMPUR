@@ -1,7 +1,8 @@
 import React from 'react'
-
+import myImage from './Executive committee list.jpg';
 const Commite = () => {
   return (
+    <div>
     <div>
       <center>
       <h1 className='c1'>Executive Committee</h1>
@@ -104,10 +105,13 @@ const Commite = () => {
           </tr>
         </table></center>
         <div className="i">
-          
+        </div>
+        </div>
+        <div>
+        <img src={myImage} alt="Description of My Image" style={{ width: '400px', height: '600px', marginTop:'100px', marginLeft:'-490px' }} />
         </div>
       </div>
-   
+    
   )
 }
 
