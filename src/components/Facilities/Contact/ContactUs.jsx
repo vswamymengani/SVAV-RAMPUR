@@ -48,7 +48,7 @@ const ContactUs = () => {
 
       {/* Add the form here */}
       <div>
-        <h2>Contact Form</h2>
+        <h2 id="cf">Contact Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>

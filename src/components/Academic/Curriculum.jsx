@@ -1,7 +1,7 @@
 import React from 'react';
 import './Curriculum.css';
-import logo from './law.png'; // Ensure the path to the logo is correct
-import img1 from './Frame .png';
+import logo1 from './law.png'; // Ensure the path to the logo is correct
+import img11 from './Frame .png';
 
 const Curriculum = () => {
   return (
@@ -9,15 +9,15 @@ const Curriculum = () => {
       <div className="curriculum-container">
         <div className="curriculum-header">
           <div className="content-container">
-            <img src={logo} alt="Logo" className="curriculum-logo" />
-            <div id="t1" className="curriculum-text">
+            <img src={logo1} alt="Logo1" className="curriculum-logo" />
+            <div id="t11" className="curriculum-text">
               Balanced Academics and Residential Life
             </div>
           </div>
         </div>
       </div>
       <div>
-        <h2>How is every child at SVAV guided through their academic growth?</h2>
+        <h2 id="he">How is every child at SVAV guided through their academic growth?</h2>
       </div>
       <p>
         SVAV focuses on the development of a child's academic results independently. We believe that
@@ -25,24 +25,24 @@ const Curriculum = () => {
         subject. If you are a parent eager to enhance your child's academic performance systematically, you should discover 
         our approach to achieving this goal.
       </p>
-      <div id="img1">
-        <img src={img1} alt="Academic Growth" className='img-logo' />
+      <div id="img11">
+        <img src={img11} alt="Academic Growth" className='img-logo' />
       </div>
       {/* Flex container for h2 and h3 contents */}
       <div className="content-row">
         <div className="content-col">
-          <h3>CBSE boarding school</h3>
-          <h3>Planned academic Growth</h3>
-          <h3>Safe and Secure Residential Campus</h3>
-          <h3>Integrated IT/NEET preparation</h3>
-          <h3>Planning for Universities Abroad</h3>
+          <h3 className='hi'>CBSE boarding school</h3>
+          <h3 className='hi'>Planned academic Growth</h3>
+          <h3 className='hi'>Safe and Secure Residential Campus</h3>
+          <h3 className='hi'>Integrated IT/NEET preparation</h3>
+          <h3 className='hi'>Planning for Universities Abroad</h3>
         </div>
         <div className="content-col">
-          <h3>Cambridge curriculum boarding school</h3>
-          <h3>Detailed Career Preparation</h3>
-          <h3>Co-scholastic Development</h3>
-          <h3>Integrated NATA, NID, CLAT, CA and IPMAT preparation</h3>
-          <h3>Preparing Children For Independent Living</h3>
+          <h3 className='hi'>Cambridge curriculum boarding school</h3>
+          <h3 className='hi'>Detailed Career Preparation</h3>
+          <h3 className='hi'>Co-scholastic Development</h3>
+          <h3 className='hi'>Integrated NATA, NID, CLAT, CA and IPMAT preparation</h3>
+          <h3 className='hi'>Preparing Children For Independent Living</h3>
         </div>
       </div>
       <div id="g2">

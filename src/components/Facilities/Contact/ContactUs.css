@@ -1,36 +1,5 @@
 
-#i1{
-    font-size: 30px;
-    margin-left: -1300px;
-  }
-  #i2{
-    background-image: url(../assets/gmap1.jpg);
-    height: 500px;
-    width: 1080px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0%;
-  }
-  #i3{
-    color: red;
-    font-size: 30px;
-    margin-top: -500px;
-    margin-left: 1100px;
-    /* float: right; */
-
-  }
-  #i4{
-  color: blue;
    
-  }
-  #i7{
-    color: black;
-    font-style: oblique;
-    font-size: 18px;
-    margin-top: -20px;
-  }
-  /* ContactUs.css */
-
 form {
 max-width: 500px;
 margin: 20px auto;
@@ -76,4 +45,7 @@ cursor: pointer;
 
 button:hover {
 background-color: #0056b3;
+}
+#cf{
+  margin-top: 100px;
 }

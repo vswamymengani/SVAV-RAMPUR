@@ -25,19 +25,7 @@
 }
 
 
-/* #position
-{
-  position: relative;
-  top: 0;
-  width: 240%;
- margin-top: -30px;
-  height: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  font-size: 1.2rem;
-} */
+
 .subtitles {
   display: flex;
   color: blue;
@@ -50,24 +38,18 @@
   white-space: nowrap;    /* Prevent wrapping */
 }
 
-/* .subtitles{
- margin: 10px;
-  color: blue;
-  font-size: 20px;
- margin-right: 80px;
-} */
+
 .subbar{
   color: brown;
-  /* margin-top: -10px; */
 }
 .sub1{
-  /* margin-top: -0px; */
+ 
   color: green;
 }
 .clgCode{
     color: red;
     margin-left: 150px;
-    /* margin-top: -20px; */
+   
 }
 .section2{
    
@@ -116,10 +98,6 @@
     width: 10px;
     
 }
-/* #position{
-  position: fixed;
- 
-} */
 
 .navbar1 {
     overflow: hidden;
@@ -275,12 +253,27 @@
   }
   .t{
     text-align: center;
+    color: black;
+  }
+  #we{
+    color: black;
+    font-size: 30px;
+  padding: 10px;
+  }
+  .p1{
+    font-size: 14px;
   }
   .t1{
     margin-top: 3%;
     text-align: left;
     display: flex;
     flex-direction: row;
+  }
+  #bk{
+    color: black;
+   background-color: darkgoldenrod;
+    border-radius: 10px solid white;
+    size: 20px;
   }
   .t2{
     width: 250%;
@@ -467,16 +460,7 @@
     box-shadow: none;
   }
   
-  /* .subElement{
-    background-color: black;
-    justify-content: center;
-    text-align: center;
-    height: 300px;
-    width: 300px;
-    margin: 20px 20px 20px 20px;
-    margin-top: 20px;
-    display: inline-grid;
-  } */
+  
   .image02{
     border-radius: 70px;
     margin-left: -30px;

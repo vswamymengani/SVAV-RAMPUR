@@ -1,4 +1,4 @@
-#t1{
+#t11{
   background-color: green;
   color: white;
   height: 30px;
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
   }
-  h2{
+  #he{
     margin-top: -230px;
     display: flex;
    justify-content: center;
@@ -92,12 +92,12 @@
     margin-right: 0; /* Remove right margin for the last column */
   }
   
-  h2 {
+  #h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
   }
   
-  h3 {
+  .hi {
     font-size: 1.2em;
     margin: 10px 0; /* Add some margin between h3 elements */
     background-color: #fff; /* White background for the box */
@@ -109,12 +109,12 @@
     position: relative; /* Position relative for the tick mark */
   }
   
-  h3::before {
+  .hi::before {
     content: "✓"; /* Tick mark */
     color: green; /* Tick mark color */
     margin-right: 10px; /* Space between tick and text */
   }
-  h1{
+  #g1{
     color: rgb(183, 234, 31);
     font-size: 30px;
     background-color: green;
@@ -140,9 +140,9 @@
     margin-top: 0; /* Remove margin-top if added by default */
   }
   
-  h4 {
+  /* h4 {
     margin: 5px 0; /* Add margin for spacing */
-  }
+  /* } */ */
   #g3{
     font-size: 30px;
   }

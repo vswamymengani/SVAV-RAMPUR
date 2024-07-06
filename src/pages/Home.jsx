@@ -254,19 +254,19 @@ const Home = () => {
             </div>
 
             <div class="t01" >
-                <div class="t"><h1>WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
+                <div class="t"><h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
                     <div class="t1">
                         <div class="t2">
                             <h5><b>School Objective:-</b></h5>
-                            <p style={{ textAlign: "justify" }}>In the field called Rampur School, if you sow seeds of letters, it will becaome a plants called students. if you water these plants by education, the flowers of success will bloom and the fruits of fame will sprout.
+                            <p style={{ textAlign: "justify" }} className="p1">In the field called Rampur School, if you sow seeds of letters, it will became a plants called students. if you water these plants by education, the flowers of success will bloom and the fruits of fame will sprout.</p>
                                 <h5><b>The opening verses of the school recited:-</b></h5>
-                                The first school was started in 1966 at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth.
+                               <p className='p1'> The first school was started in 1966 at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth.
                                 Rampur is a small village in the remote area of   Hajipur mandal, in Manchiryala district while the children's sanctuaries are flourishing. Sri Vidyaranya Avasa Vidyalaya was started in Rampur village with the great aim of providing education to the surrounding people and with the good intention of providing culture along with education.
                                 This idea came to the fore when the family members of Sri Kirti Seshulu Sri Malraju Rama Rao (Sri Laxman Rao, Sri Harish Rao, Sri Venkatarao, Sri Acharya) donated five acres of land for the realization of their ideas.
                                 On 19-4-1980, Shri Raudrinama year Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona Brahmananda Rao.
                                 Later 28 acres of land was donated by the family members of Hajipur resident Shri Puskuri Chokka Rao(Shri Puskuri Surya Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri chokkarao).
                             </p>
-                            <button>KNOW MORE</button>
+                            <button id="bk">KNOW MORE</button>
                         </div>
                         <div className='container'>
                             <img className='image2' style={{ height: "300px" }} src='https://svis.ind.in/wp-content/uploads/2021/11/vidyaranya_panchakosha.png' />
@@ -284,8 +284,7 @@ const Home = () => {
                         <p class="design">SVAV is established with the purpose to prepare children to reach high academic standards, with<br /> ancient wisdom, modern technology, and scientific temper.</p><br />
                         <p class="design">To blossom the inner potential of the child in a creative and innovative atmosphere, nurture the self-<br />exploration to enquire, to experiment, to find the truth in the best spirit and indomitable will.</p>
                     </div>
-                </div>
-                <div class="c1">
+                </div><div class="c1">
                     <h2 class="c12">FACILITIES</h2>
                 </div>
             </div>
@@ -298,7 +297,7 @@ const Home = () => {
 
                     </figure>
                     <h4 className='subspace'>Digital Classrooms</h4>
-                    <p style={{ textAlign: "justify" }}>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding, planning, and developing environments</p>
+                    <p style={{ textAlign: "justify" }}>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding</p>
                 </div>
                 <div className='subElement1'>
                     <figure class="Element">
@@ -328,7 +327,7 @@ const Home = () => {
 
                     </figure>
                     <h4 className='subspace'>Laboratories</h4>
-                    <p style={{ textAlign: "justify" }}>SVAV has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning by understanding theoretical concepts and boost students</p>
+                    <p style={{ textAlign: "justify" }}>SVAV has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning </p>
                 </div>
                 <div className='subElement4'>
                     <figure class="Element">
@@ -337,7 +336,7 @@ const Home = () => {
 
                     </figure>
                     <h4 className='subspace'>Library</h4>
-                    <p style={{ textAlign: "justify" }}>An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students build fluency and become</p>
+                    <p style={{ textAlign: "justify" }}>An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students</p>
                 </div>
                 <div className='subElement5'>
                     <figure class="Element">
@@ -346,9 +345,10 @@ const Home = () => {
 
                     </figure>
                     <h4 className='subspace'>Transport Management System</h4>
-                    <p style={{ textAlign: "justify" }}>SVAV1 Transport Management System is a convenience provided to our parents to facilitate a safe and easy commute for their children. 5 buses and 1 winger will ply in 6 routes.</p>
+                    <p style={{ textAlign: "justify" }}>SVAV1 Transport Management System is a convenience provided to our parents to facilitate a safe and easy commute for their children. </p>
                 </div>
             </div>
+
         
             <footer className="footer">
       <div id="l3">
