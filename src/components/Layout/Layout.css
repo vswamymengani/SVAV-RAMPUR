@@ -1,0 +1,38 @@
+/* src/components/Layout/Layout.css */
+
+/* .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding-top: 60px; 
+    padding-bottom: 50px; 
+} */
+/* src/components/Layout/Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Ensure background to avoid text overlap */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a floating effect */
+    padding: 10px 0;
+}
+
+.content {
+    flex: 1;
+    padding-top: 60px; /* Adjust based on header height */
+    padding-bottom: 50px; /* Adjust based on footer height */
+    margin-top: 260px; /* Ensure content starts below the fixed header */
+    overflow-y: auto; /* Enable vertical scrolling for content */
+}

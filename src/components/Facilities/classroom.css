@@ -7,7 +7,7 @@
     padding: 15px;
     margin: 20px;
     text-align: center;
-    margin-top: -100px;
+    margin-top: -20px;
 }
 #clslogo{
     height: 100px;
@@ -21,13 +21,14 @@
     margin-top: -100px;
 }
 #images{
-    width: 100px;
+    width: -130px;
     height: 100px;
 }
 .classroom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
   }
   
   .classroom-content {
@@ -37,7 +38,7 @@
   
   .classroom-slider {
     flex: 1;
-    max-width: 50%;
+    max-width: 40%;
     margin-top: 100px;
  
   }
@@ -45,6 +46,6 @@
   .classroom-slider img {
     width: 100%;
     border-radius: 60px;
-   
+    
   }
   
