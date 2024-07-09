@@ -7,6 +7,8 @@ import schoolCampusView1 from './School Campus-Dwaraka-1.jpg';
 
 const Home = () => {
    return (
+
+    
         <div>
             
              <div className="t01" >

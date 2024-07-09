@@ -1,15 +1,14 @@
 import './Home.css';
-import exampleImage from '../assets/school logo .jpg';
 import { useNavigate } from 'react-router-dom';
 import '../components/Footer/Footer.css';
+import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
+
 
 const Header = () => {
     const navigate = useNavigate();
   
-    // const goToHome = () => {
-    //     navigate('Home');
-    // };
+    
     const goToVidhya = () => {
         navigate('Vidhya');
     };
@@ -51,7 +50,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className="position">
+             <div className="position">
                 <div className='Header'>
                     <div className='section1'>
                         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -81,10 +80,10 @@ const Header = () => {
                     </div>
 
                     <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '-20px' }} />
-                </div>
-
+                </div> 
+              
                 <div className="navbar1">
-                    {/* <div id="home">HOME</div> */}
+                    
                   
                     <a href="/#" onClick="goToHome()" className="styled-link">HOME</a>
 

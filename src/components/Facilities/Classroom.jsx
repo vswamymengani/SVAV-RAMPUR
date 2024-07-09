@@ -12,11 +12,12 @@ const Classroom = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 900,
+    speed: 1900,
+    interval: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 630,
+    autoplaySpeed: 630
   };
 
   return (

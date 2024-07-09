@@ -6,9 +6,10 @@
   font-style: normal;
   width: 50%;
   padding: 15px;
-  margin: 20px;
+  border-radius: 15px; /* Added this line to make the border radius curved */
+  margin: 100px;
   text-align: center;
-  margin-left: 80px;
+  margin-top: 10px;
 }
 
 .boardingroom-container {
@@ -54,13 +55,13 @@
 .boardingroom-slider {
   flex: 1; /* Makes the slider take available space */
   max-width: 600px; /* Optional: limit the maximum width */
-  margin-right: 20px; /* Adds space between slider and content */
+  margin-right: 0px; /* Adds space between slider and content */
 }
 
 .boardingroom-slider img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 .facility-logo {
   width: 30px;  /* Adjust the size as needed */

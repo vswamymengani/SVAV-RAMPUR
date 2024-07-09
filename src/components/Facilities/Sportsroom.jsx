@@ -12,17 +12,18 @@ const Sportsroom = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 900,
+    speed: 1900,
+    interval: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 630,
+    autoplaySpeed: 630
   };
 
   return (
     <div className="sports-container">
       <div className="sports-content">
-        <h1 id="spo">Sportsroom Facilities</h1><br></br>
+        <span id="spo">Sportsroom Facilities</span><br></br><br></br><br></br><br></br><br></br><br></br>
         <div id="spocontents">
           <div className="facility-item">
             <FaVolleyballBall className="facility-icon" />

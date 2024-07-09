@@ -1,13 +1,16 @@
-#t11{
+#t11 {
   background-color: green;
   color: white;
-  height: 30px;
-  width: 80%;
-  font-size: 30px;
+  height: 8px; /* Increased height for better visibility */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  font-size: 35px;
   border: 40px solid transparent;
- display: flex;
- justify-content: center;
+  margin: 0 auto; /* Center the element horizontally within its parent container */
 }
+
 
 
 /* src/components/Curriculum.css */
@@ -51,6 +54,12 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
+  }
+  #hee{
+    display: flex;
+    justify-content:center;
+    margin-left: 360px;
+    margin-right: 360px;
   }
   #he{
     margin-top: -230px;
@@ -142,9 +151,29 @@
     font-size: 25px;
   }
   #g1 {
+    color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 39%;
+  padding: 15px;
+  border-radius: 15px; /* Added this line to make the border radius curved */
+  margin: 100px;
+  text-align: center;
+  margin-top: 10px;
     margin-top: 0; /* Remove margin-top if added by default */
   }
   #g12{
+    color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 39%;
+  padding: 15px;
+  border-radius: 15px; /* Added this line to make the border radius curved */
+  margin: 100px;
+  text-align: center;
+  margin-top: 10px;
     margin-top: 0; /* Remove margin-top if added by default */
   }
   
@@ -241,6 +270,7 @@
   margin-left: 940px;
   text-align: center;
   margin-top: 80px;
+  border-radius: 15px;
 }
 
 #bx1 .g31 {

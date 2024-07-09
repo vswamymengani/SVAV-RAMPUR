@@ -10,7 +10,7 @@ const Layout = () => {
     return (
         <div className="layout">
             <Header />
-            <main className="content">
+         <main className="content">
                 <Outlet /> {/* This will render the component corresponding to the route */}
             </main>
             <Footer />

@@ -6,6 +6,7 @@ import classImage from './priscl.webp'; // Import the new image
 import classImage1 from './6 to 8.webp';
 import classImage2 from './9 and 10.jpeg';
 import classImage3 from './11 and 12 1.jpeg';
+import { BsDisplay } from 'react-icons/bs';
 const Curriculum = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const Curriculum = () => {
       <div>
         <h2 id="he">How is every child at SVAV guided through their academic growth?</h2>
       </div>
-      <p>
+      <p id="hee">
         SVAV focuses on the development of a child's academic results independently. We believe that
         personalized attention and methodical guidance will progressively improve a child's performance in any 
         subject. If you are a parent eager to enhance your child's academic performance systematically, you should discover 
