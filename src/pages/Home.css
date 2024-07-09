@@ -416,11 +416,13 @@
     background-image: url(./Assets/IT-LAB-Technology-Lab.png);
     margin: -230px;
     height: 100px;
-    width: 100px;
-    float: left;
+    width: 90px;
+    /* float: left; */
     background-size: cover;
     margin-left: 690px;
     margin-bottom: -10px;
+    display: flex;
+    text-align: center;
   }
   .d{
     background-color: aqua;
@@ -519,6 +521,7 @@
   }
   .c12{
     text-align: center;
+    width: 0px;
   }
   .con1{
     background-size: cover;

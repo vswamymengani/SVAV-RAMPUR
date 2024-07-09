@@ -73,7 +73,7 @@ const Home = () => {
                         <p className="design">To blossom the inner potential of the child in a creative and innovative atmosphere, nurture the self-<br />exploration to enquire, to experiment, to find the truth in the best spirit and indomitable will.</p>
                     </div>
                 </div><div className="c1">
-                    <h2 className="c12">FACILITIES</h2>
+                <center> <span className="c132">FACILITIES</span></center>   
                 </div>
             </div>
 
