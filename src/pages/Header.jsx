@@ -29,6 +29,12 @@ const Header = () => {
     const goToLabroom = () => {
         navigate('Labroom');
     };
+    const goToMedical = () => {
+        navigate('Medical');
+    };
+    const goToLaboratories = () => {
+        navigate('Laboratories');
+    };
     const goToBoardingroom = () => {
         navigate('Boardingroom');
     };
@@ -41,6 +47,9 @@ const Header = () => {
     const goToCirriculum = () => {
         navigate('Cirriculum');
     };
+    const goToHalloffame = () => {
+        navigate('Halfoffame');
+    };
     const handleContactUsClick = () => {
         navigate('/contact'); // This navigates to the "/contact" route
     };
@@ -50,7 +59,7 @@ const Header = () => {
 
     return (
         <header className="header">
-             <div className="position">
+           <div className="position">
                 <div className='Header'>
                     <div className='section1'>
                         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -106,8 +115,8 @@ const Header = () => {
                             <a href="/Classroom" onClick={goToClassroom}>CATALYTIC CLASSROOMS</a>
                             <a href="/Sportsroom" onClick={goToSportsroom}>GAMES & SPORTS</a>
                             <a href="/Labroom" onClick={goToLabroom}>IT LAB / COMPUTER LAB</a>
-                            <a href="#">MEDICAL / VAIDHYA VIBHAG  </a>
-                            <a href="#">LABORATORIES</a>
+                            <a href="/Medical" onClick={goToMedical}>MEDICAL / VAIDHYA VIBHAG  </a>
+                            <a href="/Laboratories" onClick={goToLaboratories}>LABORATORIES</a>
                             <a href="#">LIBRARY</a>
                             <a href="#">MULTI-PURPOSE AUDITORIUM</a>
                             <a href="#">ARTS & CRAFTS</a>
@@ -162,7 +171,7 @@ const Header = () => {
                         <div className="dropdown-content">
                             <a href="#">OUR EVENTS</a>
                             <a href="#">GALLERY</a>
-                            <a href="#">MEDIA & PUBLICATIONS</a>
+                            <a href="/Halloffame" onClick={goToHalloffame}>HALL OF FAME</a>
                         </div>
                     </div>
                     <div className="dropdown">
@@ -192,8 +201,8 @@ const Header = () => {
                 <div className="color">
                     <div className="line">LATEST NEWS</div>
                     <div><marquee>Job Openings: Join our Team of teachers and admin by applying at careers@svav.ind.in or hr@svav.ind.in</marquee></div>
-                </div>
-            </div>
+                </div></div>
+               
         </header>
     )
 }

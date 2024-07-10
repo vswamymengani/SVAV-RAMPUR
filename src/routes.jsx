@@ -58,11 +58,14 @@ import Classroom from './components/Facilities/Classroom';
 import Donate from './components/Donate/Donate';
 import Sportsroom from './components/Facilities/Sportsroom';
 import Labroom from './components/Facilities/Labroom';
+import Medical from './components/Facilities/Medical';
+import Laboratories from './components/Facilities/Laboratories';
 import Boardingroom from './components/Facilities/Boardingroom';
 import Onlineenquiryform from './components/Admission/Onlineenquiryform';
 import Contact from './components/Facilities/Contact/ContactUs';
 import Cirriculum from './components/Academic/Curriculum';
 import AdmissionProcess from './components/Admission/AdmissionProcess';
+import Halloffame from './components/News and Letter/Halloffame';
 
 const AppRoutes = () => {
     return (
@@ -75,11 +78,14 @@ const AppRoutes = () => {
                 <Route path="Classroom" element={<Classroom />} />
                 <Route path="Sportsroom" element={<Sportsroom />} />
                 <Route path="Labroom" element={<Labroom />} />
+                <Route path="Medical" element={<Medical />} />
+                <Route path="Laboratories" element={<Laboratories />} />
                 <Route path="Boardingroom" element={<Boardingroom />} />
                 <Route path="Onlineenquiryform" element={<Onlineenquiryform />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="AdmissionProcess" element={<AdmissionProcess />} />
                 <Route path="Cirriculum" element={<Cirriculum />} />
+                <Route path="Halloffame" element={<Halloffame />} />
                 <Route path="Donate" element={<Donate />} />
             </Route>
         </Routes>

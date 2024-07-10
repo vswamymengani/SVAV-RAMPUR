@@ -1,0 +1,17 @@
+#hf{
+    font-size: 30px;
+    font-style: normal;
+    margin: 40px;
+}
+.box{
+    background-image: url(./hfimg.png);
+    height: 700px;
+    width: 600px;
+    background-repeat: no-repeat;
+    margin: 60px;
+}
+#boxnm{
+   margin-bottom: 6px;
+   font-weight: 500px;
+   color: lightcoral;
+}

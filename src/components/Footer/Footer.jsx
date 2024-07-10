@@ -4,7 +4,6 @@ import './Footer.css';
 import donationlogo from './donation.png';
 import aluminilogo from './alumini.png';
 import teacherlogo from './teacher.png';
-import clglogo from './clg.png';
 import studentlogo from './student (1).png';
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -26,11 +25,7 @@ const Footer = () => {
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
         <img src={teacherlogo} alt="A" className="link-icon" />
-        TEACHER
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     
-        <img src={clglogo} alt="clg" className="link-icon" />
-        SCHOOL/COLLEGE
+       OURFACULTY
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
         <img src={studentlogo} alt="student" className="link-icon" />

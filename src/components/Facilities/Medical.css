@@ -1,0 +1,81 @@
+/* Ensure you import this in your component file */
+#boa {
+    color: rgb(183, 234, 31);
+    font-size: 30px;
+    background-color: green;
+    font-style: normal;
+    width: 150%;
+    padding: 15px;
+    border-radius: 15px; /* Added this line to make the border radius curved */
+    margin: 120px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .boardingroom-container {
+    display: flex;
+    flex-direction: row; /* Aligns items in a row */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .boardingroom-content {
+    flex: 1; /* Makes the content take available space */
+    text-align: left; /* Aligns text to the left */
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+  
+  #boa {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #boacontents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+   margin-left: 100px;
+   margin-bottom: 100px;
+  }
+  
+  .facility-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .facility-icon {
+    margin-right: 10px;
+    font-size: 24px; /* Adjust the size as needed */
+  }
+  
+  .boardingroom-slider {
+    flex: 1; /* Makes the slider take available space */
+    max-width: 600px; /* Optional: limit the maximum width */
+    margin-right: 0px; /* Adds space between slider and content */
+  }
+  
+  .boardingroom-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+  }
+  .facility-logo {
+    width: 30px;  /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;  /* Space between logo and text */
+  }
+  #medicalpara{
+    font-weight: 300px;
+    font-family:  'Open Sans', sans-serif;
+      margin: 100px;
+    margin-bottom: -50px;
+    margin-top: -20px;
+  }
+
+  

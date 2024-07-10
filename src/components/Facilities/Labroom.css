@@ -1,58 +1,89 @@
-#spo{
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 43%;
-    padding: 15px;
-    margin: 15px;
-    text-align: center;
+.lab {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 80%;
+  margin-bottom: 100px;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 40px;
+  text-align: center;
 }
-#spologo{
+#lablogo{
     height: 100px;
     width: 100px;
    background-image: url(../);
 }
-#spocontents{
+#labcontents{
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
-    margin-top: -10px;
+    margin-left: 60px;
+    margin-top: 70px;
+    margin-bottom: -180px;
+    width: 300px;
+  gap: 20px; /* Space between the facility items */
 }
 #images{
     width: 100px;
     height: 100px;
 }
-.sports-container {
+.labroom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 70%;
+    height: 800px;
+    margin-top: -120px;
+    margin-left: 60px;
   }
   
-  .sports-content {
+  .labroom-content {
     flex: 1;
     padding: 20px;
+    
   }
   
-  .sports-slider {
-    flex: 1;
-    max-width: 50%;
- 
+  .labroom-slider {
+    width: 80%;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 300px; /* Adjust this value to move the slider downwards */
+    padding-top: 20px; /* Optional: Add padding to separate images from the top content */
   }
   
-  .sports-slider img {
-    width: 100%;
-    border-radius: 60px;}
+  
+  .labroom-slider img {
+    width: 80%;
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 60px;
+    padding-top: 20px; 
+  }
    
-  .facility-item {
+  .facility-iteml {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: -10px;
+      margin-left: -20px;
     }
+    /* sportsroom.css */
+
+.facility-iteml h3 {
+  margin: -20px 90; /* Reduce the vertical margin */
+}
+
     
-    .facility-icon {
+    .facility-iconl {
       margin-right: 10px;
       font-size: 24px; /* Adjust the size as needed */
+    }
+     #labpara{
+      font-weight: 300px;
+      font-family:  'Open Sans', sans-serif;
+        margin: 120px;
+      margin-bottom: -50px;
     }
   
   

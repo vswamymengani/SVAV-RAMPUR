@@ -21,6 +21,7 @@ const Classroom = () => {
   };
 
   return (
+    <div>
     <div className="classroom-container">
       <div className="classroom-content">
         <h1 id="cls">Classroom Facilities</h1>
@@ -42,6 +43,27 @@ const Classroom = () => {
           <div><img src={img3} alt="Classroom 3" /></div>
         </Slider>
       </div>
+    </div>
+    <div>
+    <div>
+        <p id="clspara">Promoting student-centric and tech-driven learning through adaptive, interactive, and centralized digital classrooms (spacious and well-ventilated rooms) and simultaneously incorporating ancient wisdom and values as an integral part of the curriculum.
+       <br></br><br></br>
+      Students are also exposed to e-learning content, grade specific-live, and stored material in order to evaluate their individual strengths, abilities, and needs.
+      <br></br><br></br>
+These classrooms are a part of the Additional Support for Learning (ASL approach) towards students with Special Educational Needs (SEN).
+<br></br><br></br>
+The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding, planning, and developing environments and experiences for students learning in digitally-rich contexts. A digital classroom, which is rapidly transforming the way, teachers teach and students learn in schools with innovative and meaningful use of technology. Students learn difficult and abstract curriculum concepts by watching highly engaging visuals and animations.
+<br></br><br></br>
+This makes learning an enjoyable experience for students while improving their overall academic performance in school. And teachers also gain the complete attention and interest of every child in the class.
+<br></br><br></br>
+Every child gets a visual input on how it happens and the concepts are well understood. This results in a faster and accurate understanding of the concepts in class and helps improve the overall academic performance of students.
+<br></br><br></br>
+Teachers are able to keep students engaged in the learning process and also get an instant and accurate assessment of learning outcomes achieved at the end of the class.
+<br></br><br></br>
+Creative Video files to teach a software application, a lesson, as well as students, can give reviews at the same time.
+        </p>
+      </div>
+    </div>
     </div>
   )
 }

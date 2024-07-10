@@ -3,16 +3,12 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import schoolCampusView from './School prayer-time-1.jpg';
 import schoolCampusView1 from './School Campus-Dwaraka-1.jpg';
-
-
 const Home = () => {
-   return (
-
     
-        <div>
-            
-             <div className="t01" >
-
+   return (
+        
+           <div className="body">
+            <div className="t01" >
                 <div className="carousel-wrapper">
                     <Carousel
                         showArrows={true} // Display navigation arrows
@@ -30,7 +26,7 @@ const Home = () => {
                                 <div className="t2">
                                     <h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
                                     
-                                    <h2><center><b>The opening verses of the school recited:</b></center></h2>
+                                    <h2><center><b>The opening verses of the school recited</b></center></h2>
                                     <p className='p1'>
                                         The first school was started in 1966 at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of
                                         Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the
@@ -72,7 +68,7 @@ const Home = () => {
                         <p className="design">SVAV is established with the purpose to prepare children to reach high academic standards, with<br /> ancient wisdom, modern technology, and scientific temper.</p><br />
                         <p className="design">To blossom the inner potential of the child in a creative and innovative atmosphere, nurture the self-<br />exploration to enquire, to experiment, to find the truth in the best spirit and indomitable will.</p>
                     </div>
-                </div><div className="c1">
+                </div><div className="c1f">
                 <center> <span className="c132">FACILITIES</span></center>   
                 </div>
             </div>
