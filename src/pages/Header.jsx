@@ -35,6 +35,12 @@ const Header = () => {
     const goToLaboratories = () => {
         navigate('Laboratories');
     };
+    const goToLibrary = () => {
+        navigate('Library');
+    };
+    const goToAuditorium = () => {
+        navigate('Auditorium');
+    };
     const goToBoardingroom = () => {
         navigate('Boardingroom');
     };
@@ -117,8 +123,8 @@ const Header = () => {
                             <a href="/Labroom" onClick={goToLabroom}>IT LAB / COMPUTER LAB</a>
                             <a href="/Medical" onClick={goToMedical}>MEDICAL / VAIDHYA VIBHAG  </a>
                             <a href="/Laboratories" onClick={goToLaboratories}>LABORATORIES</a>
-                            <a href="#">LIBRARY</a>
-                            <a href="#">MULTI-PURPOSE AUDITORIUM</a>
+                            <a href="/Library" onClick={goToLibrary}>LIBRARY</a>
+                            <a href="/Auditorium" onClick={goToAuditorium}>MULTI-PURPOSE AUDITORIUM</a>
                             <a href="#">ARTS & CRAFTS</a>
                             <a href="#">TRANSPORT MANAGEMENT SYSTEM</a>
                             <a href="/Boardingroom" onClick={goToBoardingroom}>BOARDING FACILITIES</a>

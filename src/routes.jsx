@@ -66,6 +66,8 @@ import Contact from './components/Facilities/Contact/ContactUs';
 import Cirriculum from './components/Academic/Curriculum';
 import AdmissionProcess from './components/Admission/AdmissionProcess';
 import Halloffame from './components/News and Letter/Halloffame';
+import Library from './components/Facilities/Library';
+import Auditorium from './components/Facilities/Auditorium';
 
 const AppRoutes = () => {
     return (
@@ -79,7 +81,9 @@ const AppRoutes = () => {
                 <Route path="Sportsroom" element={<Sportsroom />} />
                 <Route path="Labroom" element={<Labroom />} />
                 <Route path="Medical" element={<Medical />} />
+                <Route path="Library" element={<Library />} />
                 <Route path="Laboratories" element={<Laboratories />} />
+                <Route path="Auditorium" element={<Auditorium />} />
                 <Route path="Boardingroom" element={<Boardingroom />} />
                 <Route path="Onlineenquiryform" element={<Onlineenquiryform />} />
                 <Route path="contact" element={<Contact />} />
