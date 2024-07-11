@@ -1,5 +1,5 @@
 /* Ensure you import this in your component file */
-#Art {
+#Svavprathana {
     color: rgb(183, 234, 31);
     font-size: 30px;
     background-color: green;
@@ -11,9 +11,8 @@
     text-align: center;
     margin-top: 10px;
   }
-   
-
-  .Art-container {
+  
+  .Svavprathana-container {
     display: flex;
     flex-direction: row; /* Aligns items in a row */
     align-items: center;
@@ -21,7 +20,7 @@
     padding: 20px;
   }
   
-  .Art-content {
+  .Svavprathana-content {
     flex: 1; /* Makes the content take available space */
     text-align: left; /* Aligns text to the left */
     padding: 20px;
@@ -29,12 +28,12 @@
     margin-left: 100px;
   }
   
-  #Art {
+  #Svavprathana {
     font-size: 2rem;
     margin-bottom: 20px;
   }
   
-  #Artcontents {
+  #Svavprathanacontents {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -42,37 +41,26 @@
    margin-left: 100px;
   }
   
-  .facility-item-Art {
+  .facility-item-Svavprathana {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
   }
   
-  .facility-icon-Art {
-    margin-right: 10px;
-    font-size: 24px; /* Adjust the size as needed */
-  }
-  
-  .Art-slider {
+  .Svavprathana-slider {
     flex: 1; /* Makes the slider take available space */
-    max-width: 600px; /* Optional: limit the maximum width */
+    max-width: 500px; /* Optional: limit the maximum width */
     margin-right: 0px; /* Adds space between slider and content */
   }
   
-  .Art-slider img {
+  .Svavprathana-slider img {
     width: 100%;
-    height: auto;
+    height: 400px;
     border-radius: 40px;
   }
-  .facility-logo-Art {
-    width: 30px;  /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px;  /* Space between logo and text */
-  }
-  #Artpara{
+  #Sadacharampara{
     font-weight: 300px;
     font-family:  'Open Sans', sans-serif;
       margin: 100px;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
   }
-  

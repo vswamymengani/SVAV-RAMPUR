@@ -41,8 +41,35 @@ const Header = () => {
     const goToAuditorium = () => {
         navigate('Auditorium');
     };
+    const goToArts = () => {
+        navigate('Arts');
+    };
+    const goToTransport = () => {
+        navigate('Transport');
+    };
     const goToBoardingroom = () => {
         navigate('Boardingroom');
+    };
+    const goToSadacharam = () => {
+        navigate('Sadacharam');
+    };
+    const goToSvavprathana= () => {
+        navigate('Svavprathana');
+    };
+    const goToSanskrit= () => {
+        navigate('Sanskrit');
+    };
+    const goToYoga= () => {
+        navigate('Yoga');
+    };
+    const goToFeestructure= () => {
+        navigate('Feestructure');
+    };
+    const goToFaq= () => {
+        navigate('Faq');
+    };
+    const goToStudentenrollment= () => {
+        navigate('Studentenrollment');
     };
     const goToOnlineenquiryform = () => {
         navigate('Onlineenquiryform');
@@ -125,8 +152,8 @@ const Header = () => {
                             <a href="/Laboratories" onClick={goToLaboratories}>LABORATORIES</a>
                             <a href="/Library" onClick={goToLibrary}>LIBRARY</a>
                             <a href="/Auditorium" onClick={goToAuditorium}>MULTI-PURPOSE AUDITORIUM</a>
-                            <a href="#">ARTS & CRAFTS</a>
-                            <a href="#">TRANSPORT MANAGEMENT SYSTEM</a>
+                            <a href="/Arts" onClick={goToArts}>ARTS & CRAFTS</a>
+                            <a href="/Transport" onClick={goToTransport}>TRANSPORT MANAGEMENT SYSTEM</a>
                             <a href="/Boardingroom" onClick={goToBoardingroom}>BOARDING FACILITIES</a>
                         </div>
                     </div>
@@ -135,10 +162,10 @@ const Header = () => {
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                            <a href="#">SADACHARAM</a>
-                            <a href="#">SVAV PRARTHANA</a>
-                            <a href="#">SANSKRIT</a>
-                            <a href="#">YOGA</a>
+                            <a href="/Sadacharam" onClick={goToSadacharam}>SADACHARAM</a>
+                            <a href="/Svavprathana" onClick={goToSvavprathana}>SVAV PRARTHANA</a>
+                            <a href="/Sanskrit" onClick={goToSanskrit}>SANSKRIT</a>
+                            <a href="/Yoga" onClick={goToYoga}>YOGA</a>
 
                         </div>
                     </div>
@@ -149,9 +176,9 @@ const Header = () => {
                         <div className="dropdown-content">
                             <a href="/AdmissionProcess" onClick={goToAdmissionProcess}>ADMISSION PROCESS</a>
                             <a href="/Onlineenquiryform" onClick={goToOnlineenquiryform}>ONLINE ENQUIRY FORM</a>
-                            <a href="#">FEE STRUCTURE</a>
-                            <a href="#">STUDENT ENROLLMENT</a>
-                            <a href="#">FAQS</a>
+                            <a href="/Feestructure" onClick={goToFeestructure}>FEE STRUCTURE</a>
+                            <a href="/Studentenrollment" onClick={goToStudentenrollment}>STUDENT ENROLLMENT</a>
+                            <a href="/Faq" onClick={goToFaq}>FAQS</a>
                         </div>
                     </div>
                     <div className="dropdown">
