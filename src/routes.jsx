@@ -77,6 +77,7 @@ import Yoga from './components/Beyond/Yoga';
 import Faq from './components/Admission/Faq';
 import Studentenrollment from './components/Admission/Studentenrollment';
 import Feestructure from './components/Admission/Feestructure';
+import Philosophy from './components/Academic/Philosophy';
 
 const AppRoutes = () => {
     return (
@@ -100,6 +101,7 @@ const AppRoutes = () => {
                 <Route path="Svavprathana" element={<Svavprathana />} />
                 <Route path="Sanskrit" element={<Sanskrit />} />
                 <Route path="Yoga" element={<Yoga />} />
+                <Route path="Philosophy" element={<Philosophy />} />
                 <Route path="Onlineenquiryform" element={<Onlineenquiryform />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="AdmissionProcess" element={<AdmissionProcess />} />

@@ -1,13 +1,13 @@
 #t11 {
   background-color: green;
   color: white;
-  height: 8px; /* Increased height for better visibility */
-  width: 90%;
+  height: 0px; /* Increased height for better visibility */
+  width: 809%;
   display: flex;
   justify-content: center;
   align-items: center; /* Center content vertically */
   font-size: 35px;
-  border: 40px solid transparent;
+  border: 20px solid transparent;
   margin: 0 auto; /* Center the element horizontally within its parent container */
 }
 

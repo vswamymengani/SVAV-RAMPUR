@@ -26,19 +26,20 @@ const Home = () => {
                                 <div className="t2">
                                     <h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
                                     
-                                    <h2><center><b>The opening verses of the school recited</b></center></h2>
-                                    <p className='p1'>
-                                        The first school was started in 1966 at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of
+                                    <h2><center><h4>The opening verses of the school recited</h4></center></h2>
+                                    <span className='p1'>
+                                       <b> The first school</b> was started in <b>1966</b>  at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of
                                         Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the
                                         founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth. Rampur is a small
-                                        village in the remote area of Hajipur mandal, in Manchiryala district while the children's sanctuaries are flourishing. Sri
-                                        Vidyaranya Avasa Vidyalaya was started in Rampur village with the great aim of providing education to the surrounding people and
+                                        village in the remote area of Hajipur mandal, in Manchiryala district while the children's sanctuaries are flourishing.<br></br> <br></br>
+                                        <b>Sri
+                                        Vidyaranya Avasa Vidyalaya</b>  was started in Rampur village with the great aim of providing education to the surrounding people and
                                         with the good intention of providing culture along with education. This idea came to the fore when the family members of Sri Kirti
                                         Seshulu Sri Malraju Rama Rao (Sri Laxman Rao, Sri Harish Rao, Sri Venkatarao, Sri Acharya) donated five acres of land for the realization
-                                        of their ideas. On 19-4-1980, Shri Raudrinama year Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona
+                                        of their ideas. On <b>19-4-1980,</b> Shri Raudrinama year Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona
                                         Brahmananda Rao. Later 28 acres of land was donated by the family members of Hajipur resident Shri Puskuri Chokka Rao (Shri Puskuri Surya
-                                        Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri Chokkarao).
-                                    </p>
+                                        Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri Chokkarao).<br></br><br></br>
+                                    </span>
                                     <button id="bk">KNOW MORE</button>
                                 </div>
                                 <div className='container'>
@@ -67,7 +68,45 @@ const Home = () => {
                         <h2>Athadhi Vidyam | Aacharyaha Poorva Roopam | Anteyvasyuthara Roopam <br />| Vidya Sandhihi | Pravachanagum Sandhanam | Itydividyam ||</h2><br />
                         <p className="design">SVAV is established with the purpose to prepare children to reach high academic standards, with<br /> ancient wisdom, modern technology, and scientific temper.</p><br />
                         <p className="design">To blossom the inner potential of the child in a creative and innovative atmosphere, nurture the self-<br />exploration to enquire, to experiment, to find the truth in the best spirit and indomitable will.</p>
-                    </div>
+                    </div> </div>
+
+
+
+                    
+                    <div className='mainElement'>
+                <div className='subElementop'>
+                    <figure className="Element">
+
+                    <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", height:"120px", width:"120px"}} src="https://tse4.mm.bing.net/th?id=OIP.BHkh7zuokhlSZ_4qRQyD0AHaHa&pid=Api&P=0&h=220" class="attachment-full size-full"></img>
+
+                    </figure>
+                    <h4 className='subspaceop'>AIM & OBJECTIVES</h4>
+                    <p className='op1' style={{ textAlign: "justify" }}>To develop a National System of Education which would help to build a generation
+                    of youngmen and women that is[....More]</p>
+                </div>
+                <div className='subElement1op'>
+                    <figure className="Element">
+
+                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto",height:"120px", width:"120px" }} src="https://tse1.mm.bing.net/th?id=OIP.D0-_bzmKDpTjpQeZhrltiwAAAA&pid=Api&P=0&h=220" class="attachment-full size-full"></img>
+
+                    </figure>
+                    <h4 className='subspaceop'>AT GLANCE</h4>
+                    <p className='op1' style={{ textAlign: "justify" }}> Sri Vidyaranya Avasa Vidyalayam at Chokkaram Nagar, Rampur is a English medium
+                    school offering education from Nursery to 10th grade[....More]</p>
+                </div>
+                <div className='subElement2op'>
+                    <figure className="Element">
+
+                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto",height:"120px", width:"120px" }} src="https://as2.ftcdn.net/v2/jpg/01/33/78/75/1000_F_133787583_DbQZgh1QPWdqMqbISwcCchzC23Fv0gO3.jpg" class="attachment-full size-full"></img>
+
+                    </figure>
+                    <h4 className='subspaceop'>ORGANIZATIONAL STRUCTURE</h4>
+                    <p className='op1' style={{ textAlign: "justify" }}>Vidya Bharati Akhila Bharatiya Shiksha Sansthan is registered under the society registration act[....More]</p>
+                </div>
+                    {/* </div> */}
+
+
+
                 </div><div className="c1f">
                 <center> <span className="c132">FACILITIES</span></center>   
                 </div>

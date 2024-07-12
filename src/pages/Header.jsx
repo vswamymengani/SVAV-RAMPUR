@@ -3,11 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import '../components/Footer/Footer.css';
 import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
+import { Button } from '@react-pdf-viewer/core';
 
 
 const Header = () => {
     const navigate = useNavigate();
   
+    const handleClick2 = () => {
+        navigate('/Onlineenquiryform');
+      };
+      const handleClick1 = () => {
+        navigate('/Halloffame');
+      };
     
     const goToVidhya = () => {
         navigate('Vidhya');
@@ -80,6 +87,9 @@ const Header = () => {
     const goToCirriculum = () => {
         navigate('Cirriculum');
     };
+    const goToPhilosophy = () => {
+        navigate('Philosophy');
+    };
     const goToHalloffame = () => {
         navigate('Halfoffame');
     };
@@ -99,7 +109,7 @@ const Header = () => {
                             <img className='image' src={exampleImage} alt="Example4" />
                             <div style={{ flexDirection: "column", textAlign: "center" }}>
                                 <h4 className="subtitles">
-                                    <span className="inline-text">SRI VIDYARANYA AVASA VIDYALAYAM<br></br> (SVAV)</span>
+                                    <span className="inline-text">SRI VIDYARANYA AVASA VIDYALAYAM<br></br> (SVAV-RAMPUR)</span>
                                 </h4>
 
 
@@ -110,10 +120,10 @@ const Header = () => {
                         <b className='clgCode'>UDISE Code:  36230301739</b>
                     </div>
                     <div className='section2'>
-                        <span className="title">Online_Enquiry</span>
+                        <span className="title" onClick={handleClick2}>Online_Enquiry</span>
                         <span className="title">Alumni_details</span>
                         <span className="title">Download_Brochure</span>
-                        <span className="title">News_Letter</span>
+                        <span className="title"  onClick={handleClick1}>News_Letter</span>
                     </div>
                     <div className='section3'>
                         <span>CONTACT NO - +91 9502116793</span>
@@ -121,7 +131,7 @@ const Header = () => {
                         <b className='code'>Proc.No. RR-GDP 007-0019</b>
                     </div>
 
-                    <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '-20px' }} />
+                    <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '-0px' }} />
                 </div> 
               
                 <div className="navbar1">
@@ -188,7 +198,7 @@ const Header = () => {
                         <div className="dropdown-content">
                             <a href="/Cirriculum" onClick={goToCirriculum}>CURRICULUM</a>
 
-                            <a href="#">SVAV PHILOSOPHY</a>
+                            <a href="/Philosophy" onClick={goToPhilosophy}>SVAV PHILOSOPHY</a>
                             <a href="#">SCHOOL HOUSES</a>
                             <a href="#">SPECIAL AWARDS</a>
                             <a href="#">CCE</a>
