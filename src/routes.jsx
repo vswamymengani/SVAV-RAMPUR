@@ -78,6 +78,14 @@ import Faq from './components/Admission/Faq';
 import Studentenrollment from './components/Admission/Studentenrollment';
 import Feestructure from './components/Admission/Feestructure';
 import Philosophy from './components/Academic/Philosophy';
+import SubmittedSuccessfully from './components/Footer/SubmittedSuccessfully';
+import Alumini from './pages/Alumini';
+import Download from './pages/Download';
+import Ourfaculty from './components/Footer/Ourfaculty';
+import Students from './components/Footer/Students';
+import Atglance from './pages/Atglance';
+import Aimobj from './pages/Aimobj';
+import Os from './pages/Os';
 
 const AppRoutes = () => {
     return (
@@ -111,7 +119,16 @@ const AppRoutes = () => {
                 <Route path="Studentenrollment" element={<Studentenrollment />} />
                 <Route path="Feestructure" element={<Feestructure />} />
                 <Route path="Donate" element={<Donate />} />
-            </Route>
+                <Route path="SubmittedSuccessfully" element={<SubmittedSuccessfully />} />
+                <Route path="Alumini" element={<Alumini />} />
+                <Route path="Download" element={<Download />} />
+                <Route path="Ourfaculty" element={<Ourfaculty />} />
+                <Route path="Students" element={<Students />} />
+                <Route path="Os" element={<Os />} />
+                <Route path="Atglance" element={<Atglance />} />
+                <Route path="Aimobj" element={<Aimobj />} />
+               
+             </Route>
         </Routes>
     );
 };

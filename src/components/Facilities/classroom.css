@@ -3,7 +3,7 @@
   font-size: 30px;
   background-color: green;
   font-style: normal;
-  width: 39%;
+  width: 44%;
   padding: 15px;
   border-radius: 15px; /* Added this line to make the border radius curved */
   margin: 100px;
@@ -25,6 +25,7 @@
 }
 /* Add this CSS to your stylesheet */
 #clscontents h3 {
+  
   margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
 }
 
@@ -46,8 +47,11 @@
   
   .classroom-slider {
     flex: 1;
-    max-width: 40%;
+    max-width: 50%;
     margin-top: 100px;
+    margin-right: -40px;
+    border-radius: 60px;
+    scroll-behavior: smooth;
  
   }
 
@@ -56,6 +60,7 @@
     border-radius: 60px;
     height: 500px; /* Maintain aspect ratio */
     max-height: 400px; 
+    scroll-behavior: smooth;
   }
   #clspara{
     font-weight: 300px;

@@ -12,6 +12,14 @@ const Header = () => {
     const handleClick2 = () => {
         navigate('/Onlineenquiryform');
       };
+      const handleClickA = () => {
+        navigate('/Alumini');
+      };
+    
+      const handleClickD = () => {
+        navigate('/Download');
+      };
+    
       const handleClick1 = () => {
         navigate('/Halloffame');
       };
@@ -121,8 +129,8 @@ const Header = () => {
                     </div>
                     <div className='section2'>
                         <span className="title" onClick={handleClick2}>Online_Enquiry</span>
-                        <span className="title">Alumni_details</span>
-                        <span className="title">Download_Brochure</span>
+                        <span className="title"  onClick={handleClickA}>Alumni_details</span>
+                        <span className="title" onClick={handleClickD}>Download_Brochure</span>
                         <span className="title"  onClick={handleClick1}>News_Letter</span>
                     </div>
                     <div className='section3'>

@@ -25,7 +25,7 @@ const Transport = () => {
     <div>
     <div className="Transport-container">
       <div className="Transport-content">
-        <span id="Transport">Laboratories Facilities</span>
+        <span id="Transport">Transport Facilities</span>
         <div id="Transportlogo">
         </div>
         <div id="Transportcontents">

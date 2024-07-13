@@ -2,7 +2,7 @@
 #l3{
     display: flex;
     align-items: center;
-    background-color:khaki;
+    background-color:aqua;
     color: black;
     padding: 0.7px;
     height: 80px;
@@ -76,7 +76,7 @@
     transition: color 0.3s ease; /* Smooth transition for hover effect */
   }
   #bu{
-    background-color: khaki;
+    background-color: aqua;
   }
   
   /* Styling for icons */
@@ -109,6 +109,28 @@
       gap: 15px; /* Reduce gap between items */
     }
   }
+  #ll3 {
+    /* display: flex;
+   align-items: first baseline;
+    flex-wrap: nowrap; */
+    background-color: orange;
+    height: 370px;
+    margin-bottom: -30px;
+    margin-top: 50px;
+}
+#fields{
+  margin-top: 60px;
+
+}
+
+#ll3 input {
+    margin-left: 40px;
+    width: 20%;
+   
+}
+#rf{
+  margin-top: -200px;
+  color: #fff;
+  margin-left: 540px;
   
-  
-     
+}

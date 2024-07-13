@@ -1,9 +1,51 @@
 import './Home.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import schoolCampusView from './School prayer-time-1.jpg';
-import schoolCampusView1 from './School Campus-Dwaraka-1.jpg';
+import schoolCampusView from './School Campus-Dwaraka-1.jpg';
+import schoolCampusView1 from './slides3.jpg';
+import schoolCampusView2 from './slide1.jpg';
+// import schoolCampusView3 from './slide2.jpg';
+import schoolCampusView4 from './slide3.jpg';
+// import schoolCampusView5 from './slide4.jpg';
+// import schoolCampusView6 from './slide5.jpg';
+import schoolCampusView7 from './slide6.jpg';
+import schoolCampusView8 from './slide4.jpg'
+import schoolCampusView9 from './SPORTS_1.jpg';
+import schoolCampusView10 from './GHOSH_1.jpg';
+import { Link } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
+
 const Home = () => {
+    const navigate = useNavigate();
+  
+    const handledigi = () => {
+        navigate('/Classroom');
+      };
+      const handlegames = () => {
+        navigate('/Sportsroom');
+      };
+      const handleitlab = () => {
+        navigate('/Library');
+      };
+      const handlelab = () => {
+        navigate('/Laboratories');
+      };
+      const handlelib = () => {
+        navigate('/Library');
+      };
+      const handletrans = () => {
+        navigate('/Transport');
+      };
+      const handleAimobj = () => {
+        navigate('/Aimobj');
+      };
+      const handleag = () => {
+        navigate('/Atglance');
+      };
+      const handleOs = () => {
+        navigate('/Os');
+      };
     
    return (
         
@@ -53,6 +95,27 @@ const Home = () => {
                             <img src={schoolCampusView} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
                         </div>
                         <div className="carousel-slide">
+                            <img src={schoolCampusView8} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
+                        </div>
+                        <div className="carousel-slide">
+                            <img src={schoolCampusView2} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                      
+                        <div className="carousel-slide">
+                            <img src={schoolCampusView4} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                        
+                        <div className="carousel-slide">
+                            <img src={schoolCampusView7} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                        <div className="carousel-slide">
+                            <img src={schoolCampusView9} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                        <div className="carousel-slide">
+                            <img src={schoolCampusView10} alt="School Campus View" style={{ width: '100%', height: '500px' }} />
+                        </div>
+
+                        <div className="carousel-slide">
                             {/* Add additional content for other slides here */}
                             <img src={schoolCampusView1} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
                         </div>
@@ -76,13 +139,13 @@ const Home = () => {
                     <div className='mainElement'>
                 <div className='subElementop'>
                     <figure className="Element">
-
+                    
                     <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", height:"120px", width:"120px"}} src="https://tse4.mm.bing.net/th?id=OIP.BHkh7zuokhlSZ_4qRQyD0AHaHa&pid=Api&P=0&h=220" class="attachment-full size-full"></img>
-
+                   
                     </figure>
-                    <h4 className='subspaceop'>AIM & OBJECTIVES</h4>
-                    <p className='op1' style={{ textAlign: "justify" }}>To develop a National System of Education which would help to build a generation
-                    of youngmen and women that is[....More]</p>
+                    <h4 className='subspaceop' >AIM & OBJECTIVES</h4>
+                    <span className='op1' style={{ textAlign: "justify" }} onClick={handleAimobj} >To develop a National System of Education which would help to build a generation
+                    of youngmen and women that is<Link className='ao'>....More</Link></span>
                 </div>
                 <div className='subElement1op'>
                     <figure className="Element">
@@ -90,18 +153,18 @@ const Home = () => {
                         <img decoding='async' style={{ margin: "inherit", marginBlock: "auto",height:"120px", width:"120px" }} src="https://tse1.mm.bing.net/th?id=OIP.D0-_bzmKDpTjpQeZhrltiwAAAA&pid=Api&P=0&h=220" class="attachment-full size-full"></img>
 
                     </figure>
-                    <h4 className='subspaceop'>AT GLANCE</h4>
-                    <p className='op1' style={{ textAlign: "justify" }}> Sri Vidyaranya Avasa Vidyalayam at Chokkaram Nagar, Rampur is a English medium
-                    school offering education from Nursery to 10th grade[....More]</p>
+                    <h4 className='subspaceop' >AT GLANCE</h4>
+                    <span className='op1' style={{ textAlign: "justify" }} onClick={handleag}> Sri Vidyaranya Avasa Vidyalayam at Chokkaram Nagar, Rampur is a English medium
+                    school offering education from Nursery to 10th grade<Link className='ao'>....More</Link></span>
                 </div>
                 <div className='subElement2op'>
                     <figure className="Element">
 
-                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto",height:"120px", width:"120px" }} src="https://as2.ftcdn.net/v2/jpg/01/33/78/75/1000_F_133787583_DbQZgh1QPWdqMqbISwcCchzC23Fv0gO3.jpg" class="attachment-full size-full"></img>
+                        <img decoding='async'  style={{ margin: "inherit", marginBlock: "auto",height:"120px", width:"120px" }} src="https://as2.ftcdn.net/v2/jpg/01/33/78/75/1000_F_133787583_DbQZgh1QPWdqMqbISwcCchzC23Fv0gO3.jpg" class="attachment-full size-full"></img>
 
                     </figure>
                     <h4 className='subspaceop'>ORGANIZATIONAL STRUCTURE</h4>
-                    <p className='op1' style={{ textAlign: "justify" }}>Vidya Bharati Akhila Bharatiya Shiksha Sansthan is registered under the society registration act[....More]</p>
+                    <span className='op1' style={{ textAlign: "justify" }} onClick={handleOs}>Vidya Bharati Akhila Bharatiya Shiksha Sansthan is registered under the society registration act<Link className='ao'>....More</Link></span>
                 </div>
                     {/* </div> */}
 
@@ -116,56 +179,58 @@ const Home = () => {
                 <div className='subElement'>
                     <figure className="Element">
 
-                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" }} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" class="attachment-full size-full"></img>
+                <button className="bc">  
+                     <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" ,marginLeft:"30px",marginTop:"-10px"}} onClick={handledigi} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" className="attachment-fullsize-full"></img></button>
 
                     </figure>
-                    <h4 className='subspace'>Digital Classrooms</h4>
-                    <p style={{ textAlign: "justify" }}>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding</p>
+                    <h4 className='subspace' >Digital Classrooms</h4>
+                    <p style={{ textAlign: "center" }}>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding</p>
                 </div>
                 <div className='subElement1'>
                     <figure className="Element">
-
-                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" }} src="https://svis.ind.in/wp-content/uploads/2021/10/Games-Sports.png" class="attachment-full size-full"></img>
+                     
+                     <button className='bc1'>
+                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" ,marginLeft:"30px",marginTop:"-10px"}} onClick={handlegames} src="https://svis.ind.in/wp-content/uploads/2021/10/Games-Sports.png" className="attachment-full size-full"></img></button>
 
                     </figure>
                     <h4 className='subspace'>Games & Sports</h4>
-                    <p style={{ textAlign: "justify" }}> To stimulate competitive behavior among students and strengthen physical & mental growth SVAV offers both outdoor and indoor game facilities led by experienced</p>
+                    <p style={{ textAlign: "center" }}> To stimulate competitive behavior among students and strengthen physical & mental growth SVAV offers both outdoor and indoor game facilities led by experienced</p>
                 </div>
                 <div className='subElement2'>
                     <figure className="Element">
-
-                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" }} src="https://svis.ind.in/wp-content/uploads/2021/10/IT-LAB-Technology-Lab.png" class="attachment-full size-full"></img>
-
+                    <button className='bc2'>
+                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto",marginLeft:"30px",marginTop:"-10px" }} onClick={handleitlab} src="https://svis.ind.in/wp-content/uploads/2021/10/IT-LAB-Technology-Lab.png" className="attachment-full size-full"></img>
+                    </button>
                     </figure>
                     <h4 className='subspace'>IT Lab / Technology Lab</h4>
-                    <p style={{ textAlign: "justify" }}>A well-equipped computer lab with a good number of systems, various educational software, and online computer applications is provided to learn from basic computer skills</p>
+                    <p style={{ textAlign: "center" }}>A well-equipped computer lab with a good number of systems, various educational software, and online computer applications is provided to learn from basic computer skills</p>
                 </div>
             </div>
 
             <div className='mainElement'>
                 <div className='subElement3'>
                     <figure className="Element">
-
-                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" }} src="https://svis.ind.in/wp-content/uploads/2021/10/LABORATORIES.png" class="attachment-full size-full"></img>
-
+                    <button className='bc3'>
+                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto",marginLeft:"30px",marginTop:"-10px" }} onClick={handlelab} src="https://svis.ind.in/wp-content/uploads/2021/10/LABORATORIES.png" class="attachment-full size-full"></img>
+                        </button>
                     </figure>
                     <h4 className='subspace'>Laboratories</h4>
                     <p style={{ textAlign: "justify" }}>SVAV has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning </p>
                 </div>
                 <div className='subElement4'>
                     <figure className = "Element" >
-
-                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" }} src="https://svis.ind.in/wp-content/uploads/2021/10/Library.png" class="attachment-full size-full"></img>
-
+                    <button className='bc4'>
+                        <img decoding='async' style={{ margin: "inherit", marginBlock: "auto" ,marginLeft:"30px",marginTop:"-10px"}} onClick={handlelib} src="https://svis.ind.in/wp-content/uploads/2021/10/Library.png" class="attachment-full size-full"></img>
+                        </button>
                     </figure>
                     <h4 className='subspace'>Library</h4>
                     <p style={{ textAlign: "justify" }}>An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students</p>
                 </div>
                 <div className='subElement5'>
                     <figure className="Element">
-
-                        <img className='img1' style={{ margin: "inherit", marginBlock: "auto" }} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" class="attachment-full size-full"></img>
-
+                    <button className='bc5'>
+                        <img className='img1' style={{ margin: "inherit", marginBlock: "auto",marginLeft:"30px",marginTop:"-10px" }} onClick={handletrans} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" class="attachment-full size-full"></img>
+                        </button>
                     </figure>
                     <h4 className='subspace'>Transport Management System</h4>
                     <p style={{ textAlign: "justify" }}>SVAV1 Transport Management System is a convenience provided to our parents to facilitate a safe and easy commute for their children. </p>
