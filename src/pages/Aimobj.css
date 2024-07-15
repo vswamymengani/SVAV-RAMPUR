@@ -1,0 +1,31 @@
+#aimp1{
+    color: black;
+    font-size: 50px;
+    text-align: justify;
+  text-justify: inter-word;
+  
+   
+}
+#aimimg{
+    width: 80%;
+    height: 500px;
+    background-size: cover;
+    background-position: 100%;
+    margin-left: 150px;
+    background-repeat: no-repeat;
+    background-image: url(./AVASAM_OLDPIC_1.jpg);
+  
+}
+#aimpara{
+    background-color: rgb(182, 182, 183);
+    height: 560px;
+    font-family: Common serif fonts include Times New Roman, Georgia, and Garamond;
+    margin-top: 10px;
+}
+#bcimg{
+    background-color: rgb(182, 182, 183);
+}
+p{
+    margin-left: 20px;
+   font-size: 24px;
+}

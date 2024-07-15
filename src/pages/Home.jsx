@@ -15,6 +15,7 @@ import schoolCampusView10 from './GHOSH_1.jpg';
 import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
+import { BsJustify } from 'react-icons/bs';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -68,20 +69,21 @@ const Home = () => {
                                 <div className="t2">
                                     <h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
                                     
-                                    <h2><center><h4>The opening verses of the school recited</h4></center></h2>
-                                    <span className='p1'>
-                                       <b> The first school</b> was started in <b>1966</b>  at Nirmal in Adilabad district, the forest region of Andhra Pradesh, the home of
-                                        Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu. Sri Shathagopan Lakshmi Narasimhacharya, the
-                                        founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth. Rampur is a small
-                                        village in the remote area of Hajipur mandal, in Manchiryala district while the children's sanctuaries are flourishing.<br></br> <br></br>
+                                    <h2><center><h4>The opening verses of the school rectified</h4></center></h2>
+                                    <div className='p1' >
+                                       <b> The first school</b> was started in <b>1966</b>  at Nirmal in Adilabad district, the forest region of United Andhra Pradesh, the home of
+                                        Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu.<b> Sri Shathagopan Lakshmi Narasimhacharya</b>, the
+                                        founders of Sri Saraswati Vidyapeeth Andhra Pradesh and the Regional Secretary of Sri Saraswati Vidyapeeth.
+                                        <br></br> <br></br> Rampur is a small
+                                        village in the remote area of Hajipur mandal, in Manchiryala district while the children sanctuaries are flourishing.
                                         <b>Sri
                                         Vidyaranya Avasa Vidyalaya</b>  was started in Rampur village with the great aim of providing education to the surrounding people and
                                         with the good intention of providing culture along with education. This idea came to the fore when the family members of Sri Kirti
-                                        Seshulu Sri Malraju Rama Rao (Sri Laxman Rao, Sri Harish Rao, Sri Venkatarao, Sri Acharya) donated five acres of land for the realization
-                                        of their ideas. On <b>19-4-1980,</b> Shri Raudrinama year Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona
-                                        Brahmananda Rao. Later 28 acres of land was donated by the family members of Hajipur resident Shri Puskuri Chokka Rao (Shri Puskuri Surya
+                                        Seshulu Sri Malraju Rama Rao (Sri Laxman Rao, Sri Harish Rao, Sri Venkatarao, Sri Acharya) donated <b> 05 acres</b> of land for the realization
+                                        of their ideas. On <b>19-4-1980,</b> Shri Raudrinama Samvatsara Vaisakh Shuddha Panchami, Bhumi Pooja and foundation stone laying was done by Dr. Kona
+                                        Brahmananda Rao. Later <b>28 acres</b> of land was donated by the family members of Hajipur resident <b>Shri Puskuri Chokka Rao</b> (Shri Puskuri Surya
                                         Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri Chokkarao).<br></br><br></br>
-                                    </span>
+                                    </div>
                                     <button id="bk">KNOW MORE</button>
                                 </div>
                                 <div className='container'>
@@ -184,7 +186,7 @@ const Home = () => {
 
                     </figure>
                     <h4 className='subspace' >Digital Classrooms</h4>
-                    <p style={{ textAlign: "center" }}>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding</p>
+                    <p className='cards'>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding</p>
                 </div>
                 <div className='subElement1'>
                     <figure className="Element">
@@ -194,7 +196,7 @@ const Home = () => {
 
                     </figure>
                     <h4 className='subspace'>Games & Sports</h4>
-                    <p style={{ textAlign: "center" }}> To stimulate competitive behavior among students and strengthen physical & mental growth SVAV offers both outdoor and indoor game facilities led by experienced</p>
+                    <p className='cards'> To stimulate competitive behavior among students and strengthen physical & mental growth SVAV offers both outdoor and indoor game facilities led by experienced</p>
                 </div>
                 <div className='subElement2'>
                     <figure className="Element">
@@ -203,7 +205,7 @@ const Home = () => {
                     </button>
                     </figure>
                     <h4 className='subspace'>IT Lab / Technology Lab</h4>
-                    <p style={{ textAlign: "center" }}>A well-equipped computer lab with a good number of systems, various educational software, and online computer applications is provided to learn from basic computer skills</p>
+                    <p className='cards'>A well-equipped computer lab with a good number of systems, various educational software, and online computer applications is provided to learn from basic computer skills</p>
                 </div>
             </div>
 
@@ -215,7 +217,7 @@ const Home = () => {
                         </button>
                     </figure>
                     <h4 className='subspace'>Laboratories</h4>
-                    <p style={{ textAlign: "justify" }}>SVAV has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning </p>
+                    <p className='cards'> <span> SVAV has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning </span></p>
                 </div>
                 <div className='subElement4'>
                     <figure className = "Element" >
@@ -224,7 +226,7 @@ const Home = () => {
                         </button>
                     </figure>
                     <h4 className='subspace'>Library</h4>
-                    <p style={{ textAlign: "justify" }}>An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students</p>
+                    <p className='cards'> <span>An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students</span></p>
                 </div>
                 <div className='subElement5'>
                     <figure className="Element">
@@ -233,7 +235,7 @@ const Home = () => {
                         </button>
                     </figure>
                     <h4 className='subspace'>Transport Management System</h4>
-                    <p style={{ textAlign: "justify" }}>SVAV1 Transport Management System is a convenience provided to our parents to facilitate a safe and easy commute for their children. </p>
+                    <p className='cards'>SVAV1 Transport Management System is a convenience provided to our parents to facilitate a safe and easy commute for their children. </p>
                 </div>
             </div>
             

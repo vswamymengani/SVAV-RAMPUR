@@ -71,12 +71,36 @@ const Library = () => {
         </div>
       </div>
     </div>
-    <div>
-        <p id="libconn">
+    <div id="libconn">
+        <span >
         An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students build fluency and become self-reliant readers.
-           <br></br><br></br><br></br>
+           <br></br><br></br>
            It plays an important part in the learning process of the school as it’s a counterpart of the schools infrastructure. This well stocked libraryis located in a quiet and calm place with a soothing ambience for the students to concentrate better.
-        </p>
+           <br></br><br></br><br></br><br></br>
+        <b>  Features of our Library</b>  <br></br><br></br>
+•	Home Lending of Books <br></br><br></br>
+•	The periodicals Journals and magazines are available for reading. <br></br><br></br>
+•	Daily Newspapers. <br></br><br></br>
+•	Reference Services for projects and assignments. <br></br><br></br>
+•	Reading Room for self-study facility after the library hours. <br></br><br></br>
+•	Internet Access through Network Resource Center and Wi-Fi. <br></br><br></br>
+•	Services to ex-students and visitors. <br></br><br></br>
+An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students build fluency and become self-reliant readers. <br></br><br></br>
+It plays an important part in the learning process of the school as it’s a counterpart of the schools infrastructure. This well stocked libraryis located in a quiet and calm place with a soothing ambience for the students to concentrate better.
+<br></br><br></br><br></br><br></br>
+
+<b>Library Rules & Regulations</b> <br></br><br></br>
+•	Before entering the library, Users (Staff & Student) should leave their belongings at the property counter and must scan their ID card in e-gate at the entrance.<br></br><br></br>
+•	Strict silent should be maintained inside the library. <br></br><br></br>
+•	Book will be issued only under the Non-Transferable Institutional ID Card.<br></br><br></br>
+•	If the borrowed book is not returned on the due date, a fine of Rs.1. per day must be paid until the book is returned.<br></br><br></br>
+•	In case of damage or loss of book, the borrower should provide a new book along with overdue charges. Otherwise the triple-price of the latest edition of book will be collected along with penalty of overdue<br></br><br></br>
+•	Writing in the books, dog-earing, tearing pages and tampering the date – slip or any other type of mutilation of books and journals etc., are punishable offences.<br></br><br></br>
+•	Reference books, Back Volumes, and Journals are not allowed to lend out of the library.<br></br><br></br>
+•	Cell phone is strictly prohibited inside the library even they are staff/Management/Students.<br></br><br></br>
+•	The authority will take necessary action against the users who violate the library rules and regulations.
+
+        </span>
     </div>
     </div>
   );

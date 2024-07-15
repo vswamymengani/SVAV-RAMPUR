@@ -68,11 +68,29 @@ const Labroom = () => {
       </div>
     </div>
     <div id="labpara">
-        <p>A well-equipped computer lab with a good number of systems, various educational 
+        <span>A well-equipped computer lab with a good number of systems, various educational 
           software, and online computer applications is provided to learn from basic computer
            skills to the latest technologies such as coding, artificial 
-          intelligence, robotics, data analytics, etc.
-        </p>  
+          intelligence, robotics, data analytics, etc.<br></br><br></br><br></br><br></br>
+
+         <b> Features of our computer labs</b><br></br><br></br>
+•	Dedicated leased line for Internet connectivity<br></br><br></br>
+•	30 64-bit high-quality LED monitors PCs in each lab<br></br><br></br>
+•	All latest licensed software like Notepad++, Ms office, Visual Studio. Etc..<br></br><br></br>
+•	Fluorescent and incandescent lighting with clearly marked controls.<br></br><br></br>
+•	Equipped with colour printers, scanners, photocopier and projector<br></br><br></br>
+•	Whiteboard, flip chart and markers.<br></br><br></br>
+•	Comfortable, ergonomic seating<br></br><br></br>
+•	High-quality ACs for continuous cooling<br></br><br></br>
+•	School has the separate IT helpdesk for all installation and maintenance work.<br></br><br></br>
+We understand importance of computer education in today's world. SVAV provided Two well-equipped computer laboratories with 30 computers enhance the learning process and enable the proper conduct of the Board prescribed courses. Branded Personal Computers are installed in two Computer Labs, all networked to facilitate teaching in small batches, with adequate faculty attention.<br></br><br></br>
+The advanced computer laboratory in our school assists students in developing robust computer skills by offering them the best-in-class computer systems. The computer lab is outfitted with Dual Core computers that are linked via the Local Area Network. Students make the perfect use of computers in their daily studies to meet the challenges of modern learning and to stay current with the global scenario. The main reason for having a well-established computer laboratory in our school for every class is because we focus on the progressive and evolving approach to ensure that our students benefit from current technological advances in IT-based educational initiatives. All computers come
+ with modern software and cutting-edge learning tools for robotics, coding, and programming. Students are also introduced to a variety of digital tools by a professional mentor who helps them learn new and relevant information
+  needed for their studies.
+
+
+
+        </span>  
     </div>
     </div>
   );

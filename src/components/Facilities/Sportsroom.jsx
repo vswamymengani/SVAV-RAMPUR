@@ -75,11 +75,26 @@ const Sportsroom = () => {
       </div>
     </div>
     <div id="spapara">
-        <p>To stimulate competitive behavior among students and strengthen physical & mental
+        <span>To stimulate competitive behavior among students and strengthen physical & mental
            growth SVIS offers both outdoor and indoor game facilities led by experienced and 
            competent coaches. Running track, Basketball, Football, Kabaddi, Kho-kho, Tennicoit, Shuttle, Skipping, Carroms, Chess, etc.
-        </p>  
-    </div>
+          <br></br> <br></br> <br></br>
+          <b>Physical Education for Saririk Vikash</b>  <br></br><br></br>
+           Children should be strong and fit, they should be good sportsmen and their physical capabilities should be adequately developed. Only such like children can become defenders of their country and their faith. All schools of Vidya Bharati have facilities and programmes for physical development of children. Classwise physical education syllabus has been developed by specialists for this purpose. Regional Physical Training Centers have been established for specialized physical training. A national Sports Committee for Vidya Bharati is also being constituted.Vidya Bharati is affiliated to SGFI as a state.
+           <br></br>  <br></br> <br></br>
+          <b>All India Sports Meet</b> <br></br> <br></br>
+           Vidya Bharati started holding All India Sports meet in the year 1988-89 in order to commemorate the birth centenary of Param Pujya Dr. HedeawarJi. the first SarSanghchalak of R.S.S. During these tournaments boys & girls of Middle, High & Sr. Secondary classes (Bal, Kishor &Tarun) take part in separate groups. Besides Kabbadi, Kho-kho there are about sixty items of athletics. A participant can take part in three events only. These tournaments start from schools & go upto District, Circle State, Region& National Level. Participants getting first position in Kshetra level games and athletic events take part in national tournament. S.G.F.I has also patronised VidyaBharati as a state to participate in national competitions
+          <br></br><br></br><br></br>
+          <b> OUTDOOR GAMES</b><br></br><br></br>
+          Games form an important part of the daily activity at the Vidyaranya school. In Telangana, it is considered the best school with excellent facility for outdoor games. Students are expected to participate in sports every day for an hour. They are given the option to choose two games from more than 11 games practiced in the school. SVAV has two well maintained football grounds and one cricket net practice ground. We also have a Danda, Niyudda and an archery pavilion.
+           Apart from this, the school also has two courts each for basketball and volleyball respectively. The school also has three kabaddi, Kho-Kho courts where interested students are provided coaching. Outdoor activities like field and track events, badminton, cricket, football, basketball help students stay active and healthy.
+         <br></br><br></br><br></br>
+         <b>INDOOR GAMES</b><br></br><br></br>
+        SVAV offers its students a number of options when it comes to indoor games. From Excellent skating facility to chess and the popular Carrom, all games that promote team spirit and healthy competition are encouraged among students.
+
+        </span> 
+   </div>
+
     </div>
   );
 };

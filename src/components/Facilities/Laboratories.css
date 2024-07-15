@@ -63,9 +63,12 @@
       margin-right: -40px;
     }
     #Laboratoriespara{
+      font-size: 24px;
       font-weight: 300px;
       font-family:  'Open Sans', sans-serif;
         margin: 100px;
       margin-bottom: -20px;
+      text-align: justify;
+    text-justify: inter-word;
     }
    

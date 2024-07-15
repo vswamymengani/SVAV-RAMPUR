@@ -101,6 +101,12 @@ const Header = () => {
     const goToHalloffame = () => {
         navigate('Halfoffame');
     };
+    const goToArchana = () => {
+        navigate('Archana');
+    };
+    const goToProfessionalDevelopment = () => {
+        navigate('ProfessionalDevelopment ');
+    };
     const handleContactUsClick = () => {
         navigate('/contact'); // This navigates to the "/contact" route
     };
@@ -184,6 +190,8 @@ const Header = () => {
                             <a href="/Svavprathana" onClick={goToSvavprathana}>SVAV PRARTHANA</a>
                             <a href="/Sanskrit" onClick={goToSanskrit}>SANSKRIT</a>
                             <a href="/Yoga" onClick={goToYoga}>YOGA</a>
+                            <a href="/Archana" onClick={goToArchana}>ARCHANA</a>
+
 
                         </div>
                     </div>
@@ -230,7 +238,7 @@ const Header = () => {
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                            <a href="#">PROFESSIONAL DEVELOPMENT</a>
+                            <a href="/ProfessionalDevelopment" onClick={goToProfessionalDevelopment}>PROFESSIONAL DEVELOPMENT</a>
                             <a href="#">JOB OPENINGS</a>
                         </div>
                     </div>

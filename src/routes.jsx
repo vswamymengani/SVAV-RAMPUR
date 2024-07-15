@@ -86,6 +86,8 @@ import Students from './components/Footer/Students';
 import Atglance from './pages/Atglance';
 import Aimobj from './pages/Aimobj';
 import Os from './pages/Os';
+import Archana from './components/Beyond/Archana';
+import ProfessionalDevelopment from './components/Career/ProfessionalDevelopment';
 
 const AppRoutes = () => {
     return (
@@ -127,6 +129,8 @@ const AppRoutes = () => {
                 <Route path="Os" element={<Os />} />
                 <Route path="Atglance" element={<Atglance />} />
                 <Route path="Aimobj" element={<Aimobj />} />
+                <Route path="Archana" element={<Archana />} />
+                <Route path="ProfessionalDevelopment" element={<ProfessionalDevelopment />} />
                
              </Route>
         </Routes>

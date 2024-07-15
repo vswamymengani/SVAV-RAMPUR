@@ -133,6 +133,10 @@ const Transport = () => {
 12. Any suggestion/complaint regarding the bus facility is to be addressed to the Principal in writing and the same will be entertained by the School Management.
 <br></br><br></br><br></br>
 Note: The school has a right to modify/alter/relocate/withdraw the routes/stops or as required by the regulating agencies from time to time.</p>
+
+<br></br><br></br><br></br>
+
+    
     </div>
     </div>
   )
