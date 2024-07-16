@@ -51,7 +51,7 @@ const Home = () => {
    return (
         
            <div className="body">
-            <div className="t01" >
+            {/* <div className="t01" > */}
                 <div className="carousel-wrapper">
                     <Carousel
                         showArrows={true} // Display navigation arrows
@@ -94,32 +94,32 @@ const Home = () => {
 
                         {/* Additional Slides */}
                         <div className="carousel-slide">
-                            <img src={schoolCampusView} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                            <img src={schoolCampusView} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
                         </div>
                         <div className="carousel-slide">
-                            <img src={schoolCampusView8} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
+                            <img src={schoolCampusView8} alt="School Campus View" style={{ width: '100%', height: '700px'}} />
                         </div>
                         <div className="carousel-slide">
-                            <img src={schoolCampusView2} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                            <img src={schoolCampusView2} alt="School Campus View" style={{ width: '100%', height: '700px'}} />
                         </div>
                       
                         <div className="carousel-slide">
-                            <img src={schoolCampusView4} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                            <img src={schoolCampusView4} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
                         </div>
                         
                         <div className="carousel-slide">
-                            <img src={schoolCampusView7} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                            <img src={schoolCampusView7} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
                         </div>
                         <div className="carousel-slide">
-                            <img src={schoolCampusView9} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                            <img src={schoolCampusView9} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
                         </div>
                         <div className="carousel-slide">
-                            <img src={schoolCampusView10} alt="School Campus View" style={{ width: '100%', height: '500px' }} />
+                            <img src={schoolCampusView10} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
                         </div>
 
                         <div className="carousel-slide">
                             {/* Add additional content for other slides here */}
-                            <img src={schoolCampusView1} alt="School Campus View" style={{ width: '100%', height: 'auto' }} />
+                            <img src={schoolCampusView1} alt="School Campus View" style={{ width: '100%', height: '700px' }} />
                         </div>
 
                         {/* Add as many slides as needed */}
@@ -175,7 +175,7 @@ const Home = () => {
                 </div><div className="c1f">
                 <center> <span className="c132">FACILITIES</span></center>   
                 </div>
-            </div>
+            {/* </div> */}
 
             <div className='mainElement'>
                 <div className='subElement'>

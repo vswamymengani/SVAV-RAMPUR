@@ -10,11 +10,11 @@ const Layout = () => {
     return (
         <div className="layout">
             <Header />
-         <main className="content">
-                <Outlet /> {/* This will render the component corresponding to the route */}
-               
+  
+            <main className="content">
+               <Outlet /> {/* This will render the component corresponding to the route */}
             </main>
-            {/* <ContactForm/> */}
+            
             <Footer />
         </div>
     );

@@ -145,9 +145,9 @@ const Header = () => {
                         <b className='code'>Proc.No. RR-GDP 007-0019</b>
                     </div>
 
-                    <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '-0px' }} />
+                    <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '0px' }} />
                 </div> 
-              
+            
                 <div className="navbar1">
                     
                   
