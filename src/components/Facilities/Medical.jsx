@@ -36,7 +36,7 @@ const Medical = () => {
         </Slider>
       </div>
       <div className="boardingroom-content">
-        <span id="boa">Medical / Vaidhya Vibhag</span>
+        <span id="boa">Medical / Vaidhya Vibhag</span><br></br><br></br><br></br>
         <div id="boacontents">
           <div className="facility-item">
             <img src={securityLogo} alt="Security" className="facility-logo" />

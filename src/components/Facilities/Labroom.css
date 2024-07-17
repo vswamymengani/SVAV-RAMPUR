@@ -20,9 +20,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     margin-left: 60px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: -180px;
-    width: 300px;
+    width: 500px;
   gap: 20px; /* Space between the facility items */
 }
 #images{
@@ -30,13 +30,13 @@
     height: 100px;
 }
 .labroom-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    height: 800px;
-    margin-top: -120px;
-    margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 800px;
+  margin-top: 20px;
+  margin-left: 60px;
   }
   
   .labroom-content {
@@ -46,20 +46,25 @@
   }
   
   .labroom-slider {
-    width: 80%;
+    width: 70%;
     height: 400px;
-    margin-left: 100px;
-    margin-top: 300px; /* Adjust this value to move the slider downwards */
+    margin-left: 90px;
+    margin-top: -40px; /* Adjust this value to move the slider downwards */
     padding-top: 20px; /* Optional: Add padding to separate images from the top content */
   }
   
   
   .labroom-slider img {
-    width: 80%;
+    width: 90%;
     height: 400px;
-    margin-left: 100px;
-    border-radius: 60px;
+    margin-top: -40px;
+    margin-left: 10px;
+    /* border-radius: 60px; */
     padding-top: 20px; 
+    border-top-left-radius: 18%; /* Apply radius to the top-left corner */
+    border-top-right-radius: 18%; /* Apply radius to the top-right corner */
+    border-bottom-left-radius: 60px; /* Apply radius to the top-left corner */
+    border-bottom-right-radius: 60px; /* Apply radius to the top-right corner */
   }
    
   .facility-iteml {

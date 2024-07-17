@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { FaLightbulb, FaPeopleArrows, FaChalkboardTeacher, FaChild, FaChair, FaHome } from 'react-icons/fa';
 import './Laboratories.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +7,8 @@ import img1 from './Laboratories-1.jpg';
 import img2 from './ScienceLab.jpg';
 import img3 from './bio.png';
 import img4 from './phy.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLightbulb, faPeopleArrows, faChalkboardTeacher, faChild, faHome, faChair } from '@fortawesome/free-solid-svg-icons';
 
 const Laboratories = () => {
   const sliderSettings = {
@@ -29,12 +30,13 @@ const Laboratories = () => {
         <div id="Laboratorieslogo">
         </div>
         <div id="Laboratoriescontents">
-          <h3><FaLightbulb /> Spacious classrooms with sample lighting.</h3>
-          <h3><FaPeopleArrows /> Collaborative Learning Spaces.</h3>
-          <h3><FaChalkboardTeacher /> Interactive Smart Boards.</h3>
-          <h3><FaChild /> Student-Centric Learning Environment.</h3>
-          <h3><FaHome /> Modern and pleasing interiors.</h3>
-          <h3><FaChair /> Individual seating arrangements for every child.</h3>
+        <h3><i class=" faLightbulb"></i> Well-equipped Science labs.</h3>
+<h3><i class="fas fa-people-arrows"></i> Math labs.</h3>
+<h3><i class="fas fa-chalkboard-teacher"></i> English labs/Language labs.</h3>
+<h3><i class="fas fa-child"></i> Computer labs.</h3>
+<h3><i class="fas fa-home"></i> Robotics labs.</h3>
+<h3><i class="fas fa-chair"></i> Theoretical concepts.</h3>
+
         </div>
       </div>
       <div className="Laboratories-slider">
@@ -48,8 +50,7 @@ const Laboratories = () => {
     </div>
     <div>
     <div id="Laboratoriespara">
-        <span >SVIS has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning by understanding theoretical concepts and boost students’ interest and practical skills.
-        <br></br> <br></br> <br></br> <br></br>
+    <span >
       <b> MATH, SCIENCE & LANGUAGE LABS</b> <br></br> <br></br>
         To look beyond the books and classroom teaching, separate laboratories for Math, Science, and Languages with the latest lab equipment & AV aids are set up to explore and promote discovery learning, trigger scientific temper and make the learning process more effective and intrinsic.
         <br></br> <br></br> <br></br> <br></br>

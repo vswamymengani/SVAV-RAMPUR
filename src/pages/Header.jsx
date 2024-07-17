@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../components/Footer/Footer.css';
 import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import { Button } from '@react-pdf-viewer/core';
 
 
@@ -140,9 +141,15 @@ const Header = () => {
                         <span className="title"  onClick={handleClick1}>News_Letter</span>
                     </div>
                     <div className='section3'>
-                        <span>CONTACT NO - +91 9502116793</span>
-                        <span>MAIL ID-info@svav.ind.in</span><br />
-                        <b className='code'>Proc.No. RR-GDP 007-0019</b>
+                    
+                              <span className="contact-item">
+                            <FaPhone className="contact-icon" />&nbsp; +91 9502116793
+                              </span>
+                            <span className="contact-item">
+                            <FaEnvelope className="contact-icon" />&nbsp;  info@svav.ind.in
+                               </span>
+                 <br></br>
+                        <b className='code'>Proc.No.RR-GDP007-0019</b>
                     </div>
 
                     <img src={exa} alt="Example" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '0px' }} />

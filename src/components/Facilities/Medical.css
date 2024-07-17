@@ -10,6 +10,8 @@
     margin: 120px;
     text-align: center;
     margin-top: 10px;
+   
+    
   }
   
   .boardingroom-container {
@@ -18,6 +20,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 40px;
   }
   
   .boardingroom-content {
@@ -25,8 +28,8 @@
     text-align: left; /* Aligns text to the left */
     padding: 20px;
     font-size: 20px;
-    margin-left: 200px;
-    margin-top: 10px;
+    margin-left: 290px;
+    margin-top: 20px;
   }
   
   #boa {
@@ -38,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 100px;
    margin-left: 100px;
    margin-bottom: 100px;
   }
@@ -55,15 +58,18 @@
   }
   
   .boardingroom-slider {
+    margin-top: -300px;
+  margin-left: 80px;
     flex: 1; /* Makes the slider take available space */
     max-width: 600px; /* Optional: limit the maximum width */
-    margin-right: 0px; /* Adds space between slider and content */
+    margin-right:  0px; /* Adds space between slider and content */
   }
   
   .boardingroom-slider img {
     width: 100%;
     height: auto;
     border-radius: 40px;
+  
   }
   .facility-logo {
     width: 30px;  /* Adjust the size as needed */
@@ -74,8 +80,9 @@
     font-size: 24px;
     font-weight: 300px;
     font-family:  'Open Sans', sans-serif;
-      margin: 100px;
+      margin: 120px;
     margin-bottom: 0px;
+    margin-top: -20px;
     text-align: justify;
   text-justify: inter-word;
   }
