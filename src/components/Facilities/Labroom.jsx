@@ -27,19 +27,19 @@ const Labroom = () => {
         <div id="labcontents">
           <div className="facility-iteml">
             <FaVolleyballBall className="facility-iconl" />
-            <h3>Volleyball Court</h3>
+            <h3>	Dedicated leased line for Internet connectivity</h3>
           </div>
           <div className="facility-iteml">
             <FaRunning className="facility-iconl" />
-            <h3>Kabaddi Ground</h3>
+            <h3>	30 64-bit high-quality LED monitors PCs in each lab</h3>
           </div>
           <div className="facility-iteml">
             <GiTeamDowngrade className="facility-iconl" />
-            <h3>Kho-Kho Ground</h3>
+            <h3>	All latest licensed software like Notepad++, Ms office, Visual Studio. Etc..</h3>
           </div>
           <div className="facility-iteml">
             <GiCricketBat className="facility-iconl" />
-            <h3>Cricket Practice Net</h3>
+            <h3>Fluorescent and incandescent lighting with clearly marked controls.</h3>
           </div>
           <div className="facility-iteml">
             <FaFootballBall className="facility-iconl" />
