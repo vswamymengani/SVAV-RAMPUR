@@ -4,7 +4,7 @@
     font-size: 30px;
     background-color: green;
     font-style: normal;
-    width: 30%;
+    width: 40%;
     padding: 15px;
     border-radius: 15px; /* Added this line to make the border radius curved */
     margin: 100px;
@@ -18,7 +18,7 @@
     flex-direction: row; /* Aligns items in a row */
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
   }
   
   .Art-content {
@@ -26,7 +26,7 @@
     text-align: left; /* Aligns text to the left */
     padding: 20px;
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 60px;
   }
   
   #Art {
@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
-   margin-left: 100px;
+   margin-left: 60px;
   }
   
   .facility-item-Art {
@@ -54,12 +54,14 @@
   }
   
   .Art-slider {
+    margin-left: 60px;
     flex: 1; /* Makes the slider take available space */
-    max-width: 600px; /* Optional: limit the maximum width */
+    max-width: 700px; /* Optional: limit the maximum width */
     margin-right: 0px; /* Adds space between slider and content */
   }
   
   .Art-slider img {
+   
     width: 100%;
     height: auto;
     border-radius: 40px;
@@ -74,8 +76,34 @@
     font-weight: 300px;
     font-family:  'Open Sans', sans-serif;
       margin: 100px;
+      margin-top: 20px;
     margin-bottom: 0px;
     text-align: justify;
   text-justify: inter-word;
+  line-height: 160%;
+  }
+  #art1{
+    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+    background-image: url(./art1.jpg);
+    height: 400px;
+    width: 800px;
+    background-size: 800px;
+    background-repeat: no-repeat;
+  }
+  #art2{
+    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+    background-image: url(./art2.jpg);
+    height: 400px;
+    width: 800px;
+    background-size: 800px;
+    background-repeat: no-repeat;
+  }
+  #art3{
+    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+    background-image: url(./art5.jpg);
+    height: 400px;
+    width: 800px;
+    background-size: 800px;
+    background-repeat: no-repeat;
   }
   

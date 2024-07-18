@@ -20,7 +20,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     margin-top: -150px;
-    margin-left: 100px;
+    margin-left: 80px;
     
 }
 /* Add this CSS to your stylesheet */
@@ -49,7 +49,7 @@
     flex: 1;
     max-width: 50%;
     margin-top: 100px;
-    margin-right: -40px;
+    margin-right: -20px;
     border-radius: 60px;
     scroll-behavior: smooth;
  
@@ -63,8 +63,37 @@
     scroll-behavior: smooth;
   }
   #clspara{
-    font-weight: 300px;
+    /* font-weight: 300px;
     font-family:  'Open Sans', sans-serif;
-      margin: 100px;
+    margin: 100px;
     margin-bottom: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 160%; */
+
+    font-weight: 300px;
+    font-size: 24px;
+    font-family:  'Open Sans', sans-serif;
+      margin: 120px;
+    margin-bottom: 0px;
+    text-align: justify;
+text-justify: inter-word;
+line-height: 160%;
+    
   }
+  #clsimg1{
+    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./clsimg1.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+   }
+   #clsimg2{
+     box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+      background-image: url(./clsimg2.jpg);
+      height: 400px;
+      width: 800px;
+      background-size: 800px;
+      background-repeat: no-repeat;
+    }

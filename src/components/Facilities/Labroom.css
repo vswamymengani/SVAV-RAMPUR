@@ -19,7 +19,7 @@
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: 50px;
     margin-bottom: -180px;
     width: 500px;
@@ -35,7 +35,7 @@
   align-items: center;
   width: 60%;
   height: 800px;
-  margin-top: 20px;
+  margin-top:-40px;
   margin-left: 60px;
   }
   
@@ -46,10 +46,10 @@
   }
   
   .labroom-slider {
-    width: 70%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
     margin-left: 90px;
-    margin-top: -40px; /* Adjust this value to move the slider downwards */
+    margin-top: 50px; /* Adjust this value to move the slider downwards */
     padding-top: 20px; /* Optional: Add padding to separate images from the top content */
   }
   
@@ -57,7 +57,7 @@
   .labroom-slider img {
     width: 90%;
     height: 400px;
-    margin-top: -40px;
+    margin-top: 60px;
     margin-left: 10px;
     /* border-radius: 60px; */
     padding-top: 20px; 
@@ -92,6 +92,15 @@
     margin-bottom: 0px;
     text-align: justify;
   text-justify: inter-word;
+  line-height: 160%;
+    }
+    #itlabimg1{
+      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./itlab1.jpg);
+     height: 400px;
+     width: 800px;
+     background-size:  800px 400px;
+     background-repeat: no-repeat;
     }
   
   

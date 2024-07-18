@@ -6,9 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from './libimg1.jpeg';
 import img2 from './libimg2.png';
 import img3 from './libimg3.jpeg';
+import img4 from './lib1.jpg';
+import img6 from './lib3.jpg';
 
 // Import logos for the facilities
-import securityLogo from './guard.png';
+
 import foodLogo from './balanced-diet.png';
 import airconLogo from './air-conditioner.png';
 import pastoralCareLogo from './portal.png';
@@ -20,11 +22,12 @@ const Library = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 900,
+    speed: 1900,
+    interval: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 630,
+    autoplaySpeed: 630
   };
 
   return (
@@ -35,38 +38,36 @@ const Library = () => {
           <div><img src={img1} alt="Library 1" /></div>
           <div><img src={img2} alt="Library 2" /></div>
           <div><img src={img3} alt="Library 3" /></div>
+          <div><img src={img4} alt="Library 1" /></div>
+          <div><img src={img6} alt="Library 3" /></div>
         </Slider>
       </div>
       <div className="Library-content">
         <h1 id="Library">Library Facilities</h1>
         <div id="Librarycontents">
           <div className="facility-item-Library">
-            <img src={securityLogo} alt="Security" className="facility-logo-Library" />
-            <h3>24/7 Security with CCTV Surveillance</h3>
-          </div>
-          <div className="facility-item-Library">
             <img src={foodLogo} alt="Food" className="facility-logo-Library" />
-            <h3>100% Vegetarian & Hygienic Food</h3>
+            <h3>Home Lending of Books</h3>
           </div>
           <div className="facility-item-Library">
             <img src={airconLogo} alt="Air Conditioning" className="facility-logo-Library" />
-            <h3>Air-conditioned Hostel Rooms</h3>
+            <h3>The periodical Journals and magazines are available</h3>
           </div>
           <div className="facility-item-Library">
             <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo-Library" />
-            <h3>Intense Pastoral Care</h3>
+            <h3>Daily Newspapers.</h3>
           </div>
           <div className="facility-item-Library">
             <img src={separateHostelsLogo} alt="Separate Hostels" className="facility-logo-Library" />
-            <h3>Separate Boy's & Girl's Hostels</h3>
+            <h3>Reference Services for projects and assignments. </h3>
           </div>
           <div className="facility-item-Library">
             <img src={dormsLogo} alt="Dorms" className="facility-logo-Library" />
-            <h3>Spacious and Ventilated Dorms</h3>
+            <h3>	Reading Room for self-study.</h3>
           </div>
           <div className="facility-item-Library">
             <img src={doctorLogo} alt="Doctor" className="facility-logo-Library" />
-            <h3>24/7 Doctor on-call</h3>
+            <h3>Services to ex-students </h3>
           </div>
         </div>
       </div>
@@ -76,20 +77,15 @@ const Library = () => {
         An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students build fluency and become self-reliant readers.
            <br></br><br></br>
            It plays an important part in the learning process of the school as it’s a counterpart of the schools infrastructure. This well stocked libraryis located in a quiet and calm place with a soothing ambience for the students to concentrate better.
-           <br></br><br></br><br></br><br></br>
+           <br></br><br></br>
+           <center><div id="lib1"></div></center><br></br><br></br>
         <b>  Features of our Library</b>  <br></br><br></br>
-•	Home Lending of Books <br></br><br></br>
-•	The periodicals Journals and magazines are available for reading. <br></br><br></br>
-•	Daily Newspapers. <br></br><br></br>
-•	Reference Services for projects and assignments. <br></br><br></br>
-•	Reading Room for self-study facility after the library hours. <br></br><br></br>
-•	Internet Access through Network Resource Center and Wi-Fi. <br></br><br></br>
-•	Services to ex-students and visitors. <br></br><br></br>
 An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students build fluency and become self-reliant readers. <br></br><br></br>
 It plays an important part in the learning process of the school as it’s a counterpart of the schools infrastructure. This well stocked libraryis located in a quiet and calm place with a soothing ambience for the students to concentrate better.
-<br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 
-<b>Library Rules & Regulations</b> <br></br><br></br>
+<b>Library Rules & Regulations</b> <br></br><br></br><br></br>
+<center><div id="lib2"></div></center><br></br><br></br>
 •	Before entering the library, Users (Staff & Student) should leave their belongings at the property counter and must scan their ID card in e-gate at the entrance.<br></br><br></br>
 •	Strict silent should be maintained inside the library. <br></br><br></br>
 •	Book will be issued only under the Non-Transferable Institutional ID Card.<br></br><br></br>

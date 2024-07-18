@@ -73,7 +73,7 @@ const Footer = () => {
     <footer className="footer">
 
 
-      <div id="l3" >
+    <div id="l3" >
         
         
         <button id="bu" onClick={handleClick}>

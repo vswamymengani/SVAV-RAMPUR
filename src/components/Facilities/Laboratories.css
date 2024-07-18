@@ -1,74 +1,138 @@
-#Laboratories{
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 39%;
-    padding: 15px;
-    border-radius: 15px; /* Added this line to make the border radius curved */
-    margin: 100px;
-    text-align: center;
-    margin-top: -80px;
-    
-  }
-  #Laboratorieslogo{
-      height: 100px;
-      width: 100px;
-     background-image: url(../);
-  }
-  #Laboratoriescontents{
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-style: normal;
-      margin-top: -50px;
-      margin-left: 100px;
-      
-  }
-  /* Add this CSS to your stylesheet */
-  #Laboratoriescontents h3 {
-    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
-  }
-  
-  #images{
-      width: -100px;
-      height: 100px;
-  }
-  .Laboratories-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-      margin-top: 50px;
-    }
-    
-    .Laboratories-content {
-      flex: 1;
-      padding: 20px;
-      margin-top: 0px;
-    }
-    
-    .Laboratories-slider {
-      flex: 1;
-      max-width: 50%;
-      margin-top: 100px;
-      margin-right: -40px;
-   
-    }
-  
-    .Laboratories-slider img {
-      width: 100%;
-      border-radius: 60px;
-      height: 500px; /* Maintain aspect ratio */
-      max-height: 400px; 
-      margin-right: -40px;
-    }
-    #Laboratoriespara{
-      font-size: 24px;
-      font-weight: 300px;
-      font-family:  'Open Sans', sans-serif;
-        margin: 100px;
-      margin-bottom: 0px;
-      text-align: justify;
-    text-justify: inter-word;
-    }
-   
+#Laboratories {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 39%;
+  padding: 15px;
+  border-radius: 15px;
+  /* Added this line to make the border radius curved */
+  margin: 100px;
+  text-align: center;
+  margin-top: -80px;
+
+}
+
+#Laboratorieslogo {
+  height: 100px;
+  width: 100px;
+  background-image: url(../);
+}
+
+#Laboratoriescontents {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  margin-top: -50px;
+  margin-left: 100px;
+
+}
+
+/* Add this CSS to your stylesheet */
+#Laboratoriescontents h3 {
+  margin-bottom: 20px;
+  /* Adjust the value as needed for desired spacing */
+}
+
+#images {
+  width: -100px;
+  height: 100px;
+}
+
+.Laboratories-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.Laboratories-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.Laboratories-slider {
+  flex: 1;
+  max-width: 50%;
+  margin-top: 100px;
+  margin-right: -40px;
+
+}
+
+.Laboratories-slider img {
+  width: 100%;
+  border-radius: 60px;
+  height: 500px;
+  /* Maintain aspect ratio */
+  max-height: 400px;
+  margin-right: -40px;
+}
+
+#Laboratoriespara {
+  font-size: 24px;
+  font-weight: 300px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 100px;
+  margin-bottom: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 160%;
+}
+#labimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./bio.png);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}
+#phyimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./phylab1.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}
+#chemimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./chemlab.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}
+#bioimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./biolab1.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}
+#mathsimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./mathslab1.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}
+#roboticsimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./roboticslab3.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}
+#engimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./englab.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+}

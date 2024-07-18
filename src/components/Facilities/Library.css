@@ -4,12 +4,13 @@
     font-size: 30px;
     background-color: green;
     font-style: normal;
-    width: 40%;
-    padding: 15px;
+    width: 50%;
+    padding: 10px;
     border-radius: 15px; /* Added this line to make the border radius curved */
     margin: 100px;
     text-align: center;
     margin-top: 10px;
+    margin-left: 10px;
   }
   
   .Library-container {
@@ -17,13 +18,13 @@
     flex-direction: row; /* Aligns items in a row */
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
   }
   
   .Library-content {
     flex: 1; /* Makes the content take available space */
     text-align: left; /* Aligns text to the left */
-    padding: 20px;
+    padding: 50px;
     font-size: 20px;
     margin-left: 100px;
   }
@@ -38,7 +39,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
-   margin-left: 100px;
+   margin-left: -40px;
   }
   
   .facility-item-Library {
@@ -51,18 +52,22 @@
     margin-right: 10px;
     font-size: 24px; /* Adjust the size as needed */
   }
-  
   .Library-slider {
+    margin-top: -10px;
+  margin-left: 60px;
     flex: 1; /* Makes the slider take available space */
     max-width: 600px; /* Optional: limit the maximum width */
-    margin-right: 0px; /* Adds space between slider and content */
+    margin-right:  0px; /* Adds space between slider and content */
   }
   
   .Library-slider img {
     width: 100%;
     height: auto;
     border-radius: 40px;
+  
   }
+  
+  
   .facility-logo-Library {
     width: 30px;  /* Adjust the size as needed */
     height: auto;
@@ -73,8 +78,26 @@
     font-weight: 300px;
     font-family:  'Open Sans', sans-serif;
       margin: 100px;
+      margin-top: 0px;
     margin-bottom: 0px;
     text-align: justify;
   text-justify: inter-word;
+  line-height: 160%;
+  }
+  #lib1{
+    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./lib1.jpg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
+  }
+  #lib2{
+    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+     background-image: url(./libimg3.jpeg);
+     height: 400px;
+     width: 800px;
+     background-size: 800px;
+     background-repeat: no-repeat;
   }
   

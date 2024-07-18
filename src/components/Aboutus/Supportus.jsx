@@ -4,13 +4,17 @@ import './Supportus.css'; // Make sure the path to your CSS file is correct
 const Supportus = () => {
   const containerStyle = {
     textAlign: 'left',
-    padding: '20px'
+    padding: '70px',
+    width: '90.4%',
+  
+  
   };
 
   return (
     <div className="v2" style={containerStyle}>
-      <h1 id="c1">Supportus</h1><br />
-      <h3>Contribute in this noble mission of Vidya Bharati</h3>
+      <span id="c1">Supportus</span><br />
+      <div id="supimg"></div>
+      <h2 style={{color:'yellow'}}>Contribute in this noble mission of Vidya Bharati</h2>
       <ul className="custom-list">
         <li>Participate in various programmes, seminars, workshops etc. organized by Vidya Bharati;</li>
         <li>Extend your valuable suggestions towards the development of various educational activities;</li>

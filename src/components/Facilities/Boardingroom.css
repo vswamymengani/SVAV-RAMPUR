@@ -6,23 +6,27 @@
   font-style: normal;
   width: 50%;
   padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
+  border-radius: 15px;
+  /* Added this line to make the border radius curved */
   margin: 100px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .boardingroom-container {
   display: flex;
-  flex-direction: row; /* Aligns items in a row */
+  flex-direction: row;
+  /* Aligns items in a row */
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
 .boardingroom-content {
-  flex: 1; /* Makes the content take available space */
-  text-align: left; /* Aligns text to the left */
+  flex: 1;
+  /* Makes the content take available space */
+  text-align: left;
+  /* Aligns text to the left */
   padding: 20px;
   font-size: 20px;
   margin-left: 100px;
@@ -37,8 +41,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 20px;
- margin-left: 100px;
+  margin-top: 40px;
+  margin-left: 100px;
 }
 
 .facility-item {
@@ -49,13 +53,18 @@
 
 .facility-icon {
   margin-right: 10px;
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 24px;
+  /* Adjust the size as needed */
 }
 
 .boardingroom-slider {
-  flex: 1; /* Makes the slider take available space */
-  max-width: 600px; /* Optional: limit the maximum width */
-  margin-right: 0px; /* Adds space between slider and content */
+  flex: 1;
+  /* Makes the slider take available space */
+  max-width: 600px;
+  /* Optional: limit the maximum width */
+  margin-top: 50px;
+  margin-right: 0px;
+  /* Adds space between slider and content */
 }
 
 .boardingroom-slider img {
@@ -63,17 +72,23 @@
   height: auto;
   border-radius: 40px;
 }
+
 .facility-logo {
-  width: 30px;  /* Adjust the size as needed */
+  width: 30px;
+  /* Adjust the size as needed */
   height: auto;
-  margin-right: 10px;  /* Space between logo and text */
+  margin-right: 10px;
+  /* Space between logo and text */
 }
-#bpara{
+
+#bpara {
   font-size: 24px;
-    font-weight: 300px;
-    font-family:  'Open Sans', sans-serif;
-      margin: 100px;
-    margin-bottom: 0px;
-    text-align: justify;
+  font-weight: 300px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 100px;
+  margin-bottom: 0px;
+  text-align: justify;
   text-justify: inter-word;
+  margin-top: 10px;
+  line-height: 160%;
 }
