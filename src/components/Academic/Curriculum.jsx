@@ -1,12 +1,11 @@
-import React from 'react';
+
 import './Curriculum.css';
 import logo1 from './law.png'; // Ensure the path to the logo is correct
-import img11 from './Frame .png';
+import img11 from './cir.png';
 import classImage from './priscl.webp'; // Import the new image
 import classImage1 from './6 to 8.webp';
 import classImage2 from './9 and 10.jpeg';
 import classImage3 from './11 and 12 1.jpeg';
-import { BsDisplay } from 'react-icons/bs';
 const Curriculum = () => {
   return (
     <div>

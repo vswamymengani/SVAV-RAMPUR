@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './ContactUs.css';
 
 const ContactUs = () => {
@@ -45,12 +45,32 @@ const ContactUs = () => {
 
   return (
     <div>
+    <h1 id="i1">Contact Us:</h1>
+    <div id="i2"></div>
+    <div>
+      <h2 id="i3">
+        Write To Us On:
+        <h5 id="i4">Registered Address:</h5>
+        <h4 id="i7">
+        Sri Vidyaranya Avasa Vidyalayam,<br></br>
+        Chokkaram Nagar, Rampur,<br></br>
+        Hazipur Mondal, Mancherial district<br></br>
+        Telangana state -500301<br></br>
+        Phone: 087362 32024
+
+     </h4>
+      </h2>
+    </div>
+
+      <br /><br /><br></br><br></br><br></br><br></br>
 
       {/* Add the form here */}
       <div>
-        <h2 id="cf">Contact Form</h2>
+    <center> <h2 id="kcf">Contact Form</h2></center> 
         <form onSubmit={handleSubmit}>
+       
           <div className="form-group">
+          
             <label htmlFor="name">Name:</label>
             <input
               type="text"

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './SubmittedSuccessfully.css'
 
 const SubmittedSuccessfully = () => {

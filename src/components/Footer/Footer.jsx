@@ -1,5 +1,4 @@
 // src/components/Footer.jsx
-import React from 'react';
 import './Footer.css';
 import { useNavigate } from 'react-router-dom';
 import donationlogo from './donation.png';
@@ -10,7 +9,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
-import { useState } from 'react';
+
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -29,31 +28,10 @@ const Footer = () => {
   };
   const handleClick5 = () => {
     alert('Your form has been submitted successfully!');
-    navigate('/SubmittedSuccessfully');
+  
   };
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   phone: ''
-  // });
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({
-  //     ...formData,
-  //     [name]: value
-  //   });
-  // };
-
-  //const handleSubmit = (e) => {
-   // e.preventDefault();
-    // Handle form submission
-   // console.log('Form submitted:', formData);
-    // You can also send the form data to a server here
-  //};
-
- 
-  return (
+    return (
     
     <div>
       <div id="ll3">
@@ -67,9 +45,10 @@ const Footer = () => {
     <input type="text" placeholder="Phone" />&nbsp;&nbsp;&nbsp;&nbsp;
     <button onClick={handleClick5} >Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </center>
-    </div>
-    </div>
-    <div><h2 id="rf">REQUEST&nbsp;&nbsp;A&nbsp;&nbsp;CALL&nbsp;&nbsp;BACK</h2></div>
+    </div>  </div>
+   
+    <div id="rf"><h2>REQUEST&nbsp;&nbsp;A&nbsp;&nbsp;CALL&nbsp;&nbsp;BACK</h2></div>
+  
     <footer className="footer">
 
 
@@ -96,9 +75,9 @@ const Footer = () => {
        STUDENTS</button>
     
     </div>
-    <div id="q1">
+    <div id="q1" >
                     <div id='a19'>
-                        <h2 style={{ color: 'aliceblue', textAlign: 'left' }}>Copyright @Srividyaranyaavasavidyalayam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h2 style={{ color: 'aliceblue', textAlign: 'left'}}>Copyright @Srividyaranyaavasavidyalayam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <FaFacebookF color='white' size={25} />&nbsp;&nbsp;<FaInstagramSquare size={25} />&nbsp;&nbsp;
                             <FaLinkedinIn size={25} />&nbsp;&nbsp;<SiYoutubeshorts size={25} />
                         </h2>

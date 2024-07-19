@@ -4,7 +4,7 @@ import '../components/Footer/Footer.css';
 import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
-import { Button } from '@react-pdf-viewer/core';
+
 
 
 const Header = () => {
@@ -120,7 +120,7 @@ const Header = () => {
            <div className="position">
                 <div className='Header'>
                     <div className='section1'>
-                        <div style={{ display: "flex", flexDirection: "row" }}>
+                        <div style={{ display: "flex", flexDirection: "row" }}> 
                             <img className='image' src={exampleImage} alt="Example4" />
                             <div style={{ flexDirection: "column", textAlign: "center" }}>
                                 <h4 className="subtitles">

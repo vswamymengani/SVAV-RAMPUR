@@ -21,7 +21,7 @@
     align-items: center;
     padding: 20px;
     margin-top: -270px;
-    background-color: #f5f5f5; /* Background for the entire component */
+    background-color :powderblue; /* Background for the entire component */
     height: 100vh; /* Full viewport height */
   }
   
@@ -60,6 +60,8 @@
     justify-content:center;
     margin-left: 360px;
     margin-right: 360px;
+    text-align: justify;
+    text-justify: inter-word;
   }
   #he{
     margin-top: -230px;
@@ -78,11 +80,11 @@
     margin-top: 20px; /* Add some spacing above the rows */
   }
   
-  content-col {
+ .content-col {
     flex: 1; /* Take equal space */
     margin-right: 20px; /* Add spacing between the columns */
     padding: 20px; /* Add padding inside the box */
-    background-color: #fff; /* White background */
+    background-color: powderblue; /* White background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for box effect */
     border-radius: 8px; /* Optional: Rounded corners */
   }.content-col {
@@ -136,7 +138,7 @@
   }
   #g2 {
     width: 50%;
-    background-color: #fff; /* White background for the box */
+    background-color: powderblue; /* White background for the box */
     padding: 20px; /* Padding inside the box */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box effect */
@@ -226,7 +228,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #fff;
+  background-color: powderblue;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px 0;

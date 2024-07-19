@@ -1,5 +1,5 @@
-import React from 'react';
-  import logo from './Admission Process[1].png';
+
+  import logo from './Ad Process.png';
   import './AdmissionProcess.css';
   
   const AdmissionProcess = () => {

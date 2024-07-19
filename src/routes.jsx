@@ -63,7 +63,7 @@ import Laboratories from './components/Facilities/Laboratories';
 import Boardingroom from './components/Facilities/Boardingroom';
 import Sadacharam from './components/Beyond/Sadacharam';
 import Onlineenquiryform from './components/Admission/Onlineenquiryform';
-import Contact from './components/Facilities/Contact/ContactUs';
+import Contact from './pages/ContactUs';
 import Cirriculum from './components/Academic/Curriculum';
 import AdmissionProcess from './components/Admission/AdmissionProcess';
 import Halloffame from './components/News and Letter/Halloffame';
