@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { FaLightbulb, FaPeopleArrows, FaChalkboardTeacher, FaChild, FaChair, FaHome } from 'react-icons/fa';
+import { FaTree, FaSnowflake, FaTv, FaVideo, FaUniversity, FaChair } from 'react-icons/fa';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import img1 from './Multi-Purpose1.jpg';
@@ -30,12 +30,12 @@ const Auditorium = () => {
         <div id="Auditoriumlogo">
         </div>
         <div id="Auditoriumcontents">
-          <h3><FaLightbulb /> Spacious Open-air Auditorium.</h3>
-          <h3><FaPeopleArrows /> 	Air-conditioned seminar hall.</h3>
-          <h3><FaChalkboardTeacher /> Equipped with Sound system, LCD projector, Overhead projector.</h3>
-          <h3><FaChild /> 	Audio video presentation facility</h3>
-          <h3><FaHome />	Hosts to several workshops, cultural and curricular events.</h3>
-          <h3><FaChair /> Individual seating arrangements for every child.</h3>
+        <h3><FaTree /> Spacious Open-air Auditorium.</h3>
+      <h3><FaSnowflake /> Air-conditioned seminar hall.</h3>
+      <h3><FaTv /> Equipped with Sound system, LCD projector, Overhead projector.</h3>
+      <h3><FaVideo /> Audio video presentation facility.</h3>
+      <h3><FaUniversity /> Hosts to several workshops, cultural and curricular events.</h3>
+      <h3><FaChair /> Individual seating arrangements for every child.</h3>
         </div>
       </div>
       <div className="Auditorium-slider">

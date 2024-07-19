@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import './Library.css';
 import "slick-carousel/slick/slick.css"; 
@@ -8,15 +8,10 @@ import img2 from './libimg2.png';
 import img3 from './libimg3.jpeg';
 import img4 from './lib1.jpg';
 import img6 from './lib3.jpg';
+import { FaBook, FaNewspaper, FaJournalWhills, FaRegClipboard, FaUserGraduate, FaChalkboard } from 'react-icons/fa';
 
 // Import logos for the facilities
 
-import foodLogo from './balanced-diet.png';
-import airconLogo from './air-conditioner.png';
-import pastoralCareLogo from './portal.png';
-import separateHostelsLogo from './roommate.png';
-import dormsLogo from './hostel.png';
-import doctorLogo from './medical-team.png';
 
 const Library = () => {
   const sliderSettings = {
@@ -45,30 +40,30 @@ const Library = () => {
       <div className="Library-content">
         <h1 id="Library">Library Facilities</h1>
         <div id="Librarycontents">
-          <div className="facility-item-Library">
-            <img src={foodLogo} alt="Food" className="facility-logo-Library" />
-            <h3>Home Lending of Books</h3>
-          </div>
-          <div className="facility-item-Library">
-            <img src={airconLogo} alt="Air Conditioning" className="facility-logo-Library" />
-            <h3>The periodical Journals and magazines are available</h3>
-          </div>
-          <div className="facility-item-Library">
-            <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo-Library" />
-            <h3>Daily Newspapers.</h3>
-          </div>
-          <div className="facility-item-Library">
-            <img src={separateHostelsLogo} alt="Separate Hostels" className="facility-logo-Library" />
-            <h3>Reference Services for projects and assignments. </h3>
-          </div>
-          <div className="facility-item-Library">
-            <img src={dormsLogo} alt="Dorms" className="facility-logo-Library" />
-            <h3>	Reading Room for self-study.</h3>
-          </div>
-          <div className="facility-item-Library">
-            <img src={doctorLogo} alt="Doctor" className="facility-logo-Library" />
-            <h3>Services to ex-students </h3>
-          </div>
+        <div className="facility-item-Library">
+        <FaBook style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
+        <h3>Home Lending of Books</h3>
+      </div>
+      <div className="facility-item-Library">
+        <FaJournalWhills style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
+        <h3>The periodical Journals and magazines are available</h3>
+      </div>
+      <div className="facility-item-Library">
+        <FaNewspaper style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
+        <h3>Daily Newspapers</h3>
+      </div>
+      <div className="facility-item-Library">
+        <FaRegClipboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
+        <h3>Reference Services for projects and assignments</h3>
+      </div>
+      <div className="facility-item-Library">
+        <FaChalkboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
+        <h3>Reading Room for self-study</h3>
+      </div>
+      <div className="facility-item-Library">
+        <FaUserGraduate style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
+        <h3>Services to ex-students</h3>
+      </div>
         </div>
       </div>
     </div>
