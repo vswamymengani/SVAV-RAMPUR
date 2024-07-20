@@ -44,7 +44,7 @@ const Art = () => {
           <div id="Artcontents">
             <div className="facility-item-Art">
               <FontAwesomeIcon icon={faMusic} className="facility-logo-Art" />
-              <h3>Sangeet Education (Music) for Manasik Vikash</h3>
+              <h3>Sangeet Education for Manasik Vikash</h3>
             </div>
             <div className="facility-item-Art">
               <FontAwesomeIcon icon={faBookOpen} className="facility-logo-Art" />
@@ -55,19 +55,11 @@ const Art = () => {
               <h3>Moral and Spiritual Education</h3>
             </div>
             <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faChurch} className="facility-logo-Art" />
-              <h3>Sanskriti Bodh Priyojna</h3>
-            </div>
-            <div className="facility-item-Art">
               <FontAwesomeIcon icon={faSchool} className="facility-logo-Art" />
               <h3>All India Sanskriti Gyan Pariksha</h3>
             </div>
             <div className="facility-item-Art">
               <FontAwesomeIcon icon={faChalkboardTeacher} className="facility-logo-Art" />
-              <h3>Sanskriti Gyan Preeksha For Teachers</h3>
-            </div>
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faStethoscope} className="facility-logo-Art" />
               <h3>Prashan Manch (Quiz Competition)</h3>
             </div>
             <div className="facility-item-Art">

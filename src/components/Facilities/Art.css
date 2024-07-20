@@ -8,6 +8,7 @@
     padding: 15px;
     border-radius: 15px; /* Added this line to make the border radius curved */
     margin: 100px;
+    margin-left: 50px;
     text-align: center;
     margin-top: 10px;
   }
@@ -18,7 +19,7 @@
     flex-direction: row; /* Aligns items in a row */
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 60px;
   }
   
   .Art-content {
@@ -39,13 +40,14 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
-   margin-left: 60px;
+   margin-left: 40px;
   }
   
   .facility-item-Art {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    line-height: 90%;
   }
   
   .facility-icon-Art {

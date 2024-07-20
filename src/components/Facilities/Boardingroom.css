@@ -13,13 +13,14 @@
   margin-top: 0px;
 }
 
+
 .boardingroom-container {
   display: flex;
   flex-direction: row;
   /* Aligns items in a row */
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 60px;
 }
 
 .boardingroom-content {
@@ -58,12 +59,13 @@
 }
 
 .boardingroom-slider {
-  flex: 1;
+  /* flex: 1; */
   /* Makes the slider take available space */
   max-width: 600px;
   /* Optional: limit the maximum width */
   margin-top: 50px;
-  margin-right: 0px;
+  margin-left: 40px;
+  margin-right: -20px;
   /* Adds space between slider and content */
 }
 
@@ -71,6 +73,7 @@
   width: 100%;
   height: auto;
   border-radius: 40px;
+
 }
 
 .facility-logo {
@@ -91,4 +94,30 @@
   text-justify: inter-word;
   margin-top: 10px;
   line-height: 160%;
+}
+#boardingimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./res2.jpg);
+  height: 400px;
+  width: 800px;
+  background-size:  800px 400px;
+  background-repeat: no-repeat;
+}
+#diningimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./dining.jpg);
+  height: 400px;
+  width: 800px;
+  background-size:  800px 400px;
+  background-repeat: no-repeat;
+
+}
+#medicalimg1{
+  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./medical3.jpg);
+  height: 400px;
+  width: 800px;
+  background-size:  800px 400px;
+  background-repeat: no-repeat;
+
 }

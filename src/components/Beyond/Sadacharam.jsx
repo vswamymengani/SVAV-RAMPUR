@@ -1,13 +1,15 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import { FaLightbulb, FaPeopleArrows, FaChalkboardTeacher, FaChild, FaChair, FaHome } from 'react-icons/fa';
 import './Sadacharam.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import img1 from './Sadacharamimg1.jpg';
-import img2 from './Sadacharamimg1.jpg';
-import img3 from './Sadacharamimg1.jpg';
-import img4 from './Sadacharamimg1.jpg';
+import img2 from '../Facilities/slide1.png';
+import img3 from '../Facilities/slide2.png';
+import img4 from '../Facilities/slide3.png';
+import img5 from '../Facilities/slide4.png';
+
 
 const Sadacharam = () => {
   const sliderSettings = {
@@ -23,12 +25,12 @@ const Sadacharam = () => {
 
   return (
     <div>
-    <div className="Sadacharam-container">
-      <div className="Sadacharam-content">
-        <span id="Sadacharam">Sadacharam</span>
-        <div id="Sadacharamlogo">
+    <div className="sadacharam-container">
+      <div className="sadacharam-content">
+        <h1 id="sadacharam">Sadacharam</h1>
+        <div id="sadacharamlogo">
         </div>
-        <div id="Sadacharamcontents">
+        <div id="sadacharamcontents">
           <h3><FaLightbulb /> Spacious classrooms with sample lighting.</h3>
           <h3><FaPeopleArrows /> Collaborative Learning Spaces.</h3>
           <h3><FaChalkboardTeacher /> Interactive Smart Boards.</h3>
@@ -37,25 +39,38 @@ const Sadacharam = () => {
           <h3><FaChair /> Individual seating arrangements for every child.</h3>
         </div>
       </div>
-      <div className="Sadacharam-slider">
+      <div className="sadacharam-slider">
         <Slider {...sliderSettings}>
-          <div><img src={img1} alt="Sadacharam 1" /></div>
-          <div><img src={img2} alt="Sadacharam 2" /></div>
-          <div><img src={img3} alt="Sadacharam 3" /></div>
-          <div><img src={img4} alt="Sadacharam 4" /></div>
+          <div><img src={img1} alt="Classroom 1" /></div>
+          <div><img src={img2} alt="Classroom 2" /></div>
+          <div><img src={img3} alt="Classroom 3" /></div>
+          <div><img src={img4} alt="Classroom 1" /></div>
+          <div><img src={img5} alt="Classroom 2" /></div>
+         
         </Slider>
       </div>
     </div>
     <div>
-    </div>
-    <div id="Sadacharampara">
-        <p>
-        Sadacharam is a value-based curriculum developed by Sri Saraswathi Vidya Peetham (SSVP) to develop high moral and ethical standards amongst its students. Sadacharam denotes Sat+ Acharamu. i.e., the real way or the true principles (Sat) of living.
-        <br></br><br></br>
-         India has been the Janmabhoomi for Saints, Rajarshis and Brahmarshis of great calibre and nobility. To face the challenges of modern times and the western influence, Young India needs guidance and such role models to look up to.
-         <br></br><br></br>
-        Sri Vidyaranya International School has adopted the Sadacharam curriculum developed by SSVS, that unfolds the eminence and beauty of Indian Culture, traditions and its world perspective through carefully picked stories from mythology and history. It is believed that, Storytelling is the most powerful way to put ideas into the young minds. Through the characters and the circumstances from these stories, children relate to their daily experiences and learn the right approach and attitude towards life.
-        </p>
+    <div id="sadacharampara">
+        <span>Promoting student-centric and tech-driven learning through adaptive, interactive, and centralized digital classrooms (spacious and well-ventilated rooms) and simultaneously incorporating ancient wisdom and values as an integral part of the curriculum.
+       <br></br><br></br>
+      Students are also exposed to e-learning content, grade specific-live, and stored material in order to evaluate their individual strengths, abilities, and needs.
+      <br></br><br></br>
+These classrooms are a part of the Additional Support for Learning (ASL approach) towards students with Special Educational Needs (SEN).
+<br></br><br></br>
+<center><div id="sadacharamimg1"></div></center><br></br><br></br>
+The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding, planning, and developing environments and experiences for students learning in digitally-rich contexts. A digital classroom, which is rapidly transforming the way, teachers teach and students learn in schools with innovative and meaningful use of technology. Students learn difficult and abstract curriculum concepts by watching highly engaging visuals and animations.
+<br></br><br></br>
+This makes learning an enjoyable experience for students while improving their overall academic performance in school. And teachers also gain the complete attention and interest of every child in the class.
+<br></br><br></br>
+Every child gets a visual input on how it happens and the concepts are well understood. This results in a faster and accurate understanding of the concepts in class and helps improve the overall academic performance of students.
+<br></br><br></br>
+<center><div id="sadacharamimg2"></div></center><br></br><br></br>
+Teachers are able to keep students engaged in the learning process and also get an instant and accurate assessment of learning outcomes achieved at the end of the class.
+<br></br><br></br>
+Creative Video files to teach a software application, a lesson, as well as students, can give reviews at the same time.
+        </span>
+      </div>
     </div>
     </div>
   )

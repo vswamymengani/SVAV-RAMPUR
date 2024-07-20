@@ -46,7 +46,7 @@ const Library = () => {
       </div>
       <div className="facility-item-Library">
         <FaJournalWhills style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>The periodical Journals and magazines are available</h3>
+        <h3>Periodical Journals and magazines are available</h3>
       </div>
       <div className="facility-item-Library">
         <FaNewspaper style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
@@ -77,7 +77,7 @@ const Library = () => {
         <b>  Features of our Library</b>  <br></br><br></br>
 An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students build fluency and become self-reliant readers. <br></br><br></br>
 It plays an important part in the learning process of the school as it’s a counterpart of the schools infrastructure. This well stocked libraryis located in a quiet and calm place with a soothing ambience for the students to concentrate better.
-<br></br><br></br><br></br>
+<br></br><br></br>
 
 <b>Library Rules & Regulations</b> <br></br><br></br><br></br>
 <center><div id="lib2"></div></center><br></br><br></br>

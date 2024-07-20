@@ -55,7 +55,7 @@
     */
     flex: 1;
     max-width: 50%;
-    margin-top: -220px;
+    margin-top: -100px;
     margin-right: -20px;
     border-radius: 60px;
     scroll-behavior: smooth;
@@ -78,10 +78,19 @@
       font-weight: 300px;
       font-size: 24px;
       font-family:  'Open Sans', sans-serif;
-        margin: 120px;
+        margin: 100px;
+        margin-top: 60px;
       margin-bottom: 0px;
       text-align: justify;
   text-justify: inter-word;
   line-height: 160%;
+    }
+    #transimg1{
+      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+      background-image: url(./transimg4.jpg);
+      height: 400px;
+      width: 800px;
+      background-size:  800px 400px;
+      background-repeat: no-repeat;
     }
   
