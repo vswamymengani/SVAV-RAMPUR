@@ -59,7 +59,7 @@
 }
 
 .boardingroom-slider {
-  /* flex: 1; */
+  flex: 1;
   /* Makes the slider take available space */
   max-width: 600px;
   /* Optional: limit the maximum width */
