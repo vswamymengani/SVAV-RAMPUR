@@ -87,6 +87,7 @@ import Atglance from './pages/Atglance';
 import Aimobj from './pages/Aimobj';
 import Os from './pages/Os';
 import Archana from './components/Beyond/Archana';
+import Sdp from './components/SDP/Sdp';
 import ProfessionalDevelopment from './components/Career/ProfessionalDevelopment';
 
 const AppRoutes = () => {
@@ -96,6 +97,7 @@ const AppRoutes = () => {
                 <Route index element={<Home />} />
                 <Route path="Supportus" element={<Supportus />} />
                 <Route path="Vidhya" element={<Vidhya />} />
+                <Route path="Sdp" element={<Sdp />} />
                 <Route path="Commite" element={<Commite />} />
                 <Route path="Classroom" element={<Classroom />} />
                 <Route path="Sportsroom" element={<Sportsroom />} />

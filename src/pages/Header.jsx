@@ -28,6 +28,9 @@ const Header = () => {
     const goToVidhya = () => {
         navigate('Vidhya');
     };
+    const goToSdp = () => {
+        navigate('Sdp');
+    };
     const goToCommitte = () => {
         navigate('Commite');
     };
@@ -160,6 +163,23 @@ const Header = () => {
                   
                     <a href="/#" onClick="goToHome()" className="styled-link">HOME</a>
 
+                    {/* <div className="navbar3">
+                    <a href="/donate" onClick="goToDonate()" className="styled-link">SDP</a>
+
+                        <div className="dropdown">
+                        </div>
+                    </div> */}
+                    <div className="dropdown">
+                        <button className="dropbtn">SDP
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <a href="/Sdp" onClick={goToSdp}>SDP_SVAV_RAMPUR</a>
+                            <a href="/donate" onClick="goToDonate()" className="styled-link" >DONATE</a>
+                
+                        </div>
+                    </div>
+
                     
                     <div className="dropdown">
                         <button className="dropbtn">ABOUT US
@@ -256,12 +276,7 @@ const Header = () => {
 
                     </div>
 
-                    <div className="navbar3">
-                    <a href="/donate" onClick="goToDonate()" className="styled-link">DONATE</a>
-
-                        <div className="dropdown">
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <div className="color">
