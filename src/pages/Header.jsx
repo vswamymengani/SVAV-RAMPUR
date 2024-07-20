@@ -108,6 +108,9 @@ const Header = () => {
     const goToArchana = () => {
         navigate('Archana');
     };
+    const goToGallery = () => {
+        navigate('Gallery');
+    };
     const goToProfessionalDevelopment = () => {
         navigate('ProfessionalDevelopment ');
     };
@@ -256,7 +259,7 @@ const Header = () => {
                         </button>
                         <div className="dropdown-content">
                             <a href="#">OUR EVENTS</a>
-                            <a href="#">GALLERY</a>
+                            <a href="/Gallery" onClick={goToGallery}>GALLERY</a>
                             <a href="/Halloffame" onClick={goToHalloffame}>HALL OF FAME</a>
                         </div>
                     </div>

@@ -1,0 +1,12 @@
+#gal{
+    color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 11%;
+  padding: 15px;
+  border-radius: 15px; /* Added this line to make the border radius curved */
+  margin: 100px;
+  text-align: center;
+  margin-top: 50px;
+}

@@ -88,6 +88,7 @@ import Aimobj from './pages/Aimobj';
 import Os from './pages/Os';
 import Archana from './components/Beyond/Archana';
 import Sdp from './components/SDP/Sdp';
+import Gallery from './components/News and Letter/Gallery';
 import ProfessionalDevelopment from './components/Career/ProfessionalDevelopment';
 
 const AppRoutes = () => {
@@ -132,6 +133,7 @@ const AppRoutes = () => {
                 <Route path="Atglance" element={<Atglance />} />
                 <Route path="Aimobj" element={<Aimobj />} />
                 <Route path="Archana" element={<Archana />} />
+                <Route path="Gallery" element={<Gallery />} />
                 <Route path="ProfessionalDevelopment" element={<ProfessionalDevelopment />} />
                
              </Route>
