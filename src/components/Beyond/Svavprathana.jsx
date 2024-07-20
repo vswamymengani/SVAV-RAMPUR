@@ -1,21 +1,24 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import './Svavprathana.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import img1 from './Sadacharamimg1.jpg';
-import img2 from './Sadacharamimg1.jpg';
+import img1 from '../Facilities/s&p2.jpg';
+import img2 from '../Facilities/p1.jpg';
+import img3 from '../Facilities/p3.png';
+import img4 from '../Facilities/psimg.jpg'
 
 
 const  Svavprathana = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 900,
+    speed: 1900,
+    interval: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 630,
+    autoplaySpeed: 630
   };
 
   return (
@@ -24,6 +27,8 @@ const  Svavprathana = () => {
         <Slider {...sliderSettings}>
           <div><img src={img1} alt="Sports ground 1" /></div>
           <div><img src={img2} alt="Sports ground 2" /></div>
+          <div><img src={img3} alt="Sports ground 1" /></div>
+          <div><img src={img4} alt="Sports ground 2" /></div>
         </Slider>
       </div>
       <div className="Svavprathana-content">
@@ -48,7 +53,7 @@ const  Svavprathana = () => {
           </div>
           <div className="facility-item-Svavprathana">
            
-            <h3>Gayathri Mantra:</h3>
+            <h3>Gayathri Mantra</h3>
           </div>
           <div className="facility-item-Svavprathana">
             

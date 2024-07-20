@@ -9,7 +9,9 @@ import img2 from '../Facilities/slide1.png';
 import img3 from '../Facilities/slide2.png';
 import img4 from '../Facilities/slide3.png';
 import img5 from '../Facilities/slide4.png';
-
+import img6 from '../Facilities/slide5.png';
+import img7 from '../Facilities/slide6.jpg';
+import img8 from '../Facilities/psimg.jpg';
 
 const Sadacharam = () => {
   const sliderSettings = {
@@ -46,6 +48,9 @@ const Sadacharam = () => {
           <div><img src={img3} alt="Classroom 3" /></div>
           <div><img src={img4} alt="Classroom 1" /></div>
           <div><img src={img5} alt="Classroom 2" /></div>
+          <div><img src={img6} alt="Classroom 1" /></div>
+          <div><img src={img7} alt="Classroom 2" /></div>
+          <div><img src={img8} alt="Classroom 2" /></div>
          
         </Slider>
       </div>
