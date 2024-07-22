@@ -97,3 +97,11 @@
         background-size: 800px;
         background-repeat: no-repeat;
       }
+      #sadacharamimg{
+        box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
+         background-image: url(../Facilities/slide5.png);
+         height: 100px;
+         width: 800px;
+         background-size: 800px 100px;
+         background-repeat: no-repeat;
+       }

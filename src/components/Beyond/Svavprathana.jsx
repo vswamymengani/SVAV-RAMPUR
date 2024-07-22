@@ -1,6 +1,7 @@
 
 import Slider from 'react-slick';
 import './Svavprathana.css';
+import { FaLightbulb, FaBookOpen, FaFeatherAlt, FaOm, FaSun, FaPeace, FaUtensils } from 'react-icons/fa';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import img1 from '../Facilities/s&p2.jpg';
@@ -22,6 +23,7 @@ const  Svavprathana = () => {
   };
 
   return (
+    <div>
     <div className="Svavprathana-container">
       <div className="Svavprathana-slider">
         <Slider {...sliderSettings}>
@@ -32,40 +34,40 @@ const  Svavprathana = () => {
         </Slider>
       </div>
       <div className="Svavprathana-content">
-        <h1 id="Svavprathana">Svavprathana</h1>
+        <h1 id="Svavprathana">SVAV&nbsp;Prathana</h1>
         <div id="Svavprathanacontents">
          
-          <div className="facility-item-Svavprathana">
-            
-            <h3>Deeparadhana-diya</h3>
-          </div>
-          <div className="facility-item-Svavprathana">
-
-            <h3>Saraswathi Vandana</h3>
-          </div>
-          <div className="facility-item-Svavprathana">
-           
-            <h3>Saraswathi Stuthi:( He Hamsavahini:)</h3>
-          </div>
-          <div className="facility-item-Svavprathana">
-            
-            <h3>Brahmanaad</h3>
-          </div>
-          <div className="facility-item-Svavprathana">
-           
-            <h3>Gayathri Mantra</h3>
-          </div>
-          <div className="facility-item-Svavprathana">
-            
-            <h3>Shanti Mantram</h3>
-          </div>
-          <div className="facility-item-Svavprathana">
-            
-            <h3>Bhojana Mantra</h3>
-          </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaLightbulb /> Deeparadhana</h3>
+        </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaBookOpen /> Saraswathi Vandana</h3>
+        </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaFeatherAlt /> Saraswathi Stuthi: (He Hamsavahini)</h3>
+        </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaOm /> Brahmanaad</h3>
+        </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaSun /> Gayathri Mantra</h3>
+        </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaPeace /> Shanti Mantram</h3>
+        </div>
+        <div className="facility-item-Svavprathana">
+          <h3><FaUtensils /> Bhojana Mantra</h3>
+        </div>
         </div>
       </div>
+    
+    </div><br></br>
+     <center><b style={{fontSize:"40px"}}>Deeparadhana</b></center> <br></br><br></br><br></br>
+     <center><div id="Svavprathana1img"></div></center><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+     <center><b style={{fontSize:"40px"}}>Brahmanaad</b></center> <br></br><br></br><br></br>
+     <center><div id="Svavprathana2img"></div></center>
     </div>
+    
   );
 };
 

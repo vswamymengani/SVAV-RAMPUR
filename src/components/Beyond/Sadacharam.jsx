@@ -1,6 +1,6 @@
 
 import Slider from 'react-slick';
-import { FaLightbulb, FaPeopleArrows, FaChalkboardTeacher, FaChild, FaChair, FaHome } from 'react-icons/fa';
+import {FaLightbulb ,  FaPray,  FaBook, FaUtensils,  FaHandHoldingHeart, FaListAlt } from 'react-icons/fa';
 import './Sadacharam.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +9,7 @@ import img2 from '../Facilities/slide1.png';
 import img3 from '../Facilities/slide2.png';
 import img4 from '../Facilities/slide3.png';
 import img5 from '../Facilities/slide4.png';
-import img6 from '../Facilities/slide5.png';
+
 import img7 from '../Facilities/slide6.jpg';
 import img8 from '../Facilities/psimg.jpg';
 
@@ -33,12 +33,12 @@ const Sadacharam = () => {
         <div id="sadacharamlogo">
         </div>
         <div id="sadacharamcontents">
-          <h3><FaLightbulb /> Spacious classrooms with sample lighting.</h3>
-          <h3><FaPeopleArrows /> Collaborative Learning Spaces.</h3>
-          <h3><FaChalkboardTeacher /> Interactive Smart Boards.</h3>
-          <h3><FaChild /> Student-Centric Learning Environment.</h3>
-          <h3><FaHome /> Modern and pleasing interiors.</h3>
-          <h3><FaChair /> Individual seating arrangements for every child.</h3>
+        <h3><FaLightbulb /> Worship God every day by lighting a lamp.</h3>
+      <h3><FaPray /> Take blessings from Parents and Teachers.</h3>
+      <h3><FaBook /> Study the scriptures, contemplate the wisdom of ancestors.</h3>
+      <h3><FaUtensils /> Provide food for all beings in need.</h3>
+      <h3><FaHandHoldingHeart /> Serve guests with respect and love.</h3>
+      <h3><FaListAlt /> Always follow 6 B's (Bhavan, Bhasha, Bhusha, Bhojan, Bhajan, Braman).</h3>
         </div>
       </div>
       <div className="sadacharam-slider">
@@ -48,14 +48,16 @@ const Sadacharam = () => {
           <div><img src={img3} alt="Classroom 3" /></div>
           <div><img src={img4} alt="Classroom 1" /></div>
           <div><img src={img5} alt="Classroom 2" /></div>
-          <div><img src={img6} alt="Classroom 1" /></div>
+        
           <div><img src={img7} alt="Classroom 2" /></div>
           <div><img src={img8} alt="Classroom 2" /></div>
          
         </Slider>
       </div>
-    </div>
+    </div><br></br><br></br><br></br>
+    <center><div id="sadacharamimg"></div></center>
     <div>
+     
     <div id="sadacharampara">
         <span>Promoting student-centric and tech-driven learning through adaptive, interactive, and centralized digital classrooms (spacious and well-ventilated rooms) and simultaneously incorporating ancient wisdom and values as an integral part of the curriculum.
        <br></br><br></br>

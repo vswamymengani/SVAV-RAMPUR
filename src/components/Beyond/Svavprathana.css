@@ -1,68 +1,82 @@
-/* Ensure you import this in your component file */
 #Svavprathana {
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 30%;
-    padding: 15px;
-    border-radius: 15px; /* Added this line to make the border radius curved */
-    margin: 100px;
-    text-align: center;
-    margin-top: 0px;
-  }
-  
-  .Svavprathana-container {
-    display: flex;
-    flex-direction: row; /* Aligns items in a row */
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 40px;
-  }
-  
-  .Svavprathana-content {
-    flex: 1; /* Makes the content take available space */
-    text-align: left; /* Aligns text to the left */
-    padding: 20px;
-    font-size: 20px;
-    margin-left: 100px;
-  }
-  
-  #Svavprathana {
-    font-size: 2rem;
-    margin-bottom: 190px;
-  }
-  
-  #Svavprathanacontents {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
-   margin-left: 100px;
-  }
-  
-  .facility-item-Svavprathana {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    line-height: 9px;
-  }
-  
-  .Svavprathana-slider {
-   
-    flex: 1; /* Makes the slider take available space */
-    max-width: 700px; /* Optional: limit the maximum width */
-    margin-right: -100px; /* Adds space between slider and content */
-    margin-left: 80px;
-   
-  }
-  
-  .Svavprathana-slider img {
-    width: 100%;
-    height: 800px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-radius: 40px;
-  }
-  
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 42%;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 100px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.Svavprathana-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.Svavprathana-content {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 100px;
+ 
+}
+
+#Svavprathana {
+  font-size: 2rem;
+  margin-bottom: 190px;
+}
+
+#Svavprathanacontents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.facility-item-Svavprathana {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 9px;
+}
+
+.Svavprathana-slider {
+  flex: 1;
+  max-width: 1000px; /* Increased maximum width */
+  margin-right: 0px;
+  margin-top: -50px;
+  margin-left: 90px;
+}
+
+.Svavprathana-slider img {
+  width: 100%; /* Ensures images take the full width of the slider container */
+  height: auto;
+  border-radius: 40px;
+}
+
+#Svavprathana1img {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(../Facilities/divyaimg1.png);
+  height: 200px;
+  width: 800px;
+  background-size: 800px 200px;
+  background-repeat: no-repeat;
+}
+
+#Svavprathana2img {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(../Facilities/Svavaprathana2.png);
+  height: 300px;
+  width: 800px;
+  background-size: 800px 300px;
+  background-repeat: no-repeat;
+}

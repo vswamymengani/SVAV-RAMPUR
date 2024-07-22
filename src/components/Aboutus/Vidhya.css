@@ -6,9 +6,14 @@
     /* background-size: cover; */
     background-position: center;
     margin-top: -30px;
+    
 }
 #v11{
     text-align: justify;
     text-justify: inter-word;
     margin-right: 20px;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 160%;
 }

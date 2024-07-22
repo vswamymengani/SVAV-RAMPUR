@@ -16,7 +16,7 @@ import schoolCampusView11 from './vb3.jpg';
 import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
-import { BsJustify } from'react-icons/bs';
+// import { BsJustify } from'react-icons/bs';
 
 const Home = () => {
     const navigate = useNavigate();

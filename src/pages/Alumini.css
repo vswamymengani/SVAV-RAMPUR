@@ -1,0 +1,118 @@
+.account-details-form {
+    max-width: 600px; /* Increase the maximum width of the form */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: burlywood;
+  }
+  
+  .account-details-form h2 {
+    text-align: center;
+  }
+  
+  .account-details-form div {
+    margin-bottom: 15px;
+  }
+  
+  .account-details-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .account-details-form input,
+  .account-details-form select {
+    width: 100%; /* Full width of the parent container */
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fff; /* Set background color to white */
+    border: 1px solid #ccc; /* Add border to inputs */
+    border-radius: 4px; /* Slightly rounded corners for inputs */
+  }
+  
+  .horizontal-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between inputs */
+    margin-bottom: 15px;
+  }
+  
+  .horizontal-group > div {
+    flex: 1; /* Allow divs to grow equally */
+    min-width: 30%; /* Ensure a minimum width to fit inputs on the same line */
+  }
+  
+  .account-details-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .account-details-form button:hover {
+    background-color: #45a049;
+  }
+ /* src/App.css */
+/* src/App.css */
+.registration-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: khaki;
+
+  }
+  
+  .registration-form div {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between checkboxes */
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+  }
+  
+  .registration-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  
+  .registration-form button:hover {
+    background-color: #45a049;
+  }
+  .addressDetails {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: khaki;
+
+  }
+  .address-details-form {
+    max-width: 600px; /* Increase the maximum width of the form */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:rgb(156, 130, 119);
+  }

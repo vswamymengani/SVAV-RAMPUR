@@ -245,11 +245,11 @@ const Header = () => {
                             <a href="/Cirriculum" onClick={goToCirriculum}>CURRICULUM</a>
 
                             <a href="/Philosophy" onClick={goToPhilosophy}>SVAV PHILOSOPHY</a>
-                            <a href="#">SCHOOL HOUSES</a>
+                            {/* <a href="#">SCHOOL HOUSES</a> */}
                             <a href="#">SPECIAL AWARDS</a>
-                            <a href="#">CCE</a>
+                            {/* <a href="#">CCE</a> */}
                             <a href="#">HOLIDAYS</a>
-                            <a href="#">ANNUAL REPORT</a>
+                            {/* <a href="#">ANNUAL REPORT</a> */}
                             <a href="#">DOWNLOADS</a>
                         </div>
                     </div>
