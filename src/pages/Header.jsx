@@ -4,9 +4,6 @@ import '../components/Footer/Footer.css';
 import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
-
-
-
 const Header = () => {
     const navigate = useNavigate();
   
@@ -132,9 +129,8 @@ const Header = () => {
                                 <h4 className="subtitles">
                                     <span className="inline-text">SRI VIDYARANYA AVASA VIDYALAYAM<br></br> (SVAV-RAMPUR)</span>
                                 </h4>
-
-
-                                <h4 className='sub1'>DAY & RESIDENTIAL</h4>
+                               <h4 className='sub1'>DAY & RESIDENTIAL
+                               </h4>
                                 <h4 className='subbar'>Gobal competence with ancient wisdom</h4>
                             </div>
                         </div>

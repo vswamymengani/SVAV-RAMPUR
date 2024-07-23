@@ -65,7 +65,7 @@ const  Svavprathana = () => {
      <center><b style={{fontSize:"40px"}}>Deeparadhana</b></center> <br></br><br></br><br></br>
      <center><div id="Svavprathana1img"></div></center><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
      <center><b style={{fontSize:"40px"}}>Brahmanaad</b></center> <br></br><br></br><br></br>
-     <center><div id="Svavprathana2img"></div></center>
+     <center><div id="Svavprathana2img"></div></center><br></br><br></br><br></br>
     </div>
     
   );

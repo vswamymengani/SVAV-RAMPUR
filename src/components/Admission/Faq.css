@@ -1,41 +1,43 @@
 .App {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 8%;
     
   }
-  #fa{
+  #fa {
     color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
-  font-style: normal;
-  width: 39%;
-  padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
-  margin: 10px;
-  text-align: center;
-  margin-top: 30px;
-  }
+    font-size: 30px; /* Keeping as px since font-size is typically better in px or em */
+    background-color: green;
+    font-style: normal;
+    width: 39%;
+    padding: 1.875%; /* Converted from 15px based on width */
+    border-radius: 15px; /* Keeping as px since border-radius typically stays in px */
+    margin: 1.67%; /* Converted from 10px based on height */
+    text-align: center;
+    margin-top: 5%; /* Converted from 30px based on height */
+}
+
   
-  .qa-box {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 50px;
-  }
+.qa-box {
+  border: 1px solid #ddd; /* Border width typically remains in px */
+  border-radius: 5px; /* Border-radius typically remains in px */
+  padding: 2%; /* Converted from 20px based on width */
+  margin-top: 6.25%; /* Converted from 50px based on height */
+}
+
   
-  .question {
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
+.question {
+  margin-bottom: 1.25%; /* Converted from 10px based on height */
+  cursor: pointer;
+}
   
   .question h3 {
     display: inline;
   }
   
   .answer {
-    margin-top: 5px;
+    margin-top: 2.5%;
     background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 830px;
+    padding: 3%;
+    border-radius: 5px;
+    margin-right: 50%;
   }
