@@ -8,10 +8,13 @@ const Tabs = ({ tabs, activeTab, setActiveTab }) => {
       {tabs.map((tab, index) => (
         <button
           key={index}
-          className={`tab ${activeTab === index ? 'active' : ''}`}
+          className={`tab-button ${activeTab === index ? 'active' : ''}`}
           onClick={() => setActiveTab(index)}
+          title={tab.title}
+          aria-label={tab.title}
         >
-          {tab}
+          <img src={tab.image} alt={tab.title} className="tab-image" />
+          <span className="tab-title">{tab.title}</span>
         </button>
       ))}
     </div>
@@ -19,7 +22,12 @@ const Tabs = ({ tabs, activeTab, setActiveTab }) => {
 };
 
 Tabs.propTypes = {
-  tabs: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   activeTab: PropTypes.number.isRequired,
   setActiveTab: PropTypes.func.isRequired,
 };
