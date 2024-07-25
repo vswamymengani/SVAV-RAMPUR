@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import './Art.css';
 import "slick-carousel/slick/slick.css";
@@ -10,7 +10,7 @@ import img4 from './art5.jpg';
 import img5 from './art7.jpg';
 import img6 from './IMG20240525141319.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faBookOpen, faPray, faChurch, faSchool, faChalkboardTeacher, faStethoscope, faPenFancy } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faBookOpen, faPray,  faSchool, faChalkboardTeacher, faPenFancy } from '@fortawesome/free-solid-svg-icons';
 
 const Art = () => {
   const sliderSettings = {
@@ -29,18 +29,18 @@ const Art = () => {
       <div className="Art-container">
         <div className="Art-slider">
           <Slider {...sliderSettings}>
-            <div><img src={img1} alt="Art 1" style={{ height: '520px' }} /></div>
-            <div><img src={img2} alt="Art 2" style={{ height: '520px' }} /></div>
-            <div><img src={img3} alt="Art 3" style={{ height: '520px' }}/></div>
-            <div><img src={img4} alt="Art 2" style={{ height: '520px' }}/></div>
-            <div><img src={img5} alt="Art 3" /></div>
-            <div><img src={img6} alt="Art 2" /></div>
+            <div><img src={img1} alt="Art 1" style={{ height: '70.15vh' }} /></div>
+            <div><img src={img2} alt="Art 2" style={{ height: '70.15vh' }}/></div>
+            <div><img src={img3} alt="Art 3" style={{ height: '70.15vh' }}/></div>
+            <div><img src={img4} alt="Art 2" style={{ height: '70.15vh' }} /></div>
+            <div><img src={img5} alt="Art 3" style={{ height: '70.15vh' }} /></div>
+            <div><img src={img6} alt="Art 2" style={{ height: '70.15vh' }} /></div>
            
             
           </Slider>
         </div>
         <div className="Art-content">
-          <h1 id="Art">Arts & Crafts</h1>
+          <span id="Art">Arts & Crafts</span>
           <div id="Artcontents">
             <div className="facility-item-Art">
               <FontAwesomeIcon icon={faMusic} className="facility-logo-Art" />

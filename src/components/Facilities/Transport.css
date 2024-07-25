@@ -1,96 +1,315 @@
-#Transport{
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 39%;
-    padding: 15px;
-    border-radius: 15px; /* Added this line to make the border radius curved */
-    margin: 100px;
-    text-align: center;
-    margin-top: -60px;
-    
+.Transport-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 220px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .Transport-container {
+    flex-direction: column; /* Stacks items in a column */
+    align-items: flex-start; /* Aligns items to the start */
+    margin-top: 100px; /* Adjusts top margin for tablets */
   }
-  #Transportlogo{
-      height: 100px;
-      width: 100px;
-     background-image: url(../);
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .Transport-container {
+    flex-direction: column; /* Stacks items in a column */
+    align-items: center; /* Centers items horizontally */
+    margin-top: 50px; /* Further reduces top margin for phones */
   }
-  #Transportcontents{
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-style: normal;
-      margin-top: -50px;
-      margin-left: 100px;
-      
-  }
-  /* Add this CSS to your stylesheet */
-  #Transportcontents h3 {
-    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+
+#Transportlogo {
+  height: 100px;
+  width: 100px;
+  background-image: url('../path/to/your/image.jpg'); /* Update the path to your image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+#Transportcontents {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  margin-top: -180px;
+  margin-left: 100px;
+}
+
+/* Heading styles within Transportcontents */
+#Transportcontents h3 {
+  margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+.Transport-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: -260px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #Transportlogo {
+    height: 80px;
+    width: 80px;
   }
   
-  #images{
-      width: -100px;
-      height: 100px;
+  #Transportcontents {
+    font-size: 18px;
+    margin-top: -20px;
+    margin-left: 50px;
   }
-  .Transport-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-      margin-top: 170px;
-    }
+  
+  .Transport-content {
+    padding: 15px;
+    margin-top: -70px;
+  }
+  
+  #Transportcontents h3 {
+    margin-bottom: 15px; /* Adjust spacing for tablet */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  #Transportlogo {
+    height: 60px;
+    width: 60px;
+  }
+  
+  #Transportcontents {
+    font-size: 16px;
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  
+  .Transport-content {
+    padding: 10px;
+    margin-top: -40px;
+  }
+  
+  #Transportcontents h3 {
+    margin-bottom: 10px; /* Adjust spacing for phone */
+  }
+}
+
+
+
+
+
+#Transport {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  display: flex;
+
+  justify-content: center; /* Center the slider horizontally */
+  align-items: center; /* Center the slider vertically if needed */
+  font-style: normal;
+  width: 39%;
+  padding: 15px;
+  border-radius: 15px; /* Curved border radius */
+  margin: 90px 90px; /* Center horizontally */
+  
+  margin-top: -40px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #Transport {
+    font-size: 24px;
+    width: 60%;
+    padding: 12px;
+    margin: 50px auto; /* Center horizontally */
+    margin-top: -20px;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  #Transport {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto; /* Center horizontally */
+    margin-top: 5px;
+  }
+}
+
+  
+
+
     
-    .Transport-content {
-      flex: 1;
-      padding: 20px;
-      margin-top: -100px;
-    }
-    
-    .Transport-slider {
-      /* flex: 1;
-      max-width: 50%;
-      margin-top: 10px;
-      margin-right: -40px;
-    */
-    flex: 1;
+   
+
+  .Transport-slider {
+    flex: 14;
     max-width: 50%;
     margin-top: -100px;
     margin-right: -20px;
     border-radius: 60px;
     scroll-behavior: smooth;
- 
+    height: 600px;
+    width: 1900px;
+  }
+  
+  /* Responsive adjustments for the slider */
+  @media (max-width: 768px) {
+    .Transport-slider {
+      max-width: 70%;
+      margin-top: -0px;
+      margin-left: 20%;
+     
     }
   
     .Transport-slider img {
-      /* width: 100%;
-      border-radius: 60px;
-      height: 500px; /* Maintain aspect ratio */
-      /* max-height: 400px; 
-      margin-right: -40px;  */
-      width: 100%;
-      border-radius: 60px;
-      height: 500px; /* Maintain aspect ratio */
-      max-height: 400px; 
-      scroll-behavior: smooth;
+      height: 400px; /* Adjust height for medium devices */
+      max-height: 300px;
     }
-    .Transportpara{
-      font-weight: 300px;
-      font-size: 24px;
-      font-family:  'Open Sans', sans-serif;
-        margin: 100px;
-        margin-top: 60px;
-      margin-bottom: 0px;
-      text-align: justify;
-  text-justify: inter-word;
-  line-height: 160%;
-    }
-    #transimg1{
-      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-      background-image: url(./transimg4.jpg);
-      height: 400px;
-      width: 800px;
-      background-size:  800px 400px;
-      background-repeat: no-repeat;
+  }
+  
+  /* Responsive adjustments for smaller devices */
+  @media (max-width: 480px) {
+    .Transport-slider {
+      max-width: 90%;
+      margin-top: -0px;
+      
     }
   
+    .Transport-slider img {
+      height: 300px; /* Adjust height for small devices */
+      max-height: 250px;
+    }
+  }
+  
+    
+    
+  .Transportpara {
+    font-weight: 300; /* Font weight should be a numerical value */
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 100px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 160%;
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    .Transportpara {
+      font-size: 20px;
+      margin: 50px;
+      margin-top: 40px;
+    }
+  }
+  
+  /* Small devices (phones, 480px and up) */
+  @media (max-width: 480px) {
+    .Transportpara {
+      font-size: 16px;
+      margin: 20px;
+      margin-top: 20px;
+    }
+  }
+
+    #transimg1 {
+      box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+      background-image: url('./transimg4.jpg');
+      height: 400px;
+      width: 100%;
+      max-width: 800px;
+      background-size: cover; /* Ensure the background image covers the element */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat;
+      margin: 0 auto; /* Center the element horizontally */
+    }
+    
+    /* Medium devices (tablets, 768px and up) */
+    @media (max-width: 768px) {
+      #transimg1 {
+        height: 300px; /* Adjust height for medium devices */
+        max-width: 600px; /* Adjust max-width for medium devices */
+        background-size: cover; /* Ensure the background image covers the element */
+      }
+    }
+    
+    /* Small devices (phones, 480px and up) */
+    @media (max-width: 480px) {
+      #transimg1 {
+        height: 200px; /* Adjust height for small devices */
+        max-width: 100%; /* Use full width for small devices */
+        background-size: cover; /* Ensure the background image covers the element */
+      }
+    }
+    
+  
+    /* Base styles */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+.responsive-table th, .responsive-table td {
+  padding: 20px;
+  border: 1px solid #000; /* Adjust border as needed */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .responsive-table {
+    width: 100%;
+  }
+
+  .responsive-table th, .responsive-table td {
+    padding: 15px;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .responsive-table {
+    width: 100%;
+    display: block; /* Change table to block for better responsiveness */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .responsive-table th, .responsive-table td {
+    display: block; /* Change table cells to block */
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make cells take full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .responsive-table th {
+    position: absolute; /* Remove table header from flow */
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .responsive-table td {
+    position: relative; /* Reposition cells */
+    padding-left: 50%; /* Add padding for label */
+  }
+
+  .responsive-table td:before {
+    content: attr(data-label); /* Add label for each cell */
+    position: absolute;
+    left: 10px;
+    white-space: nowrap;
+  }
+}
+.Transport-slider img {
+  height: 500px; /* Adjust height for small devices */
+  max-height: 250px;
+  width: 500px;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import { FaLightbulb, FaPeopleArrows, FaChalkboardTeacher, FaChild, FaChair, FaHome } from 'react-icons/fa';
 import './Transport.css';
@@ -29,7 +29,7 @@ const Transport = () => {
           <div id="Transportlogo">
           </div>
           <div id="Transportcontents">
-            <h3><FaLightbulb />Safe and Reliabale Transport</h3>
+            <h3><FaLightbulb />Safe and Reliabale Transport </h3>
             <h3><FaPeopleArrows />Well Trained Attendants/escorts</h3>
             <h3><FaChalkboardTeacher /> Pick Up & Drop Off Facility</h3>
             <h3><FaChild />Extensive Transport Network</h3>
@@ -39,6 +39,7 @@ const Transport = () => {
         </div>
         <div className="Transport-slider">
           <Slider {...sliderSettings}>
+            <div><img src={img1} alt="Art 1" style={{ height: '90.15vh' }} /></div>
             <div><img src={img1} alt="Transport 1" /></div>
             <div><img src={img2} alt="Transport 2" /></div>
             <div><img src={img3} alt="Transport 3" /></div>

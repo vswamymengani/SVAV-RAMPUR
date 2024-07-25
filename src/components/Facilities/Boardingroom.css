@@ -1,41 +1,52 @@
 /* Ensure you import this in your component file */
-#boa {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
-  font-style: normal;
-  width: 50%;
-  padding: 15px;
-  border-radius: 15px;
-  /* Added this line to make the border radius curved */
-  margin: 100px;
-  text-align: center;
-  margin-top: 0px;
-}
-
-
 .boardingroom-container {
   display: flex;
   flex-direction: row;
-  /* Aligns items in a row */
   align-items: center;
   justify-content: center;
   padding: 60px;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .boardingroom-container {
+    flex-direction: column; /* Stack items vertically on tablets */
+    padding: 30px; /* Adjust padding for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .boardingroom-container {
+    flex-direction: column; /* Stack items vertically on phones */
+    padding: 20px; /* Adjust padding for phones */
+  }
+}
+
 .boardingroom-content {
-  flex: 1;
-  /* Makes the content take available space */
-  text-align: left;
-  /* Aligns text to the left */
+  flex: 1; /* Makes the content take available space */
+  text-align: left; /* Aligns text to the left */
   padding: 20px;
   font-size: 20px;
   margin-left: 100px;
 }
 
-#boa {
-  font-size: 2rem;
-  margin-bottom: 20px;
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .boardingroom-content {
+    padding: 15px;
+    font-size: 18px;
+    margin-left: 50px; /* Adjust margin for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .boardingroom-content {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 20px; /* Adjust margin for phones */
+  }
 }
 
 #boacontents {
@@ -46,47 +57,125 @@
   margin-left: 100px;
 }
 
-.facility-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #boacontents {
+    margin-left: 50px; /* Adjust left margin for tablets */
+    margin-top: 30px; /* Adjust top margin for tablets */
+  }
+
+  .facility-item {
+    flex-direction: column; /* Stack items vertically on tablets */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .facility-icon {
+    font-size: 20px; /* Adjust icon size for tablets */
+    margin-bottom: 5px; /* Add bottom margin for spacing */
+  }
+
+  .facility-logo {
+    width: 25px; /* Adjust logo size for tablets */
+    margin-bottom: 5px; /* Add bottom margin for spacing */
+  }
 }
 
-.facility-icon {
-  margin-right: 10px;
-  font-size: 24px;
-  /* Adjust the size as needed */
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  #boacontents {
+    margin-left: 20px; /* Adjust left margin for phones */
+    margin-top: 20px; /* Adjust top margin for phones */
+  }
+
+  .facility-item {
+    flex-direction: column; /* Stack items vertically on phones */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .facility-icon {
+    font-size: 18px; /* Adjust icon size for phones */
+    margin-bottom: 5px; /* Add bottom margin for spacing */
+  }
+
+  .facility-logo {
+    width: 20px; /* Adjust logo size for phones */
+    margin-bottom: 5px; /* Add bottom margin for spacing */
+  }
+}
+
+#boa {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 50%;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 100px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #boa {
+    font-size: 24px; /* Adjust font size for tablets */
+    width: 70%; /* Adjust width for tablets */
+    padding: 12px; /* Adjust padding for tablets */
+    margin: 50px; /* Adjust margin for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  #boa {
+    font-size: 20px; /* Adjust font size for phones */
+    width: 90%; /* Adjust width for phones */
+    padding: 10px; /* Adjust padding for phones */
+    margin: 20px; /* Adjust margin for phones */
+  }
 }
 
 .boardingroom-slider {
-  flex: 1;
-  /* Makes the slider take available space */
-  max-width: 600px;
-  /* Optional: limit the maximum width */
+  flex: 1; /* Makes the slider take available space */
+  max-width: 600px; /* Optional: limit the maximum width */
   margin-top: 50px;
   margin-left: 40px;
-  margin-right: -20px;
-  /* Adds space between slider and content */
+  margin-right: -20px; /* Adds space between slider and content */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .boardingroom-slider {
+    max-width: 80%; /* Increase the width on tablets */
+    margin-left: 20px; /* Adjust left margin for tablets */
+    margin-right: 20px; /* Adjust right margin for tablets */
+    margin-top: 30px; /* Adjust top margin for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .boardingroom-slider {
+    max-width: 90%; /* Increase the width on phones */
+    margin-left: 10px; /* Adjust left margin for phones */
+    margin-right: 10px; /* Adjust right margin for phones */
+    margin-top: 20px; /* Adjust top margin for phones */
+  }
 }
 
 .boardingroom-slider img {
   width: 100%;
-  height: auto;
-  border-radius: 40px;
-
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 40px; /* Optional: add rounded corners */
 }
 
-.facility-logo {
-  width: 30px;
-  /* Adjust the size as needed */
-  height: auto;
-  margin-right: 10px;
-  /* Space between logo and text */
-}
+
+
 
 #bpara {
   font-size: 24px;
-  font-weight: 300px;
+  font-weight: 300;
   font-family: 'Open Sans', sans-serif;
   margin: 100px;
   margin-bottom: 0px;
@@ -95,29 +184,54 @@
   margin-top: 10px;
   line-height: 160%;
 }
-#boardingimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-  background-image: url(./res2.jpg);
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #bpara {
+    font-size: 20px; /* Adjust font size for tablets */
+    margin: 50px; /* Adjust margin for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  #bpara {
+    font-size: 16px; /* Adjust font size for phones */
+    margin: 20px; /* Adjust margin for phones */
+  }
+}
+
+#boardingimg1, #diningimg1, #medicalimg1 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
   height: 400px;
   width: 800px;
-  background-size:  800px 400px;
+  background-size: 800px 400px;
   background-repeat: no-repeat;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #boardingimg1, #diningimg1, #medicalimg1 {
+    height: 300px; /* Adjust height for tablets */
+    width: 600px; /* Adjust width for tablets */
+    background-size: 600px 300px; /* Adjust background size for tablets */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  #boardingimg1, #diningimg1, #medicalimg1 {
+    height: 200px; /* Adjust height for phones */
+    width: 400px; /* Adjust width for phones */
+    background-size: 400px 200px; /* Adjust background size for phones */
+  }
+}
+#boardingimg1{
+  background-image: url(./res2.jpg);
 }
 #diningimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-  background-image: url(./dining.jpg);
-  height: 400px;
-  width: 800px;
-  background-size:  800px 400px;
-  background-repeat: no-repeat;
-
+  background-image: url(./dining.jpg); 
 }
 #medicalimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
   background-image: url(./medical3.jpg);
-  height: 400px;
-  width: 800px;
-  background-size:  800px 400px;
-  background-repeat: no-repeat;
-
 }

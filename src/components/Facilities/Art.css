@@ -1,4 +1,72 @@
-/* Ensure you import this in your component file */
+/* Artcss */
+.Art-container {
+  display: flex;
+  flex-direction: row; /* Aligns items in a row */
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .Art-container {
+    padding: 40px;
+    flex-direction: column; /* Stacks items in a column */
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .Art-container {
+    padding: 20px;
+    flex-direction: column; /* Stacks items in a column */
+  }
+}
+
+.Art-slider {
+  margin-left: 20px;
+  flex: 1; /* Makes the slider take available space */
+  max-width: 700px; /* Optional: limit the maximum width */
+  margin-right: 0px; /* Adds space between slider and content */
+}
+
+.Art-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .Art-slider {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%; /* Allow the slider to take full width */
+  }
+  
+  .Art-slider img {
+    border-radius: 30px;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .Art-slider {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%; /* Allow the slider to take full width */
+  }
+  
+  .Art-slider img {
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
 #Art {
     color: rgb(183, 234, 31);
     font-size: 30px;
@@ -14,14 +82,6 @@
   }
    
 
-  .Art-container {
-    display: flex;
-    flex-direction: row; /* Aligns items in a row */
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
-  }
-  
   .Art-content {
     flex: 1; /* Makes the content take available space */
     text-align: left; /* Aligns text to the left */
@@ -40,7 +100,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
-   margin-left: 40px;
+    margin-left: 40px;
   }
   
   .facility-item-Art {
@@ -55,57 +115,135 @@
     font-size: 24px; /* Adjust the size as needed */
   }
   
-  .Art-slider {
-    margin-left: 60px;
-    flex: 1; /* Makes the slider take available space */
-    max-width: 700px; /* Optional: limit the maximum width */
-    margin-right: 0px; /* Adds space between slider and content */
-  }
-  
-  .Art-slider img {
-   
-    width: 100%;
-    height: auto;
-    border-radius: 40px;
-  }
   .facility-logo-Art {
     width: 30px;  /* Adjust the size as needed */
     height: auto;
     margin-right: 10px;  /* Space between logo and text */
   }
-  #Artpara{
-    font-size: 24px;
-    font-weight: 300px;
-    font-family:  'Open Sans', sans-serif;
-      margin: 100px;
-      margin-top: 20px;
-    margin-bottom: 0px;
-    text-align: justify;
-  text-justify: inter-word;
-  line-height: 160%;
-  }
-  #art1{
-    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-    background-image: url(./art1.jpg);
-    height: 400px;
-    width: 800px;
-    background-size: 800px;
-    background-repeat: no-repeat;
-  }
-  #art2{
-    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-    background-image: url(./art2.jpg);
-    height: 400px;
-    width: 800px;
-    background-size: 800px;
-    background-repeat: no-repeat;
-  }
-  #art3{
-    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-    background-image: url(./art5.jpg);
-    height: 400px;
-    width: 800px;
-    background-size: 800px;
-    background-repeat: no-repeat;
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    .Art-content {
+      padding: 15px;
+      font-size: 18px;
+      margin-left: 30px;
+    }
+  
+    #Art {
+      font-size: 1.5rem;
+    }
+  
+    #Artcontents {
+      margin-left: 20px;
+    }
+  
+    .facility-item-Art {
+      margin-bottom: 8px;
+    }
+  
+    .facility-icon-Art {
+      font-size: 20px;
+    }
+  
+    .facility-logo-Art {
+      width: 25px;
+    }
   }
   
+  /* Small devices (phones, 480px and up) */
+  @media (max-width: 480px) {
+    .Art-content {
+      padding: 10px;
+      font-size: 16px;
+      margin-left: 15px;
+    }
+  
+    #Art {
+      font-size: 1.2rem;
+    }
+  
+    #Artcontents {
+      margin-left: 10px;
+    }
+  
+    .facility-item-Art {
+      margin-bottom: 6px;
+    }
+  
+    .facility-icon-Art {
+      font-size: 18px;
+    }
+  
+    .facility-logo-Art {
+      width: 20px;
+    }
+  }
+  
+
+
+
+
+
+  
+  #Artpara {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    margin: 100px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 160%;
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    #Artpara {
+      font-size: 20px;
+      margin: 50px;
+      line-height: 140%;
+    }
+  }
+  
+  /* Small devices (phones, 480px and up) */
+  @media (max-width: 480px) {
+    #Artpara {
+      font-size: 16px;
+      margin: 20px;
+      line-height: 130%;
+    }
+  }
+  
+  #art1, #art2, #art3 {
+    box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+    height: 400px;
+    width: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #art1{
+    background-image: url(./art1.jpg);
+  }
+  #art2{
+    background-image: url(./art2.jpg);
+  }
+  #art3{
+    background-image: url(./art3.jpg);
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    #art1, #art2, #art3 {
+      height: 300px;
+      width: 100%;
+    }
+  }
+  
+  /* Small devices (phones, 480px and up) */
+  @media (max-width: 480px) {
+    #art1, #art2, #art3 {
+      height: 200px;
+      width:100%;
+    }
+  }
