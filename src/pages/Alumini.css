@@ -116,3 +116,39 @@
     border-radius: 5px;
     background-color:rgb(156, 130, 119);
   }
+
+
+
+
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .horizontal-group > div {
+      min-width: 100%; /* Stack form fields on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .account-details-form h2,
+  .registration-form h2,
+  .address-details-form h2 {
+      font-size: 20px; /* Reduce heading font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .account-details-form,
+  .registration-form,
+  .address-details-form {
+      padding: 15px; /* Reduce padding for very small screens */
+  }
+
+  .account-details-form h2,
+  .registration-form h2,
+  .address-details-form h2 {
+      font-size: 18px; /* Further reduce heading font size */
+  }
+
+  .horizontal-group > div {
+      min-width: 100%; /* Stack form fields on very small screens */
+  }
+}

@@ -1,64 +1,215 @@
+/* Base styles */
 .enquiry-form-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 40px;
-    border: 1px solid aqua;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: moccasin;
-    margin-top: 90px;
+  max-width: 600px; /* Maximum width of the container */
+  margin: auto; /* Center the container horizontally */
+  padding: 40px; /* Padding inside the container */
+  border: 1px solid aqua; /* Border around the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: moccasin; /* Background color of the container */
+  margin-top: 90px; /* Margin from the top */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+  .enquiry-form-container {
+      padding: 20px; /* Reduce padding for smaller screens */
+      margin-top: 60px; /* Adjust top margin for smaller screens */
   }
-  h1{
-    color: blue;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form-container {
+      padding: 15px; /* Further reduce padding for mobile screens */
+      margin-top: 30px; /* Adjust top margin for mobile screens */
+      max-width: 100%; /* Allow the container to take full width */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduce shadow for mobile screens */
   }
-  
+}
+/* Base styles for h1 */
+h1 {
+  color: blue; /* Text color */
+}
+
+/* Styles for h1 inside .enquiry-form-container */
+.enquiry-form-container h1 {
+  text-align: center; /* Center-align the text */
+  margin-bottom: 20px; /* Bottom margin */
+  font-size: 2.5rem; /* Base font size for large screens */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
   .enquiry-form-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
+      font-size: 2rem; /* Adjust font size for tablets */
+      margin-bottom: 15px; /* Adjust bottom margin for tablets */
   }
-  
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form-container h1 {
+      font-size: 1.5rem; /* Further reduce font size for mobile screens */
+      margin-bottom: 10px; /* Adjust bottom margin for mobile screens */
+  }
+}
+
+  /* Base styles for form groups */
+.enquiry-form .form-group {
+  margin-bottom: 15px; /* Default margin for larger screens */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
   .enquiry-form .form-group {
-    margin-bottom: 15px;
+      margin-bottom: 12px; /* Reduce margin for tablets */
   }
-  
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form .form-group {
+      margin-bottom: 8px; /* Further reduce margin for mobile screens */
+  }
+}
+
+ /* Base styles for form labels */
+.enquiry-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px; /* Default font size for larger screens */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
   .enquiry-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+      font-size: 14px; /* Slightly smaller font size for tablets */
+      margin-bottom: 4px; /* Reduce margin for better fit on tablets */
   }
-  
-  .enquiry-form input[type="text"],
-  .enquiry-form input[type="tel"],
-  .enquiry-form input[type="email"],
-  .enquiry-form textarea {
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form label {
+      font-size: 12px; /* Smaller font size for mobile screens */
+      margin-bottom: 3px; /* Further reduce margin for mobile screens */
+  }
+}
+
+  /* Base styles for form inputs and textarea */
+.enquiry-form input[type="text"],
+.enquiry-form input[type="tel"],
+.enquiry-form input[type="email"],
+.enquiry-form textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .enquiry-form input[type="text"],
+    .enquiry-form input[type="tel"],
+    .enquiry-form input[type="email"],
+    .enquiry-form textarea {
+        padding: 10px; /* Slightly increased padding for better touch experience */
+        margin-bottom: 12px; /* Increased margin to prevent crowding */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .enquiry-form input[type="text"],
+    .enquiry-form input[type="tel"],
+    .enquiry-form input[type="email"],
+    .enquiry-form textarea {
+        padding: 12px; /* Larger padding for easier touch interaction on mobile */
+        margin-bottom: 15px; /* Further increased margin for better spacing */
+    }
+}
+
+  /* Base styles for checkbox */
+.enquiry-form input[type="checkbox"] {
+  margin-right: 10px; /* Spacing between checkbox and label */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
   .enquiry-form input[type="checkbox"] {
-    margin-right: 10px;
+      margin-right: 8px; /* Slightly reduced margin for tablets */
   }
-  
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form input[type="checkbox"] {
+      margin-right: 6px; /* Further reduced margin for mobile screens */
+  }
+}
+
+  /* Base styles for textarea */
+.enquiry-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allows vertical resizing */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
   .enquiry-form textarea {
-    resize: vertical;
+      font-size: 14px; /* Adjust font size for better readability */
   }
-  
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form textarea {
+      font-size: 12px; /* Further adjust font size for small screens */
+      min-height: 100px; /* Ensure minimum height for usability on mobile */
+  }
+}
+
+  /* Base styles for submit button */
+.enquiry-form .submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px; /* Slightly increased padding for better touch targets */
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center; /* Center-aligns text within the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+.enquiry-form .submit-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
   .enquiry-form .submit-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+      font-size: 14px; /* Adjust font size for readability on smaller screens */
+      padding: 10px; /* Slightly adjust padding if needed */
   }
-  
-  .enquiry-form .submit-button:hover {
-    background-color: #0056b3;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .enquiry-form .submit-button {
+      font-size: 12px; /* Further adjust font size for very small screens */
+      padding: 8px; /* Adjust padding for compact screens */
   }
+}
+
   

@@ -1,10 +1,31 @@
-#pdt{
-    font-size: 24px;
-    font-weight: 300px;
-    font-family:  'Open Sans', sans-serif;
-      margin: 120px;
-    margin-bottom: 0px;
-    text-align: justify;
+#pdt {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  margin: 120px;
+  margin-bottom: 0px;
+  text-align: justify;
   text-justify: inter-word;
+}
 
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablets and smaller screens */
+  #pdt {
+      font-size: 20px; /* Slightly reduce font size */
+      margin: 80px; /* Adjust margins */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile devices and small tablets */
+  #pdt {
+      font-size: 18px; /* Further reduce font size */
+      margin: 40px; /* Reduce margins for better fit */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  #pdt {
+      font-size: 16px; /* Further reduce font size */
+      margin: 20px; /* Adjust margins for small screens */
+  }
 }

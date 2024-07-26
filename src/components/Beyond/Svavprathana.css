@@ -1,3 +1,4 @@
+/* Base styles for #Svavprathana */
 #Svavprathana {
   color: rgb(183, 234, 31);
   font-size: 30px;
@@ -6,11 +7,11 @@
   width: 42%;
   padding: 5px;
   border-radius: 15px;
-  margin: 100px;
+  margin: 100px auto; /* Centered horizontally */
   text-align: center;
-  margin-top: 0px;
 }
 
+/* Flex container for Svavprathana */
 .Svavprathana-container {
   display: flex;
   flex-direction: row;
@@ -18,50 +19,20 @@
   justify-content: center;
   padding: 20px;
   margin-top: 40px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+/* Content styling */
 .Svavprathana-content {
   flex: 1;
   text-align: left;
   padding: 20px;
   font-size: 20px;
   margin-left: 100px;
- 
+  box-sizing: border-box; /* Ensures padding does not affect width */
 }
 
-#Svavprathana {
-  font-size: 2rem;
-  margin-bottom: 190px;
-}
 
-#Svavprathanacontents {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 20px;
-  margin-left: 100px;
-}
-
-.facility-item-Svavprathana {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  line-height: 9px;
-}
-
-.Svavprathana-slider {
-  flex: 1;
-  max-width: 1000px; /* Increased maximum width */
-  margin-right: 0px;
-  margin-top: -50px;
-  margin-left: 90px;
-}
-
-.Svavprathana-slider img {
-  width: 100%; /* Ensures images take the full width of the slider container */
-  height: auto;
-  border-radius: 40px;
-}
 
 #Svavprathana1img {
   box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
@@ -79,4 +50,105 @@
   width: 800px;
   background-size: 800px 300px;
   background-repeat: no-repeat;
+}
+
+/* Responsive adjustments for #Svavprathana */
+@media (max-width: 768px) {
+  #Svavprathana {
+    font-size: 24px; /* Adjust font size */
+    width: 70%; /* Adjust width */
+    margin: 50px auto; /* Centered and reduced margin */
+  }
+
+  .Svavprathana-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .Svavprathana-content {
+    margin-left: 0; /* Remove margin for small screens */
+    text-align: center; /* Center text */
+  }
+
+  #Svavprathana1img, #Svavprathana2img {
+    width: 100%; /* Adjust width to fit smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    background-size: cover; /* Cover background size */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  #Svavprathana {
+    font-size: 20px; /* Further adjust font size */
+    width: 100%; /* Adjust width */
+    margin: 30px auto; /* Centered and reduced margin */
+  }
+
+  .Svavprathana-content {
+    padding: 10px; /* Reduce padding */
+    font-size: 16px; /* Adjust font size */
+    margin-left: 0; /* Ensure margin is removed */
+  }
+
+  #Svavprathana1img, #Svavprathana2img {
+    height: 150px; /* Reduce height for small screens */
+    background-size: cover; /* Ensure background size covers the element */
+  }
+
+  .Svavprathana-slider {
+    margin-top: 0; /* Remove top margin */
+    margin-left: 0; /* Remove left margin */
+    max-width: 100%; /* Ensure slider fits within container */
+  }
+}
+
+/* Styling for facility items */
+.facility-item-Svavprathana {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 1.5; /* Adjust line height */
+}
+
+/* Styling for Svavprathana slider */
+.Svavprathana-slider {
+  flex: 1;
+  max-width: 1000px; /* Increased maximum width */
+  margin: 0 auto; /* Centered horizontally */
+}
+
+/* Responsive adjustments for Svavprathana slider images */
+.Svavprathana-slider img {
+  width: 100%; /* Ensures images take the full width of the slider container */
+  height: auto;
+  border-radius: 40px;
+}
+
+/* Styling for Svavprathana images */
+#Svavprathana1img, #Svavprathana2img {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-repeat: no-repeat;
+}
+
+/* Responsive adjustments for Svavprathana images */
+@media (max-width: 768px) {
+  #Svavprathana1img, #Svavprathana2img {
+    height: 150px; /* Reduce height for medium-sized devices */
+    width: 100%; /* Ensure width fits container */
+    background-size: cover; /* Adjust background size */
+  }
+}
+
+@media (max-width: 480px) {
+  #Svavprathana1img, #Svavprathana2img {
+    height: 100px; /* Further reduce height for small devices */
+    background-size: cover; /* Adjust background size */
+  }
+}
+#Svavprathana1img{
+  background-image: url(../Facilities/divyaimg1.png);
+}
+#Svavprathana2img{
+  background-image: url(../Facilities/Svavaprathana2.png); 
 }

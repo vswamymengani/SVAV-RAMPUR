@@ -50,6 +50,7 @@ const Home = () => {
     };
 
     return (
+        <div>
 
         <div className="body">
             {/* <div className="t01" > */}
@@ -245,6 +246,7 @@ const Home = () => {
                 </div>
             </div>
 
+        </div>
         </div>
     )
 }

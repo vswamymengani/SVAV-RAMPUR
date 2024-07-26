@@ -1,14 +1,39 @@
 #t11 {
   background-color: green;
   color: white;
-  height: 0px; /* Increased height for better visibility */
-  width: 809%;
+  height: auto; /* Adjust height based on content */
+  width: 100%; /* Full width of its container */
+  max-width: 1200px; /* Set a max width for large screens */
   display: flex;
   justify-content: center;
   align-items: center; /* Center content vertically */
-  font-size: 35px;
+  font-size: 2rem; /* Responsive font size */
   border: 20px solid transparent;
   margin: 0 auto; /* Center the element horizontally within its parent container */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #t11 {
+    font-size: 1.75rem; /* Adjust font size for medium screens */
+    padding: 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  #t11 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  #t11 {
+    font-size: 1.25rem; /* Adjust font size for mobile screens */
+    padding: 5px; /* Adjust padding */
+  }
 }
 
 
@@ -16,187 +41,620 @@
 /* src/components/Curriculum.css */
 
 .curriculum-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-top: -270px;
-    background-color :powderblue; /* Background for the entire component */
-    height: 100vh; /* Full viewport height */
-  }
-  
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0; /* Reset margin-top */
+  background-color: powderblue; /* Background for the entire component */
+  height: auto; /* Adjust height based on content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+.curriculum-container {
+  flex-direction: row; /* Align items horizontally on larger screens */
+  margin-top: -270px; /* Original margin for larger screens */
+}
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+.curriculum-container {
+  flex-direction: column; /* Stack items vertically for medium screens */
+  margin-top: -200px; /* Adjust margin-top for medium screens */
+}
+}
+
+@media (max-width: 767px) {
+.curriculum-container {
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  margin-top: 0; /* Reset margin-top for smaller screens */
+  padding: 10px; /* Reduce padding for smaller screens */
+}
+}
+
+.curriculum-header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
   .curriculum-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      flex-direction: row; /* Align items horizontally on larger screens */
+      padding: 30px; /* Increase padding for larger screens */
   }
-  
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .curriculum-header {
+      flex-direction: column; /* Stack items vertically for medium screens */
+      padding: 20px; /* Maintain padding for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .curriculum-header {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center;
+  background-color: green;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
   .content-container {
-    display: flex;
-    align-items: center;
-    background-color: green; /* Green background for the combined logo and text */
-    padding: 20px; /* Padding inside the green background */
-    border-radius: 25px; /* Optional: rounded corners for a smoother look */
+      flex-direction: row; /* Align items horizontally on larger screens */
+      padding: 30px; /* Increase padding for larger screens */
   }
-  
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .content-container {
+      flex-direction: column; /* Stack items vertically for medium screens */
+      padding: 25px; /* Adjust padding for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .content-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+.curriculum-logo {
+  height: 50px; /* Default size */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between logo and text */
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
   .curriculum-logo {
-    height: 50px; /* Adjust the size of the logo */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between logo and text */
+      height: 70px; /* Increase size for larger screens */
+      margin-right: 20px; /* More space on larger screens */
   }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .curriculum-logo {
+      height: 60px; /* Adjust size for medium screens */
+      margin-right: 18px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 767px) {
+  .curriculum-logo {
+      height: 40px; /* Smaller size for smaller screens */
+      margin-right: 10px; /* Reduce space */
+  }
+}
+
   
+.curriculum-text {
+  font-size: 1.5rem; /* Default font size */
+  font-weight: bold;
+  color: #fff; /* Text color inside the green background */
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
   .curriculum-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff; /* Text color inside the green background */
+      font-size: 2rem; /* Increase font size for larger screens */
   }
-  p{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .curriculum-text {
+      font-size: 1.75rem; /* Adjust font size for medium screens */
   }
-  #hee{
-    display: flex;
-    justify-content:center;
-    margin-left: 360px;
-    margin-right: 360px;
-    text-align: justify;
-    text-justify: inter-word;
+}
+
+@media (max-width: 767px) {
+  .curriculum-text {
+      font-size: 1.25rem; /* Smaller font size for smaller screens */
   }
-  #he{
-    margin-top: -230px;
-    display: flex;
-   justify-content: center;
+}
+p {
+  font-size: 20px; /* Default font size */
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  p {
+      font-size: 22px; /* Increase font size for larger screens */
   }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  p {
+      font-size: 21px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+      font-size: 18px; /* Smaller font size for smaller screens */
+  }
+}
+#hee {
+  display: flex;
+  justify-content: center;
+  margin-left: 360px; /* Default margin */
+  margin-right: 360px; /* Default margin */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  #hee {
+      margin-left: 400px; /* Increase margin for larger screens */
+      margin-right: 400px; /* Increase margin for larger screens */
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  #hee {
+      margin-left: 250px; /* Adjust margin for medium screens */
+      margin-right: 250px; /* Adjust margin for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  #hee {
+      margin-left: 20px; /* Reduce margin for smaller screens */
+      margin-right: 20px; /* Reduce margin for smaller screens */
+      text-align: left; /* Align text left on smaller screens */
+  }
+}
+#he {
+  margin-top: -230px; /* Default margin */
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  #he {
+      margin-top: -200px; /* Adjust margin for larger screens */
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  #he {
+      margin-top: -180px; /* Adjust margin for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  #he {
+      margin-top: -100px; /* Reduce margin for smaller screens */
+  }
+}
+.img-logo {
+  width: 50%; /* Default width */
+  height: auto;
+  margin-left: 350px; /* Default margin */
+  margin-top: 10px; /* Default margin */
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
   .img-logo {
-    width: 50%; /* Adjust the size as needed */
-    height: auto;
-    margin-left: 350px;
-    margin-top: 10px; /* Add margin if you want space between the paragraph and the image */
+      width: 40%; /* Decrease width for larger screens if needed */
+      margin-left: 400px; /* Increase margin for larger screens */
   }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .img-logo {
+      width: 60%; /* Increase width for medium screens */
+      margin-left: 200px; /* Adjust margin for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .img-logo {
+      width: 80%; /* Increase width for smaller screens */
+      margin-left: 20px; /* Reduce margin for smaller screens */
+      margin-top: 5px; /* Adjust margin for smaller screens */
+  }
+}
+.content-row {
+  display: flex;
+  justify-content: space-between; /* Default distribution */
+  margin-top: 20px; /* Default spacing */
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
   .content-row {
-    display: flex;
-    justify-content: space-between; /* Distribute space between columns */
-    margin-top: 20px; /* Add some spacing above the rows */
+      margin-top: 30px; /* Increase spacing for larger screens if needed */
   }
-  
- .content-col {
-    flex: 1; /* Take equal space */
-    margin-right: 20px; /* Add spacing between the columns */
-    padding: 20px; /* Add padding inside the box */
-    background-color: powderblue; /* White background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for box effect */
-    border-radius: 8px; /* Optional: Rounded corners */
-  }.content-col {
-    flex: 1; /* Take equal space */
-    margin-right: 20px; /* Add spacing between the columns */
-    padding: 10px; /* Optional: Add padding to the column */
-   
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .content-row {
+      flex-direction: row; /* Default to row direction */
+      margin-top: 25px; /* Adjust spacing for medium screens */
   }
+}
+
+@media (max-width: 767px) {
+  .content-row {
+      flex-direction: column; /* Stack columns on smaller screens */
+      margin-top: 15px; /* Reduce spacing for smaller screens */
+  }
+}
+
   
+/* Default Styles for Large Screens */
+.content-col {
+  flex: 1; /* Take equal space */
+  margin-right: 20px; /* Add spacing between the columns */
+  padding: 20px; /* Add padding inside the box */
+  background-color: powderblue; /* Background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for box effect */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Media Queries */
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+  .content-col {
+      padding: 20px; /* Maintain padding for larger screens */
+      margin-right: 20px; /* Maintain margin for larger screens */
+  }
+}
+
+/* For screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-col {
+      padding: 15px; /* Adjust padding for medium screens */
+      margin-right: 15px; /* Adjust margin for medium screens */
+  }
+}
+
+/* For screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-col {
+      padding: 15px; /* Adjust padding for medium screens */
+      margin-right: 10px; /* Adjust margin for medium screens */
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .content-col {
+      padding: 10px; /* Reduce padding for smaller screens */
+      margin-right: 0; /* Remove margin for smaller screens */
+      margin-bottom: 10px; /* Add margin at the bottom for stacking columns */
+      /* Ensure columns stack vertically */
+  }
+}
+
+  /* Default Styles for Large Screens */
+.content-col:last-child {
+  margin-right: 0; /* Remove right margin for the last column */
+}
+
+/* Media Queries */
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
   .content-col:last-child {
-    margin-right: 0; /* Remove right margin for the last column */
+      margin-right: 0; /* Remove right margin for the last column */
   }
-  
-  
+}
+
+/* For screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
   .content-col:last-child {
-    margin-right: 0; /* Remove right margin for the last column */
+      margin-right: 0; /* Remove right margin for the last column */
   }
-  
+}
+
+/* For screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-col:last-child {
+      margin-right: 0; /* Remove right margin for the last column */
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .content-col:last-child {
+      margin-right: 0; /* Remove right margin for the last column */
+      margin-bottom: 10px; /* Add bottom margin to separate stacked columns */
+  }
+}
+
+#h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   #h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
   }
-  
+}
+
+@media (max-width: 480px) {
+  #h2 {
+    font-size: 1em; /* Further adjust font size for very small screens */
+    margin-bottom: 6px; /* Adjust margin for very small screens */
+  }
+}
+.hi {
+  font-size: 1.2em;
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .hi {
-    font-size: 1.2em;
-    margin: 10px 0; /* Add some margin between h3 elements */
-    background-color: #fff; /* White background for the box */
-    padding: 15px; /* Padding inside the box */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box effect */
-    display: flex; /* Align content horizontally */
-    align-items: center; /* Center the content vertically */
-    position: relative; /* Position relative for the tick mark */
+    font-size: 1em; /* Adjust font size for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
   }
-  
-  .hi::before {
-    content: "✓"; /* Tick mark */
-    color: green; /* Tick mark color */
-    margin-right: 10px; /* Space between tick and text */
+}
+
+@media (max-width: 480px) {
+  .hi {
+    font-size: 0.9em; /* Further adjust font size for very small screens */
+    padding: 8px; /* Reduce padding for very small screens */
   }
-  #g1,#g12{
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 30%;
-    padding: 15px;
-    margin: 140px;
-    text-align: center;
-    margin-top: 80px;
+}
+#g1, #g12 {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 30%;
+  padding: 15px;
+  margin: 140px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  #g1, #g12 {
+    font-size: 24px; /* Adjust font size for medium screens */
+    width: 40%; /* Adjust width for medium screens */
+    margin: 100px; /* Adjust margin for medium screens */
+    margin-top: 60px; /* Adjust margin-top for medium screens */
   }
+}
+
+@media (max-width: 768px) {
+  #g1, #g12 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    width: 50%; /* Adjust width for smaller screens */
+    margin: 80px; /* Adjust margin for smaller screens */
+    margin-top: 40px; /* Adjust margin-top for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #g1, #g12 {
+    font-size: 18px; /* Further adjust font size for very small screens */
+    width: 70%; /* Adjust width for very small screens */
+    margin: 60px; /* Adjust margin for very small screens */
+    margin-top: 20px; /* Adjust margin-top for very small screens */
+  }
+}
+#g2 {
+  width: 50%;
+  background-color: powderblue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
   #g2 {
-    width: 50%;
-    background-color: powderblue; /* White background for the box */
-    padding: 20px; /* Padding inside the box */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box effect */
-    margin-top: 20px; /* Add some space above the box */
+    width: 60%; /* Adjust width for medium screens */
+    padding: 15px; /* Reduce padding for medium screens */
+    margin-top: 15px; /* Adjust margin-top for medium screens */
   }
-  #bx{
-    margin-top: -80px;
-    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  #g2 {
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 12px; /* Reduce padding for smaller screens */
+    margin-top: 10px; /* Adjust margin-top for smaller screens */
   }
-  #bx2{
-    margin-top: -80px;
-    font-size: 25px;
+}
+
+@media (max-width: 480px) {
+  #g2 {
+    width: 90%; /* Adjust width for very small screens */
+    padding: 10px; /* Reduce padding for very small screens */
+    margin-top: 5px; /* Adjust margin-top for very small screens */
   }
-  #g1 {
-    color: rgb(183, 234, 31);
+}
+#bx, #bx2 {
+  margin-top: -80px;
+  font-size: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #bx, #bx2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-top: -60px; /* Adjust margin-top for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #bx, #bx2 {
+    font-size: 18px; /* Further adjust font size for very small screens */
+    margin-top: -40px; /* Adjust margin-top for very small screens */
+  }
+}
+#g1, #g12 {
+  color: rgb(183, 234, 31);
   font-size: 30px;
   background-color: green;
   font-style: normal;
   width: 39%;
   padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
+  border-radius: 15px;
   margin: 100px;
   text-align: center;
   margin-top: 10px;
-    margin-top: 0; /* Remove margin-top if added by default */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  #g1, #g12 {
+    font-size: 24px; /* Adjust font size for medium screens */
+    width: 45%; /* Adjust width for medium screens */
+    margin: 80px; /* Adjust margin for medium screens */
+    margin-top: 10px; /* Adjust margin-top for medium screens */
   }
-  #g12{
-    color: rgb(183, 234, 31);
+}
+
+@media (max-width: 768px) {
+  #g1, #g12 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    width: 60%; /* Adjust width for smaller screens */
+    margin: 60px; /* Adjust margin for smaller screens */
+    margin-top: 10px; /* Adjust margin-top for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #g1, #g12 {
+    font-size: 18px; /* Further adjust font size for very small screens */
+    width: 80%; /* Adjust width for very small screens */
+    margin: 40px; /* Adjust margin for very small screens */
+    margin-top: 10px; /* Adjust margin-top for very small screens */
+  }
+}
+#g03 {
   font-size: 30px;
-  background-color: green;
-  font-style: normal;
-  width: 39%;
-  padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
-  margin: 100px;
-  text-align: center;
-  margin-top: 10px;
-    margin-top: 0; /* Remove margin-top if added by default */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #g03 {
+    font-size: 24px; /* Adjust font size for medium screens */
   }
-  
-  #g03{
-    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  #g03 {
+    font-size: 18px; /* Further adjust font size for small screens */
   }
-  .g4{
-    font-size: 22px;
-    color: green;
-    
+}
+.g4 {
+  font-size: 22px;
+  color: green;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .g4 {
+    font-size: 18px; /* Adjust font size for medium screens */
   }
-  .text-container13{
+}
+
+@media (max-width: 480px) {
+  .g4 {
+    font-size: 16px; /* Further adjust font size for small screens */
+  }
+}
+.text-container13 {
   margin-left: 880px;
   margin-top: -430px;
-  }
+}
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .text-container13 {
+    margin-left: 600px; /* Adjust margin-left for medium screens */
+    margin-top: -300px; /* Adjust margin-top for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container13 {
+    margin-left: 0; /* Remove left margin for small screens */
+    margin-top: -150px; /* Adjust margin-top for small screens */
+  }
+}
 .g5 {
   font-size: 19px;
   position: relative; /* Make the container position relative for the bullet */
   padding-left: 20px; /* Add padding to the left for the bullet */
   display: block; /* Ensure each g5 item is a block element */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .g5 {
+    font-size: 16px; /* Adjust font size for medium screens */
+    padding-left: 15px; /* Adjust padding-left for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .g5 {
+    font-size: 14px; /* Further adjust font size for small screens */
+    padding-left: 10px; /* Further adjust padding-left for small screens */
+  }
 }
 
 .g5::before {
@@ -212,6 +670,18 @@
   text-align: center;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-container {
+    /* Adjust the styles if necessary for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    /* Adjust the styles if necessary for small screens */
+  }
+}
 .class-image {
   margin-top: -490px;
   margin-left: 840px;
@@ -220,8 +690,27 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Curriculum.css */
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .class-image {
+    margin-top: -300px; /* Adjust margin-top for medium screens */
+    margin-left: 0; /* Remove left margin for medium screens */
+    max-width: 90%; /* Increase max-width for medium screens */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .class-image {
+    margin-top: -150px; /* Adjust margin-top for small screens */
+    margin-left: 0; /* Remove left margin for small screens */
+    max-width: 100%; /* Full width on small screens */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+  }
+}
+
+/* Curriculum.css */
 #bx1.class-info-container {
   display: flex;
   flex-direction: row;
@@ -234,12 +723,39 @@
   margin: 20px 0;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #bx1.class-info-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  #bx1.class-info-container {
+    padding: 10px; /* Further adjust padding */
+  }
+}
 .image-container1 {
   flex: 1;
   text-align: center;
   margin-right: 20px; /* Space between image and text */
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-container1 {
+    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container1 {
+    /* Additional styles if needed for extra small screens */
+  }
+}
 .class-image1 {
   margin-left: 10px;
   max-width: 290%;
@@ -249,17 +765,49 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.text-container1 {
-  flex: 2; /* Ensure text takes up more space than image */
-  /* color: #333; */
-  margin-left: 600px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .class-image1 {
+    max-width: 100%; /* Limit width to 100% of the container */
+    height: auto; /* Adjust height automatically */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 0; /* Remove top margin */
+  }
 }
 
-/* Optional additional styles */
+@media (max-width: 480px) {
+  .class-image1 {
+    /* Additional styles if needed for extra small screens */
+  }
+}
+.text-container1 {
+  flex: 2; /* Ensure text takes up more space than image */
+  margin-left: 600px; /* Adjust space from left */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .text-container1 {
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container1 {
+    /* Further adjust styles if needed */
+  }
+}
 #g21 {
   margin: 20px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #g21 {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+}
 #g11 {
   text-align: center;
   margin-bottom: 20px;
@@ -275,24 +823,51 @@
   border-radius: 15px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #g11 {
+    width: 80%; /* Adjust width */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Reduce top margin */
+  }
+}
+
+@media (max-width: 480px) {
+  #g11 {
+    font-size: 20px; /* Smaller font size */
+    padding: 10px; /* Less padding */
+  }
+}
 #bx1 .g31 {
   font-size: 30px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #bx1 .g31 {
+    font-size: 24px; /* Adjust font size */
+  }
+}
 #bx1 .g41 {
   margin-top: 10px;
   font-size: 22px;
-    color: green;
+  color: green;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #bx1 .g41 {
+    font-size: 18px; /* Adjust font size */
+  }
+}
 #bx1 .g51 {
-
   margin-bottom: 10px;
   font-size: 19px;
   position: relative; /* Make the container position relative for the bullet */
   padding-left: 20px; /* Add padding to the left for the bullet */
   display: block; /* Ensure each g5 item is a block element */
 }
+
 .g51::before {
   content: "•"; /* Bullet character */
   color: black; /* Bullet color */
@@ -301,23 +876,44 @@
   top: 0; /* Align to the top */
   line-height: 1.2; /* Adjust line-height for vertical alignment */
 }
- .g33 {
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #bx1 .g51 {
+    font-size: 16px; /* Adjust font size */
+    padding-left: 15px; /* Adjust padding */
+  }
+}
+.g33 {
   font-size: 30px;
 }
- .g43 {
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .g33 {
+    font-size: 24px; /* Adjust font size */
+  }
+}
+.g43 {
   margin-top: 10px;
   font-size: 22px;
-    color: green;
+  color: green;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .g43 {
+    font-size: 18px; /* Adjust font size */
+  }
+}
 .g53 {
-
   margin-bottom: 10px;
   font-size: 19px;
   position: relative; /* Make the container position relative for the bullet */
   padding-left: 20px; /* Add padding to the left for the bullet */
   display: block; /* Ensure each g5 item is a block element */
 }
+
 .g53::before {
   content: "•"; /* Bullet character */
   color: black; /* Bullet color */
@@ -325,6 +921,14 @@
   left: 0; /* Align to the left */
   top: 0; /* Align to the top */
   line-height: 1.2; /* Adjust line-height for vertical alignment */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .g53 {
+    font-size: 16px; /* Adjust font size */
+    padding-left: 15px; /* Adjust padding */
+  }
 }
 .youtube-video-container {
   text-align: center; /* Center the video on the page */
@@ -336,4 +940,19 @@
   height: 300px; /* Adjust height automatically */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .youtube-video-container iframe {
+    width: 90%; /* Adjust width */
+    height: auto; /* Adjust height automatically */
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube-video-container iframe {
+    width: 100%; /* Full width for very small screens */
+    height: auto; /* Adjust height automatically */
+  }
 }

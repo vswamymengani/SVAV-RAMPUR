@@ -1,17 +1,64 @@
-#hf{
+#hf {
     font-size: 30px;
     font-style: normal;
     margin: 40px;
 }
-.box{
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablets and smaller screens */
+    #hf {
+        font-size: 24px; /* Reduce font size for smaller screens */
+        margin: 30px; /* Adjust margins */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    #hf {
+        font-size: 20px; /* Further reduce font size */
+        margin: 20px; /* Adjust margins for extra small screens */
+    }
+}
+.box {
     background-image: url(./hfimg.png);
     height: 700px;
     width: 600px;
     background-repeat: no-repeat;
     margin: 60px;
 }
-#boxnm{
-   margin-bottom: 6px;
-   font-weight: 500px;
-   color: lightcoral;
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablets and smaller screens */
+    .box {
+        height: 500px; /* Adjust height */
+        width: 100%; /* Full width */
+        margin: 30px; /* Adjust margins */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    .box {
+        height: 400px; /* Further adjust height */
+        width: 100%; /* Full width */
+        margin: 20px; /* Adjust margins */
+    }
+}
+#boxnm {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: lightcoral;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablets and smaller screens */
+    #boxnm {
+        font-weight: 400; /* Adjust font weight if necessary */
+        margin-bottom: 4px; /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    #boxnm {
+        font-weight: 400; /* Further adjust font weight if necessary */
+        margin-bottom: 2px; /* Further reduce margin */
+    }
 }
