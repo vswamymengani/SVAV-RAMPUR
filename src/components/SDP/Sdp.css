@@ -1,53 +1,100 @@
+/* Sdp.css */
 
-#sdp{
-    color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
-  font-style: normal;
-  width: 35%;
-  padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
-  margin: 100px;
+#sdp {
   text-align: center;
-  margin-top: 50px;
+  color: orange;
+  font-size: 36px;
 }
-/* #sdpimgs{
-    
-   
-} */
-/* .custom-list {
-  font-size: 30px;
-    list-style-type: none; 
-    padding-left: 60px;
-  } */
-  
-  .custom-list li {
-    /* position: relative;
-    margin-bottom: 10px;  */
-    list-style-type: circle;
-    background-color:khaki;
-   width: 90%;
-    color: black;
-   border-radius: 15px;
-   margin-left: 30px;
 
+#sdppara {
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.custom-list {
+  font-size: 18px;
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 20px 50px; /* Adjust margin for better spacing */
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.custom-list li::before {
+  content: '•';
+  position: absolute;
+  left: -15px;
+  color: black;
+}
+
+#sdpimgs img {
+  height: 600px;
+  width: 900px;
+}
+
+h2.sdp-contribute {
+  color: blue;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #sdp {
+    font-size: 28px;
   }
-  
-  /* .custom-list li::before {
-    content: '=>';
-    position: absolute;
-    left: -15px; 
-    color: purple; 
-  } */
-   #sdppara{
-  font-weight: 300px;
+
+  #sdppara {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .custom-list {
+    font-size: 16px;
+    margin: 10px 20px;
+  }
+
+  #sdpimgs img {
+    height: auto;
+    width: 100%;
+  }
+
+  h2.sdp-contribute {
     font-size: 24px;
-    font-family:  'Open Sans', sans-serif;
-      margin: 100px;
-    margin-bottom: 0px;
-    text-align: justify;
-text-justify: inter-word;
-line-height: 160%;
-margin-top: -40px;
-   
-   }
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #sdp {
+    font-size: 24px;
+  }
+
+  #sdppara {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .custom-list {
+    font-size: 14px;
+    margin: 5px 10px;
+  }
+
+  #sdpimgs img {
+    height: auto;
+    width: 100%;
+  }
+
+  h2.sdp-contribute {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+}

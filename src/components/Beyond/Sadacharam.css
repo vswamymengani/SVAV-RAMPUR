@@ -1,107 +1,324 @@
-#sadacharam{
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 44%;
-    padding: 15px;
-    border-radius: 15px; /* Added this line to make the border radius curved */
-    margin: 100px;
-    text-align: center;
-    margin-top: 60px;
+/* sadacharam.css */
+#sadacharam {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 100%; /* Set width to 100% for full width on small devices */
+  max-width: 44%; /* Ensure it doesn't exceed 44% on larger screens */
+  padding: 15px;
+  border-radius: 15px; /* Curved border radius */
+  margin: 20px auto; /* Center align with automatic margins */
+  text-align: center;
+}
+
+/* Responsive styles for screens with a max width of 768px */
+@media (max-width: 768px) {
+  #sadacharam {
+    font-size: 24px; /* Smaller font size */
+    padding: 10px; /* Reduce padding */
+    width: 90%; /* Increase width to use more space */
+    margin: 20px auto; /* Center align */
   }
-  #sadacharamlogo{
-      height: 100px;
-      width: 100px;
-     background-image: url(../);
+}
+
+/* Responsive styles for screens with a max width of 480px */
+@media (max-width: 480px) {
+  #sadacharam {
+    font-size: 20px; /* Smaller font size */
+    padding: 8px; /* Reduce padding */
+    width: 95%; /* Nearly full width */
+    margin: 10px auto; /* Center align with smaller margins */
   }
-  #sadacharamcontents{
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-style: normal;
-      margin-top: -150px;
-      margin-left: 80px;
-      
+}
+
+  /* Base styles for the #sadacharamlogo element */
+#sadacharamlogo {
+  height: 100px;
+  width: 100px;
+  background-image: url(../);
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+}
+
+/* Responsive styles for screens with a max width of 768px */
+@media (max-width: 768px) {
+  #sadacharamlogo {
+    height: 80px; /* Smaller height */
+    width: 80px; /* Smaller width */
   }
-  /* Add this CSS to your stylesheet */
-  #sadacharamcontents h3 {
-    
-    margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+/* Responsive styles for screens with a max width of 480px */
+@media (max-width: 480px) {
+  #sadacharamlogo {
+    height: 60px; /* Even smaller height */
+    width: 60px; /* Even smaller width */
   }
+}
+#sadacharamcontents {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  margin-top: -150px;
+  margin-left: 80px;
+}
+
+/* Add this CSS to your stylesheet */
+#sadacharamcontents h3 {
+  margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
+}
+
+/* Responsive styles for screens with a max width of 768px */
+@media (max-width: 768px) {
+  #sadacharamcontents {
+    font-size: 18px;
+    margin-top: -100px;
+    margin-left: 40px;
+  }
+}
+
+/* Responsive styles for screens with a max width of 480px */
+@media (max-width: 480px) {
+  #sadacharamcontents {
+    font-size: 16px;
+    margin-top: -50px;
+    margin-left: 20px;
+  }
+}
+
   
-  #images{
-      width: -100px;
-      height: 100px;
+#images {
+  width: 100%; /* Default width to be responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  #images {
+    width: 80%; /* Adjust width for medium-sized devices */
+    height: auto; /* Maintain aspect ratio */
   }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  #images {
+    width: 100%; /* Adjust width for small devices */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+.sadacharam-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto; /* Center the container horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
   .sadacharam-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-    }
-    
-    .sadacharam-content {
-      flex: 1;
-      padding: 20px;
-    }
-    
-    .sadacharam-slider {
-      flex: 1;
-      max-width: 50%;
-      margin-top: 100px;
-      margin-right: -20px;
-      border-radius: 60px;
-      scroll-behavior: smooth;
-   
-    }
-  
-    .sadacharam-slider img {
-      width: 100%;
-      border-radius: 60px;
-      height: 500px; /* Maintain aspect ratio */
-      max-height: 400px; 
-      scroll-behavior: smooth;
-    }
-    #sadacharampara{
-      /* font-weight: 300px;
-      font-family:  'Open Sans', sans-serif;
-      margin: 100px;
-      margin-bottom: 0px;
-      text-align: justify;
-      text-justify: inter-word;
-      line-height: 160%; */
-  
-      font-weight: 300px;
-      font-size: 24px;
-      font-family:  'Open Sans', sans-serif;
-        margin: 120px;
-      margin-bottom: 0px;
-      text-align: justify;
+    width: 95%; /* Adjust width for medium-sized devices */
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Align items to fill the container width */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  .sadacharam-container {
+    width: 100%; /* Adjust width for small devices */
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Align items to fill the container width */
+  }
+}
+
+.sadacharam-content {
+  flex: 1;
+  padding: 20px; /* Default padding */
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  .sadacharam-content {
+    padding: 15px; /* Reduce padding for medium-sized devices */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  .sadacharam-content {
+    padding: 10px; /* Further reduce padding for small devices */
+  }
+}
+.sadacharam-slider {
+  flex: 1;
+  max-width: 50%;
+  margin-top: 100px;
+  margin-right: -20px;
+  border-radius: 60px;
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  .sadacharam-slider {
+    max-width: 70%; /* Increase max-width for medium-sized devices */
+    margin-top: 80px; /* Reduce top margin for medium-sized devices */
+    margin-right: -10px; /* Reduce right margin for medium-sized devices */
+    border-radius: 40px; /* Decrease border radius for medium-sized devices */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  .sadacharam-slider {
+    max-width: 90%; /* Increase max-width for small devices */
+    margin-top: 60px; /* Further reduce top margin for small devices */
+    margin-right: 0; /* Reset right margin for small devices */
+    border-radius: 20px; /* Further decrease border radius for small devices */
+  }
+}
+
+.sadacharam-slider img {
+  width: 100%;
+  border-radius: 60px;
+  height: 500px; /* Maintain aspect ratio */
+  max-height: 400px; 
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  .sadacharam-slider img {
+    height: 400px; /* Adjust height for medium-sized devices */
+    max-height: 300px; /* Reduce max-height for medium-sized devices */
+    border-radius: 40px; /* Decrease border radius for medium-sized devices */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  .sadacharam-slider img {
+    height: 300px; /* Adjust height for small devices */
+    max-height: 200px; /* Further reduce max-height for small devices */
+    border-radius: 20px; /* Further decrease border radius for small devices */
+  }
+}
+
+  /* Base styles for #sadacharampara */
+#sadacharampara {
+  font-weight: 300; /* Corrected from 300px to 300 */
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 120px; /* General margin for larger screens */
+  margin-bottom: 0px;
+  text-align: justify;
   text-justify: inter-word;
   line-height: 160%;
-      
-    }
-    #sadacharamimg1{
-      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-       background-image: url(../Facilities/slide3.png);
-       height: 400px;
-       width: 800px;
-       background-size: 800px;
-       background-repeat: no-repeat;
-     }
-     #sadacharamimg2{
-       box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-        background-image: url(../Facilities/slide2.png);
-        height: 400px;
-        width: 800px;
-        background-size: 800px;
-        background-repeat: no-repeat;
-      }
-      #sadacharamimg{
-        box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-         background-image: url(../Facilities/slide5.png);
-         height: 100px;
-         width: 800px;
-         background-size: 800px 100px;
-         background-repeat: no-repeat;
-       }
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  #sadacharampara {
+    font-size: 20px; /* Adjust font size for medium-sized devices */
+    margin: 80px; /* Reduce margin for better fit on medium-sized screens */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  #sadacharampara {
+    font-size: 16px; /* Further reduce font size for small devices */
+    margin: 40px; /* Further reduce margin for small screens */
+  }
+}
+
+  /* Base styles for #sadacharamimg1 */
+#sadacharamimg1 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(../Facilities/slide3.png);
+  height: 400px;
+  width: 800px;
+  background-size: cover; /* Ensure the image covers the container */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  #sadacharamimg1 {
+    height: 300px; /* Adjust height for medium-sized devices */
+    width: 100%; /* Make width 100% for better fit */
+    background-size: cover; /* Ensure the image covers the container */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  #sadacharamimg1 {
+    height: 200px; /* Further reduce height for small devices */
+    width: 100%; /* Maintain width as 100% */
+    background-size: cover; /* Ensure the image covers the container */
+  }
+}
+/* Base styles for #sadacharamimg2 */
+#sadacharamimg2 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(../Facilities/slide2.png);
+  height: 400px;
+  width: 800px;
+  background-size: cover; /* Ensure the image covers the container */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  #sadacharamimg2 {
+    height: 300px; /* Adjust height for medium-sized devices */
+    width: 100%; /* Make width 100% for better fit */
+    background-size: cover; /* Ensure the image covers the container */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  #sadacharamimg2 {
+    height: 200px; /* Further reduce height for small devices */
+    width: 100%; /* Maintain width as 100% */
+    background-size: cover; /* Ensure the image covers the container */
+  }
+}
+/* Base styles for #sadacharamimg */
+#sadacharamimg {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(../Facilities/slide5.png);
+  height: 100px;
+  width: 800px;
+  background-size: 800px 100px;
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+}
+
+/* Responsive styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  #sadacharamimg {
+    height: 80px; /* Reduce height for medium-sized devices */
+    width: 100%; /* Adjust width to fit the container */
+    background-size: 100% 80px; /* Adjust background size to fit the new width and height */
+  }
+}
+
+/* Responsive styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+  #sadacharamimg {
+    height: 60px; /* Further reduce height for small devices */
+    width: 100%; /* Maintain width as 100% */
+    background-size: 100% 60px; /* Adjust background size to fit the new width and height */
+  }
+}

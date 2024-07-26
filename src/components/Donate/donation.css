@@ -1,7 +1,69 @@
-.donation{
- background-color: grey;
- display: flex;
- flex-direction: row;
- gap: 50px;
- justify-content: center;
+/* donation.css */
+table {
+    width: 100%; /* Make table width 100% to fit the container */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+  }
+  
+  thead, tbody, th, td, tr {
+    border: 1px solid #ddd; /* Add borders to table elements */
+    padding: 8px; /* Add padding for better readability */
+  }
+  
+  /* Style for table header cells */
+  th {
+    background-color: #f2f2f2; /* Light grey background for header */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Responsive styles for screens with a max width of 768px */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block; /* Make elements block to stack them */
+    }
+  
+    th {
+      display: none; /* Hide table headers */
+    }
+  
+    td {
+      position: relative; /* Relative positioning for the pseudo-element */
+      padding-left: 50%; /* Space for pseudo-element */
+      text-align: right; /* Align text to the right */
+    }
+  
+    td:before {
+      position: absolute; /* Absolute positioning for the pseudo-element */
+      top: 50%; /* Center vertically */
+      left: 10px; /* Space from the left */
+      transform: translateY(-50%); /* Center vertically */
+      font-weight: bold; /* Bold text */
+      content: attr(data-label); /* Content is the data-label attribute */
+    }
+  
+    /* Style for the submit button */
+    button[type="submit"] {
+      width: 100%; /* Full width */
+      padding: 10px; /* Padding */
+      font-size: 1em; /* Font size */
+    }
+  }
+  
+  /* Additional responsive styles for screens with a max width of 480px */
+  @media (max-width: 480px) {
+    table {
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    td {
+      padding: 5px; /* Smaller padding */
+      padding-left: 40%; /* Space for pseudo-element */
+    }
+  
+    td:before {
+      left: 10px; /* Space from the left */
+    }
+  
+    button[type="submit"] {
+      font-size: 0.9em; /* Smaller font size */
+    }
 }
