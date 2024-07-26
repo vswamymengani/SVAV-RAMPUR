@@ -1,13 +1,78 @@
-.c1{
-    color: rgb(183, 234, 31);
-font-size: 30px;
-background-color: green;
-font-style: normal;
-width: 19%;
-padding: 15px;
-border-radius: 15px; /* Added this line to make the border radius curved */
-margin: 20px;
-text-align: center;
-margin-top: 90px;
-
-}
+/* committe.css */
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are merged */
+    margin: 20px 0;
+  }
+  
+  .responsive-table th, .responsive-table td {
+    padding: 10px;
+    border: 1px solid black; /* Border color for cells */
+    text-align: left;
+  }
+  
+  /* Responsive styles for medium-sized screens */
+  @media (max-width: 1200px) {
+    .responsive-table {
+      font-size: 14px; /* Adjust font size for medium screens */
+    }
+  }
+  
+  /* Responsive styles for small screens */
+  @media (max-width: 768px) {
+    .responsive-table {
+      font-size: 12px; /* Further adjust font size for small screens */
+    }
+    
+    .responsive-table th, .responsive-table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box; /* Ensures padding is included in width */
+      text-align: right;
+      position: relative;
+      padding: 10px 15px;
+    }
+    
+    .responsive-table thead {
+      display: none; /* Hide table headers */
+    }
+    
+    .responsive-table tr {
+      display: block;
+      margin-bottom: 10px;
+      border: 1px solid #ddd; /* Add border for block rows */
+    }
+    
+    .responsive-table td::before {
+      content: attr(data-label); /* Add label before cell content */
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+      background-color: #f4f4f4; /* Background color for labels */
+      border-right: 1px solid #ddd; /* Border for separation */
+    }
+    
+    .responsive-table td {
+      padding-left: 50%;
+      border: none; /* Remove default border */
+      border-bottom: 1px solid #ddd; /* Add border to the bottom of cells */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .responsive-table {
+      font-size: 10px; /* Adjust font size for very small screens */
+    }
+    
+    .responsive-table th, .responsive-table td {
+      padding: 8px; /* Reduce padding */
+    }
+    
+    .responsive-table td::before {
+      font-size: 10px; /* Adjust label font size */
+      padding-left: 5px; /* Adjust padding */
+    }
+  }

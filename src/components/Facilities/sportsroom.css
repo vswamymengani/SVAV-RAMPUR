@@ -1,3 +1,4 @@
+/* sportsroom.css */
 #spo {
   color: rgb(183, 234, 31);
   font-size: 30px;
@@ -10,128 +11,248 @@
   margin-left: 30px;
   text-align: center;
 }
-#spologo{
-    height: 100px;
-    width: 100px;
-   background-image: url(../);
+
+#spologo {
+  height: 100px;
+  width: 100px;
+  background-image: url(../);
 }
-#spocontents{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    margin-left: 60px;
-    margin-top: 80px;
-    margin-bottom: -180px;
-    width: 300px;
+
+#spocontents {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-bottom: -180px;
+  width: 300px;
   gap: 20px; /* Space between the facility items */
 }
-#images{
-    width: 100px;
-    height: 100px;
+
+#images {
+  width: 100px;
+  height: 100px;
 }
+
 .sports-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    height: 800px;
-    margin-top: -60px;
-    margin-left: 60px;
-  }
-  
-  .sports-content {
-    flex: 1;
-    padding: 20px;
-    
-  }
-  
-  /* .sports-slider {
-    flex:1;
-    width: 80%;
-    height: 500px;
-    margin-left: 90px;
-    margin-top: 90px; 
-    padding-top: 20px; 
-  } */
-  
-  
-  /* .sports-slider img {
-    width: 80%;
-    height: 500px;
-    margin-left: 90px;
-    border-radius: 60px;
-    padding-top: 20px; 
-  } */
-  .sports-slider {
-    flex: 1;
-    max-width: 70%;
-    margin-top: 100px;
-    margin-right: -220px;
-    border-radius: 60px;
-    scroll-behavior: smooth;
-    
- 
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 800px;
+  margin-top: -60px;
+  margin-left: 60px;
+}
 
-  .sports-slider img {
-    width: 100%;
-    border-radius: 60px;
-    height: 800px; /* Maintain aspect ratio */
-    max-height: 500px; 
-    scroll-behavior: smooth;
-  }
-   
-  .facility-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: -180px;
-      margin-left: -20px;
-    }
-    /* sportsroom.css */
+.sports-content {
+  flex: 1;
+  padding: 20px;
+}
 
+.sports-slider {
+  flex: 1;
+  max-width: 70%;
+  margin-top: 100px;
+  margin-right: -220px;
+  border-radius: 60px;
+  scroll-behavior: smooth;
+}
+
+.sports-slider img {
+  width: 100%;
+  border-radius: 60px;
+  height: 800px; /* Maintain aspect ratio */
+  max-height: 500px;
+  scroll-behavior: smooth;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: -180px;
+  margin-left: -20px;
+}
+
+/* sportsroom.css */
 .facility-item h3 {
   margin: 10px 0; /* Reduce the vertical margin */
 }
 
-    
-    .facility-icon {
-      margin-right: 10px;
-      font-size: 24px; /* Adjust the size as needed */
-    }
-     #spapara{
-      font-weight: 300px;
-      font-size: 24px;
-      font-family:  'Open Sans', sans-serif;
-        margin: 100px;
-      margin-bottom: 0px;
-      text-align: justify;
+.facility-icon {
+  margin-right: 10px;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+#spapara {
+  font-weight: 300;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 100px;
+  margin-bottom: 0px;
+  text-align: justify;
   text-justify: inter-word;
   line-height: 160%;
-     
-    }
-    #spoi1{
-     box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-      background-image: url(./spoimg1.jpg);
-      height: 400px;
-      width: 800px;
-      background-size: 800px;
-      background-repeat: no-repeat;
-    }
-    #spoi2{
-      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-       background-image: url(./spoimg2.jpg);
-       height: 400px;
-       width: 800px;
-       background-size: 800px;
-       background-repeat: no-repeat;
-     }
-     #spoi3{
-      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-       background-image: url(./spoimg3.jpg);
-       height: 400px;
-       width: 800px;
-       background-size: 800px;
-       background-repeat: no-repeat;
-     }
-  
-  
+}
+
+#spoi1, #spoi2, #spoi3 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  height: 400px;
+  width: 800px;
+  background-size: cover; /* Ensuring background size scales with the element */
+  background-repeat: no-repeat;
+}
+
+/* Medium screens (tablets, landscape phones, etc.) */
+@media (max-width: 1024px) {
+  #spoi1, #spoi2, #spoi3 {
+    height: 350px;
+    width: 80%;
+    background-size: cover;
+  }
+}
+
+/* Small screens (portrait tablets, large phones, etc.) */
+@media (max-width: 768px) {
+  #spoi1, #spoi2, #spoi3 {
+    height: 300px;
+    width: 90%;
+    background-size: cover;
+  }
+}
+
+/* Extra small screens (phones, portrait phones, etc.) */
+@media (max-width: 480px) {
+  #spoi1, #spoi2, #spoi3 {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+#spoi1 {
+  background-image: url(./spoimg1.jpg);
+}
+
+#spoi2 {
+  background-image: url(./spoimg2.jpg);
+}
+
+#spoi3 {
+  background-image: url(./spoimg3.jpg);
+}
+
+/* Responsive Styles */
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  #spo {
+    font-size: 28px;
+    margin: 80px 20px 80px 20px; /* Adjust margins */
+  }
+
+  .sports-container {
+    width: 80%;
+    margin: 0 20px 80px 20px;
+  }
+
+  #spocontents {
+    font-size: 18px;
+    margin: 60px 40px 0 40px;
+    width: 400px;
+  }
+
+  .sports-slider {
+    max-width: 80%;
+  }
+
+  .sports-slider img {
+    height: 600px;
+    max-height: 400px;
+  }
+
+  #spapara {
+    font-size: 22px;
+    margin: 80px 20px 0 20px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  #spo {
+    font-size: 24px;
+    margin: 60px 10px 60px 10px;
+  }
+
+  .sports-container {
+    flex-direction: column; /* Stack items vertically */
+    width: 90%;
+    margin: 0 10px 60px 10px;
+  }
+
+  .sports-content {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  #spocontents {
+    font-size: 16px;
+    margin: 10px 10px 0 10px;
+    width: auto;
+  }
+
+  .sports-slider {
+    max-width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .sports-slider img {
+    height: 400px;
+    max-height: 300px;
+  }
+
+  #spapara {
+    font-size: 20px;
+    margin: 60px 10px 0 10px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  #spo {
+    font-size: 20px;
+    margin: 30px 0 30px 0;
+  }
+
+  .sports-container {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    margin: 0;
+  }
+
+  .sports-content {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  #spocontents {
+    font-size: 14px;
+    margin: 0;
+    width: auto;
+  }
+
+  .sports-slider {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sports-slider img {
+    height: 300px;
+    max-height: 200px;
+  }
+
+  #spapara {
+    font-size: 18px;
+    margin: 30px 0 0 0;
+  }
+}

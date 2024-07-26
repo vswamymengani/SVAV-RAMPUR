@@ -1,111 +1,230 @@
-/* Ensure you import this in your component file */
+/* medical.css */
 #medical {
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
-    width: 150%;
-    padding: 15px;
-    border-radius: 15px; /* Added this line to make the border radius curved */
-    margin: 120px;
-    text-align: center;
-    margin-top: 10px;
-   margin-left: 80px;
-    
-  }
-  
-  .medicalroom-container {
-    display: flex;
-    flex-direction: row; /* Aligns items in a row */
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 40px;
-  }
-  
-  .medicalroom-content {
-    flex: 1; /* Makes the content take available space */
-    text-align: left; /* Aligns text to the left */
-    padding: 20px;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  
-  #medical {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  .img3medical{
-    height: 700px;
-  }
- #med1img{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-  background-image: url(./medical1.jpg);
-  height: 400px;
-  width: 800px;
-  background-size:  800px 400px;
-  background-repeat: no-repeat;
-
- }
- #med2img{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-  background-image: url(./medical4.jpg);
-  height: 400px;
-  width: 800px;
-  background-size:  800px 400px;
-  background-repeat: no-repeat;
- }
-  
-  #medicalcontents {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
-   margin-left: 100px;
-   margin-bottom: 100px;
-  }
-  
-  .facility-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .facility-icon {
-    margin-right: 10px;
-    font-size: 24px; /* Adjust the size as needed */
-  }
-  
-  .medicalroom-slider {
-    margin-top: -50px;
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 150%;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 120px;
+  text-align: center;
+  margin-top: 10px;
   margin-left: 80px;
-    flex: 1; /* Makes the slider take available space */
-    max-width: 600px; /* Optional: limit the maximum width */
-    margin-right:  0px; /* Adds space between slider and content */
-  }
-  
-  .medicalroom-slider img {
-    width: 100%;
-    height: auto;
-    border-radius: 40px;
-  
-  }
-  .facility-logo {
-    width: 30px;  /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px;  /* Space between logo and text */
-  }
-  #medicalpara{
-    font-size: 24px;
-    font-weight: 300px;
-    font-family:  'Open Sans', sans-serif;
-      margin: 120px;
-    margin-bottom: 0px;
-    margin-top: -40px;
-    text-align: justify;
+}
+
+.medicalroom-container {
+  display: flex;
+  flex-direction: row; /* Aligns items in a row */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.medicalroom-content {
+  flex: 1; /* Makes the content take available space */
+  text-align: left; /* Aligns text to the left */
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#medical {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.img3medical {
+  height: 700px;
+}
+
+#med1img, #med2img {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  height: 400px;
+  width: 800px;
+  background-size: 800px 400px;
+  background-repeat: no-repeat;
+}
+
+#med1img {
+  background-image: url(./medical1.jpg);
+}
+
+#med2img {
+  background-image: url(./medical4.jpg);
+}
+
+#medicalcontents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.facility-icon {
+  margin-right: 10px;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.medicalroom-slider {
+  margin-top: 0px;
+  margin-left: 80px;
+  flex: 1; /* Makes the slider take available space */
+  max-width: 600px; /* Optional: limit the maximum width */
+  margin-right: 0px; /* Adds space between slider and content */
+}
+
+.medicalroom-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.facility-logo {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+#medicalpara {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  margin: 120px;
+  margin-bottom: 0px;
+  margin-top: -40px;
+  text-align: justify;
   text-justify: inter-word;
   line-height: 160%;
+}
+
+/* Responsive Styles */
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  #medical {
+    width: 100%;
+    font-size: 28px;
+    margin: 80px;
+    margin-left: 50px;
   }
 
-  
+  .medicalroom-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .medicalroom-content {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  #medicalcontents {
+    margin-left: 50px;
+  }
+
+  .medicalroom-slider {
+    max-width: 80%;
+    margin-left: 0px;
+  }
+
+  #med1img, #med2img {
+    height: 350px;
+    width: 700px;
+    background-size: 700px;
+  }
+
+  #medicalpara {
+    font-size: 22px;
+    margin: 80px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  #medical {
+    width: 80%;
+    font-size: 24px;
+    margin: 60px;
+    margin-left: 20px;
+  }
+
+  .medicalroom-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+  }
+
+  .medicalroom-content {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  #medicalcontents {
+    margin-left: 20px;
+  }
+
+  .medicalroom-slider {
+    max-width: 90%;
+    margin-left: 0px;
+  }
+
+  #med1img, #med2img {
+    height: 300px;
+    width: 600px;
+    background-size: 600px;
+  }
+
+  #medicalpara {
+    font-size: 20px;
+    margin: 60px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  #medical {
+    width: 90%;
+    font-size: 20px;
+    margin: 30px;
+    margin-left: 10px;
+  }
+
+  .medicalroom-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 5px;
+  }
+
+  .medicalroom-content {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  #medicalcontents {
+    margin-left: 0;
+  }
+
+  .medicalroom-slider {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  #med1img, #med2img {
+    height: 200px;
+    width: 400px;
+    background-size: 400px;
+  }
+
+  #medicalpara {
+    font-size: 18px;
+    margin: 30px;
+  }
+}

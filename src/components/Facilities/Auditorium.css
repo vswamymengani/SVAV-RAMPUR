@@ -1,107 +1,238 @@
-#Auditorium{
-    color: rgb(183, 234, 31);
-    font-size: 30px;
-    background-color: green;
-    font-style: normal;
+/* Auditorium.css */
+#Auditorium {
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 80%; /* Default to a larger width for small screens */
+  padding: 15px;
+  border-radius: 15px;
+  margin: 60px auto; /* Center align with automatic left and right margins */
+  text-align: left;
+  margin-top: -60px;
+}
+
+/* For larger screens, adjust width, font size, and margins */
+@media (min-width: 768px) {
+  #Auditorium {
+    width: 50%;
+    font-size: 28px;
+    margin: 60px auto;
+  }
+}
+
+/* For very large screens, further adjust width and font size */
+@media (min-width: 1024px) {
+  #Auditorium {
     width: 39%;
-    padding: 15px;
-    border-radius: 15px; /* Added this line to make the border radius curved */
-    margin: 100px;
-    text-align: center;
-    margin-top: -60px;
-    
+    font-size: 30px;
+    margin: 60px auto;
   }
-  #Auditoriumlogo{
-      height: 100px;
-      width: 100px;
-     background-image: url(../);
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+  #Auditorium {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 0;
   }
-  #Auditoriumcontents{
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-style: normal;
-      margin-top: -50px;
-      margin-left: 50px;
+}
+
+
+
+  .Auditorium-container {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    align-items: left;
+    width: 90%;
+    margin-top: 20px;
+  }
+  
+  /* For larger screens, use row layout */
+  @media (min-width: 768px) {
+    .Auditorium-container {
+      flex-direction: row;
+      justify-content: space-between;
       
+    }
   }
-  /* Add this CSS to your stylesheet */
+  
+  #Auditoriumlogo {
+    height: 100px;
+    width: 100px;
+    background-image: url(../);
+  }
+  
+  #Auditoriumcontents {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    margin-top: -50px;
+    margin-left: 0px;
+  }
+  
+  /* Adjust font size and margins for smaller screens */
+  @media (max-width: 767px) {
+    #Auditoriumcontents {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-right: 0%;
+      
+      text-align: left; /* Center align text on small screens */
+    }
+  }
+  
+  .Auditorium-content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 70px;
+  }
+  
+  /* Adjust padding and margin for smaller screens */
+  @media (max-width: 767px) {
+    .Auditorium-content {
+      padding: 10px;
+      margin-top: 70px;
+      margin-left: 10px;
+    }
+  }
+  
+  /* Adjust the heading spacing */
   #Auditoriumcontents h3 {
     margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
   }
   
-  #images{
-      width: -100px;
-      height: 100px;
-  }
-  .Auditorium-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-      margin-top: 20px;
+  /* Additional responsive adjustments */
+  @media (max-width: 480px) {
+    #Auditoriumlogo {
+      height: 80px;
+      width: 80px;
     }
-    
+  
+    #Auditoriumcontents {
+      font-size: 14px;
+      
+    }
+  
     .Auditorium-content {
-      flex: 1;
-      padding: 20px;
-      margin-top: 70px;
+      padding: 5px;
+      margin-top: 20px;
+      
     }
+  }
+  
+  #images {
+    width: 100px; /* Correct negative width */
+    height: 100px;
+  }
+  
+  .Auditorium-slider {
+    flex: 1;
+    max-width: 90%; /* Default to a larger width for small screens */
+    margin-top: 20px;
+    margin-right: 0; /* Remove negative margin for small screens */
+    border-radius: 20px; /* Adjust border radius for small screens */
+    scroll-behavior: smooth;
+  }
+  
+  /* Adjustments for medium screens (e.g., tablets) */
+  @media (min-width: 768px) {
     .Auditorium-slider {
-      flex: 1;
+      max-width: 75%;
+      margin-top: 50px;
+      border-radius: 40px;
+      margin-right: 20px; /* Remove negative margin for small screens */
+    }
+  }
+  
+  /* Adjustments for large screens (e.g., desktops) */
+  @media (min-width: 1024px) {
+    .Auditorium-slider {
       max-width: 50%;
       margin-top: 100px;
       margin-right: -80px;
       border-radius: 60px;
-      scroll-behavior: smooth;
-   
     }
+  }
   
+  .Auditorium-slider img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px; /* Adjust border radius for small screens */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Reduce max height for small screens */
+  }
+  
+  /* Adjustments for medium screens */
+  @media (min-width: 768px) {
     .Auditorium-slider img {
-      width: 100%;
-      margin-top: 20px;
-      border-radius: 60px;
-      height: 500px; /* Maintain aspect ratio */
-      max-height: 400px; 
-      scroll-behavior: smooth;
+      border-radius: 40px;
+      max-height: 400px;
     }
-    
-    /* .Auditorium-slider {
-      flex: 1;
-      max-width: 50%;
-      margin-top: 130px;
-      margin-right: -80px;
-      height: 400px;
-   
-    } */
-
-    
+  }
   
-     /* .Auditorium-slider img {
-      width: 100%;
+  /* Adjustments for large screens */
+  @media (min-width: 1024px) {
+    .Auditorium-slider img {
       border-radius: 60px;
-      height: 600px; 
-      max-height: 400px; 
-      margin-right: -40px;
-      margin-top: -70px;
-    } */
-    #Auditoriumpara{
-      font-weight: 300px;
-      font-size: 24px;
-      margin-top: -30px;
-      font-family:  'Open Sans', sans-serif;
-        margin: 100px;
-      margin-bottom: 0px;
-      text-align: justify;
-  text-justify: inter-word;
-  line-height: 160%;
-      
+      max-height: 500px;
     }
-    #auditoriumimg1{
-      box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-      background-image: url(./auditorium4.jpg);
+  }
+    
+
+
+  #Auditoriumpara {
+    font-weight: 300; /* Corrected font-weight value */
+    font-size: 24px;
+    margin-top: -30px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px; /* Default margin for small screens */
+    margin-bottom: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 160%;
+  }
+  
+  /* Adjustments for medium screens (e.g., tablets) */
+  @media (min-width: 768px) {
+    #Auditoriumpara {
+      font-size: 22px;
+      margin: 10px;
+    }
+  }
+  
+  /* Adjustments for large screens (e.g., desktops) */
+  @media (min-width: 1024px) {
+    #Auditoriumpara {
+      font-size: 24px;
+      margin: 100px;
+    }
+  }
+  
+  #auditoriumimg1 {
+    box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+    background-image: url(./auditorium4.jpg);
+    height: 200px; /* Default height for small screens */
+    width: 100%; /* Full width for small screens */
+    background-size: cover; /* Cover entire element */
+    background-repeat: no-repeat;
+  }
+  
+  /* Adjustments for medium screens */
+  @media (min-width: 768px) {
+    #auditoriumimg1 {
+      height: 300px;
+      width: 80%; /* Reduced width for medium screens */
+      background-size: contain; /* Adjust background size */
+    }
+  }
+  
+  /* Adjustments for large screens */
+  @media (min-width: 1024px) {
+    #auditoriumimg1 {
       height: 400px;
       width: 800px;
       background-size: 800px;
-      background-repeat: no-repeat;
     }
-    
+  }

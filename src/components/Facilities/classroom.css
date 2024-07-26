@@ -1,99 +1,240 @@
-#cls{
+/* classroom.css */
+#cls {
   color: rgb(183, 234, 31);
   font-size: 30px;
   background-color: green;
   font-style: normal;
   width: 44%;
   padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
+  border-radius: 15px;
   margin: 100px;
   text-align: center;
   margin-top: 50px;
 }
-#clslogo{
-    height: 100px;
-    width: 100px;
-   background-image: url(../);
+
+#clslogo {
+  height: 100px;
+  width: 100px;
+  background-image: url(../);
 }
-#clscontents{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    margin-top: -150px;
-    margin-left: 80px;
-    
+
+#clscontents {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  margin-top: -150px;
+  margin-left: 80px;
 }
-/* Add this CSS to your stylesheet */
+
 #clscontents h3 {
-  
   margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
 }
 
-#images{
-    width: -100px;
-    height: 100px;
+#images {
+  width: 100px;
+  height: 100px;
 }
+
 .classroom-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.classroom-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.classroom-slider {
+  flex: 1;
+  max-width: 50%;
+  margin-top: 100px;
+  margin-right: -20px;
+  border-radius: 60px;
+  scroll-behavior: smooth;
+}
+
+.classroom-slider img {
+  width: 100%;
+  border-radius: 60px;
+  height: 500px; /* Maintain aspect ratio */
+  max-height: 400px;
+  scroll-behavior: smooth;
+}
+
+#clspara {
+  font-weight: 300;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 120px;
+  margin-bottom: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 160%;
+}
+
+#clsimg1 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./clsimg1.jpg);
+  height: 400px;
+  width: 800px;
+  background-size: cover; /* Ensuring background size scales with the element */
+  background-repeat: no-repeat;
+}
+
+/* Medium screens (tablets, landscape phones, etc.) */
+@media (max-width: 1024px) {
+  #clsimg1 {
+    height: 250px;
+    width: 80%;
+  }
+}
+
+/* Small screens (portrait tablets, large phones, etc.) */
+@media (max-width: 768px) {
+  #clsimg1 {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+/* Extra small screens (phones, portrait phones, etc.) */
+@media (max-width: 480px) {
+  #clsimg1 {
+    height: 250px;
     width: 90%;
+    background-size: cover;
   }
-  
-  .classroom-content {
-    flex: 1;
-    padding: 20px;
+}
+
+
+#clsimg2 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./clsimg2.jpg);
+  height: 400px;
+  width: 800px;
+  background-size: cover; /* Ensuring background size scales with the element */
+  background-repeat: no-repeat;
+}
+
+/* Medium screens (tablets, landscape phones, etc.) */
+@media (max-width: 1024px) {
+  #clsimg2 {
+    height: 250px;
+    width: 80%;
   }
-  
+}
+
+/* Small screens (portrait tablets, large phones, etc.) */
+@media (max-width: 768px) {
+  #clsimg2 {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+/* Extra small screens (phones, portrait phones, etc.) */
+@media (max-width: 480px) {
+  #clsimg2 {
+    height: 250px;
+    width: 90%;
+    background-size: cover;
+  }
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 1200px) {
+  #cls {
+    font-size: 26px;
+    width: 60%;
+    margin: 80px;
+  }
+
+  #clscontents {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: -120px;
+  }
+
   .classroom-slider {
-    flex: 1;
-    max-width: 50%;
-    margin-top: 100px;
-    margin-right: -20px;
-    border-radius: 60px;
-    scroll-behavior: smooth;
- 
+    max-width: 60%;
+    margin-right: -10px;
   }
 
   .classroom-slider img {
-    width: 100%;
-    border-radius: 60px;
-    height: 500px; /* Maintain aspect ratio */
-    max-height: 400px; 
-    scroll-behavior: smooth;
+    height: 400px;
+    max-height: 300px;
   }
-  #clspara{
-    /* font-weight: 300px;
-    font-family:  'Open Sans', sans-serif;
-    margin: 100px;
-    margin-bottom: 0px;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 160%; */
+}
 
-    font-weight: 300px;
-    font-size: 24px;
-    font-family:  'Open Sans', sans-serif;
-      margin: 120px;
-    margin-bottom: 0px;
-    text-align: justify;
-text-justify: inter-word;
-line-height: 160%;
-    
+@media (max-width: 768px) {
+  #cls {
+    font-size: 22px;
+    width: 90%;
+    margin: 60px 10px;
   }
-  #clsimg1{
-    box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./clsimg1.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
-   }
-   #clsimg2{
-     box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-      background-image: url(./clsimg2.jpg);
-      height: 400px;
-      width: 800px;
-      background-size: 800px;
-      background-repeat: no-repeat;
-    }
+
+  #clscontents {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: -100px;
+  }
+
+  .classroom-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 10px;
+  }
+
+  .classroom-content {
+    margin: 10px 0;
+  }
+
+  .classroom-slider {
+    max-width: 90%;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .classroom-slider img {
+    height: 300px;
+    max-height: 250px;
+  }
+
+  #clspara {
+    font-size: 18px;
+    margin: 60px 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #cls {
+    font-size: 20px;
+    width: 100%;
+    margin: 40px 10px;
+  }
+
+  #clscontents {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: -80px;
+  }
+
+  .classroom-slider {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .classroom-slider img {
+    height: 250px;
+    max-height: 200px;
+  }
+
+  #clspara {
+    font-size: 16px;
+    margin: 40px 10px 0;
+  }
+}

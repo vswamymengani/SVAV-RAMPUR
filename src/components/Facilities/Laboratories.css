@@ -1,3 +1,4 @@
+/* Laboratories .css*/
 #Laboratories {
   color: rgb(183, 234, 31);
   font-size: 30px;
@@ -6,11 +7,9 @@
   width: 39%;
   padding: 15px;
   border-radius: 15px;
-  /* Added this line to make the border radius curved */
   margin: 100px;
   text-align: center;
   margin-top: -80px;
-
 }
 
 #Laboratorieslogo {
@@ -25,17 +24,14 @@
   font-style: normal;
   margin-top: -50px;
   margin-left: 100px;
-
 }
 
-/* Add this CSS to your stylesheet */
 #Laboratoriescontents h3 {
   margin-bottom: 20px;
-  /* Adjust the value as needed for desired spacing */
 }
 
 #images {
-  width: -100px;
+  width: 100px;
   height: 100px;
 }
 
@@ -58,21 +54,19 @@
   max-width: 50%;
   margin-top: 100px;
   margin-right: -40px;
-
 }
 
 .Laboratories-slider img {
   width: 100%;
   border-radius: 60px;
   height: 500px;
-  /* Maintain aspect ratio */
   max-height: 400px;
   margin-right: -40px;
 }
 
 #Laboratoriespara {
   font-size: 24px;
-  font-weight: 300px;
+  font-weight: 300;
   font-family: 'Open Sans', sans-serif;
   margin: 100px;
   margin-bottom: 0px;
@@ -80,59 +74,157 @@
   text-justify: inter-word;
   line-height: 160%;
 }
+
+#labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1, #roboticsimg1, #engimg1 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  height: 400px;
+  width: 800px;
+  background-size: 800px;
+  background-repeat: no-repeat;
+}
+
+/* Responsive Styles */
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  #Laboratories {
+    width: 45%;
+    font-size: 28px;
+    margin: 80px;
+    margin-top: -60px;
+  }
+
+  #Laboratoriescontents {
+    font-size: 18px;
+    margin-left: 80px;
+  }
+
+  .Laboratories-container {
+    width: 80%;
+  }
+
+  .Laboratories-slider {
+    max-width: 45%;
+    margin-right: -20px;
+  }
+
+  .Laboratories-slider img {
+    height: 450px;
+  }
+
+  #Laboratoriespara {
+    font-size: 22px;
+    margin: 80px;
+  }
+
+  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1, #roboticsimg1, #engimg1 {
+    height: 350px;
+    width: 700px;
+    background-size: 700px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  #Laboratories {
+    width: 60%;
+    font-size: 24px;
+    margin: 60px;
+    margin-top: -40px;
+  }
+
+  #Laboratoriescontents {
+    font-size: 16px;
+    margin-left: 60px;
+  }
+
+  .Laboratories-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .Laboratories-slider {
+    max-width: 90%;
+    margin-right: 0;
+  }
+
+  .Laboratories-slider img {
+    height: 400px;
+  }
+
+  #Laboratoriespara {
+    font-size: 20px;
+    margin: 60px;
+  }
+
+  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1, #roboticsimg1, #engimg1 {
+    height: 300px;
+    width: 600px;
+    background-size: 600px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  #Laboratories {
+    width: 80%;
+    font-size: 20px;
+    margin: 30px;
+    margin-top: -20px;
+  }
+
+  #Laboratoriescontents {
+    font-size: 14px;
+    margin-left: 30px;
+  }
+
+  .Laboratories-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Laboratories-slider {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .Laboratories-slider img {
+    height: 300px;
+  }
+
+  #Laboratoriespara {
+    font-size: 18px;
+    margin: 30px;
+  }
+
+  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1, #roboticsimg1, #engimg1 {
+    height: 200px;
+    width: 300px;
+    background-size: 300px;
+  }
+}
 #labimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./bio.png);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
+  background-image: url(./bio.png);
 }
 #phyimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./phylab1.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
+  background-image: url(./phylab1.jpg);
+}
+
+#bioimg1{
+  background-image: url(./biolab1.jpg);
 }
 #chemimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./chemlab.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
-}
-#bioimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./biolab1.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
+  background-image: url(./chemlab.jpg); 
 }
 #mathsimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./mathslab1.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
+  background-image: url(./mathslab1.jpg);
 }
 #roboticsimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./roboticslab3.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
+  background-image: url(./roboticslab3.jpg); 
 }
 #engimg1{
-  box-shadow: 1px  10px 10px 30px rgb(165, 165, 179);
-     background-image: url(./englab.jpg);
-     height: 400px;
-     width: 800px;
-     background-size: 800px;
-     background-repeat: no-repeat;
+  background-image: url(./englab.jpg);
 }
