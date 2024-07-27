@@ -158,11 +158,22 @@
     margin: 60px;
   }
 
-  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1, #roboticsimg1, #engimg1 {
+  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1 {
     height: 300px;
-    width: 600px;
-    background-size: 600px;
+    width: 100%;
+    background-size: 400px;
   }
+   #engimg1{
+    height: 300px;
+    width: 400px;
+ 
+  }
+  #roboticsimg1 {
+    height: 400px;
+    width: 500px;
+ 
+  }
+
 }
 
 /* Small screens (phones) */
@@ -200,11 +211,27 @@
     margin: 30px;
   }
 
-  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1, #roboticsimg1, #engimg1 {
+  #labimg1, #phyimg1, #chemimg1, #bioimg1, #mathsimg1 {
     height: 200px;
     width: 300px;
     background-size: 300px;
   }
+   #engimg1{
+    height: 200px;
+    width: 300px;
+ 
+  }
+  #roboticsimg1 {
+    height: 350px; /* Increase height */
+    width: 100%; /* Ensure it uses full width */
+ 
+  }
+  #chemimg1 {
+   
+    object-fit: fill;
+ 
+  }
+
 }
 #labimg1{
   background-image: url(./bio.png);

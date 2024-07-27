@@ -34,7 +34,7 @@ const Sdp = () => {
             The SDP is a strategic plan for improvement. It should bring together, in a clear and simple way, the school’s priorities, the main measures it will take to raise standards, the resources dedicated to these, and the key outcomes and targets it intends to achieve.
           </span>
         </div><br></br><br></br>
-        <h2 style={{ color: 'blue', marginLeft: '50px', marginTop: '10px', fontSize: '30px' }}>Contribute in this noble mission of SDP-SVAV-RAMPUR</h2>
+        <h2 style={{ color: 'blue' }}>Contribute in this noble mission of SDP-SVAV-RAMPUR</h2>
         <ul className="custom-list">
           <li>&nbsp;&nbsp;Contribute in the resource developments of Sri Vidyaranya Avasa Vidyalayam schools;</li>
           <li>&nbsp;&nbsp;Associate with the Alumni Council of your respective school, if you are a former student of Sri Vidyaranya Avasa Vidyalayam.</li>
@@ -44,13 +44,13 @@ const Sdp = () => {
       </div><br></br><br></br>
       <div id="sdpimgs">
         <center>
-          <div><img src={img1} alt="Transport 1" style={{ height: "600px", width: "900px" }} /></div><br></br>
-          <div><img src={img2} alt="Transport 2" style={{ height: "600px", width: "900px" }} /></div><br></br>
-          <div><img src={img3} alt="Transport 3" style={{ height: "600px", width: "900px" }} /></div><br></br>
-          <div><img src={img4} alt="Transport 4" style={{ height: "600px", width: "900px" }} /></div><br></br>
-          <div><img src={img5} alt="Transport 3" style={{ height: "600px", width: "900px" }} /></div><br></br>
-          <div><img src={img6} alt="Transport 4" style={{ height: "600px", width: "900px" }} /></div><br></br>
-          <div><img src={img7} alt="Transport 4" style={{ height: "600px", width: "900px" }} /></div>
+          <div><img src={img1} alt="Transport 1" /></div><br></br>
+          <div><img src={img2} alt="Transport 2"  /></div><br></br>
+          <div><img src={img3} alt="Transport 3"  /></div><br></br>
+          <div><img src={img4} alt="Transport 4"  /></div><br></br>
+          <div><img src={img5} alt="Transport 3" /></div><br></br>
+          <div><img src={img6} alt="Transport 4" /></div><br></br>
+          <div><img src={img7} alt="Transport 4"  /></div>
         </center>
       </div>
 

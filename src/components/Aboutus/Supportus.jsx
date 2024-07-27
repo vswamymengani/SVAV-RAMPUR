@@ -5,7 +5,7 @@ const Supportus = () => {
   const containerStyle = {
     textAlign: 'left',
     padding: '70px',
-    width: '90.4%',
+    width: '100%',
   
   
   };
