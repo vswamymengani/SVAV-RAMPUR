@@ -4,7 +4,12 @@
     min-height: 100vh;
     background-color: powderblue;
 }
-
+/* Basic reset and general styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .header {
     position: relative;
     top: 0;
