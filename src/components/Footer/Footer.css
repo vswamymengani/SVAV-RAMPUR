@@ -33,10 +33,7 @@
      
     } 
      
-    /* .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    } */
+   
     #q1 {
       background-color: #333;
       color: white;
@@ -45,11 +42,7 @@
       bottom: 0;
       width: 100%;
     }
-    /* .link-icon{
-      height: 30px;
-      width: 30px;
-    }
-     */
+   
      /* Basic styling for the footer */
    .footer {
     /* Light background color */
@@ -102,17 +95,9 @@
     color: #0056b3; /* Darker blue for active state */
   }
   
-  /* Responsive design: stack links vertically on small screens */
-  @media (max-width: 768px) {
-    .footer-nav {
-      flex-direction: column; /* Stack items vertically */
-      gap: 15px; /* Reduce gap between items */
-    }
-  }
+ 
   #ll3 {
-    /* display: flex;
-   align-items: first baseline;
-    flex-wrap: nowrap; */
+   
     background-color: orange;
     height: 370px;
     margin-bottom: -30px;
@@ -135,3 +120,10 @@
 
   
 }
+
+
+
+
+
+
+

@@ -1,44 +1,46 @@
-/* src/components/Layout/Layout.css */
-
-/* .layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content {
-    flex: 1;
-    padding-top: 60px; 
-    padding-bottom: 50px; 
-} */
-/* src/components/Layout/Layout.css */
-
 .layout {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background-color: lightgray; */
     background-color: powderblue;
-    /* background-color: rgb(231, 227, 198);
-    */
-    /* background-color: #fff;  */
 }
 
 .header {
     position: relative;
-     top: 0px;
-    /* background-color: #fff;  */
-    z-index: 1000; 
-    width: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
-    
+    background-color: #fff; /* Ensure the header has a background color */
 }
 
 .content {
     flex: 1;
-    /* padding-top: 0px; Adjust based on header height */
-    /* padding-bottom: 50px; Adjust based on footer height */
-    margin-top: -30px; /* Ensure content starts below the fixed header */
+    margin-top: -30px; /* Ensure content starts below the header */
+    padding-top: 30px; /* Compensate for the negative margin */
     overflow-y: auto; /* Enable vertical scrolling for content */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 5px 0; /* Adjust padding for smaller screens */
+    }
+
+    .content {
+        margin-top: -20px; /* Adjust margin for smaller screens */
+        padding-top: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 3px 0; /* Adjust padding for very small screens */
+    }
+
+    .content {
+        margin-top: -15px; /* Adjust margin for very small screens */
+        padding-top: 15px; /* Adjust padding for very small screens */
+    }
 }

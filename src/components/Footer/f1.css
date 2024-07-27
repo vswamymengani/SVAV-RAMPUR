@@ -1,0 +1,102 @@
+/* src/components/Footer.css */
+
+/* Basic styling for the footer */
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    background-color: #333; /* Dark background for footer */
+}
+
+/* Flexbox container for footer links */
+#l3 {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+#l3 button {
+    background-color: aqua;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+#q1 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#ll3 {
+    background-color: orange;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#fields input, #fields button {
+    width: 80%;
+    max-width: 300px;
+}
+
+#rf {
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: orange;
+}
+
+/* Responsive design: stack links vertically on small screens */
+@media (max-width: 768px) {
+    #l3 {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduced gap between items */
+    }
+    
+    #fields {
+        flex-direction: column;
+    }
+    
+    #fields input, #fields button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #fields input, #fields button {
+        width: 100%;
+    }
+    
+    #rf {
+        margin-left: 0; /* Center align on very small screens */
+    }
+}

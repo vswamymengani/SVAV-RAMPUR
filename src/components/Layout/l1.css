@@ -1,0 +1,74 @@
+/* src/components/Layout/Layout.css */
+
+/* Basic reset and general styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Choose a font family that suits your design */
+    line-height: 1.6;
+}
+
+/* Layout container styles */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the layout takes up the full viewport height */
+}
+
+.content {
+    flex: 1; /* Allow content to expand and take up available space */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Header and Footer styles */
+footer {
+    background-color: #333; /* Dark background color for header and footer */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+header {
+    background-color: orange; /* Dark background color for header and footer */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header {
+    /* Additional header-specific styles if needed */
+}
+
+footer {
+    /* Additional footer-specific styles if needed */
+}
+
+/* Responsive design for header and footer */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 14px; /* Adjust font size for very small screens */
+    }
+}
+
+/* Content area responsive design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
+
+/* Example of responsive layout adjustments */
+@media (max-width: 480px) {
+    .content {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+}
