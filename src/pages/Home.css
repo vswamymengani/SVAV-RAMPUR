@@ -537,85 +537,90 @@
   justify-content: center;
   margin-top: 50px;
  }
-  .subElement{
-    background-color: #70CAC7;
-    height: 390px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color: whitesmoke;
-    
-  }
-  .bc{
-    background-color: #70CAC7;
- 
-  }
-  .bc:hover{
-    background-color: #70CAC7;
-    height: 10px;
-    width: 10px;
-  
-  }
-  .bc1{
-    background-color:#979435;
- 
-  }
-  .bc1:hover{
-    background-color: #979435;
-    height: 10px;
-    width: 10px;
-  
-  }
-  
-  .bc2{
-    background-color: #732F22;
- 
-  }
-  .bc2:hover{
-    background-color: #732F22;
-    height: 10px;
-    width: 10px;
-  
-  }
-  .bc3{
-    background-color: #995073;
- 
-  }
-  .bc3:hover{
-    background-color:#995073;
-    height: 10px;
-    width: 10px;
-  
-  }
-  .bc4{
-    background-color: #2776BC ;
- 
-  }
-  .bc4:hover{
-    background-color: #2776BC ;
-    height: 10px;
-    width: 10px;
-  
-  }
-  .bc5{
-    background-color: #F54461;
- 
-  }
-  .bc5:hover{
-    background-color: #F54461;
-    height: 10px;
-    width: 10px;
-  
-  }
-  .ao{
-    background-color: #f2f2f2;
-  }
-  .ao:hover{
-    background-color: #f2f2f2;
-  }
 
 
 
+ .subElement {
+  background-color: #70CAC7;
+  height: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+  padding: 25px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid #70CAC7; /* Border color to animate */
+  animation: animateEdges 5s infinite; /* Applying border animation */
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+
+.subElement:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+}
+
+.Element {
+  margin: 0;
+}
+
+.bc {
+  background-color: #70CAC7;
+  border: none;
+  padding: 0;
+}
+
+.bc:hover {
+  background-color: #70CAC7;
+}
+
+.attachment-fullsize-full {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.subspace {
+  margin: 15px 0 10px 0;
+  font-size: 1.2em;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.cards {
+  font-size: 1em;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+@media (max-width: 768px) {
+  .subElement {
+    padding: 20px;
+  }
+
+  .subspace {
+    font-size: 1.1em;
+  }
+
+  .cards {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .subElement {
+    padding: 15px;
+  }
+
+  .subspace {
+    font-size: 1em;
+  }
+
+  .cards {
+    font-size: 0.8em;
+  }
+}
+
+  
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
@@ -646,45 +651,106 @@
   
 }
 
-  
-  .subElementop,.subElement1op,.subElement2op{
-    background-color: #f2f2f2;
-    height: 300px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color:whitesmoke;
-    
+
+.subElementop, .subElement1op, .subElement2op {
+  background-color: #f2f2f2;
+  height: auto; /* Adjusted to auto for responsiveness */
+  max-width: 306.4px;
+  margin: 0 auto; /* Centering the container */
+  padding: 25px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid #f2f2f2; /* Initial border color */
+  animation: animateEdges 5s infinite; /* Animation applied */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.subElementop:hover, .subElement1op:hover, .subElement2op:hover {
+  transform: scale(1.1); /* Scale up the element slightly */
+}
+
+
+.Element {
+  margin: 0;
+}
+
+.attachment-full.size-full {
+  max-width: 100%;
+  height: auto; /* Ensures the image scales correctly */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.subspaceop {
+  color: black;
+  font-size: 20px;
+  margin: 15px 0; /* Added margin for spacing */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.op1 {
+  color: #333;
+  font-size: 18px;
+  text-align: justify; /* Ensuring text justification */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.ao {
+  color: blue; /* Link color */
+  text-decoration: underline; /* Link underline */
+}
+
+@media (max-width: 768px) {
+  .subElementop, .subElement1op, .subElement2op {
+    padding: 20px;
   }
-  .subspaceop,.subspaceop,.subspace0p{
-    text-align: center;
-    color: black;
-    font-size: 20px;
-  }
-  .subspace{
-    text-align: center;
-   
-  }
-  .op1{
-    color: #333;
-    text-align: center;
+
+  .subspaceop {
     font-size: 18px;
   }
-  .subElement1{
-    background-color: #979435;
-    height: 390px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color: whitesmoke;
+
+  .op1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subElementop, .subElement1op, .subElement2op {
+    padding: 15px;
   }
 
+  .subspaceop {
+    font-size: 16px;
+  }
+
+  .op1 {
+    font-size: 14px;
+  }
+}
 
 
 
-
-
-
+/* animation code here */
+  
+@keyframes animateEdges {
+  0% {
+    border-color: #f2f2f2;
+  }
+  25% {
+    border-color: #70CAC7;
+  }
+  50% {
+    border-color: #FF5733;
+  }
+  75% {
+    border-color: #70CAC7;
+  }
+  100% {
+    border-color: #f2f2f2;
+  }
+}
 
   .img{
     margin-bottom: -80PX;
@@ -695,64 +761,8 @@
 
 
 
-  .subElement2{
-    background-color: #732F22;
-    height: 390px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color:whitesmoke;
-  }
-  .cards{
-    text-align: justify;
-  text-justify: inter-word;
-  }
-
-
-
-
-
 
   
-  .subElement3{
-    background-color: #995073;
-    height: 390px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color:whitesmoke;
-  }
-  .subElement4{
-    background-color:#2776BC ;
-    height: 390px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color:whitesmoke;
-  }
-  .subElement5{
-    background-color: #F54461;
-    height: 390px;
-    width: 306.4px;
-    margin: 0px 0px 0px 0px;
-    padding: 25px 25px 25px 25px;
-    color:whitesmoke;
-    
-
-  }
-  .element{
-    height: auto;
-    max-width: 100px;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  
-
-
-
-
-
 
 
   
@@ -866,19 +876,49 @@
     text-align: end;
     
   }
-  .c1f{
+  .c1f {
     color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
-  font-style: normal;
-  width: 12%;
-  padding: 15px;
-  border-radius: 15px; /* Added this line to make the border radius curved */
-    text-align: center;
     font-size: 30px;
-    margin-top: 30px;
-    margin-left: 620px;
+    background-color: green;
+    font-style: normal;
+    width: 80%; /* Adjusted for smaller screens */
+    max-width: 400px; /* Ensures it doesn't get too wide on larger screens */
+    padding: 15px;
+    border-radius: 15px; /* Added this line to make the border radius curved */
+    text-align: center;
+    margin: 30px auto; /* Centered the element with automatic side margins */
   }
+  
+  @media (min-width: 600px) {
+    .c1f {
+      width: 60%;
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .c1f {
+      width: 50%;
+      font-size: 26px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .c1f {
+      width: 40%;
+      font-size: 24px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .c1f {
+      width: 30%;
+      font-size: 22px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
  
   
 

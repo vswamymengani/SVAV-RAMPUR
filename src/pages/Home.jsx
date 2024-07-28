@@ -175,7 +175,7 @@ const Home = () => {
                     <h4 className='subspaceop'>ORGANIZATIONAL STRUCTURE</h4>
                     <span className='op1' style={{ textAlign: "justify" }} onClick={handleOs}>Vidya Bharati Akhila Bharatiya Shiksha Sansthan is registered under the society registration act<Link className='ao'>....More</Link></span>
                 </div>
-                {/* </div> */}
+              
 
 
 
@@ -183,34 +183,38 @@ const Home = () => {
             <div className="c1f">
               <div> <span className="c132">FACILITIES</span></div> 
             </div>
-            {/* </div> */}
+          
 
             <div className='mainElement'>
+               
                 
                 <div className='subElement'>
+               
                     <figure className="Element">
 
                         <button className="bc">
-                            <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", marginLeft: "30px", marginTop: "-10px" }} onClick={handledigi} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" className="attachment-fullsize-full"></img></button>
+                            <img decoding='async' onClick={handledigi} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" className="attachment-fullsize-full"></img>
+                            
+                            </button>
 
                     </figure>
                     <h4 className='subspace' >Digital Classrooms</h4>
                     <p className='cards'>The Digital Classroom project features information, resources, and professional development opportunities to support schools in understanding</p>
                 </div>
-                <div className='subElement1'>
+                <div className='subElement'>
                     <figure className="Element">
 
-                        <button className='bc1'>
-                            <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", marginLeft: "30px", marginTop: "-10px" }} onClick={handlegames} src="https://svis.ind.in/wp-content/uploads/2021/10/Games-Sports.png" className="attachment-full size-full"></img></button>
+                        <button className='bc'>
+                            <img decoding='async'  onClick={handlegames} src="https://svis.ind.in/wp-content/uploads/2021/10/Games-Sports.png" className="attachment-full size-full"></img></button>
 
                     </figure>
                     <h4 className='subspace'>Games & Sports</h4>
                     <p className='cards'> To stimulate competitive behavior among students and strengthen physical & mental growth SVAV offers both outdoor and indoor game facilities led by experienced</p>
                 </div>
-                <div className='subElement2'>
+                <div className='subElement'>
                     <figure className="Element">
-                        <button className='bc2'>
-                            <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", marginLeft: "30px", marginTop: "-10px" }} onClick={handleitlab} src="https://svis.ind.in/wp-content/uploads/2021/10/IT-LAB-Technology-Lab.png" className="attachment-full size-full"></img>
+                        <button className='bc'>
+                            <img decoding='async'  onClick={handleitlab} src="https://svis.ind.in/wp-content/uploads/2021/10/IT-LAB-Technology-Lab.png" className="attachment-full size-full"></img>
                         </button>
                     </figure>
                     <h4 className='subspace'>IT Lab / Technology Lab</h4>
@@ -219,28 +223,28 @@ const Home = () => {
             </div>
 
             <div className='mainElement'>
-                <div className='subElement3'>
+                <div className='subElement'>
                     <figure className="Element">
-                        <button className='bc3'>
-                            <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", marginLeft: "30px", marginTop: "-10px" }} onClick={handlelab} src="https://svis.ind.in/wp-content/uploads/2021/10/LABORATORIES.png" className="attachment-full size-full"></img>
+                        <button className='bc'>
+                            <img decoding='async' onClick={handlelab} src="https://svis.ind.in/wp-content/uploads/2021/10/LABORATORIES.png" className="attachment-full size-full"></img>
                         </button>
                     </figure>
                     <h4 className='subspace'>Laboratories</h4>
                     <p className='cards'> <span> SVAV has well-equipped Science labs, Math labs, English labs/Language labs, Computer labs & Robotics labs to foster hands-on experience, enhance learning </span></p>
                 </div>
-                <div className='subElement4'>
+                <div className='subElement'>
                     <figure className="Element" >
-                        <button className='bc4'>
-                            <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", marginLeft: "30px", marginTop: "-10px" }} onClick={handlelib} src="https://svis.ind.in/wp-content/uploads/2021/10/Library.png" className="attachment-full size-full"></img>
+                        <button className='bc'>
+                            <img decoding='async'  onClick={handlelib} src="https://svis.ind.in/wp-content/uploads/2021/10/Library.png" className="attachment-full size-full"></img>
                         </button>
                     </figure>
                     <h4 className='subspace'>Library</h4>
                     <p className='cards'> <span>An all-encompassing source of information including children’s literature, magazines, reference books, newspapers and educational CD’s is provided to help students</span></p>
                 </div>
-                <div className='subElement5'>
+                <div className='subElement'>
                     <figure className="Element">
-                        <button className='bc5'>
-                            <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", marginLeft: "30px", marginTop: "-10px" }} onClick={handletrans} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" className="attachment-full size-full"></img>
+                        <button className='bc'>
+                            <img decoding='async'  onClick={handletrans} src="https://svis.ind.in/wp-content/uploads/2021/10/Digital-Classrooms.png" className="attachment-full size-full"></img>
                         </button>
                     </figure>
                     <h4 className='subspace'>Transport Management System</h4>
