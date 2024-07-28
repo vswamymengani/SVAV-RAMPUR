@@ -2,22 +2,19 @@ import './header.css';
 import { useNavigate } from 'react-router-dom';
 import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
-import { FaPhone, FaEnvelope, FaBars } from 'react-icons/fa';
+import { FaPhone, FaEnvelope} from 'react-icons/fa';
 import { useState } from 'react';
 
 const Header = () => {
   const navigate = useNavigate();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [ setIsMobileMenuOpen] = useState(false);
 
   const handleNavigation = (path) => {
     navigate(path);
     setIsMobileMenuOpen(false); // Close the mobile menu after navigation
   };
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
+ 
   return (
     <header className="header">
       <div className="Header">
@@ -27,16 +24,17 @@ const Header = () => {
             <div style={{ flexDirection: "column", textAlign: "center" }}>
               <h4 className="subtitles">
                 <span className="inline-text">
-                  SRI VIDYARANYA AVASA VIDYALAYAM
+                  SRI VIDYARANYA AVASA VIDYALAYAM  </span>
                   <br />
-                  (SVAV-RAMPUR)
-                </span>
+                  <span className="inline-text1"> (CHOKKARAM NAGAR-RAMPUR)</span> 
+              
               </h4>
               <h4 className="sub1">DAY & RESIDENTIAL</h4>
               <h4 className="subbar">Global competence with ancient wisdom</h4>
+             <h4 className="clgCode">Affilated by Vidyapeetham </h4>
             </div>
           </div>
-          <b className="clgCode">UDISE Code: 36230301739</b>
+         
         </div>
         <div className="section2">
           <span className="title" onClick={() => handleNavigation('/Onlineenquiryform')}>Online Enquiry</span>
@@ -46,10 +44,10 @@ const Header = () => {
         </div>
         <div className="section3">
           <span className="contact-item">
-            <FaPhone className="contact-icon" />&nbsp; +91 9502116793
+            <FaPhone className="contact-icon" />&nbsp; +91 9492873533
           </span>
           <span className="contact-item">
-            <FaEnvelope className="contact-icon" />&nbsp; info@svav.ind.in
+            <FaEnvelope className="contact-icon" />&nbsp; info@svavrampur.com
           </span>
           <br />
           <b className="code">Proc.No.RR-GDP007-0019</b>
@@ -58,9 +56,7 @@ const Header = () => {
       </div>
 
       <div className="navbar1">
-        <FaBars className="mobile-menu-icon" onClick={toggleMobileMenu} />
-        <nav className={isMobileMenuOpen ? 'nav-links-mobile' : 'nav-links'}>
-          <a href="#" onClick={() => handleNavigation('/')}>HOME</a>
+        <a href="#" onClick={() => handleNavigation('/')} className="no-underline">HOME</a>
           <div className="dropdown">
             <button className="dropbtn">SDP<i className="fa fa-caret-down"></i></button>
             <div className="dropdown-content">
@@ -139,7 +135,7 @@ const Header = () => {
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleNavigation('/contact')}>CONTACT US<i className="fa fa-caret-down"></i></button>
           </div>
-        </nav>
+       
       </div>
 
       <div className="color">

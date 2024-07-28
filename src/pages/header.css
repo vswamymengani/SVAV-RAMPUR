@@ -13,7 +13,17 @@
     margin: 5px;
     margin-left: 70px;
   }
+
+  .clgCode{
+    color: red;
+text-align: center;
+   
+}
   
+.subbar{
+    color: brown;
+   margin-left: 0%;
+}
   
   
   
@@ -22,7 +32,7 @@
     margin-top: 30px;
     height: 80px;
     width: 90px;
-    margin-left: -31px;
+    margin-left: -59px;
     margin-top: 46px;
     border-radius: 55px;
     
@@ -123,23 +133,30 @@
   }
   
   .inline-text {
+    margin-top: 20px;
+    margin-left: 0px;
     white-space: nowrap;    /* Prevent wrapping */
   }
-  
-  
-  .subbar{
-    color: brown;
+  .inline-text1{
+    white-space: nowrap;
+    font-size: 15px;
+    margin-top: 60px;
+    margin-left: -300px;
   }
+  
+  /* .subbar{
+    color: brown;
+  } */
   .sub1{
-   
+    margin-top: 20px;
     color: green;
   }
-  .clgCode{
+  /* .clgCode{
       color: red;
       margin-left: 150px;
      
   }
-  
+   
   
   
   /* Responsive Adjustments */
@@ -148,15 +165,11 @@
       font-size: 18px; /* Adjust font size for medium screens */
     }
   
-    .subbar,
-    .sub1,
-    .clgCode {
+ 
+    .sub1 {
       font-size: 16px; /* Adjust font size for better readability on smaller screens */
     }
   
-    .clgCode {
-      margin-left: 8%; /* Adjust margin for medium screens */
-    }
   }
   
   @media (max-width: 768px) {
@@ -164,15 +177,12 @@
       font-size: 16px; /* Further adjust font size for small screens */
     }
   
-    .subbar,
-    .sub1,
-    .clgCode {
+  
+    .sub1{
       font-size: 14px; /* Further adjust font size for small screens */
     }
   
-    .clgCode {
-      margin-left: 5%; /* Reduce margin for small screens */
-    }
+    
   }
   
   @media (max-width: 480px) {
@@ -180,17 +190,18 @@
       font-size: 14px; /* Further adjust font size for very small screens */
     }
   
-    .subbar,
-    .sub1,
-    .clgCode {
+    
+    .sub1 {
       font-size: 12px; /* Further adjust font size for very small screens */
     }
   
-    .clgCode {
-      margin-left: 0; /* Remove margin for very small screens */
-    }
+    /* .clgCode {
+      margin-left: 0; 
+    } */
   }
-  
+  .ssc{
+    justify-content: center;
+  }
   
   
   
@@ -200,7 +211,7 @@
       align-items:center;
       display:inline-flex;
       column-gap: 10px;
-      margin-left: -30px;
+      margin-left: 30px;
   
    
       
@@ -477,6 +488,12 @@
     color: black;
     border-color: #555;
   }
+  
+  /* this tag is used for no-underline */
+.no-underline {
+  text-decoration: none;
+}
+
   
 
   
