@@ -5,6 +5,8 @@
     width: 100%;
       display: flex;
       background-color: orange;
+      
+     
      
   }
   
@@ -40,7 +42,7 @@ text-align: center;
   /* Responsive Adjustments */
   @media (max-width: 1024px) {
     .Header {
-      padding: 5px; /* Reduce padding for medium screens */
+      padding: 0px; /* Reduce padding for medium screens */
     }
   
     .section1 {
@@ -579,9 +581,10 @@ text-align: center;
     text-align: center;
     color: antiquewhite;
     background-color: darkblue;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
   
   }
+  
 
 
   .t{

@@ -137,7 +137,7 @@ const Header = () => {
           </div>
        
       </div>
-
+        {/* LATEST news scroles here */}
       <div className="color">
         <div className="line">LATEST NEWS</div>
         <div><marquee>Job Openings: Join our Team of teachers and admin by applying at careers@svav.ind.in or hr@svav.ind.in</marquee></div>
