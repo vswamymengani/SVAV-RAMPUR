@@ -1,0 +1,80 @@
+#ev{
+    color: brown;
+    background-color: yellow;
+    width: 370px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+#ejo {
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+    width: 32%;
+    height: 460px;
+    background-color: khaki;
+    text-align: center;
+   
+  }
+  
+  #elo {
+    font-size: 1.5rem; /* Adjust as needed */
+     width: 79%;
+    height: 400px;
+    background-color: antiquewhite;
+    justify-content: center;
+  
+  }
+  #n1{
+    margin-left: 400px;
+  }
+ #n2{
+    margin-top: -480px;
+ }
+  
+
+
+/* Styles for screens 480px and above */
+@media (max-width: 480px) {
+    #ejo {
+        font-size: 1.4rem;
+        width: 34%;
+        height: 440px;
+    }
+
+    #elo {
+        font-size: 1.4rem;
+        width: 75%;
+        height: 370px;
+    }
+
+    #n1 {
+        margin-left: 350px;
+    }
+
+    #n2 {
+        margin-top: -450px;
+    }
+}
+
+/* Styles for screens 768px and above (tablets) */
+@media (max-width: 768px) {
+    #ejo {
+        font-size: 1.3rem;
+        width: 36%;
+        height: 420px;
+    }
+
+    #elo {
+        font-size: 1.3rem;
+        width: 72%;
+        height: 350px;
+    }
+
+    #n1 {
+        margin-left: 300px;
+    }
+
+    #n2 {
+        margin-top: -400px;
+    }
+}
+

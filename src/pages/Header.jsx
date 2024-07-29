@@ -67,8 +67,8 @@ const Header = () => {
         </div>
         <img src={exa} alt="Candle Logo" style={{ width: '100px', height: '90px', marginTop: '40px', marginRight: '0px' }} />
       </div>
-
-      <div className={`navbar1 ${isFixed ? 'fixed' : ''}`} ref={navbarRef}>
+         {/* ref={navbarRef} this code is for navbar fixed */}
+      <div className={`navbar1 ${isFixed ? 'fixed' : ''}`} >
         <a href="#" onClick={() => handleNavigation('/')} className="no-underline">HOME</a>
         <div className="dropdown">
           <button className="dropbtn">SDP<i className="fa fa-caret-down"></i></button>
@@ -133,7 +133,7 @@ const Header = () => {
         <div className="dropdown">
           <button className="dropbtn">NEWS & EVENTS<i className="fa fa-caret-down"></i></button>
           <div className="dropdown-content">
-            <a href="#">Our Events</a>
+            <a href="#" onClick={() => handleNavigation('/Events')}>Our Events</a>
             <a href="#" onClick={() => handleNavigation('/Gallery')}>Gallery</a>
             <a href="#" onClick={() => handleNavigation('/Halloffame')}>Hall of Fame</a>
           </div>
@@ -142,7 +142,7 @@ const Header = () => {
           <button className="dropbtn">CAREER<i className="fa fa-caret-down"></i></button>
           <div className="dropdown-content">
             <a href="#" onClick={() => handleNavigation('/ProfessionalDevelopment')}>Professional Development</a>
-            <a href="#">Job Openings</a>
+            <a href="#" onClick={() => handleNavigation('/JobOpening')}>Job Openings</a>
           </div>
         </div>
         <div className="dropdown">

@@ -1,175 +1,251 @@
-
-#i1{
-   margin-top: 50px;
-    font-size: 30px;
+/* #i1{
+    margin-top: 20px;
+     font-size: 30px;
+     margin-left: 5px;
+   
+   }
+   #i2 {
+     background-image: url(./gmap1.jpg);
+     height: 400px;
+     width: 70%;
+     background-repeat: no-repeat;
+     background-size: cover; 
+     background-position: 0%;
+   } */
+   
+   #i1 {
+    margin-top: 20px;
+    font-size: 2rem; /* Use rem for responsiveness */
     margin-left: 5px;
-  
   }
-  #i2{
+  
+  #i2 {
     background-image: url(./gmap1.jpg);
-    height: 500px;
-    width: 1000px;
+    height: 400px;
+    width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0%;
   }
-  #i3{
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    #i1 {
+      font-size: 1.8rem;
+      margin-top: 15px;
+    }
+  
+    #i2 {
+      height: 350px;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #i1 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    #i2 {
+      height: 300px;
+      width: 80%;
+      align-items: center;
+      margin-left: 10%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #i1 {
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+  
+    #i2 {
+      height: 250px;
+      width: 80%;
+      align-items: center;
+      margin-left: 10%;
+    }
+  }
+  
+   
+   
+ /* Base styles */
+ #i3 {
     color: red;
     font-size: 30px;
-    margin-top: -500px;
+    margin-top: -400px;
     margin-left: 1100px;
-    /* float: right; */
-
   }
+
   #i4{
-  color: blue;
-   
-  }
-  #i7{
-   color: black;
-    font-style: normal;
-   font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-top: -20px;
-    margin-left: -10px;
-    line-height: 180%;
-  }
-  /* ContactUs.css */
+   color: blue;
+    
+   }
+   #i7{
+    color: black;
+     font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+     margin-top: -20px;
+     margin-left: -10px;
+     line-height: 180%;
+   } 
 
-form {
-max-width: 500px;
-margin: 20px auto;
-padding: 20px;
-border: 1px solid #ccc;
-border-radius: 5px;
-background-color: #f9f9f9;
-}
-#kcf{
-margin-top: 100px;
- 
-}
-
-.form-group {
-margin-bottom: 15px;
-}
-
-label {
-display: block;
-margin-bottom: 5px;
-font-weight: bold;
-}
-
-input, textarea {
-width: 100%;
-padding: 8px;
-box-sizing: border-box;
-border: 1px solid #ccc;
-border-radius: 4px;
-}
-
-textarea {
-resize: vertical;
-height: 100px;
-}
-
-button {
-display: inline-block;
-padding: 10px 20px;
-font-size: 16px;
-color: black;
-background-color: #007bff;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-}
-
-button:hover {
-background-color: #0056b3;
-}
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  #i1 {
-      font-size: 24px; /* Adjust font size */
-  }
-
-  #i3 {
-      font-size: 24px; /* Adjust font size */
-      margin-left: 50px; /* Adjust margin for smaller screens */
-      margin-top: -250px; /* Adjust margin-top */
-  }
-}
-
+/* Responsive styles */
 @media (max-width: 768px) {
-  #i1 {
-      font-size: 20px; /* Further reduce font size */
-  }
-
-  #i2 {
-      height: 400px; /* Reduce height */
-  }
-
   #i3 {
-      font-size: 20px; /* Further reduce font size */
-      margin-left: 20px; /* Further adjust margin */
-      margin-top: -150px; /* Further adjust margin-top */
-  }
-
-  #i4 {
-      font-size: 18px; /* Adjust font size */
+    font-size: 1.5rem;
+    margin-top: 60px;
+    margin-left: 0;
+    text-align: center;
   }
 
   #i7 {
-      font-size: 16px; /* Adjust font size */
-      margin-top: -10px; /* Adjust margin-top */
-      margin-left: 0; /* Adjust margin-left */
+    font-size: 1rem;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 480px) {
-  #i1 {
-      font-size: 18px; /* Further reduce font size */
-  }
-
-  #i2 {
-      height: 300px; /* Further reduce height */
-  }
-
   #i3 {
-      font-size: 18px; /* Further reduce font size */
-      margin-left: 0; /* Adjust margin for small screens */
-      margin-top: -100px; /* Further adjust margin-top */
-  }
-
-  #i4 {
-      font-size: 16px; /* Further reduce font size */
+    font-size: 1.2rem;
+    margin-top: 60px;
+    margin-left: 0;
   }
 
   #i7 {
-      font-size: 14px; /* Further reduce font size */
-      margin-top: 0; /* Adjust margin-top */
-      margin-left: 0; /* Adjust margin-left */
+    font-size: 0.875rem;
+    margin-left: 0;
   }
 }
+   
+ 
 
-@media (max-width: 768px) {
+
+ form {
+ max-width: 500px;
+ margin: 20px auto;
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ background-color: #f9f9f9;
+ }
+ #kcf{
+ margin-top: 90px;
+ font-size: 40px;
+ color: brown;
+  
+ }
+ 
+ .form-group {
+ margin-bottom: 15px;
+ 
+ }
+ /* .hq{
+   width: 80%;
+ }
+  */
+ label {
+ display: block;
+ margin-bottom: 5px;
+ font-weight: bold;
+ }
+ 
+ input, textarea {
+ width: 100%;
+ padding: 8px;
+ box-sizing: border-box;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ }
+ 
+ textarea {
+ resize: vertical;
+ height: 100px;
+ }
+ 
+ button {
+ display: inline-block;
+ padding: 10px 20px;
+ font-size: 16px;
+ color: black;
+ background-color: #007bff;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ 
+ button:hover {
+ background-color: #0056b3;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+   form {
+       padding: 15px; /* Adjust padding for smaller screens */
+   }
+ 
+   .form-group {
+       margin-bottom: 10px; /* Adjust spacing between form groups */
+   }
+ 
+   label {
+       font-size: 14px; /* Adjust font size for labels */
+   }
+ 
+   input, textarea {
+       padding: 6px; /* Adjust padding inside input and textarea */
+   }
+ 
+   button {
+       padding: 8px 16px; /* Adjust button padding */
+       font-size: 14px; /* Adjust button font size */
+   }
+ }
+
+  .hq {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
   form {
-      padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
   }
-
-  .form-group {
-      margin-bottom: 10px; /* Adjust spacing between form groups */
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .hq {
+      width: 90%; /* Adjust the width for tablets */
+    }
+  
+    form {
+      max-width: 700px; /* Adjust the max-width for tablets */
+    }
   }
-
-  label {
-      font-size: 14px; /* Adjust font size for labels */
+  
+  @media (max-width: 768px) {
+    .hq {
+      margin-top: -100px;
+      width: 85%; /* Adjust the width for small tablets */
+    }
+  
+    form {
+      max-width: 600px; /* Adjust the max-width for small tablets */
+    }
   }
-
-  input, textarea {
-      padding: 6px; /* Adjust padding inside input and textarea */
+  
+  @media (max-width: 480px) {
+    .hq {
+      width: 85%; /* Full width for mobile devices */
+    }
+  
+    form {
+      max-width: 100%; /* Full width for mobile devices */
+    }
   }
-
-  button {
-      padding: 8px 16px; /* Adjust button padding */
-      font-size: 14px; /* Adjust button font size */
-  }
-}
+  

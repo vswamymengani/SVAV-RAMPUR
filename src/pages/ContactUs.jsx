@@ -45,28 +45,29 @@ const ContactUs = () => {
 
   return (
     <div>
-    <h1 id="i1">Contact Us:</h1>
+    <h1 id="i1">Contact Us:</h1><br></br>
     <div id="i2"></div>
     <div>
       <h2 id="i3">
-        Write To Us On:
-        <h5 id="i4">Registered Address:</h5>
+        Write To Us On:<br></br><br></br>
+        <h5 id="i4">Registered Address:</h5><br></br>
         <h4 id="i7">
-        Sri Vidyaranya Avasa Vidyalayam,<br></br>
-        Chokkaram Nagar, Rampur,<br></br>
-        Hazipur Mondal, Mancherial district<br></br>
-        Telangana state -500301<br></br>
-        Phone: 087362 32024
+       &nbsp; Sri Vidyaranya Avasa Vidyalayam,<br></br>
+       &nbsp; Chokkaram Nagar, Rampur,<br></br>
+       &nbsp; Hazipur Mondal, Mancherial district<br></br>
+       &nbsp; Telangana state -500301<br></br>
+       &nbsp; Phone: 087362 32024
 
      </h4>
       </h2>
     </div>
 
-      <br /><br /><br></br><br></br><br></br><br></br>
+      <br /><br /><br></br>
 
       {/* Add the form here */}
-      <div>
+      <div className='hq'><br></br><br></br>
     <center> <h2 id="kcf">Contact Form</h2></center> 
+    <div>
         <form onSubmit={handleSubmit}>
        
           <div className="form-group">
@@ -122,7 +123,10 @@ const ContactUs = () => {
           </button>
         </form>
         {isLoading && <p>Submitting your message, please wait...</p>} {/* Show loading message */}
-      </div>
+        </div>
+
+
+       </div>
     </div>
   );
 };

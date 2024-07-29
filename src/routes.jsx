@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout/Layout'; // Import the Layout component
 import Home from './pages/Home';
@@ -43,6 +43,8 @@ import Archana from './components/Beyond/Archana';
 import Sdp from './components/SDP/Sdp';
 import Gallery from './components/News and Letter/Gallery';
 import ProfessionalDevelopment from './components/Career/ProfessionalDevelopment';
+import JobOpening from './components/Career/JobOpening';
+import Events from './components/News and Letter/Events';
 
 const AppRoutes = () => {
     return (
@@ -86,7 +88,9 @@ const AppRoutes = () => {
                 <Route path="Atglance" element={<Atglance />} />
                 <Route path="Aimobj" element={<Aimobj />} />
                 <Route path="Archana" element={<Archana />} />
+                <Route path="JobOpening" element={<JobOpening />} />
                 <Route path="Gallery" element={<Gallery />} />
+                <Route path="Events" element={<Events/>} />
                 <Route path="ProfessionalDevelopment" element={<ProfessionalDevelopment />} />
                
              </Route>

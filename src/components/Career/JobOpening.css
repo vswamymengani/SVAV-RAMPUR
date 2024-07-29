@@ -1,0 +1,66 @@
+#hjo{
+    color: brown;
+    background-color: yellow;
+    width: 300px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+#fjo {
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+
+    width: 70%;
+    height: 400px;
+    background-color: khaki;
+    text-align: center;
+  }
+  
+  #ljo {
+    font-size: 1.5rem; /* Adjust as needed */
+     width: 95%;
+    height: 340px;
+    background-color: antiquewhite;
+    justify-content: center;
+  }
+  
+  #cjo {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    #fjo {
+      font-size: 1.3rem;
+      height: 300px;
+    }
+  
+    #ljo {
+      font-size: 0.95rem;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #fjo {
+      font-size: 1.2rem;
+      height: 300px;
+    }
+  
+    #ljo {
+      font-size: 0.85rem;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #fjo {
+      font-size: 1rem;
+    }
+  
+    #ljo {
+      font-size: 0.75rem;
+      padding: 0 10px; /* Add padding for mobile view */
+    }
+  }
