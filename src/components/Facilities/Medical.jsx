@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import './Medical.css';
 import "slick-carousel/slick/slick.css";

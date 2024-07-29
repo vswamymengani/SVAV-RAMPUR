@@ -1,6 +1,6 @@
 /* classroom.css */
 #cls {
-  color: rgb(183, 234, 31);
+  /* color: rgb(183, 234, 31);
   font-size: 30px;
   background-color: green;
   font-style: normal;
@@ -9,7 +9,19 @@
   border-radius: 15px;
   margin: 100px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 50px; */
+
+  color: rgb(183, 234, 31);
+  font-size: 30px;
+  background-color: green;
+  font-style: normal;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 30px;
+  text-align: center;
+
 }
 
 
@@ -83,7 +95,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
   margin-top: -150px;
-  margin-left: 80px;
+  margin-left: 10px;
 }
 
 
@@ -92,7 +104,7 @@
 @media (min-width: 768px) {
   #clscontents {
     font-size: 18px;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 }
 
@@ -428,5 +440,49 @@
   #clsimg1 {
     height: 500px; /* Increase height */
     box-shadow: 1px 25px 30px 30px rgb(165, 165, 179);
+  }
+}
+
+
+#clsimg2 {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./clsimg2.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover; /* Ensuring background size scales with the element */
+  background-repeat: no-repeat;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #clsimg1 {
+    height: 350px; /* Increase height */
+    box-shadow: 1px 10px 20px 15px rgb(165, 165, 179);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #clsimg1 {
+    height: 400px; /* Increase height */
+    box-shadow: 1px 15px 20px 20px rgb(165, 165, 179);
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  #clsimg1 {
+    height: 450px; /* Increase height */
+    box-shadow: 1px 20px 25px 25px rgb(165, 165, 179);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #clsimg1 {
+    height: 500px; /* Increase height */
+    box-shadow: 1px 25px 30px 30px rgb(165, 165, 179);
   }
 }

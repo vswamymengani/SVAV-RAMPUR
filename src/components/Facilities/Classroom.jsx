@@ -1,7 +1,8 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import { FaLightbulb, FaPeopleArrows, FaChalkboardTeacher, FaChild, FaChair, FaHome } from 'react-icons/fa';
 import './classroom.css';
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import img1 from './Classroom-1.jpg';
@@ -73,5 +74,6 @@ Creative Video files to teach a software application, a lesson, as well as stude
     </div>
   )
 }
+
 
 export default Classroom;
