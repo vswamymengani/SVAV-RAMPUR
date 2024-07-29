@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Supportus.css'; // Make sure the path to your CSS file is correct
 
 const Supportus = () => {

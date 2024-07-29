@@ -2,22 +2,67 @@
 
 #sdp {
   text-align: center;
-  color: orange;
+  color: blue;
   font-size: 36px;
+}
+#ch1 {
+  color: blue;
+  margin-left: 83px;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  #ch1 {
+    margin-left: 70px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  #ch1 {
+    margin-left: 60px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #ch1 {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #ch1 {
+    margin-left: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  #ch1 {
+    margin-left: 30px;
+    font-size: 12px;
+  }
 }
 
 #sdppara {
-  text-align: left;
-  padding: 20px;
-  font-size: 18px;
-  line-height: 1.6;
+  font-weight: 300;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 100px;
+  margin-bottom: 0px;
+  text-align: justify;
+  margin-top: 25px;
+  text-justify: inter-word;
+  line-height: 160%;
 }
 
 .custom-list {
-  font-size: 18px;
+  font-size: 24px;
   list-style-type: none;
   padding-left: 20px;
-  margin: 20px 50px; /* Adjust margin for better spacing */
+  margin: 40px 50px; /* Adjust margin for better spacing */
 }
 
 .custom-list li {
@@ -37,12 +82,7 @@
   width: 900px;
 }
 
-h2.sdp-contribute {
-  color: blue;
-  margin-left: 50px;
-  margin-top: 10px;
-  font-size: 30px;
-}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -52,12 +92,15 @@ h2.sdp-contribute {
 
   #sdppara {
     padding: 10px;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .custom-list {
-    font-size: 16px;
-    margin: 10px 20px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 160%;
   }
 
   #sdpimgs img {
@@ -65,11 +108,7 @@ h2.sdp-contribute {
     width: 100%;
   }
 
-  h2.sdp-contribute {
-    font-size: 24px;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
+
 }
 
 @media (max-width: 480px) {
@@ -79,7 +118,7 @@ h2.sdp-contribute {
 
   #sdppara {
     padding: 5px;
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .custom-list {
@@ -92,9 +131,5 @@ h2.sdp-contribute {
     width: 100%;
   }
 
-  h2.sdp-contribute {
-    font-size: 20px;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
+ 
 }

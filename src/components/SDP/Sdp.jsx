@@ -12,7 +12,7 @@ const Sdp = () => {
   return (
     <div>
       <br></br><br></br>
-      <h1 id="sdp">Patashala Abhivrudhi Pranalika &nbsp; (School Development Plan)</h1>
+      <h1 id="sdp">Patashala Abhivrudhi Pranalika <br></br> (School Development Plan)</h1>
       <div>
         <div id="sdppara">
           <span>
@@ -33,8 +33,8 @@ const Sdp = () => {
             Here is the school development planning process with the resulting actions and targets captured in School Development Plans (SDPs).
             The SDP is a strategic plan for improvement. It should bring together, in a clear and simple way, the school’s priorities, the main measures it will take to raise standards, the resources dedicated to these, and the key outcomes and targets it intends to achieve.
           </span>
-        </div><br></br><br></br>
-        <h2 style={{ color: 'blue' }}>Contribute in this noble mission of SDP-SVAV-RAMPUR</h2>
+        </div><br></br><br></br><br></br>
+        <h2 id="ch1">Contribute in this noble mission of SDP-SVAV-RAMPUR</h2>
         <ul className="custom-list">
           <li>&nbsp;&nbsp;Contribute in the resource developments of Sri Vidyaranya Avasa Vidyalayam schools;</li>
           <li>&nbsp;&nbsp;Associate with the Alumni Council of your respective school, if you are a former student of Sri Vidyaranya Avasa Vidyalayam.</li>

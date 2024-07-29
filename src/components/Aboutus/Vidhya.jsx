@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Vidhya.css';
 const Vidhya = () => {
   return (
