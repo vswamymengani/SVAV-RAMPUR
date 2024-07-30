@@ -1,4 +1,3 @@
-
 import Slider from 'react-slick';
 import './Art.css';
 import "slick-carousel/slick/slick.css";
@@ -29,6 +28,7 @@ const Art = () => {
       <div className="Art-container">
         <div className="Art-slider">
           <Slider {...sliderSettings}>
+         
             <div><img src={img1} alt="Art 1" style={{ height: '70.15vh' }} /></div>
             <div><img src={img2} alt="Art 2" style={{ height: '70.15vh' }}/></div>
             <div><img src={img3} alt="Art 3" style={{ height: '70.15vh' }}/></div>
@@ -42,28 +42,28 @@ const Art = () => {
         <div className="Art-content">
           <span id="Art">Arts & Crafts</span>
           <div id="Artcontents">
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faMusic} className="facility-logo-Art" />
+            <div className="facility-item">
+              <FontAwesomeIcon icon={faMusic} className="facility-logo" />
               <h3>Sangeet Education for Manasik Vikash</h3>
             </div>
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faBookOpen} className="facility-logo-Art" />
+            <div className="facility-item">
+              <FontAwesomeIcon icon={faBookOpen} className="facility-logo" />
               <h3>Sanskrit Education for Boudhik Vikash</h3>
             </div>
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faPray} className="facility-logo-Art" />
+            <div className="facility-item">
+              <FontAwesomeIcon icon={faPray} className="facility-logo" />
               <h3>Moral and Spiritual Education</h3>
             </div>
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faSchool} className="facility-logo-Art" />
+            <div className="facility-item">
+              <FontAwesomeIcon icon={faSchool} className="facility-logo" />
               <h3>All India Sanskriti Gyan Pariksha</h3>
             </div>
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faChalkboardTeacher} className="facility-logo-Art" />
+            <div className="facility-item">
+              <FontAwesomeIcon icon={faChalkboardTeacher} className="facility-logo" />
               <h3>Prashan Manch (Quiz Competition)</h3>
             </div>
-            <div className="facility-item-Art">
-              <FontAwesomeIcon icon={faPenFancy} className="facility-logo-Art" />
+            <div className="facility-item">
+              <FontAwesomeIcon icon={faPenFancy} className="facility-logo" />
               <h3>Essay Writing Competition</h3>
             </div>
           </div>
