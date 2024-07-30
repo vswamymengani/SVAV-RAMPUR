@@ -1,258 +1,362 @@
-/* sportsroom.css */
+.sports-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+ 
+  margin: 80px; /* Center the container */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sports-container {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+}
+
+
 #spo {
   color: rgb(183, 234, 31);
   font-size: 30px;
   background-color: green;
   font-style: normal;
-  width: 100%;
+  width: 60%;
   margin-bottom: 100px;
   padding: 15px;
   border-radius: 15px;
   margin-left: 30px;
   text-align: center;
+
 }
 
-#spologo {
-  height: 100px;
-  width: 100px;
-  background-image: url(../);
-}
+
+
+
 
 #spocontents {
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
-  margin-left: 60px;
-  margin-top: 80px;
-  margin-bottom: -180px;
-  width: 300px;
-  gap: 20px; /* Space between the facility items */
+  margin-top: 50px;
+  margin-left: 50px;
+  line-height: 160%;
 }
 
-#images {
-  width: 100px;
-  height: 100px;
-}
 
-.sports-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  height: 800px;
-  margin-top: -60px;
-  margin-left: 60px;
-}
+
+
+
 
 .sports-content {
   flex: 1;
-  padding: 20px;
+  padding: 20px; /* Default padding */
 }
 
-.sports-slider {
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .sports-content {
+    padding: 15px; /* Slightly reduced padding for larger tablets */
+  }
+}
+
+@media (max-width: 992px) {
+  .sports-content {
+    padding: 10px; /* Further reduced padding for medium tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .sports-content {
+    padding: 8px; /* Smaller padding for tablets and larger phones */
+  }
+}
+
+@media (max-width: 576px) {
+  .sports-content {
+    padding: 5px; /* Minimal padding for mobile devices */
+  }
+  
+
+}
+
+
+.facility-item h2 {
+  font-size: 24px; /* Base font size */
+  margin: 10px 0; /* Base margin */
+  display: flex; /* To align icon and text horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.facility-item h2 svg {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 28px; /* Base size for icons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .facility-item h2 {
+    font-size: 22px; /* Slightly smaller font size */
+  }
+
+  .facility-item h2 svg {
+    font-size: 26px; /* Slightly smaller icons */
+  }
+}
+
+@media (max-width: 768px) {
+  .facility-item h2 {
+    font-size: 20px; /* Smaller font size for tablets */
+  }
+
+  .facility-item h2 svg {
+    font-size: 24px; /* Smaller icons for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .facility-item h2 {
+    font-size: 18px; /* Even smaller font size for mobile */
+    margin: 8px 0; /* Reduce margin */
+  }
+
+  .facility-item h2 svg {
+    font-size: 22px; /* Smaller icons for mobile */
+  }
+}
+
+
+
+ .sports-slider {
   flex: 1;
-  max-width: 70%;
-  margin-top: 100px;
-  margin-right: -220px;
-  border-radius: 60px;
+  max-width: 100%; /* Adjust width to full container width */
+  margin-top: 50px; /* Adjusted margin for responsiveness */
+  margin-right: 0; /* Remove negative margin for small screens */
+  border-radius: 30px; /* Adjust border-radius for smaller screens */
   scroll-behavior: smooth;
+  
+  overflow: hidden; /* Hide overflow to maintain clean appearance */
+}
+
+/* Responsive adjustments for the slider */
+@media (max-width: 1200px) {
+  .sports-slider {
+    margin-top: 40px; /* Reduce top margin for medium screens */
+    border-radius: 40px; /* Adjust border-radius */
+  }
+}
+
+@media (max-width: 992px) {
+  .sports-slider {
+    margin-top: 30px; /* Further reduce top margin */
+    border-radius: 30px; /* Further adjust border-radius */
+  }
+}
+
+@media (max-width: 768px) {
+  .sports-slider {
+    margin-top: 20px; /* Smaller top margin for tablets */
+    border-radius: 20px; /* Adjust border-radius for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .sports-slider {
+    margin-top: 10px; /* Minimal top margin for mobile devices */
+    border-radius: 15px; /* Adjust border-radius for mobile devices */
+  }
 }
 
 .sports-slider img {
-  width: 100%;
-  border-radius: 60px;
-  height: 800px; /* Maintain aspect ratio */
-  max-height: 500px;
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Ensure image does not exceed max-height */
+  border-radius: inherit; /* Inherit border-radius from parent */
   scroll-behavior: smooth;
 }
 
-.facility-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: -180px;
-  margin-left: -20px;
+/* Responsive adjustments for images */
+@media (max-width: 768px) {
+  .sports-slider img {
+    max-height: 300px; /* Adjust max-height for smaller screens */
+  }
 }
 
-/* sportsroom.css */
-.facility-item h3 {
-  margin: 10px 0; /* Reduce the vertical margin */
+@media (max-width: 576px) {
+  .sports-slider img {
+    max-height: 250px; /* Further adjust max-height for mobile devices */
+  }
 }
 
-.facility-icon {
-  margin-right: 10px;
-  font-size: 24px; /* Adjust the size as needed */
-}
+
+
+
 
 #spapara {
   font-weight: 300;
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
-  margin: 100px;
-  margin-bottom: 0px;
+  margin: 120px;
+  margin-bottom: 0;
   text-align: justify;
   text-justify: inter-word;
   line-height: 160%;
 }
 
-#spoi1, #spoi2, #spoi3 {
-  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
-  height: 400px;
-  width: 800px;
-  background-size: cover; /* Ensuring background size scales with the element */
-  background-repeat: no-repeat;
-}
-
-/* Medium screens (tablets, landscape phones, etc.) */
-@media (max-width: 1024px) {
-  #spoi1, #spoi2, #spoi3 {
-    height: 350px;
-    width: 80%;
-    background-size: cover;
+/* Responsive styles */
+@media (max-width: 1200px) {
+  #spapara {
+    font-size: 22px; /* Slightly smaller font size for larger tablets */
+    margin: 80px;
   }
 }
 
-/* Small screens (portrait tablets, large phones, etc.) */
+@media (max-width: 992px) {
+  #spapara {
+    font-size: 20px; /* Medium size for tablets */
+    margin: 60px;
+  }
+}
+
 @media (max-width: 768px) {
-  #spoi1, #spoi2, #spoi3 {
-    height: 300px;
-    width: 90%;
-    background-size: cover;
+  #spapara {
+    font-size: 18px; /* Smaller font size for small tablets and larger phones */
+    margin: 40px;
   }
 }
 
-/* Extra small screens (phones, portrait phones, etc.) */
-@media (max-width: 480px) {
-  #spoi1, #spoi2, #spoi3 {
-    height: 250px;
-    width: 100%;
-    background-size: cover;
+@media (max-width: 576px) {
+  #spapara {
+    font-size: 16px; /* Smaller font size for mobile devices */
+    margin: 20px;
   }
 }
+
+
+
 
 #spoi1 {
+  box-shadow: 1px 10px 10px 30px rgba(165, 165, 179, 0.7); /* Shadow effect */
   background-image: url(./spoimg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Maximum width */
+  height: 0;
+  padding-top: 50%; /* Aspect ratio: 50% of max-width height */
+  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Ensures clean edges */
+  position: relative; /* For proper positioning of shadow */
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  #spoi1 {
+    box-shadow: 1px 8px 8px 20px rgba(165, 165, 179, 0.6); /* Adjusted shadow */
+  }
+}
+
+@media (max-width: 992px) {
+  #spoi1 {
+    box-shadow: 1px 6px 6px 15px rgba(165, 165, 179, 0.5); /* Adjusted shadow */
+  }
+}
+
+@media (max-width: 768px) {
+  #spoi1 {
+    box-shadow: 1px 4px 4px 10px rgba(165, 165, 179, 0.4); /* Adjusted shadow */
+  }
+}
+
+@media (max-width: 576px) {
+  #spoi1 {
+    box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
+  }
+}
+
+
+
 
 #spoi2 {
+  box-shadow: 1px 10px 10px 30px rgba(165, 165, 179, 0.7); /* Shadow effect */
   background-image: url(./spoimg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Maximum width */
+  height: 0;
+  padding-top: 50%; /* Aspect ratio: 50% of max-width height */
+  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Ensures clean edges */
+  position: relative; /* For proper positioning of shadow */
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  #spoi2 {
+    box-shadow: 1px 8px 8px 20px rgba(165, 165, 179, 0.6); /* Adjusted shadow */
+  }
+}
+
+@media (max-width: 992px) {
+  #spoi2 {
+    box-shadow: 1px 6px 6px 15px rgba(165, 165, 179, 0.5); /* Adjusted shadow */
+  }
+}
+
+@media (max-width: 768px) {
+  #spoi2 {
+    box-shadow: 1px 4px 4px 10px rgba(165, 165, 179, 0.4); /* Adjusted shadow */
+  }
+}
+
+@media (max-width: 576px) {
+  #spoi2 {
+    box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
+  }
+}
+
+
 
 #spoi3 {
+  box-shadow: 1px 10px 10px 30px rgba(165, 165, 179, 0.7); /* Shadow effect */
   background-image: url(./spoimg3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Maximum width */
+  height: 0;
+  padding-top: 50%; /* Aspect ratio: 50% of max-width height */
+  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Ensures clean edges */
+  position: relative; /* For proper positioning of shadow */
 }
 
-/* Responsive Styles */
-
-/* Large screens (desktops) */
+/* Responsive adjustments */
 @media (max-width: 1200px) {
-  #spo {
-    font-size: 28px;
-    margin: 80px 20px 80px 20px; /* Adjust margins */
-  }
-
-  .sports-container {
-    width: 80%;
-    margin: 0 20px 80px 20px;
-  }
-
-  #spocontents {
-    font-size: 18px;
-    margin: 60px 40px 0 40px;
-    width: 400px;
-  }
-
-  .sports-slider {
-    max-width: 80%;
-  }
-
-  .sports-slider img {
-    height: 600px;
-    max-height: 400px;
-  }
-
-  #spapara {
-    font-size: 22px;
-    margin: 80px 20px 0 20px;
+  #spoi3 {
+    box-shadow: 1px 8px 8px 20px rgba(165, 165, 179, 0.6); /* Adjusted shadow */
   }
 }
 
-/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  #spoi3 {
+    box-shadow: 1px 6px 6px 15px rgba(165, 165, 179, 0.5); /* Adjusted shadow */
+  }
+}
+
 @media (max-width: 768px) {
-  #spo {
-    font-size: 24px;
-    margin: 60px 10px 60px 10px;
-  }
-
-  .sports-container {
-    flex-direction: column; /* Stack items vertically */
-    width: 90%;
-    margin: 0 10px 60px 10px;
-  }
-
-  .sports-content {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-
-  #spocontents {
-    font-size: 16px;
-    margin: 10px 10px 0 10px;
-    width: auto;
-  }
-
-  .sports-slider {
-    max-width: 90%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-
-  .sports-slider img {
-    height: 400px;
-    max-height: 300px;
-  }
-
-  #spapara {
-    font-size: 20px;
-    margin: 60px 10px 0 10px;
+  #spoi3 {
+    box-shadow: 1px 4px 4px 10px rgba(165, 165, 179, 0.4); /* Adjusted shadow */
   }
 }
 
-/* Small screens (phones) */
-@media (max-width: 480px) {
-  #spo {
-    font-size: 20px;
-    margin: 30px 0 30px 0;
-  }
-
-  .sports-container {
-    flex-direction: column; /* Stack items vertically */
-    width: 100%;
-    margin: 0;
-  }
-
-  .sports-content {
-    font-size: 14px;
-    margin: 0;
-  }
-
-  #spocontents {
-    font-size: 14px;
-    margin: 0;
-    width: auto;
-  }
-
-  .sports-slider {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .sports-slider img {
-    height: 300px;
-    max-height: 200px;
-  }
-
-  #spapara {
-    font-size: 18px;
-    margin: 30px 0 0 0;
+@media (max-width: 576px) {
+  #spoi3 {
+    box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
   }
 }

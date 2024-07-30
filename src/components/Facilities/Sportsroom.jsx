@@ -72,7 +72,7 @@ const Sportsroom = () => {
       <div className="sports-slider">
         <Slider {...sliderSettings}>
           <div><img className="sports-img" src={img1} alt="Sports ground 1" /></div>
-          <div><img className="sports-img" src={img2} alt="Sports ground 2" /></div>
+          <div><img src={img2} alt="sports 2" style={{ height: '70.15vh' }} /></div>
           <div><img className="sports-img" src={img3} alt="Sports ground 3" /></div>
           <div><img className="sports-img" src={img4} alt="Sports ground 2" /></div>
           <div><img className="sports-img" src={img5} alt="Sports ground 3" /></div>
