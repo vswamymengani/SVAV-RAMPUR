@@ -30,7 +30,7 @@ const Labroom = () => {
           <div id="labcontents">
             <div className="facility-iteml">
               <FaWifi className="facility-iconl" />
-              <h3>Dedicated leased line Internet connection</h3>
+              <h3>Dedicated Internet connection</h3>
             </div>
             <div className="facility-iteml">
               <FaDesktop className="facility-iconl" />
@@ -46,7 +46,7 @@ const Labroom = () => {
             </div>
             <div className="facility-iteml">
               <FaPrint className="facility-iconl" />
-              <h3>Equipped with colour printers and projector</h3>
+              <h3>Equipped colour printers & projector</h3>
             </div>
             <div className="facility-iteml">
               <FaChalkboard className="facility-iconl" />

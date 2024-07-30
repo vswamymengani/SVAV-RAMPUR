@@ -8,8 +8,9 @@
   padding: 15px;
   border-radius: 15px;
   margin: 60px auto; /* Center align with automatic left and right margins */
-  text-align: left;
+  text-align: center;
   margin-top: -60px;
+  margin-left: 30px;
 }
 
 /* For larger screens, adjust width, font size, and margins */
@@ -87,6 +88,7 @@
     flex: 1;
     padding: 20px;
     margin-top: 70px;
+    margin-left: 30px;
   }
   
   /* Adjust padding and margin for smaller screens */
@@ -118,6 +120,7 @@
     .Auditorium-content {
       padding: 5px;
       margin-top: 20px;
+      align-items: center;
       
     }
   }
@@ -135,12 +138,22 @@
     border-radius: 20px; /* Adjust border radius for small screens */
     scroll-behavior: smooth;
   }
+
+  @media (min-width: 504px) {
+    .Auditorium-slider {
+      max-width: 80%;
+      margin-left: 90px;
+      border-radius: 60px;
+      align-items: center;
+    }
+  }
   
   /* Adjustments for medium screens (e.g., tablets) */
   @media (min-width: 768px) {
     .Auditorium-slider {
       max-width: 75%;
       margin-top: 50px;
+      align-items: center;
       border-radius: 40px;
       margin-right: 20px; /* Remove negative margin for small screens */
     }
@@ -153,11 +166,13 @@
       margin-top: 100px;
       margin-right: -80px;
       border-radius: 60px;
+      align-items: center;
     }
   }
   
   .Auditorium-slider img {
     width: 100%;
+    align-items: center;
     margin-top: 20px;
     border-radius: 20px; /* Adjust border radius for small screens */
     height: auto; /* Maintain aspect ratio */
@@ -169,6 +184,7 @@
     .Auditorium-slider img {
       border-radius: 40px;
       max-height: 400px;
+     
     }
   }
   
@@ -218,11 +234,27 @@
     background-size: cover; /* Cover entire element */
     background-repeat: no-repeat;
   }
+
+  @media (min-width: 480px) {
+    #auditoriumimg1 {
+      height: 300px;
+      width: 80%; /* Reduced width for medium screens */
+      background-size: cover; /* Adjust background size */
+    }
+  }
+  @media (min-width: 767px) {
+    #auditoriumimg1 {
+      height: 400px;
+      width: 80%; /* Reduced width for medium screens */
+      background-size: cover; /* Adjust background size */
+    }
+  }
+  
   
   /* Adjustments for medium screens */
   @media (min-width: 768px) {
     #auditoriumimg1 {
-      height: 300px;
+      height: 400px;
       width: 80%; /* Reduced width for medium screens */
       background-size: contain; /* Adjust background size */
     }
@@ -231,8 +263,8 @@
   /* Adjustments for large screens */
   @media (min-width: 1024px) {
     #auditoriumimg1 {
-      height: 400px;
-      width: 800px;
-      background-size: 800px;
+      height: 500px;
+      width: 80%;
+      background-size: cover;
     }
   }

@@ -32,19 +32,19 @@ const Auditorium = () => {
         <div id="Auditoriumcontents">
         <h3><FaTree /> Spacious Open-air Auditorium.</h3>
       <h3><FaSnowflake /> Air-conditioned seminar hall.</h3>
-      <h3><FaTv /> Equipped with Sound system, LCD projector, Overhead projector.</h3>
+      <h3><FaTv /> Equipped with Sound system,LCD projector.</h3>
       <h3><FaVideo /> Audio video presentation facility.</h3>
-      <h3><FaUniversity /> Hosts to several workshops, cultural and curricular events.</h3>
+      <h3><FaUniversity /> Hosts to several workshops, cultural & curricular events.</h3>
       <h3><FaChair /> Individual seating arrangements for every child.</h3>
         </div>
       </div>
       <div className="Auditorium-slider">
         <Slider {...sliderSettings}>
-          <div><img src={img1}  alt="Laboratories 1" /></div>
-          <div><img src={img2} alt="Laboratories 2" /></div>
-          <div><img src={img3} alt="Laboratories 3" /></div>
-          <div><img src={img4} alt="Laboratories 4" /></div>
-          <div><img src={img5} alt="Laboratories 4" /></div>
+          <div><img src={img1} alt="lab 1 " style={{ height: '70.1vh' }} /></div>
+          <div><img src={img2} alt="lab 1 " style={{ height: '70.1vh' }} /></div>
+          <div><img src={img3} alt="lab 1 " style={{ height: '70.1vh' }} /></div>
+          <div><img src={img4} alt="lab 1 " style={{ height: '70.1vh' }} /></div>
+          <div><img src={img5} alt="lab 1 " style={{ height: '70.1vh' }} /></div>
         </Slider>
       </div>
     </div>
