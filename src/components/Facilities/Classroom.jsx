@@ -41,11 +41,11 @@ const Classroom = () => {
       </div>
       <div className="classroom-slider">
         <Slider {...sliderSettings}>
-          <div><img src={img1} alt="Classroom 1" /></div>
-          <div><img src={img2} alt="Classroom 2" /></div>
-          <div><img src={img3} alt="Classroom 3" /></div>
-          <div><img src={img4} alt="Classroom 1" /></div>
-          <div><img src={img5} alt="Classroom 2" /></div>
+        <div><img src={img1} alt="cls 1" style={{ height: '70.15vh' }} /></div>
+        <div><img src={img2} alt="cls 2" style={{ height: '70.15vh' }} /></div>
+        <div><img src={img3} alt="cls 1" style={{ height: '70.15vh' }} /></div>
+        <div><img src={img4} alt="cls 2" style={{ height: '70.15vh' }} /></div>
+        <div><img src={img5} alt="cls 1" style={{ height: '70.15vh' }} /></div>
         </Slider>
       </div>
     </div>
