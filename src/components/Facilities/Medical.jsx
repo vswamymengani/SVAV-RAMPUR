@@ -32,10 +32,13 @@ const Medical = () => {
       <div className="medicalroom-container">
         <div className="medicalroom-slider">
           <Slider {...sliderSettings}>
-            <div><img src={img1} alt="Medical 1" /></div>
-            <div><img src={img2} alt="Medical 2" /></div>
-            <div><img className='img3medical' src={img3} alt="Medical 3" /></div>
-            <div><img src={img4} alt="Medical 2" /></div>
+           
+            {/* <div><img className='img3medical' src={img3} alt="Medical 3" /></div> */}
+            <div><img src={img1} alt="Medical 4" style={{ height: '60.15vh' }} /></div>
+            <div><img src={img2} alt="Medical 4" style={{ height: '60.15vh' }} /></div>
+            <div><img src={img3} alt="Medical 4" style={{ height: '60.15vh' }} /></div>
+            <div><img src={img4} alt="Medical 4" style={{ height: '60.15vh' }} /></div>
+
 
           </Slider>
         </div>
@@ -56,7 +59,7 @@ const Medical = () => {
             </div>
             <div className="facility-item">
               <img src={airconLogo} alt="Air Conditioning" className="facility-logo" />
-              <h3>	Managed by an experienced staff nurse and ward boy.</h3>
+              <h3>	Managed by an experienced staff nurse.</h3>
             </div>
             <div className="facility-item">
               <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />
@@ -64,7 +67,7 @@ const Medical = () => {
             </div>
             <div className="facility-item">
               <img src={dormsLogo} alt="Dorms" className="facility-logo" />
-              <h3>	Tie-up with nearby Govt. and private hospitals for emergency</h3>
+              <h3> Tie-up Govt & private hospitals emergency</h3>
             </div>
             <div className="facility-item">
               <img src={doctorLogo} alt="Doctor" className="facility-logo" />
@@ -77,7 +80,7 @@ const Medical = () => {
         <span>A prime area of interest for all parents is their ward’s wellness. SVAV
           has an adequately equipped infirmary to enable health support not only to
           the students but also to the staff. The infirmary is looked after
-          by a qualified nurse. Annual health check-ups of students are regularly carried out and a record is maintained.
+          by a qualified nurse. Annual health check-ups of students are regularly carried out & a record is maintained.
           <br></br><br></br><br></br>
           <center><div id="med1img"></div></center><br></br><br></br>
           We consider the health of our students as our primary concern. The school has an excellent medical centre on campus with medical professionals available around the clock. On-campus medical centre ensures all its students living on campus with immediate medical care in need. Any form of viral diseases, infections and minor injuries are treated within school premises itself. The medical centre has 2 staff nurses and one ward boy attend at all times. A doctor visits the campus once/twice in a Month.<br></br><br></br>

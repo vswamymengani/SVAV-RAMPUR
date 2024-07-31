@@ -10,7 +10,7 @@
   margin: 120px;
   text-align: center;
   margin-top: 10px;
-  margin-left: 80px;
+  margin-left: -100px;
 }
 
 .medicalroom-container {
@@ -24,10 +24,11 @@
 
 .medicalroom-content {
   flex: 1; /* Makes the content take available space */
-  text-align: left; /* Aligns text to the left */
-  padding: 20px;
+  text-align: center; /* Aligns text to the left */
+  padding: 10px;
   font-size: 20px;
-  margin-left: 30px;
+  margin-left: 60px;
+  margin-right: 10px;
   margin-top: 20px;
 }
 
@@ -37,15 +38,19 @@
 }
 
 .img3medical {
-  height: 700px;
+  height: 50vh;
 }
 
 #med1img, #med2img {
-  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+ 
   height: 400px;
-  width: 800px;
-  background-size: 800px 400px;
+  width: 50%;
+  background-size: 100%;
   background-repeat: no-repeat;
+}
+
+#med1img:hover, #med2img:hover {
+  box-shadow: 1px 10px 15px 25px rgb(165, 165, 179); /* Stronger shadow on hover */
 }
 
 #med1img {
@@ -61,12 +66,15 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 10px;
-  margin-left: 100px;
-  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  
 }
 
 .facility-item {
   display: flex;
+  
   align-items: center;
   margin-bottom: 10px;
 }
@@ -102,7 +110,7 @@
   font-family: 'Open Sans', sans-serif;
   margin: 120px;
   margin-bottom: 0px;
-  margin-top: -40px;
+  margin-top: 20px;
   text-align: justify;
   text-justify: inter-word;
   line-height: 160%;
@@ -110,44 +118,6 @@
 
 /* Responsive Styles */
 
-/* Large screens (desktops) */
-@media (max-width: 1200px) {
-  #medical {
-    width: 100%;
-    font-size: 28px;
-    margin: 80px;
-    margin-left: 50px;
-  }
-
-  .medicalroom-container {
-    flex-direction: column; /* Stack items vertically */
-  }
-
-  .medicalroom-content {
-    font-size: 18px;
-    margin-left: 20px;
-  }
-
-  #medicalcontents {
-    margin-left: 50px;
-  }
-
-  .medicalroom-slider {
-    max-width: 80%;
-    margin-left: 0px;
-  }
-
-  #med1img, #med2img {
-    height: 350px;
-    width: 700px;
-    background-size: 700px;
-  }
-
-  #medicalpara {
-    font-size: 22px;
-    margin: 80px;
-  }
-}
 
 /* Medium screens (tablets) */
 @media (max-width: 768px) {
@@ -178,11 +148,14 @@
   }
 
   #med1img, #med2img {
-    height: 300px;
-    width: 600px;
-    background-size: 600px;
+   
+    height: 200px;
+    width: 50%;
+    background-size: 100%;
   }
-
+  #med1img:hover, #med2img:hover {
+    box-shadow: 1px 10px 15px 25px rgb(165, 165, 179); /* Stronger shadow on hover */
+  }
   #medicalpara {
     font-size: 20px;
     margin: 60px;
@@ -192,8 +165,10 @@
 /* Small screens (phones) */
 @media (max-width: 480px) {
   #medical {
-    width: 90%;
-    font-size: 20px;
+    
+    width: 50%;
+    font-size: 12px;
+    margin-top: 30px;
     margin: 30px;
     margin-left: 10px;
   }
@@ -218,13 +193,20 @@
   }
 
   #med1img, #med2img {
-    height: 200px;
-    width: 400px;
-    background-size: 400px;
+   
+    height: 80px;
+   
+   width: 50%; 
+    background-size: 100%;
   }
-
+  
+  #med1img:hover, #med2img:hover {
+    box-shadow: 1px 10px 15px 25px rgb(165, 165, 179); /* Stronger shadow on hover */
+  }
   #medicalpara {
     font-size: 18px;
+ margin-left: 20px;
+ margin-right: 20px;
     margin: 30px;
   }
 }
