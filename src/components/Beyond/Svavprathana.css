@@ -4,11 +4,12 @@
   font-size: 30px;
   background-color: green;
   font-style: normal;
-  width: 42%;
+  width: 45%;
   padding: 5px;
   border-radius: 15px;
-  margin: 100px auto; /* Centered horizontally */
+  margin: 40px auto; /* Centered horizontally */
   text-align: center;
+  margin-left: 30px;
 }
 
 /* Flex container for Svavprathana */
@@ -18,7 +19,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-left: 80px;
+  margin-top: -70px;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
@@ -28,7 +30,8 @@
   text-align: left;
   padding: 20px;
   font-size: 20px;
-  margin-left: 100px;
+  margin-left: -300px;
+  margin-top: 250px;
   box-sizing: border-box; /* Ensures padding does not affect width */
 }
 
@@ -46,9 +49,18 @@
 #Svavprathana2img {
   box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
   background-image: url(../Facilities/Svavaprathana2.png);
-  height: 200px;
+  height: 300px;
   width: 800px;
   background-size: 800px 300px;
+  background-repeat: no-repeat;
+}
+
+#Svavprathana3img {
+  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  background-image: url(./shan1.png);
+  height: 200px;
+  width: 800px;
+  background-size: 800px 200px;
   background-repeat: no-repeat;
 }
 
@@ -114,14 +126,16 @@
 /* Styling for Svavprathana slider */
 .Svavprathana-slider {
   flex: 1;
+  height: 500px;
   max-width: 1000px; /* Increased maximum width */
-  margin: 0 auto; /* Centered horizontally */
+  margin: 0px auto; /* Centered horizontally */
 }
 
 /* Responsive adjustments for Svavprathana slider images */
 .Svavprathana-slider img {
   width: 100%; /* Ensures images take the full width of the slider container */
-  height: auto;
+  height: 500px;
+  margin-top: -20px;
   border-radius: 40px;
 }
 

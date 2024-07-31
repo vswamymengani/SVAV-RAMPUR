@@ -30,11 +30,12 @@ const Library = () => {
     <div className="Library-container">
       <div className="Library-slider">
         <Slider {...sliderSettings}>
-          <div><img src={img1} alt="Library 1" /></div>
-          <div><img src={img2} alt="Library 2" /></div>
-          <div><img src={img3} alt="Library 3" /></div>
-          <div><img src={img4} alt="Library 1" /></div>
-          <div><img src={img6} alt="Library 3" /></div>
+
+          <div><img src={img1} alt="Library 1"   style={{ height: '70.15vh' }}/></div>
+          <div><img src={img2} alt="Library 2"  style={{ height: '70.15vh' }}/></div>
+          <div><img src={img3} alt="Library 3"  style={{ height: '70.15vh' }}/></div>
+          <div><img src={img4} alt="Library 1"  style={{ height: '70.15vh' }}/></div>
+          <div><img src={img6} alt="Library 3"  style={{ height: '70.15vh' }}/></div>
         </Slider>
       </div>
       <div className="Library-content">
@@ -46,7 +47,7 @@ const Library = () => {
       </div>
       <div className="facility-item-Library">
         <FaJournalWhills style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Periodical Journals and magazines are available</h3>
+        <h3>Periodical Journals & magazines are available</h3>
       </div>
       <div className="facility-item-Library">
         <FaNewspaper style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
@@ -54,7 +55,7 @@ const Library = () => {
       </div>
       <div className="facility-item-Library">
         <FaRegClipboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Reference Services for projects and assignments</h3>
+        <h3>Reference Services for projects & assignments</h3>
       </div>
       <div className="facility-item-Library">
         <FaChalkboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />

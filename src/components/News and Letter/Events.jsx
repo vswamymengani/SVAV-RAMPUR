@@ -9,7 +9,7 @@ const Events = () => {
             <div id="n1">
                 <div id="n2">
                     <div id="ejo">
-                        <center>
+                     
                             <div id="elo">
                                 <br /><br />
                                 NOTICE BOARD
@@ -20,13 +20,13 @@ const Events = () => {
                                 BHS/CIR - 27/24-25<br /><br />
                                 BHS/CIR - 26/24-25
                             </div>
-                        </center>
+                     
                     </div>
                 </div>
                 
                 <div id="n3">
                     <div id="ejo">
-                        <center>
+                      
                             <div id="elo">
                                 <br /><br />
                                 NOTICE BOARD
@@ -37,10 +37,26 @@ const Events = () => {
                                 BHS/CIR - 27/24-25<br /><br />
                                 BHS/CIR - 26/24-25
                             </div>
-                        </center>
+                       
                     </div>
                 </div>
             </div>
+            <div id="n3">
+                    <div id="ejo">
+                      
+                            <div id="elo">
+                                <br /><br />
+                                NOTICE BOARD
+                                <br /><br /><br />
+                                BHS/CIR - 30/24-25<br /><br />
+                                BHS/CIR - 29/24-25<br /><br />
+                                BHS/CIR - 28/24-25<br /><br />
+                                BHS/CIR - 27/24-25<br /><br />
+                                BHS/CIR - 26/24-25
+                            </div>
+                       
+                    </div>
+                </div>
         </div>
     );
 }

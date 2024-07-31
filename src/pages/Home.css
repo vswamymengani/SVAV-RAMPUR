@@ -94,10 +94,21 @@
 
 
   .t2{
+  
+    /* filter: brightness(0.7); */
     width: 250%;
     margin-left: 5%;
+    /* background: rgba(135, 137, 137, 0.5);  */
     margin-right: 5%;
     margin-top: -80px;
+    background-image: url(./saraswathimatha.png);
+    /* background-color: rgba(176, 244, 200, 0.1); */
+    /* background-image: radial-gradient(rgb(0, 0, 0)); */
+    background-repeat: no-repeat;
+   background-position: center;
+   /* opacity: 0.5; */
+   /* z-index: 2.5; Place overlay above the background but below text */
+    
   }
   .container{
     margin-top: 2%;
@@ -790,7 +801,10 @@
     background-size: cover;
   }
 
-
+.p1{
+  font-size: 24px;
+  line-height: 160%;
+}
 
 
   /* Responsive Styles */

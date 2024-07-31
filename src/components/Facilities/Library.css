@@ -7,9 +7,11 @@
   width: 90%; /* Default width for small screens */
   padding: 10px;
   border-radius: 15px;
-  margin: 20px auto; /* Centering and margin for small screens */
-  text-align: center;
-  margin-top: 10px;
+  /* margin: 50px auto; */
+  /* text-align: center; */
+  margin-top: 0px;
+
+  margin-right: -180px;
 }
 
 /* Adjustments for medium screens */
@@ -34,6 +36,7 @@
   display: flex;
   flex-direction: column; /* Column layout for small screens */
   align-items: center;
+  margin-top: -120px;
   justify-content: center;
   padding: 20px; /* Reduced padding for small screens */
 }
@@ -46,37 +49,62 @@
   }
 }
 
+
 .Library-content {
-  flex: 1;
-  text-align: left;
-  padding: 20px; /* Reduced padding for small screens */
-  font-size: 16px; /* Smaller font size for small screens */
-  margin-left: 0; /* Remove margin for small screens */
+  /* flex: 1; */
+  margin-top: 470px;
+  /* text-align: left; */
+  padding: 20px;
+  font-size: 16px;
+  margin-left:30px;
 }
 
-/* Adjustments for medium screens */
-@media (min-width: 768px) {
+/* For screens that are 1200px or larger */
+@media (min-width: 1200px) {
   .Library-content {
     padding: 30px;
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-top: 440px;
   }
 }
 
-/* Adjustments for large screens */
-@media (min-width: 1024px) {
+/* For screens between 768px and 1199px */
+@media (max-width: 1199px) and (min-width: 768px) {
   .Library-content {
-    padding: 50px;
-    font-size: 20px;
-    margin-left: 100px;
+    padding: 25px;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-top: 340px;
   }
 }
+
+/* For screens between 480px and 767px */
+@media (max-width: 767px) and (min-width: 480px) {
+  .Library-content {
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 240px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+  .Library-content {
+    padding: 15px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 140px;
+  }
+}
+
 
 #Librarycontents {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 20px;
+  margin-top: -90px;
   margin-left: 0; /* Remove negative margin for small screens */
 }
 
@@ -162,9 +190,9 @@
   font-size: 18px; /* Smaller font size for small screens */
   font-weight: 300; /* Corrected font-weight value */
   font-family: 'Open Sans', sans-serif;
-  margin: 20px; /* Reduced margin for small screens */
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0px; /* Reduced margin for small screens */
+  margin-top: 220px;
+  /* margin-bottom: 0; */
   text-align: justify;
   text-justify: inter-word;
   line-height: 160%;

@@ -1,11 +1,14 @@
-import React from 'react';
+
 import './Commite.css';
+import img1 from './sdp1.png';
 
 const Commite = () => {
   return (
     <div>
+       <br></br>
       <center>
         <h1 className='c1'>Executive Committee</h1>
+        <div><img src={img1} alt="sdp 1" style={{height:"200px", width: "1330px"}} /></div>
         <table >
           <thead>
             <tr>
@@ -110,6 +113,7 @@ const Commite = () => {
         </table>
       </center>
       <div className="i"></div>
+      
     </div>
   );
 }

@@ -13,10 +13,14 @@
     text-align: justify;
     text-justify: inter-word;
     /* margin-right: 20px; */
-    font-size: 30px;
+    /* font-size: 30px; */
     margin-left: 70px;
     margin-right: 70px;
     line-height: 160%;
+
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Large devices (desktops, 1200px and up) */

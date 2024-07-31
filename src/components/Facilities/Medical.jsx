@@ -47,31 +47,31 @@ const Medical = () => {
           <div id="medicalcontents">
             <div className="facility-item">
               <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />
-              <h3>Intense Pastoral Care</h3>
+              <h4>Intense Pastoral Care</h4>
             </div>
             <div className="facility-item">
               <img src={dormsLogo} alt="Dorms" className="facility-logo" />
-              <h3>Spacious and Ventilated Dorms</h3>
+              <h4>Spacious and Ventilated Dorms</h4>
             </div>
             <div className="facility-item">
               <img src={doctorLogo} alt="Doctor" className="facility-logo" />
-              <h3>	Well-equipped Medical Room</h3>
+              <h4>	Well-equipped Medical Room</h4>
             </div>
             <div className="facility-item">
               <img src={airconLogo} alt="Air Conditioning" className="facility-logo" />
-              <h3>	Managed by an experienced staff nurse.</h3>
+              <h4>	Managed by an experienced staff nurse.</h4>
             </div>
             <div className="facility-item">
               <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />
-              <h3>	Regular health check-ups of the students</h3>
+              <h4>	Regular health check-ups of the students</h4>
             </div>
             <div className="facility-item">
               <img src={dormsLogo} alt="Dorms" className="facility-logo" />
-              <h3> Tie-up Govt & private hospitals emergency</h3>
+              <h4> Tie-up Govt & private hospitals emergency</h4>
             </div>
             <div className="facility-item">
               <img src={doctorLogo} alt="Doctor" className="facility-logo" />
-              <h3>	Senior doctors visit the campus twice in a Month</h3>
+              <h4>	Senior doctors visit the campus twice in a Month</h4>
             </div>
           </div>
         </div>

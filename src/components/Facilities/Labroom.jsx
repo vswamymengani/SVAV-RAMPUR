@@ -30,39 +30,39 @@ const Labroom = () => {
           <div id="labcontents">
             <div className="facility-iteml">
               <FaWifi className="facility-iconl" />
-              <h3>Dedicated Internet connection</h3>
+              <h4>Dedicated Internet connection</h4>
             </div>
             <div className="facility-iteml">
               <FaDesktop className="facility-iconl" />
-              <h3>30 high-quality LED monitors PCs</h3>
+              <h4>30 high-quality LED monitors PCs</h4>
             </div>
             <div className="facility-iteml">
               <FaFileAlt className="facility-iconl" />
-              <h3>All latest licensed softwares</h3>
+              <h4>All latest licensed softwares</h4>
             </div>
             <div className="facility-iteml">
               <GiLightBulb className="facility-iconl" />
-              <h3>Fluorescent and incandescent lighting</h3>
+              <h4>Fluorescent and incandescent lighting</h4>
             </div>
             <div className="facility-iteml">
               <FaPrint className="facility-iconl" />
-              <h3>Equipped colour printers & projector</h3>
+              <h4>Equipped colour printers & projector</h4>
             </div>
             <div className="facility-iteml">
               <FaChalkboard className="facility-iconl" />
-              <h3>Whiteboard, flip chart and markers.</h3>
+              <h4>Whiteboard, flip chart and markers.</h4>
             </div>
             <div className="facility-iteml">
               <FaChair className="facility-iconl" />
-              <h3>Comfortable, ergonomic seating</h3>
+              <h4>Comfortable, ergonomic seating</h4>
             </div>
             <div className="facility-iteml">
               <FaSnowflake className="facility-iconl" />
-              <h3>High-quality ACs for continuous cooling</h3>
+              <h4>High-quality ACs for continuous cooling</h4>
             </div>
             <div className="facility-iteml">
               <FaTools className="facility-iconl" />
-              <h3>School has the separate IT helpdesk</h3>
+              <h4>School has the separate IT helpdesk</h4>
             </div>
 
 

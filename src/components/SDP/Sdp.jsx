@@ -1,11 +1,12 @@
 import './Sdp.css';
-import img1 from '../Facilities/sd1.png';
-import img2 from '../Facilities/sd2.png';
-import img3 from '../Facilities/sd33.png';
-import img4 from '../Facilities/sd4.png';
-import img5 from '../Facilities/sd5.png';
-import img6 from '../Facilities/sd6.png';
-import img7 from '../Facilities/s&p2.jpg';
+import img11 from './sdp1.png';
+// import img1 from '../Facilities/sd1.png';
+// import img2 from '../Facilities/sd2.png';
+// import img3 from '../Facilities/sd33.png';
+// import img4 from '../Facilities/sd4.png';
+// import img5 from '../Facilities/sd5.png';
+// import img6 from '../Facilities/sd6.png';
+// import img7 from '../Facilities/s&p2.jpg';
 
 
 const Sdp = () => {
@@ -44,18 +45,116 @@ const Sdp = () => {
       </div><br></br><br></br>
       <div id="sdpimgs">
         <center>
-          <div><img src={img1} alt="Transport 1" /></div><br></br>
+          <div><img src={img11} alt="sdp 1" /></div>
+          {/* <div><img src={img1} alt="Transport 1" /></div><br></br>
           <div><img src={img2} alt="Transport 2"  /></div><br></br>
           <div><img src={img3} alt="Transport 3"  /></div><br></br>
           <div><img src={img4} alt="Transport 4"  /></div><br></br>
           <div><img src={img5} alt="Transport 3" /></div><br></br>
           <div><img src={img6} alt="Transport 4" /></div><br></br>
-          <div><img src={img7} alt="Transport 4"  /></div>
+          <div><img src={img7} alt="Transport 4"  /></div> */}
         </center>
       </div>
 
-
-
+      <div>
+        <center>
+          <h2 className='sdp1'></h2>
+          <table style={{ width: "1200px" }} border="10px solid black" cellPadding="10px" cellSpacing="5px">
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>S.No</th>
+                <th>Work Details</th>
+                <th>Estimation</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Donar</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowSpan={6}>Phase 1</td>
+                <td>1</td>
+                <td>Arch, entry and exit gate with 100m wall each side</td>
+                <td>30-40 Lakhs</td>
+                <td>19th Aug 2024</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Compound Wall</td>
+                <td>xx Lakhs</td>
+                <td>19th Aug 2024</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Internal rows</td>
+                <td>xx Lakhs</td>
+                <td>19th Aug 2024</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Play Ground</td>
+                <td>xx Lakhs</td>
+                <td>19th Aug 2024</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Parking Green Spots</td>
+                <td>xx Lakhs</td>
+                <td>19th Aug 2024</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Memorial</td>
+                <td>xx Lakhs</td>
+                <td>19th Aug 2024</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td rowSpan={2}>Phase 2</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+      </div>
+      <br></br><br></br>
+      <center>
+        <b>Project status reports:</b>
+      <a href=""><b>Please click here</b></a>
+      </center>
     </div>
   )
 }

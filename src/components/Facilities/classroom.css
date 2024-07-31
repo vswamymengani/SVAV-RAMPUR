@@ -100,7 +100,7 @@ padding: 40px;
   flex: 1;
   max-width: 100%; /* Adjust width to full container width */
   margin-top: 50px; /* Adjusted margin for responsiveness */
-  margin-right: 0; /* Remove negative margin for small screens */
+  margin-right: -20px; /* Remove negative margin for small screens */
   border-radius: 30px; /* Adjust border-radius for smaller screens */
   scroll-behavior: smooth;
   
@@ -241,6 +241,12 @@ padding: 40px;
 
 @media (max-width: 576px) {
   #clsimg1 {
+    box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
+  }
+}
+@media (max-width: 476px) {
+  #clsimg1 {
+    height: 300px;
     box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
   }
 }

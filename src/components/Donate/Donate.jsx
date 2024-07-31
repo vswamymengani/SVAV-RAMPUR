@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './donation.css'
 
 const items = [
@@ -44,14 +44,15 @@ const Donate = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div>
+        <h2 style={{color:'green',marginTop:"40px",textAlign:"center"}}>Contribute in this noble mission of SVAV high school</h2>
+        <form onSubmit={handleSubmit} style={{marginTop:"40px"}}>
             <table>
                 <thead>
                     <tr>
                         <th>Item</th>
                         <th>Cost per Item</th>
                         <th>Quantity</th>
-                        <th>Unit</th>
                         <th>Total Cost</th>
                     </tr>
                 </thead>
@@ -68,17 +69,23 @@ const Donate = () => {
                                     min="0"
                                 />
                             </td>
-                            <td>USD</td>
                             <td>{item.cost * quantities[item.id]}</td>
                         </tr>
+                        
                     ))}
                 </tbody>
-            </table>
+            </table><br></br>
+            <center>
             <div>
-                <strong>Total Donation Amount: {calculateTotal()} USD</strong>
+            <strong>Total Donation Amount: {calculateTotal()} </strong>
             </div>
-            <button type="submit">Donate</button>
+            <br></br>
+            <button type="submit">Donate</button></center><br></br> 
+            <div style={{backgroundColor:"yellow",fontSize:"20px"}}> 
+           <b>NOTE : </b> For more info please reachout 9440623001 / 9492873533 
+           </div>
         </form>
+        </div>
     );
 };
 export default Donate

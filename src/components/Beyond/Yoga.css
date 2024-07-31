@@ -1,200 +1,5 @@
-/* Ensure you import this in your component file */
-#Svavprathana {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
-  font-style: normal;
-  width: 30%;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 100px;
-  text-align: center;
-  margin-top: 10px;
-}
 
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  #Svavprathana {
-      font-size: 24px; /* Reduce font size */
-      width: 50%; /* Increase width to use more of the available screen width */
-      padding: 12px; /* Reduce padding */
-      margin: 50px; /* Reduce margin */
-      margin-top: 5px; /* Adjust top margin */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  #Svavprathana {
-      font-size: 20px; /* Further reduce font size */
-      width: 80%; /* Increase width to be almost full-width */
-      padding: 10px; /* Reduce padding further */
-      margin: 20px; /* Further reduce margin */
-      margin-top: 0px; /* Remove top margin */
-  }
-}
-
-.Svavprathana-container {
-  display: flex;
-  flex-direction: row; /* Aligns items in a row */
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .Svavprathana-container {
-      flex-direction: column; /* Stack items vertically on tablets */
-      padding: 15px; /* Adjust padding for smaller screens */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .Svavprathana-container {
-      flex-direction: column; /* Stack items vertically on mobile */
-      padding: 10px; /* Further adjust padding for mobile screens */
-  }
-}
-.Svavprathana-content {
-  flex: 1; /* Makes the content take available space */
-  text-align: left; /* Aligns text to the left */
-  padding: 20px;
-  font-size: 20px;
-  margin-left: 100px;
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .Svavprathana-content {
-      padding: 15px; /* Reduce padding for tablets */
-      font-size: 18px; /* Slightly reduce font size */
-      margin-left: 0; /* Remove left margin for better alignment on smaller screens */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .Svavprathana-content {
-      padding: 10px; /* Further reduce padding for mobile screens */
-      font-size: 16px; /* Reduce font size for mobile */
-      margin-left: 0; /* Ensure no margin for full-width content on mobile */
-  }
-}
-
-  
-#Svavprathana {
-  font-size: 2rem; /* Base font size */
-  margin-bottom: 20px; /* Base margin */
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  #Svavprathana {
-      font-size: 1.5rem; /* Reduce font size for tablets */
-      margin-bottom: 15px; /* Reduce margin for tablets */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  #Svavprathana {
-      font-size: 1.25rem; /* Further reduce font size for mobile */
-      margin-bottom: 10px; /* Further reduce margin for mobile */
-  }
-}
-
-#Svavprathanacontents {
-  display: flex;
-  flex-direction: column; /* Stacks children vertically */
-  align-items: flex-start; /* Aligns children to the start of the flex container */
-  margin-top: 20px; /* Space above the element */
-  margin-left: 100px; /* Space to the left of the element */
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  #Svavprathanacontents {
-      margin-left: 50px; /* Reduce left margin for tablets */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  #Svavprathanacontents {
-      margin-left: 20px; /* Further reduce left margin for mobile */
-      align-items: center; /* Center align children on mobile */
-  }
-}
-
-.facility-item-Svavprathana {
-  display: flex; /* Arrange items in a row */
-  align-items: center; /* Vertically center items */
-  margin-bottom: 10px; /* Space below each item */
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .facility-item-Svavprathana {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: flex-start; /* Align items to the start on smaller screens */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .facility-item-Svavprathana {
-      margin-bottom: 5px; /* Reduce bottom margin for smaller screens */
-  }
-}
-
-  
-.Svavprathana-slider {
-  flex: 1; /* Makes the slider take available space */
-  max-width: 500px; /* Optional: limit the maximum width */
-  margin-right: 0; /* Space between slider and content */
-  margin-top: 20px; /* Space from the top, adjust as needed */
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .Svavprathana-slider {
-      max-width: 90%; /* Adjust max width to fit smaller screens */
-      margin: 10px auto; /* Center slider and add vertical margins */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .Svavprathana-slider {
-      max-width: 100%; /* Ensure slider takes full width on small screens */
-      margin: 5px auto; /* Center slider and reduce vertical margins */
-  }
-}
-
-.Svavprathana-slider img {
-  width: 100%; /* Ensure image takes full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 40px; /* Rounded corners */
-  object-fit: cover; /* Ensure image covers the area without stretching */
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .Svavprathana-slider img {
-      height: 300px; /* Adjust height for smaller screens */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .Svavprathana-slider img {
-      height: 200px; /* Further adjust height for very small screens */
-  }
-}
-
-#Sadacharampara {
+#yogapara {
   font-size: 24px;
   font-weight: 300; /* Use numerical values for font-weight */
   font-family: 'Open Sans', sans-serif;
@@ -206,7 +11,7 @@
 
 /* Responsive styles for tablets and smaller devices */
 @media (max-width: 768px) {
-  #Sadacharampara {
+  #yogapara  {
       font-size: 20px; /* Adjust font size for tablets */
       margin: 50px; /* Reduce margins */
   }
@@ -214,8 +19,24 @@
 
 /* Responsive styles for mobile devices */
 @media (max-width: 480px) {
-  #Sadacharampara {
+  #yogapara  {
       font-size: 16px; /* Further reduce font size for mobile devices */
       margin: 20px; /* Further reduce margins */
   }
+}
+#yogaimg{
+  width: 140%; /* Ensures images take the full width of the slider container */
+  height: 700px;
+  background-repeat: no-repeat;
+}
+#img2{
+  height: 400px;
+  width: 500px;
+  margin-left: 150px;
+}
+#img3{
+  height: 400px;
+  width: 500px;
+  float: left;
+  margin-left: 30px;
 }

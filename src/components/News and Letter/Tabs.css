@@ -1,6 +1,9 @@
 .tabs {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   margin-top: 4%;
+  justify-content: center; /* Center align the tabs */
+  gap: 20px; /* Set gap between tabs */
 
 }
 
@@ -24,12 +27,34 @@
 }
 
 .tab-image {
-  width: 50px; /* Adjust as needed */
-  height: 50px; /* Adjust as needed */
+  width: 300px;  /* Set a fixed width for all images */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
 }
 
 .tab-title {
   margin-top: 8px; /* Adjust as needed */
   font-size: 14px; /* Adjust as needed */
   text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tab-image {
+    max-width: 300px; /* Adjust image width for tablets */
+  }
+
+  .tab-title {
+    font-size: 12px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-image {
+    max-width: 200px; /* Adjust image width for mobile devices */
+  }
+
+  .tab-title {
+    font-size: 10px; /* Adjust font size for mobile devices */
+  }
 }

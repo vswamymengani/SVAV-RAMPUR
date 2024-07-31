@@ -1,5 +1,5 @@
 
-  import logo from './Ad Process.png';
+  import logo from './admissionpage.png';
   import './AdmissionProcess.css';
   
   const AdmissionProcess = () => {

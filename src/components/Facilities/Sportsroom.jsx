@@ -1,6 +1,6 @@
-import React from 'react';
+
 import Slider from 'react-slick';
-import { FaVolleyballBall, FaTableTennis, FaBasketballBall, FaSwimmer, FaSkating, FaFootballBall, FaRunning } from 'react-icons/fa';
+import { FaVolleyballBall, FaTableTennis, FaBasketballBall,  FaSkating, FaFootballBall, FaRunning } from 'react-icons/fa';
 import { GiCricketBat, GiTennisRacket, GiTeamDowngrade } from 'react-icons/gi'; // Importing from Game Icons for cricket, badminton, and kho-kho
 import './sportsroom.css';
 import "slick-carousel/slick/slick.css"; 
@@ -33,39 +33,39 @@ const Sportsroom = () => {
         <div id="spocontents">
           <div className="facility-item">
             <FaVolleyballBall className="facility-icon" />
-            <h3>Volleyball Court</h3>
+            <h4>Volleyball Court</h4>
           </div>
           <div className="facility-item">
             <FaRunning className="facility-icon" />
-            <h3>Kabaddi Court</h3>
+            <h4>Kabaddi Court</h4>
           </div>
           <div className="facility-item">
             <GiTeamDowngrade className="facility-icon" />
-            <h3>Kho-Kho Court</h3>
+            <h4>Kho-Kho Court</h4>
           </div>
           <div className="facility-item">
             <GiCricketBat className="facility-icon" />
-            <h3>Cricket Practice Net</h3>
+            <h4>Cricket Practice Net</h4>
           </div>
           <div className="facility-item">
             <FaFootballBall className="facility-icon" />
-            <h3>Football Field</h3>
+            <h4>Football Field</h4>
           </div>
           <div className="facility-item">
             <FaTableTennis className="facility-icon" />
-            <h3>Track and field</h3>
+            <h4>Track and field</h4>
           </div>
           <div className="facility-item">
             <FaBasketballBall className="facility-icon" />
-            <h3>Basketball Court</h3>
+            <h4>Basketball Court</h4>
           </div>
           <div className="facility-item">
             <GiTennisRacket className="facility-icon" />
-            <h3>Badminton Court</h3>
+            <h4>Badminton Court</h4>
           </div>
           <div className="facility-item">
             <FaSkating className="facility-icon" />
-            <h3>Skating Rink</h3>
+            <h4>Skating Rink</h4>
           </div>
         </div>
       </div>

@@ -68,10 +68,10 @@ const Home = () => {
                     <div className="carousel-slide">
 
                         <div className="t1">
-                            <div className="t2">
-                                <h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1>
+                            <div className="t2"><br></br><br></br><br></br>
+                                <center><h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1></center><br></br><br></br>
 
-                                <h2><center><h4>The opening verses of the school rectified</h4></center></h2>
+                                <h2><center><h4>The opening verses of the school rectified</h4></center></h2><br></br><br></br>
                                 <div className='p1' >
                                     <b> The first school</b> was started in <b>1966</b>  at Nirmal in Adilabad district, the forest region of United Andhra Pradesh, the home of
                                     Mother Basara Saraswati, jointly with the ideas of Manyashree, Kirti Seshulu.<b> Sri Shathagopan Lakshmi Narasimhacharya</b>, the
@@ -86,7 +86,7 @@ const Home = () => {
                                     Brahmananda Rao. Later <b>28 acres</b> of land was donated by the family members of Hajipur resident <b>Shri Puskuri Chokka Rao</b> (Shri Puskuri Surya
                                     Prakash Rao, Shri Puskuri Venkateswar Rao, Shri Puskuri Chokkarao).<br></br><br></br>
                                 </div>
-                                <button id="bk">KNOW MORE</button>
+                                {/* <button id="bk">KNOW MORE</button> */}
                             </div>
                             <div className='container'>
                                 <img className='image2' style={{ height: "400px", width: "400px" }} src='https://svis.ind.in/wp-content/uploads/2021/11/vidyaranya_panchakosha.png' alt="School Image" />

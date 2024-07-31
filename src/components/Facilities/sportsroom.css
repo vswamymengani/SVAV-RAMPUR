@@ -1,20 +1,44 @@
+
+
 .sports-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
- 
-  margin: 80px; /* Center the container */
+  padding: -40px;
+  margin: 40px auto; /* Center the container */
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+/* For screens that are 1200px or larger */
+@media (min-width: 1200px) {
   .sports-container {
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
+    margin: 80px auto;
   }
 }
+
+/* For screens between 768px and 1199px */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .sports-container {
+    margin: 60px auto;
+  }
+}
+
+/* For screens between 480px and 767px */
+@media (max-width: 767px) and (min-width: 480px) {
+  .sports-container {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+  .sports-container {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+}
+
 
 
 #spo {
@@ -26,7 +50,7 @@
   margin-bottom: 100px;
   padding: 15px;
   border-radius: 15px;
-  margin-left: 30px;
+  margin-left: 70px;
   text-align: center;
 
 }
@@ -51,7 +75,7 @@
 
 .sports-content {
   flex: 1;
-  padding: 20px; /* Default padding */
+  padding: 0px; /* Default padding */
 }
 
 /* Responsive adjustments for different screen sizes */
@@ -132,7 +156,7 @@
   flex: 1;
   max-width: 100%; /* Adjust width to full container width */
   margin-top: 50px; /* Adjusted margin for responsiveness */
-  margin-right: 0; /* Remove negative margin for small screens */
+  margin-right: 20px; /* Remove negative margin for small screens */
   border-radius: 30px; /* Adjust border-radius for smaller screens */
   scroll-behavior: smooth;
   

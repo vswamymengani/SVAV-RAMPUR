@@ -1,37 +1,38 @@
 
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import './Svavprathana.css';
 import { FaLightbulb, FaBookOpen, FaFeatherAlt, FaOm, FaSun, FaPeace, FaUtensils } from 'react-icons/fa';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import img1 from '../Facilities/s&p2.jpg';
-import img2 from '../Facilities/p1.jpg';
-import img3 from '../Facilities/p3.png';
-import img4 from '../Facilities/psimg.jpg'
+// import img4 from '../Facilities/s&p2.jpg';
+// import img2 from '../Facilities/p1.jpg';
+// import img3 from '../Facilities/p3.png';
+import img1 from '../Facilities/psimg.jpg'
 
 
 const  Svavprathana = () => {
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 1900,
-    interval: 1800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 630
-  };
+  // const sliderSettings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 1900,
+  //   interval: 1800,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 630
+  // };
 
   return (
     <div>
     <div className="Svavprathana-container">
       <div className="Svavprathana-slider">
-        <Slider {...sliderSettings}>
-          <div><img src={img1} alt="Sports ground 1" /></div>
+      <div><img src={img1} alt="Sports ground 1" style={{height:"700px",width:"1400px",marginLeft:"-60px"}}/></div>
+        {/* <Slider {...sliderSettings}>
+          // <div><img src={img1} alt="Sports ground 1" /></div>
           <div><img src={img2} alt="Sports ground 2" /></div>
           <div><img src={img3} alt="Sports ground 1" /></div>
           <div><img src={img4} alt="Sports ground 2" /></div>
-        </Slider>
+        </Slider> */}
       </div>
       <div className="Svavprathana-content">
         <h1 id="Svavprathana">SVAV&nbsp;Prathana</h1>
@@ -61,11 +62,13 @@ const  Svavprathana = () => {
         </div>
       </div>
     
-    </div><br></br>
+    </div><br></br><br></br><br></br><br></br><br></br>
      <center><b style={{fontSize:"40px"}}>Deeparadhana</b></center> <br></br><br></br><br></br>
      <center><div id="Svavprathana1img"></div></center><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-     <center><b style={{fontSize:"40px"}}>Brahmanaad</b></center> <br></br><br></br><br></br>
-     <center><div id="Svavprathana2img"></div></center><br></br><br></br><br></br>
+     <center><b style={{fontSize:"40px"}}>Bhojana Mantra</b></center> <br></br><br></br><br></br>
+     <center><div id="Svavprathana2img"></div></center><br></br><br></br><br></br><br></br>
+     <center><b style={{fontSize:"40px"}}>Shanti Mantram</b></center> <br></br><br></br><br></br>
+     <center><div id="Svavprathana3img"></div></center><br></br><br></br><br></br>
     </div>
     
   );

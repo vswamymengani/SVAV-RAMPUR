@@ -23,9 +23,7 @@ th, td ,tr {
   border: 2px solid black; /* Black border for table cells */
 }
 
-thead th {
-  background-color: #f2f2f2; /* Optional: Adding a background color to header */
-}
+
 
 @media (max-width: 768px) {
   .c1 {

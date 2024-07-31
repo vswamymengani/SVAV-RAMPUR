@@ -1,33 +1,36 @@
 
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import {FaLightbulb ,  FaPray,  FaBook, FaUtensils,  FaHandHoldingHeart, FaListAlt } from 'react-icons/fa';
 import './Sadacharam.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import img1 from './Sadacharamimg1.jpg';
-import img2 from '../Facilities/slide1.png';
-import img3 from '../Facilities/slide2.png';
-import img4 from '../Facilities/slide3.png';
-import img5 from '../Facilities/slide4.png';
+// import img1 from './Sadacharamimg1.jpg';
+// import img2 from '../Facilities/slide1.png';
+import img3 from '../Facilities/slide3.png';
+// import img4 from '../Facilities/slide3.png';
+// import img5 from '../Facilities/slide4.png';
 
-import img7 from '../Facilities/slide6.jpg';
-import img8 from '../Facilities/psimg.jpg';
+// import img7 from '../Facilities/slide6.jpg';
+// import img8 from '../Facilities/psimg.jpg';
 
 const Sadacharam = () => {
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 1900,
-    interval: 1800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 630
-  };
+  // const sliderSettings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 1900,
+  //   interval: 1800,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 630
+  // };
 
   return (
     <div>
     <div className="sadacharam-container">
+    <div className="sadacharam-slider">
+      <div><img src={img3} alt="Sports ground 1" style={{height:"1000px",width:"1400px",marginLeft:"110px",marginTop:"120px"}}/></div>
+      </div>
       <div className="sadacharam-content">
         <h1 id="sadacharam">Sadacharam</h1>
         <div id="sadacharamlogo">
@@ -41,8 +44,8 @@ const Sadacharam = () => {
       <h3><FaListAlt /> Always follow 6 B's (Bhavan, Bhasha, Bhusha, Bhojan, Bhajan, Braman).</h3>
         </div>
       </div>
-      <div className="sadacharam-slider">
-        <Slider {...sliderSettings}>
+      
+        {/* <Slider {...sliderSettings}>
           <div><img src={img1} alt="Classroom 1" /></div>
           <div><img src={img2} alt="Classroom 2" /></div>
           <div><img src={img3} alt="Classroom 3" /></div>
@@ -52,8 +55,8 @@ const Sadacharam = () => {
           <div><img src={img7} alt="Classroom 2" /></div>
           <div><img src={img8} alt="Classroom 2" /></div>
          
-        </Slider>
-      </div>
+        </Slider> */}
+    
     </div><br></br><br></br><br></br>
     <center><div id="sadacharamimg"></div></center>
     <div>

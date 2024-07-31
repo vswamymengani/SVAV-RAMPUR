@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import imgg from './galleryimg.png';
 import img1 from '../Facilities/dining.jpg';
 import img2 from '../Facilities/clsimg1.jpg';
 import img3 from '../Facilities/clsimg2.jpg';
@@ -67,9 +68,13 @@ const Gallery = () => {
   ];
 
   return (
+    <div><br></br>
+     <center>  <div><img src={imgg} alt="Art 1" style={{width:"100%"}} /></div></center>
     <div className="gallery">
+     
       <Tabs tabs={imageCategories} activeTab={activeTab} setActiveTab={setActiveTab} />
       <TabContent images={imageCategories[activeTab].images} />
+    </div>
     </div>
   );
 };

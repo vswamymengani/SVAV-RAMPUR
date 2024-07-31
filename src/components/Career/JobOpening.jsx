@@ -14,11 +14,11 @@ const JobOpening = () => {
             Dated: 01/01/2024
             <br></br><br></br><br></br>
             Applications are invited from trained (Graduates with the TTC/B.ED) and experienced 
-            candidates from English medium background for the Primary Section.
+            candidates from English medium background for the Primary and Secondary Sections.
             <br></br>
             <br></br><br></br>
             Kindly apply with full bio-date including a recent passport size photograph to the 
-            Rampur, SVAV High School at <span id="cjo"> svavrampur@gmail.com</span>
+            Rampur, SVAV High School at <span id="cjo">  info@svavrampur.com</span>
             </div>
             </center>
            </div>
