@@ -67,7 +67,7 @@ const Header = () => {
         </div>
         <div className="section2">
           <span className="title" onClick={() => handleNavigation('/Onlineenquiryform')}>Online Enquiry</span>
-          <span className="title" onClick={() => handleNavigation('/Alumni')}>Alumni Details</span>
+          <span className="title" onClick={() => handleNavigation('/Alumini')}>Alumni Details</span>
           <span className="title" onClick={() => handleNavigation('/Download')}>Download Brochure</span>
           <span className="title" onClick={() => handleNavigation('/Halloffame')}>News Letter</span>
         </div>

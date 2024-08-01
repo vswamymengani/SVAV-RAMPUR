@@ -59,8 +59,10 @@
 }
 
 .custom-list {
+  font-weight: 300;
   font-size: 24px;
-  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  /* list-style-type: none; */
   padding-left: 20px;
   margin: 40px 50px; /* Adjust margin for better spacing */
 }

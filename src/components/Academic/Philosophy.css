@@ -7,13 +7,17 @@
     text-justify: inter-word;
     margin: 100px;
     font-size: 24px;
-    margin-top: 40px;
+    margin-top: 60px;
+    line-height: 160%;
   }
   .oil2{
     font-size: 20px;
    margin-left: -440px;
-    
+   text-align: justify;
+   text-justify: inter-word;
+   line-height: 160%;
   }
+
   #sp1{
     font-size: 20px;
     margin: 100px;
