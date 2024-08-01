@@ -13,7 +13,7 @@ const Curriculum = () => {
         <div className="curriculum-header">
           <div className="content-container">
             <img src={logo1} alt="Logo1" className="curriculum-logo" />
-            <div id="t11" className="curriculum-text">
+            <div id="t11">
               Balanced Academics and Residential Life
             </div>
           </div>
@@ -34,14 +34,14 @@ const Curriculum = () => {
       {/* Flex container for h2 and h3 contents */}
       <div className="content-row">
         <div className="content-col">
-          <h3 className='hi'>CBSE boarding school</h3>
+          <h3 className='hi'>CBSE AND STATE boarding school</h3>
           <h3 className='hi'>Planned academic Growth</h3>
           <h3 className='hi'>Safe and Secure Residential Campus</h3>
           <h3 className='hi'>Integrated IT/NEET preparation</h3>
           <h3 className='hi'>Planning for Universities Abroad</h3>
         </div>
         <div className="content-col">
-          <h3 className='hi'>Cambridge curriculum boarding school</h3>
+          <h3 className='hi'>STATE BOARD curriculum boarding school</h3>
           <h3 className='hi'>Detailed Career Preparation</h3>
           <h3 className='hi'>Co-scholastic Development</h3>
           <h3 className='hi'>Integrated NATA, NID, CLAT, CA and IPMAT preparation</h3>
@@ -52,9 +52,9 @@ const Curriculum = () => {
         <h1 id="g1">Classes 4 and 5</h1>
         <div id="bx" className="class-info-container">
           <div className="text-container">
-            <b id="g03">Primary School</b><br /><br />
+            <b id="g03">Primary School</b><br></br>
             <span className="g4">Curriculum</span><br />
-            <span className="g5">CBSE</span><br /><br />
+            <span className="g5">CBSE And STATE</span><br></br>
             <span className="g4">Academics</span><br />
             <span className="g5">Diagnostic test.Individual progression plan,<br />
               Experiental Learning.Learning and reflection
@@ -80,7 +80,7 @@ const Curriculum = () => {
           <div className="text-container1">
             <b className="g31">Middle School</b><br /><br />
             <span className="g41">Curriculum</span><br />
-            <span className="g51">CBSE + Cambridge assessment curriculum</span><br /><br />
+            <span className="g51">CBSE And STATE assessment curriculum</span><br /><br />
             <span className="g41">Academics</span><br />
             <span className="g51">Diagnostic test.Individual progression plan,<br />
               Experimental order thinking,Project-based Learning,Research and documentation.
@@ -100,7 +100,7 @@ const Curriculum = () => {
           <div className="text-container">
             <b id="g03">Secondary School</b><br /><br />
             <span className="g4">Curriculum</span><br />
-            <span className="g5">CBSE or Cambridge assessment curriculum</span><br /><br />
+            <span className="g5">CBSE and STATE assessment curriculum</span><br /><br />
             <span className="g4">Academics</span><br />
             <span className="g5">Board selection,individual progression plan, Setting high targets, Learning and Reflection,
               The challenge to cognitive ability.<br />
@@ -126,7 +126,7 @@ const Curriculum = () => {
           <div className="text-container13">
             <b className="g33">Secondary School</b><br /><br />
             <span className="g43">Curriculum</span><br />
-            <span className="g53">CBSE or Cambridge assessment curriculum</span><br /><br />
+            <span className="g53">CBSE and STATE BOARD assessment curriculum</span><br /><br />
             <span className="g43">Academics</span><br />
             <span className="g53">Plan own Learning .Final Board selection,Learning and reflection, The balance of Board &
               Entrance

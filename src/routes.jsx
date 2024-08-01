@@ -45,10 +45,13 @@ import Gallery from './components/News and Letter/Gallery';
 import ProfessionalDevelopment from './components/Career/ProfessionalDevelopment';
 import JobOpening from './components/Career/JobOpening';
 import Events from './components/News and Letter/Events';
+import ScrollToTop from './pages/ScrollToTop';
 
 const AppRoutes = () => {
     return (
-        <Routes>
+        <>
+        <ScrollToTop />
+          <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="Supportus" element={<Supportus />} />
@@ -95,6 +98,8 @@ const AppRoutes = () => {
                
              </Route>
         </Routes>
+        </>
+
     );
 };
 

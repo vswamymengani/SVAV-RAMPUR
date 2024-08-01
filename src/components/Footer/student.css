@@ -1,0 +1,90 @@
+.float {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        background-image: url(./whstapp.jpeg);
+        background-size: cover;
+      }
+      
+      .my-float {
+        margin-top: 20px;
+        color: blue;
+        font-size: 22px;
+        font-weight: 30%;
+      }
+      
+      /* Media Queries for Responsive Design */
+      @media (max-width: 1200px) {
+        .float {
+          width: 80px;
+          height: 80px;
+          bottom: 30px;
+          right: 30px;
+        }
+      
+        .my-float {
+          font-size: 20px;
+        }
+      }
+      
+      @media (max-width: 992px) {
+        .float {
+          width: 70px;
+          height: 70px;
+          bottom: 25px;
+          right: 25px;
+        }
+      
+        .my-float {
+          font-size: 18px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .float {
+          width: 60px;
+          height: 60px;
+          bottom: 20px;
+          right: 20px;
+        }
+      
+        .my-float {
+          font-size: 16px;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .float {
+          width: 50px;
+          height: 50px;
+          bottom: 15px;
+          right: 15px;
+        }
+      
+        .my-float {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 300px) {
+        .float {
+          width: 40px;
+          height: 40px;
+          bottom: 10px;
+          right: 10px;
+        }
+      
+        .my-float {
+          font-size: 12px;
+        }
+      }
+      
+      

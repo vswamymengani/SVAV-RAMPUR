@@ -19,7 +19,8 @@ const Sdp = () => {
           <span>
             The school improvement is first and foremost the responsibility of the school Management. It is based on the premise that schools themselves are best placed to identify areas for improvement and to implement changes that can bring about better outcomes for pupiles.
             <br></br><br></br>
-            We bring to your kind Notice that Sri Vidyaranya Avasa Vidyalayam is a reputed non-profit NGO based School run by Sri Saraswathi Vidya Pettam.As you may kindly be aware, Vidya Pettam which is Affilliated to Vidya Bharathi-Akhil Bharatiya Shiksha Sansthan is running around 300 Shishumandir Schools in the state of telangana.Shishumandir Schools all over the country, are known for impacting value based education, with emphasis on
+            We bring to your kind Notice that Sri Vidyaranya Avasa Vidyalayam is a reputed non-profit NGO based School run by Sri Saraswathi Vidya Pettam.As you may kindly be aware, Vidya Pettam which is Affilliated to Vidya Bharathi-Akhil Bharatiya Shiksha Sansthan is running around 300 Shishumandir Schools in the state of telangana.
+            Shishumandir Schools all over the country, are known for impacting value based education, with emphasis on
             ancient Bharatiya Culture & Imbibing Patriotism among it's students.
             <br></br>   <br></br>
             In our School, in addition to the academic education, we are also conducting activities & programs to install physical, Mental,
@@ -29,7 +30,7 @@ const Sdp = () => {
             Our school campus is spanned across 33 acres land, with spacious classrooms, big playground, goshala & Sri Kodanda Ramalayam Temple. Apart from the regular academic curriculum, we are also imparting training in yoga, vedic maths, robotics, spoken english and many more extra curricular activites, which improves student personality development.
             <br></br>   <br></br>
             This campus provides education facilities to more than 820 plus students including 480 plus residential students belonging to middle class families.
-            We therefore,Requesting you to help our school for further improvement in all dimensions.
+            We therefore, Requesting you to help our school for further improvement in all dimensions.
             <br></br>   <br></br>
             Here is the school development planning process with the resulting actions and targets captured in School Development Plans (SDPs).
             The SDP is a strategic plan for improvement. It should bring together, in a clear and simple way, the school’s priorities, the main measures it will take to raise standards, the resources dedicated to these, and the key outcomes and targets it intends to achieve.
@@ -46,19 +47,11 @@ const Sdp = () => {
       <div id="sdpimgs">
         <center>
           <div><img src={img11} alt="sdp 1" /></div>
-          {/* <div><img src={img1} alt="Transport 1" /></div><br></br>
-          <div><img src={img2} alt="Transport 2"  /></div><br></br>
-          <div><img src={img3} alt="Transport 3"  /></div><br></br>
-          <div><img src={img4} alt="Transport 4"  /></div><br></br>
-          <div><img src={img5} alt="Transport 3" /></div><br></br>
-          <div><img src={img6} alt="Transport 4" /></div><br></br>
-          <div><img src={img7} alt="Transport 4"  /></div> */}
         </center>
       </div>
 
       <div>
         <center>
-          <h2 className='sdp1'></h2>
           <table style={{ width: "1200px" }} border="10px solid black" cellPadding="10px" cellSpacing="5px">
             <thead>
               <tr>

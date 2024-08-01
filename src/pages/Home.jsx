@@ -28,7 +28,7 @@ const Home = () => {
         navigate('/Sportsroom');
     };
     const handleitlab = () => {
-        navigate('/Library');
+        navigate('/Labroom');
     };
     const handlelab = () => {
         navigate('/Laboratories');
@@ -48,6 +48,7 @@ const Home = () => {
     const handleOs = () => {
         navigate('/Os');
     };
+    
 
     return (
         <div>

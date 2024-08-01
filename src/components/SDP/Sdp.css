@@ -76,10 +76,28 @@
   left: -15px;
   color: black;
 }
+#sdpimgs {
+  width: 100%;
+}
 
 #sdpimgs img {
-  height: 200px;
-  width: 1200px;
+  height: auto;
+  width: 100%;
+  max-width: 1200px; /* Ensures the image doesn't exceed its original size */
+}
+
+@media (max-width: 768px) {
+  #sdpimgs img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #sdpimgs img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 table {

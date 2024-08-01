@@ -9,6 +9,7 @@
 
 }
 
+
 .section1 {
   height: 200px;
   margin: 5px;
@@ -670,4 +671,7 @@
   background-color: darkblue;
   /* padding: 12px 16px; */
 
+}
+a {
+  text-decoration: none;
 }
