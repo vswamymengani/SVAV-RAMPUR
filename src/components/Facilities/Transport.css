@@ -112,12 +112,12 @@
   justify-content: center; /* Center the slider horizontally */
   align-items: center; /* Center the slider vertically if needed */
   font-style: normal;
-  width: 39%;
+  width: 48%;
   padding: 15px;
   border-radius: 15px; /* Curved border radius */
   margin: 90px 90px; /* Center horizontally */
   
-  margin-top: -40px;
+  margin-top: -140px;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -194,8 +194,8 @@
     font-weight: 300; /* Font weight should be a numerical value */
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
-    margin: 100px;
-    margin-top: 60px;
+    margin: 120px;
+    margin-top: -180px;
     margin-bottom: 0px;
     text-align: justify;
     text-justify: inter-word;

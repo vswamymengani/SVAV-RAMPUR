@@ -22,7 +22,8 @@ const Library = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 630
+    autoplaySpeed: 630,
+    arrows: false
   };
 
   return (
@@ -39,7 +40,7 @@ const Library = () => {
         </Slider>
       </div>
       <div className="Library-content">
-        <h1 id="Library">Library Facilities</h1>
+        <h1 id="Library">Library Facilities</h1><br></br>
         <div id="Librarycontents">
         <div className="facility-item-Library">
         <FaBook style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />

@@ -89,9 +89,9 @@ const Home = () => {
                                 </div>
                                 {/* <button id="bk">KNOW MORE</button> */}
                             </div>
-                            <div className='container'>
+                            {/* <div className='container'>
                                 <img className='image2' style={{ height: "400px", width: "400px" }} src='https://svis.ind.in/wp-content/uploads/2021/11/vidyaranya_panchakosha.png' alt="School Image" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

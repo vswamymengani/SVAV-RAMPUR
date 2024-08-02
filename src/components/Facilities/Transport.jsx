@@ -18,14 +18,15 @@ const Transport = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 630
+    autoplaySpeed: 630,
+    arrows: false
   };
 
   return (
     <div>
       <div className="Transport-container">
         <div className="Transport-content">
-            <span id="Transport">Transport Facilities</span>
+            <span id="Transport">Transport Facilities</span><br></br><br></br>
           <div id="Transportlogo">
           </div>
           <div id="Transportcontents">
@@ -39,11 +40,11 @@ const Transport = () => {
         </div>
         <div className="Transport-slider">
           <Slider {...sliderSettings}>
-            <div><img src={img1} alt="Art 1" style={{ height: '90.15vh' }} /></div>
-            <div><img src={img1} alt="Transport 1" /></div>
-            <div><img src={img2} alt="Transport 2" /></div>
-            <div><img src={img3} alt="Transport 3" /></div>
-            <div><img src={img4} alt="Transport 4" /></div>
+            <div><img src={img1} alt="Art 1" style={{ height: '70.15vh',width:'90%' }} /></div>
+            <div><img src={img1} alt="Transport 1"style={{ height: '70.15vh',width:'90%' }} /></div>
+            <div><img src={img2} alt="Transport 2" style={{ height: '70.15vh',width:'90%' }}/></div>
+            <div><img src={img3} alt="Transport 3"style={{ height: '70.15vh',width:'90%' }} /></div>
+            <div><img src={img4} alt="Transport 4"style={{ height: '70.15vh',width:'90%' }} /></div>
           </Slider>
         </div>
       </div>
@@ -54,7 +55,7 @@ const Transport = () => {
             All drivers of SVAV are well trained, hold RTA-issued heavy driving licenses, and participate in our ongoing drivers’ training sessions for safety. All the buses are installed with GPS Trackers to empower parents to know their child’s location and become assured about the safety of their children.
           </p>
         </div>
-      </div><br></br><br></br><br></br><br></br><br></br>
+      </div><br></br><br></br><br></br>
       <center>
         <table border="1px" cellPadding={"20px"} cellSpacing={"0px"} width="1000px">
           <tr>
@@ -98,7 +99,7 @@ const Transport = () => {
             <td>35,000</td>
           </tr>
         </table>
-      </center>
+      </center><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <div className="Transportpara">
         <span >
           <b><center>Transport Terms & Policies</center> </b> <br></br>

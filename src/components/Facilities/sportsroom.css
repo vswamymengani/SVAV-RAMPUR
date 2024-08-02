@@ -41,6 +41,8 @@
 
 
 
+
+
 #spo {
   color: rgb(183, 234, 31);
   font-size: 30px;
@@ -52,8 +54,37 @@
   border-radius: 15px;
   margin-left: 70px;
   text-align: center;
-
 }
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  #spo {
+    font-size: 25px;
+    width: 70%;
+    margin-left: 50px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  #spo {
+    font-size: 20px;
+    width: 80%;
+    margin-left: 30px;
+    padding: 10px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  #spo {
+    font-size: 16px;
+    width: 90%;
+    margin-left: 20px;
+    padding: 5px;
+  }
+}
+
 
 
 

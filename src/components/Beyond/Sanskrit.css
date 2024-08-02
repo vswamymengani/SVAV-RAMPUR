@@ -9,6 +9,7 @@
   border-radius: 15px; /* Border radius for curved corners */
   margin: 100px auto; /* Centered horizontally */
   text-align: center;
+  margin-left: 102px;
 }
 
 /* Responsive styles for medium-sized devices */
