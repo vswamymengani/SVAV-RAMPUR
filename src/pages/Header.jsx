@@ -142,7 +142,7 @@ const Header = () => {
             <div className="dropdown-content">
               <a href="#" onClick={() => handleNavigation('/Cirriculum')}>Curriculum</a>
               <a href="#" onClick={() => handleNavigation('/Philosophy')}>SVAV Philosophy</a>
-              <a href="#">Special Awards</a>
+              {/* <a href="#">Special Awards</a> */}
               <a href="#"  onClick={() => handleNavigation('/Holidays')}>Holidays</a>
               <a href="#">Downloads</a>
             </div>

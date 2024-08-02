@@ -25,7 +25,7 @@ const Footer = () => {
     navigate('/Students');
   };
   const handleClick5 = () => {
-    alert('Your form has been submitted successfully!');
+    navigate('/Gogglesheet');
   };
 
   return (

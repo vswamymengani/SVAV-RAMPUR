@@ -47,7 +47,7 @@
 }
 
 #sdppara {
-  font-weight: 300;
+ 
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   margin: 100px;
@@ -126,7 +126,7 @@ th, td ,tr {
   }
 
   #sdppara {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 24px;
   }
 
@@ -152,7 +152,7 @@ th, td ,tr {
   }
 
   #sdppara {
-    padding: 5px;
+    /* padding: 5px; */
     font-size: 24px;
   }
 

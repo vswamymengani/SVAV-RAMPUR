@@ -75,9 +75,10 @@ p {
 
 #hee {
   display: flex;
+  line-height: 160%;
   justify-content: center;
-  margin-left: 360px; /* Default margin */
-  margin-right: 360px; /* Default margin */
+  margin-left: 100px; /* Default margin */
+  margin-right: 100px; /* Default margin */
   text-align: justify;
   text-justify: inter-word;
 }
@@ -92,9 +93,9 @@ p {
 
 
 .img-logo {
-  width: 50%; /* Default width */
-  height: auto;
-  margin-left: 350px; /* Default margin */
+  width: 80%; /* Default width */
+  height: 500px;
+  margin-left: 150px; /* Default margin */
   margin-top: 10px; /* Default margin */
 }
 
@@ -207,7 +208,7 @@ p {
 
 
 .g5 {
- 
+ line-height: 150%;
   font-size: 19px;
   position: relative; /* Make the container position relative for the bullet */
   padding-left: 20px; /* Add padding to the left for the bullet */
@@ -311,6 +312,7 @@ p {
 }
 
 #bx1 .g51 {
+  line-height: 150%;
   margin-bottom: 10px;
   font-size: 19px;
   position: relative; /* Make the container position relative for the bullet */

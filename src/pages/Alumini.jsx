@@ -7,54 +7,54 @@ import './Alumini.css';
 
 const Alumini = () => {
 
-  const [country, setCountry] = useState('');
+  // const [country, setCountry] = useState('');
 
-  const handleChange3 = (event) => {
-    setCountry(event.target.value);
-  };
+  // const handleChange3 = (event) => {
+  //   setCountry(event.target.value);
+  // };
 
-  const [roles, setRoles] = useState({
-    teacher: false,
-    alumni: false,
-  });
+  // const [roles, setRoles] = useState({
+  //   teacher: false,
+  //   alumni: false,
+  // });
 
-  const handleRoleChange = (event) => {
-    const { id, checked } = event.target;
-    setRoles((prevRoles) => ({
-      ...prevRoles,
-      [id]: checked,
-    }));
-  };
+  // const handleRoleChange = (event) => {
+  //   const { id, checked } = event.target;
+  //   setRoles((prevRoles) => ({
+  //     ...prevRoles,
+  //     [id]: checked,
+  //   }));
+  // };
 
-  const handleSubmit1 = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    const selectedRoles = Object.keys(roles).filter(role => roles[role]);
-    alert(`Selected Roles: ${selectedRoles.join(', ')}`);
-  };
+  // const handleSubmit1 = (event) => {
+  //   event.preventDefault();
+   
+  //   const selectedRoles = Object.keys(roles).filter(role => roles[role]);
+  //   alert(`Selected Roles: ${selectedRoles.join(', ')}`);
+  // };
 
-  const [formData, setFormData] = useState({
-    fullname: '',
-    email: '',
-    mobile: '',
-    profession: '',
-    jobLocation: '',
-    dob: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   fullname: '',
+  //   email: '',
+  //   mobile: '',
+  //   profession: '',
+  //   jobLocation: '',
+  //   dob: ''
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form Data Submitted: ', formData);
-    // Handle form submission logic here
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Form Data Submitted: ', formData);
+    
+  // };
 
   return (
     <div>
@@ -80,11 +80,12 @@ const Alumini = () => {
       <center><div style={{fontSize:"30px"}}>Alumini/Teacher Registration Form</div></center>
       <br></br><br></br>
       <center><div style={{color:"red",fontSize:"24px"}}>Note: The portal is currently undergoing maintenance. Please register using the provided Google Form</div></center>
-      <center><div style={{color:"red",fontSize:"24px"}}>link:<a href="https://forms.gle/eNqq64EeQX5FXnrj8" className="my-link1">https://forms.gle/eNqq64EeQX5FXnrj8</a></div></center>
+      <center><div style={{color:"red",fontSize:"24px"}}>link:<button className="my-link1"><a href="https://docs.google.com/forms/d/1wowPkKmFhUbTjGhGPQKP8PCefB7kn8XeG_pc9ApgknY/edit" >click here to register</a></button></div></center>
+     
       <br></br><br></br>
-
+{/* 
       <div className="account-details-form">
-        <h2>Account Details</h2>
+        <h2></h2>
        
         <form onSubmit={handleSubmit}>
           <div className="horizontal-group">
@@ -163,7 +164,7 @@ const Alumini = () => {
       </div>
       <br></br><br></br><br></br><br></br>
       <div className="registration-form">
-    <center>  <h2>Register As</h2>  </center> 
+    <center>  <h2></h2>  </center> 
       <form onSubmit={handleSubmit1}>
         <div>
           <label>Role(s):</label><br></br><br></br>
@@ -192,10 +193,10 @@ const Alumini = () => {
 
         <button type="submit">Register</button>
       </form>
-    </div><br></br><br></br><br></br>
+    </div>
        
     <div className="address-details-form">
-    <center>  <h2>Address Details</h2>  </center> 
+    <center>  <h2></h2>  </center> 
     <form>
     
       <label htmlFor="country">Country:</label>
@@ -211,10 +212,14 @@ const Alumini = () => {
         <option value="uk">United Kingdom</option>
         <option value="aus">Australia</option>
         <option value="ind">India</option>
-        {/* Add more options as needed */}
+        Add more options as needed
       </select>
-    </form>
-    </div></div>
+
+    </form> */}
+             
+          
+    {/* </div> */}
+    </div>
   );
 }
 
