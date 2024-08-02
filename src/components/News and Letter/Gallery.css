@@ -1,89 +1,18 @@
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) { /* Medium devices (tablets) */
-  .column {
-    width: 33.33%; /* Three columns */
-  }
-}
-
-@media (max-width: 768px) { /* Small devices (phones) */
-  .column {
-    width: 50%; /* Two columns */
-  }
-}
-
-@media (max-width: 480px) { /* Extra small devices (phones in portrait mode) */
-  .column {
-    width: 100%; /* Single column */
-  }
-}
-.column img {
-  opacity: 0.8;
+.gallery-image {
+  width: 200px; /* Set a specific width */
+  height: auto; /* Maintain aspect ratio */
   cursor: pointer;
- 
+  transition: transform 0.2s ease; /* Smooth transition for hover effect */
 }
 
-/* Responsive Styles */
-@media (max-width: 480px) {
-  .column img {
-    width: 100%; /* Ensure images scale properly in smaller screens */
-    height: auto;
-  }
-}
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .container {
-    /* You can add specific styles if needed for the container */
-  }
-}
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  #imgtext {
-    font-size: 16px; /* Adjust text size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  #imgtext {
-    font-size: 14px; /* Further adjust text size for extra small screens */
-  }
-}
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .closebtn {
-    font-size: 30px; /* Adjust button size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .closebtn {
-    font-size: 25px; /* Further adjust button size for extra small screens */
-  }
+.gallery-image:hover {
+  transform: scale(1.05);
 }

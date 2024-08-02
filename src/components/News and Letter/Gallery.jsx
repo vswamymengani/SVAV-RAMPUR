@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import imgg from './galleryimg.png';
+import Modal from './Modal'; // Import the Modal component
+import imgg from './galleryimg.png'; // Banner image
 import img1 from '../Facilities/dining.jpg';
 import img2 from '../Facilities/clsimg1.jpg';
 import img3 from '../Facilities/clsimg2.jpg';
@@ -26,55 +27,46 @@ import img23 from '../Facilities/Boarding campus-Ayodya.jpg';
 import img24 from '../Facilities/chemlab.jpg';
 import img25 from '../Facilities/cir.png';
 
-import Tabs from './Tabs';
-import TabContent from './TabContent';
-import './Gallery.css';
+import './Gallery.css'; // Import CSS for styling
 
 const Gallery = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  // Define an array of image objects
-  const imageCategories = [
-    { title: 'Dining', image: img1, images: [img1] },
-    { title: 'Classroom1', image: img2, images: [img2] },
-    { title: 'Classroom2', image: img3, images: [img3] },
-    { title: 'Classroom3', image: img4, images: [img4] },
-    { title: 'sciencelab', image: img5, images: [img5] },
-    { title: 'chemlab', image: img6, images: [img6] },
-    { title: 'art1', image: img7, images: [img7] },
-    { title: 'art2', image: img8, images: [img8] },
-    { title: 'art3', image: img9, images: [img9] },
-    { title: 'art4', image: img4, images: [img10] },
-    { title: 'art5', image: img5, images: [img11] },
-    { title: 'art6', image: img6, images: [img12] },
-    { title: 'art7', image: img7, images: [img13] },
-    { title: 'art8', image: img14, images: [img14] },
-    { title: 'Dining', image: img15, images: [img15] },
-
-    { title: 'Classroom1', image: img16, images: [img16] },
-    { title: 'Classroom2', image: img17, images: [img17] },
-    { title: 'Classroom3', image: img18, images: [img18] },
-    { title: 'sciencelab', image: img19, images: [img19] },
-    { title: 'chemlab', image: img20, images: [img20] },
-    { title: 'art1', image: img21, images: [img21] },
-    { title: 'art2', image: img22, images: [img22] },
-    { title: 'art3', image: img23, images: [img23] },
-    { title: 'art4', image: img24, images: [img24] },
-    { title: 'art5', image: img25, images: [img25] },
-    { title: 'art6', image: img6, images: [img12] },
-  
-    
-
+  const images = [
+    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12,
+    img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23,
+    img24, img25
   ];
 
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
-    <div><br></br>
-     <center>  <div><img src={imgg} alt="Art 1" style={{width:"100%"}} /></div></center>
-    <div className="gallery">
-     
-      <Tabs tabs={imageCategories} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <TabContent images={imageCategories[activeTab].images} />
-    </div>
+    <div>
+      <center>
+        <div>
+          <img src={imgg} alt="Gallery Banner" style={{ width: '100%' }} />
+        </div>
+      </center>
+      <div className="gallery">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Gallery Image ${index}`}
+            className="gallery-image"
+            onClick={() => handleImageClick(image)}
+          />
+        ))}
+      </div>
+      {selectedImage && (
+        <Modal selectedImage={selectedImage} onClose={handleCloseModal} />
+      )}
     </div>
   );
 };

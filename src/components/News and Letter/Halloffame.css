@@ -1,64 +1,95 @@
-#hf {
-    font-size: 30px;
-    font-style: normal;
-    margin: 40px;
-}
+.event-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .event-table th, .event-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .event-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .read-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .read-more-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
 
-/* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and smaller screens */
-    #hf {
-        font-size: 24px; /* Reduce font size for smaller screens */
-        margin: 30px; /* Adjust margins */
-    }
-}
 
-@media (max-width: 480px) { /* Mobile devices */
-    #hf {
-        font-size: 20px; /* Further reduce font size */
-        margin: 20px; /* Adjust margins for extra small screens */
-    }
-}
-.box {
-    background-image: url(./hfimg.png);
-    height: 700px;
-    width: 600px;
-    background-repeat: no-repeat;
-    margin: 60px;
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and smaller screens */
-    .box {
-        height: 500px; /* Adjust height */
-        width: 100%; /* Full width */
-        margin: 30px; /* Adjust margins */
-    }
-}
 
-@media (max-width: 480px) { /* Mobile devices */
-    .box {
-        height: 400px; /* Further adjust height */
-        width: 100%; /* Full width */
-        margin: 20px; /* Adjust margins */
-    }
-}
-#boxnm {
-    margin-bottom: 6px;
-    font-weight: 500;
-    color: lightcoral;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) { /* Tablets and smaller screens */
-    #boxnm {
-        font-weight: 400; /* Adjust font weight if necessary */
-        margin-bottom: 4px; /* Reduce margin for smaller screens */
-    }
-}
-
-@media (max-width: 480px) { /* Mobile devices */
-    #boxnm {
-        font-weight: 400; /* Further adjust font weight if necessary */
-        margin-bottom: 2px; /* Further reduce margin */
-    }
-}
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.05);
+  }
