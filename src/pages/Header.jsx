@@ -69,7 +69,7 @@ const Header = () => {
           <span className="title" onClick={() => handleNavigation('/Onlineenquiryform')}>Online Enquiry</span>
           <span className="title" onClick={() => handleNavigation('/Alumini')}>Alumni Details</span>
           <span className="title" onClick={() => handleNavigation('/Download')}>Download Brochure</span>
-          <span className="title" onClick={() => handleNavigation('/Halloffame')}>News Letter</span>
+          <span className="title" onClick={() => handleNavigation('/Holidays')}>News Letter</span>
         </div>
         <div className="section3">
           <span className="contact-item">
@@ -143,7 +143,7 @@ const Header = () => {
               <a href="#" onClick={() => handleNavigation('/Cirriculum')}>Curriculum</a>
               <a href="#" onClick={() => handleNavigation('/Philosophy')}>SVAV Philosophy</a>
               <a href="#">Special Awards</a>
-              <a href="#">Holidays</a>
+              <a href="#"  onClick={() => handleNavigation('/Holidays')}>Holidays</a>
               <a href="#">Downloads</a>
             </div>
           </div>

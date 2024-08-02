@@ -46,6 +46,7 @@ import ProfessionalDevelopment from './components/Career/ProfessionalDevelopment
 import JobOpening from './components/Career/JobOpening';
 import Events from './components/News and Letter/Events';
 import ScrollToTop from './pages/ScrollToTop';
+import Holidays from './components/Academic/Holidays';
 
 const AppRoutes = () => {
     return (
@@ -94,6 +95,7 @@ const AppRoutes = () => {
                 <Route path="JobOpening" element={<JobOpening />} />
                 <Route path="Gallery" element={<Gallery />} />
                 <Route path="Events" element={<Events/>} />
+                <Route path="Holidays" element={<Holidays/>} />
                 <Route path="ProfessionalDevelopment" element={<ProfessionalDevelopment />} />
                
              </Route>
