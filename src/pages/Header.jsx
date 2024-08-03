@@ -144,7 +144,7 @@ const Header = () => {
               <a href="#" onClick={() => handleNavigation('/Philosophy')}>SVAV Philosophy</a>
               {/* <a href="#">Special Awards</a> */}
               <a href="#"  onClick={() => handleNavigation('/Holidays')}>Holidays</a>
-              <a href="#">Downloads</a>
+              <a href="#" onClick={() => handleNavigation('/Download')}>Downloads</a>
             </div>
           </div>
           <div className="dropdown">

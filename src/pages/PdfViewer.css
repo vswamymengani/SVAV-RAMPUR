@@ -1,0 +1,50 @@
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    padding: 10px;
+    /* box-sizing: border-box; */
+  }
+  
+  .pdf-controls {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .pdf-controls button {
+    margin: 0 5px;
+  }
+  
+/* Default styles (for larger screens) */
+.pdf-canvas-container {
+    width: 50%;
+    max-width: 50%;
+    /* overflow: hidden; */
+  
+  }
+  
+  /* For tablets and smaller devices (up to 768px wide) */
+  @media (max-width: 768px) {
+    .pdf-canvas-container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* For mobile devices (up to 480px wide) */
+  @media (max-width: 480px) {
+    .pdf-canvas-container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .pdf-canvas-container canvas {
+    width: 60%;
+    height: auto;
+  }
+  

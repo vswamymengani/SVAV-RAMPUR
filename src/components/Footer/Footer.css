@@ -7,6 +7,7 @@
   padding: 20px 0;
   position: relative;
   width: 100%;
+  bottom: 0;
   background-color: #333; /* Dark background for footer */
 }
 
@@ -46,34 +47,37 @@
   padding: 10px;
 }
 
-/* #ll3 {
+
+
+#ll3 {
   background-color: orange;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px; /* Space between heading and fields */
 }
 
 #fields {
   display: flex;
-  flex-direction: column;
   gap: 10px;
-  align-items: center;
-} */
-
-#fields input, #fields button {
-  width: 80%;
-  max-width: 300px;
+  justify-content: center; /* Center the fields horizontally */
 }
 
-#rf {
-  margin-top: 20px;
-  color: #ffffff;
-  text-align: center;
-  background-color: orange;
+
+.error {
+  color: red;
+  /* font-size: 2em;
+  margin-top: 10px; */
 }
+
+
 
 /* Responsive design: stack links vertically on small screens */
 @media (max-width: 768px) {
@@ -97,26 +101,6 @@
   }
   
   #rf {
-      margin-left: 0; /* Center align on very small screens */
+      margin-left: 0; /* Center align on very small screens */
   }
-}
-#ll3 {
-  background-color: orange;
-  padding: 20px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-h2 {
-  margin: 0;
-  margin-bottom: 20px; /* Space between heading and fields */
-}
-
-#fields {
-  display: flex;
-  gap: 10px;
-  justify-content: center; /* Center the fields horizontally */
 }
