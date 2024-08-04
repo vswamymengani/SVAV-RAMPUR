@@ -48,6 +48,7 @@ import Events from './components/News and Letter/Events';
 import ScrollToTop from './pages/ScrollToTop';
 import Holidays from './components/Academic/Holidays';
 import Gogglesheet from './components/Footer/Gogglesheet';
+import Downloads from './components/Academic/Downloads';
 
 const AppRoutes = () => {
     return (
@@ -87,6 +88,7 @@ const AppRoutes = () => {
                 <Route path="SubmittedSuccessfully" element={<SubmittedSuccessfully />} />
                 <Route path="Alumini" element={<Alumini />} />
                 <Route path="Download" element={<Download />} />
+                <Route path="Downloads" element={<Downloads />} />
                 <Route path="Ourfaculty" element={<Ourfaculty />} />
                 <Route path="Students" element={<Students />} />
                 <Route path="Os" element={<Os />} />
