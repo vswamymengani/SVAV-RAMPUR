@@ -53,8 +53,9 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
 .t2 {
   width: 100%; /* Use relative width for responsiveness */
   max-width: 250%; /* Control maximum width */
-  background-image: url(./saraswathimatha.png);
+  background-image: url(./godess.png);
   background-repeat: no-repeat;
+  background-color: white;
   background-position: center;
   background-size: contain; /* Ensure the image scales */
  
