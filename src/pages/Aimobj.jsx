@@ -5,13 +5,13 @@ const Aimobj = () => {
   return (
 <div>
      <div id="bcimg">
-      <div id="aimimg"></div><br></br><br></br>
+     <center> <div id="aimimg"></div></center><br></br><br></br>
       </div>
   <div id="aimpara">
     <br></br><br></br>
-     <center><b id="aimp1">AIM & OBJECTIVES</b></center>
+     <center><b id="aimp1">AIM & OBJECTIVES</b></center><br></br>
     <p>
-      To develop a National System of Education which would help to build a generation of youngmen and women that is<br></br><br></br><br></br>
+      To develop a National System of Education which would help to build a generation of youngmen and women that is<br></br><br></br>
 •	Committed to cultural values and infused with patriotic fervor,<br></br><br></br>
 •	Fully developed physically, vitally, mentally and spiritually,<br></br><br></br>
 •	Capable of successfully facing challenges of day to day life-situations.<br></br><br></br>

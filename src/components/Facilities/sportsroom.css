@@ -42,7 +42,6 @@
 
 
 
-
 #spo {
   color: rgb(183, 234, 31);
   font-size: 30px;
@@ -56,32 +55,45 @@
   text-align: center;
 }
 
-/* For tablets and small desktops */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   #spo {
-    font-size: 25px;
     width: 70%;
+    font-size: 28px;
     margin-left: 50px;
   }
 }
 
-/* For mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #spo {
-    font-size: 20px;
     width: 80%;
+    font-size: 26px;
     margin-left: 30px;
-    padding: 10px;
   }
 }
 
-/* For very small devices */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #spo {
-    font-size: 16px;
     width: 90%;
+    font-size: 24px;
     margin-left: 20px;
-    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  #spo {
+    width: 100%;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  #spo {
+    width: 100%;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    padding: 10px;
   }
 }
 
