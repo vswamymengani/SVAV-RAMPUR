@@ -54,8 +54,8 @@ const Header = () => {
               </h4> */}
 
               <div className='demo'>
-                <h4>SRI VIDYARANYA AVASA VIDYALAYAM</h4>
-                <h6>(CHOKKARAM NAGAR-RAMPUR)</h6>
+                <h4 >SRI VIDYARANYA AVASA VIDYALAYAM</h4>
+                <h6 >(CHOKKARAM NAGAR-RAMPUR)</h6>
               </div>
 
 
@@ -65,7 +65,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="section2">
+        <div
+  className="section2"
+  style={{ fontFamily: 'Cursive' }}
+>
           <span className="title" onClick={() => handleNavigation('/Onlineenquiryform')}>Online Enquiry</span>
           <span className="title" onClick={() => handleNavigation('/Alumini')}>Alumni Details</span>
           <span className="title" onClick={() => handleNavigation('/Download')}>Download Brochure</span>
@@ -83,7 +86,7 @@ const Header = () => {
         </div>
         <img src={exa} alt="Candle Logo" style={{ width: '100px', height: '90px', marginTop: '60px', marginRight: '0px' }} />
       </div>
-      <div className={`navbar1 ${isFixed ? 'fixed' : ''}`} ref={navbarRef}>
+      <div className={`navbar1 ${isFixed ? 'fixed' : ''}`}  ref={navbarRef}>
         <div className="menu-icon" onClick={toggleMenu}>&#9776;</div> {/* Menu icon */}
         <div className={`navbar-menu ${menuOpen ? 'show' : ''}`}>
           <a href="#" onClick={() => handleNavigation('/')}>HOME</a>
@@ -124,7 +127,7 @@ const Header = () => {
               <a href="#" onClick={() => handleNavigation('/Svavprathana')}>SVAV Prarthana</a>
               <a href="#" onClick={() => handleNavigation('/Sanskrit')}>Sanskrit</a>
               <a href="#" onClick={() => handleNavigation('/Yoga')}>Yoga</a>
-              <a href="#" onClick={() => handleNavigation('/Archana')}>Archana</a>
+              {/* <a href="#" onClick={() => handleNavigation('/Archana')}>Archana</a> */}
             </div>
           </div>
           <div className="dropdown">

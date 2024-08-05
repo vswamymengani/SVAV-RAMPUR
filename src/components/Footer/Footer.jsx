@@ -11,6 +11,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
 
 const Footer = () => {
+  const handleFacebookClick = () => {
+    window.location.href = 'https://www.facebook.com/profile.php?id=61563910378757';
+  };
   const navigate = useNavigate();
   
   // State to handle form inputs and errors
@@ -57,7 +60,7 @@ const Footer = () => {
   return (
     <div>
       <div id="ll3">
-        <h2>REQUEST A CALL BACK</h2>
+        <h2 className="c132" style={{ fontFamily: 'Cursive' }}>REQUEST A CALL BACK</h2>
         <div id="fields">
           <input
             type="text"
@@ -87,30 +90,30 @@ const Footer = () => {
         </div>
       </div>
 
-      <footer className="footer">
+      <footer className="footer" >
         <div id="l3">
-          <button id="bu" onClick={handleClick}>
+          <button id="bu" onClick={handleClick} style={{ fontFamily: 'Cursive' }}>
             <img src={donationlogo} alt="C" className="link-icon" />
             DONATION
           </button>
-          <button id="bu" onClick={handleClickal}>
+          <button id="bu" onClick={handleClickal} style={{ fontFamily: 'Cursive' }}>
             <img src={aluminilogo} alt="Blogs" className="link-icon" />
             ALUMINI
           </button>
-          <button id="bu" onClick={handleClickte}>
+          <button id="bu" onClick={handleClickte} style={{ fontFamily: 'Cursive' }}>
             <img src={teacherlogo} alt="A" className="link-icon" />
             OURFACULTY
           </button>
-          <button id="bu" onClick={handleClicksl}>
+          <button id="bu" onClick={handleClicksl} style={{ fontFamily: 'Cursive' }}>
             <img src={studentlogo} alt="student" className="link-icon" />
             STUDENTS
           </button>
         </div>
         <div id="q1">
           <div id='a19'>
-            <h2 style={{ color: 'aliceblue', textAlign: 'left' }}>
+            <h2 style={{ color: 'aliceblue', textAlign: 'left',fontFamily: 'Cursive' }}>
               Copyright @Srividyaranyaavasavidyalayam
-              <FaFacebookF color='white' size={25} />
+              <FaFacebookF color='white' size={25} onClick={handleFacebookClick} />
               <FaInstagramSquare size={25} />
               <FaLinkedinIn size={25} />
               <SiYoutubeshorts size={25} />

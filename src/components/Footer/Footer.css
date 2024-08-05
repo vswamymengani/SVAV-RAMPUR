@@ -62,6 +62,7 @@
 h2 {
   margin: 0;
   margin-bottom: 20px; /* Space between heading and fields */
+  
 }
 
 #fields {
@@ -102,5 +103,51 @@ h2 {
   
   #rf {
       margin-left: 0; /* Center align on very small screens */
+  }
+}
+
+
+
+/* Base Styles */
+#a19 {
+  padding: 20px;
+  background-color: #333; /* Dark background for contrast */
+  color: aliceblue;
+}
+
+#a19 h2 {
+  font-family: 'Cursive', sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#a19 .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  #a19 h2 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #a19 .social-icons {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #a19 h2 {
+    font-size: 1em; /* Adjust font size for very small screens */
+    text-align: left;
+  }
+
+  #a19 .social-icons {
+    margin-top: 10px;
+    gap: 10px; /* Reduce gap for small screens */
   }
 }

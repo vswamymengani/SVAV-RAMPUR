@@ -1,4 +1,3 @@
-
 .Header {
   justify-content: center;
   width: 100%;
@@ -251,6 +250,7 @@
 
 
 
+
 .section2 {
 
   align-content: center;
@@ -258,6 +258,7 @@
   display: inline-flex;
   column-gap: 10px;
   margin-left: 30px;
+  /* font-family: 'Cursive', sans-serif; */
 
 
 
@@ -328,7 +329,7 @@
   flex-direction: column;
   display: flex;
   margin-left: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   align-content: center;
   margin-top: 20px;
   padding: 30px;
@@ -457,7 +458,9 @@
 .navbar1 {
   overflow: hidden;
   background-color: lightsteelblue;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  /* font-family: 'Cursive', sans-serif; */
+  
   font-size: 12px;
   display: flex;
   gap: 10px;
@@ -673,5 +676,684 @@
 
 }
 a {
+  text-decoration: none;
+}.Header {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  background-color: orange;
+
+
+
+}
+
+
+.section1 {
+  height: 200px;
+  margin: 5px;
+  margin-left: 70px;
+}
+
+.clgCode {
+  color: red;
+  text-align: center;
+
+}
+
+.subbar {
+  color: brown;
+  margin-left: 0%;
+}
+
+
+
+
+.image {
+
+  height: 70px;
+  width: 70px;
+  margin-left: -30px;
+  margin-top: 70px;
+  border-radius: 55px;
+
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .Header {
+    padding: 0px;
+    /* Reduce padding for medium screens */
+  }
+
+  .section1 {
+    margin-left: 2%;
+    /* Further adjust margin on medium screens */
+  }
+
+  .image {
+    width: 25%;
+    /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    /* Stack header items vertically on smaller screens */
+  }
+
+  .section1 {
+    margin-left: 0;
+    /* Remove left margin for small screens */
+  }
+
+  .image {
+    width: 30%;
+    /* Adjust width for small screens */
+    max-width: 80px;
+    /* Reduce max-width */
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header {
+    padding: 10px;
+    /* Add padding back for very small screens */
+  }
+
+  .section1 {
+    margin-left: 0;
+    /* Ensure full width usage on very small screens */
+  }
+
+  .image {
+    width: 40%;
+    /* Further adjust width for very small screens */
+    max-width: 70px;
+    /* Reduce max-width further */
+    margin-left: 10%;
+  }
+}
+
+.image6 {
+  height: 99px;
+  margin-top: 40px;
+  background-image: url(./logocandle.png);
+  border-radius: 50px;
+
+}
+
+
+
+.pos {
+  position: absolute;
+  margin: 0px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .image6 {
+    width: 60%;
+    /* Adjust width for medium screens */
+    max-width: 120px;
+    /* Reduce max-width */
+  }
+}
+
+@media (max-width: 768px) {
+  .image6 {
+    width: 70%;
+    /* Adjust width for small screens */
+    max-width: 100px;
+    /* Further reduce max-width */
+    margin-top: 15px;
+    /* Reduce margin-top for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image6 {
+    width: 80%;
+    /* Further adjust width for very small screens */
+    max-width: 80px;
+    /* Further reduce max-width */
+    margin-top: 10px;
+    /* Further reduce margin-top for very small screens */
+  }
+}
+
+
+.subtitles {
+  display: flex;
+  color: blue;
+  font-size: 20px;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+
+
+
+
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: blue;
+  margin-top: 30px;
+  font-size: 21px;
+  margin-left: -50px;
+}
+@media (max-width: 480px) {
+ 
+  .demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: blue;
+  }
+
+  .section1 {
+    margin-left: -30px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+ 
+}
+
+
+.sub1 {
+  margin-top: 20px;
+  color: green;
+}
+
+/* .clgCode{
+    color: red;
+    margin-left: 150px;
+   
+}
+ 
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .subtitles {
+    font-size: 18px;
+    /* Adjust font size for medium screens */
+  }
+
+
+  .sub1 {
+    font-size: 16px;
+    /* Adjust font size for better readability on smaller screens */
+  }
+
+}
+
+@media (max-width: 768px) {
+  .subtitles {
+    font-size: 12px;
+    /* Further adjust font size for small screens */
+  }
+
+
+  .sub1 {
+    font-size: 14px;
+    /* Further adjust font size for small screens */
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .subtitles {
+    font-size: 1px;
+    /* Further adjust font size for very small screens */
+  }
+
+
+  .sub1 {
+    font-size: 12px;
+    /* Further adjust font size for very small screens */
+  }
+
+}
+
+
+
+
+.section2 {
+
+  align-content: center;
+  align-items: center;
+  display: inline-flex;
+  column-gap: 10px;
+  margin-left: 30px;
+  /* font-family: 'Cursive', sans-serif; */
+
+
+
+}
+
+.title {
+  border: 1px solid black;
+  padding: 5px;
+  width: auto;
+  background-size: cover;
+  color: gray;
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .section2 {
+    column-gap: 8px;
+    /* Adjust column gap for medium screens */
+    margin-left: -20px;
+    /* Adjust margin for medium screens */
+  }
+
+  .title {
+    font-size: 16px;
+    /* Adjust font size for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .section2 {
+    column-gap: 6px;
+    /* Adjust column gap for small screens */
+    margin-left: -10px;
+    /* Adjust margin for small screens */
+  }
+
+  .title {
+    font-size: 14px;
+    /* Adjust font size for small screens */
+    padding: 4px;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section2 {
+    column-gap: 4px;
+    /* Further adjust column gap for very small screens */
+    margin-left: 0;
+    /* Remove margin for very small screens */
+    flex-direction: column;
+    /* Stack items vertically on very small screens */
+  }
+
+  .title {
+    font-size: 12px;
+    /* Further adjust font size for very small screens */
+    padding: 3px;
+    /* Further adjust padding for very small screens */
+    margin-bottom: 10px;
+  }
+}
+
+.section3 {
+  flex-direction: column;
+  display: flex;
+  margin-left: 10px;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  align-content: center;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.code {
+  color: red;
+  font-size: 14px;
+}
+
+.subheader {
+  border: 1px solid white;
+  background-color: blue;
+  height: 30px;
+  color: whitesmoke;
+  align-items: center;
+  text-align: center;
+  column-gap: 20px;
+  ;
+
+}
+
+.type {
+  padding: 30px;
+  width: auto;
+}
+
+.type:hover {
+  background-color: chocolate;
+  width: 10px;
+
+}
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .section3 {
+    margin-left: 5px;
+    /* Adjust margin for medium screens */
+    padding: 20px;
+    /* Reduce padding for medium screens */
+  }
+
+  .code {
+    font-size: 12px;
+    /* Adjust font size for better readability */
+  }
+
+  .subheader {
+    height: 25px;
+    /* Adjust height for medium screens */
+    font-size: 14px;
+    /* Adjust font size for medium screens */
+    column-gap: 15px;
+    /* Adjust column gap */
+  }
+
+  .type {
+    padding: 20px;
+    /* Reduce padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    margin-left: 0;
+    /* Remove margin for small screens */
+    padding: 15px;
+    /* Further reduce padding for small screens */
+  }
+
+  .code {
+    font-size: 10px;
+    /* Further reduce font size */
+  }
+
+  .subheader {
+    height: 20px;
+    /* Further reduce height for small screens */
+    font-size: 12px;
+    /* Further reduce font size */
+    column-gap: 10px;
+    /* Further reduce column gap */
+  }
+
+  .type {
+    padding: 15px;
+    /* Further reduce padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section3 {
+    margin-left: 0;
+    /* Ensure no margin on very small screens */
+    padding: 10px;
+    /* Further reduce padding */
+  }
+
+  .code {
+    font-size: 8px;
+    /* Smallest font size for very small screens */
+  }
+
+  .subheader {
+    height: 15px;
+    /* Minimize height */
+    font-size: 10px;
+    /* Minimize font size */
+    column-gap: 5px;
+    /* Minimize column gap */
+  }
+
+  .type {
+    padding: 10px;
+    /* Minimize padding for very small screens */
+  }
+}
+
+
+
+
+.navbar1 {
+  overflow: hidden;
+  background-color: lightsteelblue;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  /* font-family: 'Cursive', sans-serif; */
+  
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+/* Navbar Styles */
+.navbar1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+  display: block;
+  /* Ensure dropdowns are visible by default */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 480px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .dropdown-content {
+    position: relative;
+    display: block;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .navbar1 {
+    font-size: 14px;
+    /* Slightly larger font size for readability */
+  }
+
+  .navbar1 a {
+    font-size: 16px;
+    /* Adjust link font size */
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    /* Adjust dropdown button font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar1 {
+    flex-direction: column;
+    /* Stack items vertically */
+    font-size: 16px;
+    /* Larger font size for easier readability on smaller screens */
+  }
+
+  .navbar1 a {
+    padding: 12px;
+    /* Adjust padding */
+    font-size: 14px;
+    /* Smaller font size for smaller screens */
+  }
+
+  .dropdown .dropbtn {
+    font-size: 14px;
+    /* Adjust dropdown button font size */
+  }
+
+  .dropdown-content {
+    min-width: 120px;
+    /* Adjust dropdown content width */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar1 {
+    font-size: 18px;
+    /* Increase font size for better readability */
+  }
+
+  .navbar1 a {
+    padding: 10px;
+    /* Adjust padding */
+    font-size: 12px;
+    /* Further reduce font size */
+  }
+
+  .dropdown .dropbtn {
+    font-size: 12px;
+    /* Adjust dropdown button font size */
+  }
+}
+
+.navbar1 a {
+  float: left;
+  font-size: 18px;
+  color: rgb(7, 7, 7);
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* this tag is used for no-underline */
+.no-underline {
   text-decoration: none;
+}
+
+
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: rgb(15, 13, 13);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.navbar1 a:hover,
+.dropdown:hover .dropbtn {
+  background-color: chocolate;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.dropdown-content a:hover {
+  background-color: lightsalmon;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* styles.css */
+.title {
+  background-color: khaki;
+  /* Replace with your desired color */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.title:hover {
+  background-color: #f9f9f9;
+  /* Replace with your desired hover color */
+}
+
+.marquee {
+  text-align: center;
+  color: antiquewhite;
+  background-color: darkblue;
+  /* padding: 12px 16px; */
+
+}
+a {
+  text-decoration: none;
 }

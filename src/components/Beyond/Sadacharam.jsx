@@ -27,7 +27,7 @@ const Sadacharam = () => {
 
   return (
     <div>
-    <div className="sadacharam-container">
+    <div class="sadacharam-container">
     <div className="sadacharam-slider">
       <div><img src={img3} alt="Sports ground 1" style={{height:"1000px",width:"1400px",marginLeft:"110px",marginTop:"120px"}}/></div>
       </div>

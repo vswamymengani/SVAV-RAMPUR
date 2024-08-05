@@ -13,6 +13,7 @@ import schoolCampusView8 from './slide4.jpg'
 import schoolCampusView9 from './SPORTS_1.jpg';
 import schoolCampusView10 from './GHOSH_1.jpg';
 import schoolCampusView11 from './vb3.jpg';
+import SpecialFonts from './SpecialFonts';
 import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
@@ -70,7 +71,7 @@ const Home = () => {
 
                         <div className="t1">
                             <div className="t2"><br></br><br></br>
-                                <center><h1 id="we">WELCOME TO SRI VIDYARANYA AVASA VIDYALAYAM</h1></center>
+                                <center><h1 id="we"> <span style={{ fontFamily: 'Cursive',fontSize: '34px'  }}>WELCOME TO</span> SRI VIDYARANYA AVASA VIDYALAYAM</h1></center>
 
                                 <h2><center><h2>The opening verses of the school rectified</h2></center></h2>
                                 <div className='p1' style={{fontSize:"24px",textAlign:"justify",textJustify:"inter-word",margin:"3%"}} >
@@ -151,7 +152,7 @@ const Home = () => {
                         <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", height: "120px", width: "120px" }} src="https://tse4.mm.bing.net/th?id=OIP.BHkh7zuokhlSZ_4qRQyD0AHaHa&pid=Api&P=0&h=220" className="attachment-full size-full"></img>
 
                     </figure>
-                    <h4 className='subspaceop' >AIM & OBJECTIVES</h4>
+                    <h4 className='subspaceop'  style={{fontFamily:'cursive'}}>AIM & OBJECTIVES</h4>
                     <span className='op1' style={{ textAlign: "justify" }} onClick={handleAimobj} >To develop a National System of Education which would help to build a generation
                         of youngmen and women that is<Link className='ao'>....More</Link></span>
                 </div>
@@ -161,7 +162,7 @@ const Home = () => {
                         <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", height: "120px", width: "120px" }} src="https://tse1.mm.bing.net/th?id=OIP.D0-_bzmKDpTjpQeZhrltiwAAAA&pid=Api&P=0&h=220" className="attachment-full size-full"></img>
 
                     </figure>
-                    <h4 className='subspaceop' >AT GLANCE</h4>
+                    <h4 className='subspaceop' style={{ fontFamily: 'Cursive' }}>AT GLANCE</h4>
                     <span className='op1' style={{ textAlign: "justify" }} onClick={handleag}> Sri Vidyaranya Avasa Vidyalayam at Chokkaram Nagar, Rampur is a English medium
                         school offering education from Nursery to 10th grade<Link className='ao'>....More</Link></span>
                 </div>
@@ -171,7 +172,7 @@ const Home = () => {
                         <img decoding='async' style={{ margin: "inherit", marginBlock: "auto", height: "120px", width: "120px" }} src="https://as2.ftcdn.net/v2/jpg/01/33/78/75/1000_F_133787583_DbQZgh1QPWdqMqbISwcCchzC23Fv0gO3.jpg" className="attachment-full size-full"></img>
 
                     </figure>
-                    <h4 className='subspaceop'>ORGANIZATIONAL STRUCTURE</h4>
+                    <h4 className='subspaceop' style={{ fontFamily: 'Cursive' }}>ORGANIZATIONAL STRUCTURE</h4>
                     <span className='op1' style={{ textAlign: "justify" }} onClick={handleOs}>Vidya Bharati Akhila Bharatiya Shiksha Sansthan is registered under the society registration act<Link className='ao'>....More</Link></span>
                 </div>
               
@@ -180,7 +181,10 @@ const Home = () => {
 
             </div>
             <div className="c1f">
-              <div> <span className="c132">FACILITIES</span></div> 
+              <div> 
+              <span className="c132" ><SpecialFonts /></span>
+              </div> 
+   
             </div>
           
 

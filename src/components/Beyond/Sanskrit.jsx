@@ -1,4 +1,3 @@
-
 // import Slider from 'react-slick';
 import { FaLightbulb, FaLanguage, FaBook, FaBrain, FaGlobe, FaChild, FaHome, FaChair, FaLaptop } from 'react-icons/fa';
 import './Sanskrit.css';
@@ -52,8 +51,8 @@ const Sanskrit = () => {
         {/* </Slider> */}
       </div>
     </div>
-    <div>
-    </div>
+
+  
     <div id="Sanskritpara">
         <p>
         Sanskrit was considered as “Dev Bhasha“, “Deva vani” or the language of the Gods by ancient Indians. The word sanskrita, means “refined” or “purified”. It is made up of the primordial sounds, and is developed systematically to include the natural progressions of sounds as created in the human mouth. Anyone attempting to understand Hinduism should have a working knowledge of Sanskrit. Most modern Indian languages have been directly derived from, or strongly influenced by Sanskrit.

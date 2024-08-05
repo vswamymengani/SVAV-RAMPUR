@@ -44,6 +44,7 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
   
 }
 
+
 /* .t1 {
   width: 100%;
   padding: 20px;
@@ -793,11 +794,12 @@ text-decoration: underline; /* Link underline */
 
 
 
-
-
 .c132{
   text-align: center;
   width: 0px;
+  
+  
+  
  
 }
 .con1{
@@ -897,9 +899,9 @@ line-height: 160%;
   
 }
 .c1f {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
+  color:red;
+  font-size: 60px;
+  /* background-color: blue; */
   font-style: normal;
   width: 80%; /* Adjusted for smaller screens */
   max-width: 400px; /* Ensures it doesn't get too wide on larger screens */
@@ -907,6 +909,7 @@ line-height: 160%;
   border-radius: 15px; /* Added this line to make the border radius curved */
   text-align: center;
   margin: 30px auto; /* Centered the element with automatic side margins */
+ 
 }
 
 @media (min-width: 600px) {

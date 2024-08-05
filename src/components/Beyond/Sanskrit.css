@@ -12,54 +12,15 @@
   margin-left: 102px;
 }
 
-/* Responsive styles for medium-sized devices */
-/* @media (max-width: 768px) {
-  #Sanskrit {
-      font-size: 24px; 
-      width: 70%; 
-      padding: 10px;
-      margin: 50px auto; 
-      margin-top: -30px; 
-  }
-} */
-
-/* Responsive styles for small-sized devices */
-/* @media (max-width: 480px) {
-  #Sadacharam {
-      font-size: 20px; 
-      width: 90%; 
-      padding: 8px; 
-      margin: 30px auto; 
-      margin-top: -20px; 
-  }
-} */
-/* Base styles for #Sadacharamlogo */
 #Sanskritlogo {
   height: 100px;
   width: 100px;
-  background-image: url(../);
-  background-size: cover; 
+  background-image: url(../); /* Specify the URL for the image */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* Responsive styles for medium-sized devices */
-/* @media (max-width: 768px) {
-  #Sadacharamlogo {
-      height: 80px; 
-      width: 80px;
-  }
-} */
-
-/* Responsive styles for small-sized devices
-@media (max-width: 480px) {
-  #Sadacharamlogo {
-      height: 60px; 
-      width: 60px; 
-  }
-} */
-
-/* Base styles for #Sadacharamcontents */
 #Sanskritcontents {
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -69,165 +30,42 @@
   line-height: 180%;
 }
 
-/* Responsive styles for medium-sized devices */
-/* @media (max-width: 768px) {
-  #Sadacharamcontents {
-      font-size: 18px; 
-      margin-top: -30px; 
-      margin-left: 50px; 
-  }
-} */
-
-/* Responsive styles for small-sized devices */
-/* @media (max-width: 480px) {
-  #Sadacharamcontents {
-      font-size: 16px;
-      margin-top: -20px; 
-      margin-left: 20px; 
-  }
-} */
-
- /* Base styles for #Sadacharamcontents h3 */
-/* #Sadacharamcontents h3 {
-  margin-bottom: 20px; 
-} */
-
-/* Responsive styles for medium-sized devices */
-/* @media (max-width: 768px) {
-  #Sadacharamcontents h3 {
-      margin-bottom: 15px; 
-  }
-} */
-
-/* Responsive styles for small-sized devices */
-/* @media (max-width: 480px) {
-  #Sadacharamcontents h3 {
-      margin-bottom: 10px; 
-  }
-} */
 #images {
   width: 100%; /* Adjust to fill the available width */
   height: auto; /* Maintain the aspect ratio */
 }
 
-/* Responsive styles for medium-sized devices */
-/* @media (max-width: 768px) {
-  #images {
-      width: 80%; 
-  }
-} */
-
-/* Responsive styles for small-sized devices */
-/* @media (max-width: 480px) {
-  #images {
-      width: 100%; 
-  }
-} */
-
 .Sanskrit-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin-top: 50px;
 }
 
-/* Responsive styles for tablets and smaller devices */
-/* @media (max-width: 768px) {
-  .Sadacharam-container {
-      flex-direction: column; 
-      align-items: flex-start;
-      width: 100%; 
-  }
-} */
-
-/* Responsive styles for mobile devices */
-/* @media (max-width: 480px) {
-  .Sadacharam-container {
-      flex-direction: column; 
-      align-items: center; 
-      width: 100%; 
-      margin-top: 20px; 
-  }
-} */
-
-    
 .Sanskrit-content {
   flex: 1;
   padding: 20px;
   margin-top: 10px;
 }
 
-/* Responsive styles for tablets and smaller devices */
-/* @media (max-width: 768px) {
-  .Sadacharam-content {
-      padding: 15px;
-      margin-top: -50px;
-  }
-} */
-
-/* Responsive styles for mobile devices */
-/* @media (max-width: 480px) {
-  .Sadacharam-content {
-      padding: 10px;
-      margin-top: 0; 
-  }
-} */
-
 .Sanskrit-slider {
   flex: 1;
   max-width: 50%;
   margin-top: 100px;
-  margin-right: -40px;
+  /* margin-right: -40px; */
 }
 
-/* Responsive styles for tablets and smaller devices */
-/* @media (max-width: 768px) {
-  .Sadacharam-slider {
-      max-width: 70%;
-      margin-top: 50px;
-      margin-right: -20px;
-  }
-} */
-
-/* Responsive styles for mobile devices */
-/* @media (max-width: 480px) {
-  .Sadacharam-slider {
-      max-width: 100%;
-      margin-top: 20px;
-      margin-right: 0;
-  }
-} */
-
-  
 .Sanskrit-slider img {
   width: 100%;
   border-radius: 60px;
   height: 500px; /* Maintain aspect ratio */
-  max-height: 400px; 
+  max-height: 400px;
   margin-right: -40px;
   margin-top: -80px;
 }
 
-/* Responsive styles for tablets and smaller devices */
-/* @media (max-width: 768px) {
-  .Sadacharam-slider img {
-      height: 300px; 
-      max-height: 300px; 
-      margin-right: -20px;
-  }
-} */
-
-/* Responsive styles for mobile devices */
-/* @media (max-width: 480px) {
-  .Sadacharam-slider img {
-      height: auto; 
-      max-height: 200px; 
-      margin-right: 0;
-  }
-} */
 #Sanskritpara {
-
   font-family: 'Open Sans', sans-serif;
   margin: 100px;
   margin-bottom: 100px;
@@ -236,18 +74,96 @@
   line-height: 260%;
 }
 
-/* Responsive styles for tablets and smaller devices */
-/* @media (max-width: 768px) {
-  #Sadacharampara {
-      margin: 50px;
-      margin-bottom: -10px;
+/* Responsive styles */
+@media (max-width: 1200px) {
+  #Sanskrit {
+    width: 60%;
+    font-size: 26px;
+    margin: 80px auto; /* Reduce margin */
+    margin-left: 50px; /* Adjust for screen width */
   }
-} */
 
-/* Responsive styles for mobile devices */
-/* @media (max-width: 480px) {
-  #Sadacharampara {
-      margin: 20px;
-      margin-bottom: -5px;
+  #Sanskritcontents {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: -30px;
   }
-} */
+
+  .Sanskrit-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .Sanskrit-slider {
+    max-width: 80%;
+    margin-top: 50px;
+  }
+
+  .Sanskrit-slider img {
+    height: auto; /* Adjust height to maintain aspect ratio */
+    max-height: 300px;
+    margin-top: 0;
+  }
+
+  #Sanskritpara {
+    margin: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Sanskrit {
+    width: 80%;
+    font-size: 24px;
+    margin: 60px auto;
+    margin-left: 0; /* Centered horizontally */
+  }
+
+  #Sanskritcontents {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .Sanskrit-container {
+    width: 100%;
+  }
+
+  .Sanskrit-content, .Sanskrit-slider {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .Sanskrit-slider img {
+    max-height: 250px;
+  }
+
+  #Sanskritpara {
+    margin: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Sanskrit {
+    width: 100%;
+    font-size: 22px;
+    padding: 10px;
+    margin: 40px auto;
+    margin-left: 0; /* Centered horizontally */
+  }
+
+  #Sanskritcontents {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+
+  .Sanskrit-slider img {
+    border-radius: 30px;
+    max-height: 200px;
+  }
+
+  #Sanskritpara {
+    margin: 30px 10px;
+  }
+}

@@ -77,7 +77,7 @@
     color: red;
     font-size: 30px;
     margin-top: -400px;
-    margin-left: 1100px;
+    margin-left: 1200px;
   }
 
   #i4{
@@ -245,7 +245,6 @@
     }
   
     form {
-      max-width: 100%; /* Full width for mobile devices */
+      max-width: 100%; /* Full width for mobile devices */
     }
   }
-  

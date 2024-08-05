@@ -1,32 +1,106 @@
-#aimp1{
+/* Base Styles */
+#aimp1 {
     color: black;
     font-size: 50px;
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
+  }
   
-   
-}
-#aimimg{
+  #aimimg {
     width: 70%;
-    height: 300px;
-    background-size: cover;
+    height: 400px;
     background-position: 100%;
-    /* margin-left: 150px; */
     background-repeat: no-repeat;
     background-image: url(./AVASAM_OLDPIC_1.jpg);
+    box-shadow: 0px 4px 12px rgba(169, 169, 169, 0.5);
+    border-radius: 8px;
+    margin: 0 auto; /* Center the image */
+  }
   
-}
-#aimpara{
-    background-color: rgb(182, 182, 183);
-    height: 560px;
-    font-family: Common serif fonts include Times New Roman, Georgia, and Garamond;
+  #aimpara {
+    font-family: 'Georgia', serif;
     margin-top: 10px;
-}
-#bcimg{
-    background-color: rgb(182, 182, 183);
-}
-p{
-    margin-left: 20px;
-   font-size: 24px;
-   line-height: 160%;
+    margin-right: 15px;
+    text-align: justify;
+  }
+  
+  #bcimg {
+    padding-top: 20px;
+  }
+  
+  #para {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.9em;
+    /* font-weight: 100; */
+    line-height: 1.6;
+    /* color:black; */
+    color: #333;
+    padding: 20px;
+    /* text-align: left; */
+    text-align: justify;
+    text-justify: inter-word;
+
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    #aimp1 {
+      font-size: 40px; /* Smaller font size for medium screens */
+    }
+  
+    #aimimg {
+      width: 80%;
+      height: 350px; /* Adjust image height for medium screens */
+    }
+  
+    #aimpara {
+      font-size: 1.2em; /* Adjust font size for medium screens */
+      margin-right: 10px;
+    }
+  
+    #para {
+      font-size: 1.3em; /* Adjust font size for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #aimp1 {
+      font-size: 30px; /* Smaller font size for small screens */
+    }
+  
+    #aimimg {
+      width: 90%;
+      height: 300px; /* Adjust image height for small screens */
+    }
+  
+    #aimpara {
+      font-size: 1.1em; /* Adjust font size for small screens */
+      margin-right: 5px;
+    }
+  
+    #para {
+      font-size: 1.2em; /* Adjust font size for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #aimp1 {
+      font-size: 25px; /* Smaller font size for very small screens */
+    }
+  
+    #aimimg {
+      width: 100%;
+      height: 250px; /* Adjust image height for very small screens */
+    }
+  
+    #aimpara {
+      font-size: 1em; /* Adjust font size for very small screens */
+      margin-right: 0;
+      padding: 10px;
+    }
+  
+    #para {
+      font-size: 1em; /* Adjust font size for very small screens */
+      padding: 10px; /* Reduce padding for very small screens */
+    }
 }
