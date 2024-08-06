@@ -1,5 +1,4 @@
-
-
+import './Downloads.css';
 const Downloads = [
   { id: '1', title: 'About SVAV-Rampur:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/Svav+About+us.pdf' },
   { id: '2', title: 'SDP-School Development Plan:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/SVAV-RAMPUR-SDP+Document.pptx' },
@@ -20,7 +19,7 @@ const Downloads = [
 
 const PdfList = () => {
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20 }}> 
       <h2>Download PDF Files</h2>
       <ul>
         {Downloads.map((file) => (

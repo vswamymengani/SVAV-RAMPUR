@@ -1,0 +1,23 @@
+/* Styles for large devices (desktops) */
+.responsive-img {
+    margin-top: 3%;
+    width: 60%;
+    height: 30%;
+  }
+  
+  /* Styles for medium devices (tablets) */
+  @media (max-width: 768px) {
+    .responsive-img {
+      margin-top: 4%;
+      width: 80%;
+    }
+  }
+  
+  /* Styles for small devices (mobile) */
+  @media (max-width: 480px) {
+    .responsive-img {
+      margin-top: 5%;
+      width: 100%;
+    }
+  }
+  

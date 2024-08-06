@@ -1,0 +1,60 @@
+/* Default styles */
+.pdf-list {
+    padding: 20px;
+  }
+  
+  .pdf-list h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .pdf-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pdf-list li {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  
+  .pdf-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .pdf-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for medium devices (tablets) */
+  @media (max-width: 768px) {
+    .pdf-list {
+      padding: 15px;
+    }
+  
+    .pdf-list h2 {
+      font-size: 1.3em;
+    }
+  
+    .pdf-list li {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Styles for small devices (mobile) */
+  @media (max-width: 480px) {
+    .pdf-list {
+      padding: 10px;
+    }
+  
+    .pdf-list h2 {
+      font-size: 1.2em;
+    }
+  
+    .pdf-list li {
+      font-size: 0.8em;
+    }
+  }
+  

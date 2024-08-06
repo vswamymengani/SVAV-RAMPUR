@@ -6,9 +6,12 @@ const Philosophy = () => {
   return (
     <div>
       <p className="oil1">
-        Sri Vidyaranya Avasa Vidyalayam (SVAV) is a SSC & CBSE School located in Rampur-Manchiryal, spread across 33 acres of lush green campus. SVAV is established with a purpose of preparing children to reach high academic standards, acquire ancient wisdom, modern technological and soft skills and scientific temperament. SVAV is founded by Sri Saraswathi Vidyapeetham, Telangana, the biggest non-profit organisation in the field of education, with over five decades of experience in providing value-based education in its schools across India.
+        Sri Vidyaranya Avasa Vidyalayam (SVAV) is a SSC & CBSE School located in Rampur-Manchiryal, spread across 33 acres of lush green campus. SVAV is established with 
+        a purpose of preparing children to reach high academic standards, acquire ancient wisdom, modern technological and soft skills and scientific temperament. SVAV is founded by Sri Saraswathi Vidyapeetham, Telangana, the biggest non-profit organisation in the field of education, with over five decades of experience in providing 
+        value-based education in its schools across India.
       </p>
-      <center><div><img src={img2} style={{height:"500px",width:"90%",marginTop:"-60px",marginBottom:"-40px"}}></img></div></center>
+      {/* <center><div><img src={img2} style={{height:"500px",width:"90%",marginTop:"-60px",marginBottom:"-40px"}}></img></div></center> */}
+      <center><div><img src={img2} style={{height:"500px",width:"90%"}}></img></div></center>
       <div id="sp1">
         <h1 className="sp">Sailent Features</h1><br></br>
         <h3>Curriculum And Pedagogy That,</h3><br></br>

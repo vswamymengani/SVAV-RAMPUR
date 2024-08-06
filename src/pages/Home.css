@@ -2,6 +2,14 @@
   margin: 0px 0; /* Margin above and below the carousel */
 }
 
+.newslider {
+  width: 100%;
+  height: auto; /* Height will be adjusted based on the content */
+  max-width: 1600px; /* Optional: limit max width for larger screens */
+  margin: 0px 0; /* Center the container */
+  /* Optional: add padding for spacing */
+}
+
 .carousel-slide {
   /* scroll-behavior: smooth; */
   display: flex;
@@ -120,10 +128,10 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
 
 
 
- 
+/*  
 .sectwo{
   width: 100%;
-}
+} */
 
 
 
@@ -192,9 +200,9 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
   color: whitesmoke;
   margin-top: 0px;
   padding: 12px 16px;
-  background-image: url(./Assets/back\ img.jpg);
+ 
   background-size: cover;
-  background-position: center;    
+  background-position: center; 
 }
 
 
@@ -232,9 +240,9 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
   text-align: center;
   padding: 12px 16px;
 }
-.design{
+/* .design{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 .color{
   background-color: blue;  
   color: whitesmoke;
@@ -1041,5 +1049,142 @@ float: none;
 
   .my-float {
     font-size: 12px;
+  }
+}
+
+/* carousel.sliders images responsive */
+
+/* Default styles for all devices */
+.carousel-slide {
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles for tablets (768px and up) */
+@media (min-width: 768px) {
+  .carousel-slide img {
+      width: 75%;
+  }
+}
+
+/* Styles for desktops (1024px and up) */
+@media (min-width: 1024px) {
+  .carousel-slide img {
+      width: 50%;
+  }
+}
+
+
+/* carousel.css */
+
+/* Basic styling for carousel-wrapper1 */
+.carousel-wrapper1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for carousel-slide1 */
+.carousel-slide1 {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ensure images and text are responsive */
+}
+
+/* For text content */
+.tn1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#we1 {
+  font-family: 'Cursive', cursive;
+  font-size: 34px;
+}
+
+.p11 {
+  font-size: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 3%;
+}
+
+/* Media Queries */
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .tn1 {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  #we1 {
+      font-size: 24px;
+  }
+
+  .p11 {
+      font-size: 16px;
+      margin: 2%;
+  }
+
+  .carousel-slide1 img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tn1 {
+      font-size: 20px;
+      padding: 15px;
+  }
+
+  #we1 {
+      font-size: 28px;
+  }
+
+  .p11 {
+      font-size: 20px;
+      margin: 2.5%;
+  }
+
+  .carousel-slide1 img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .tn1 {
+      font-size: 24px;
+      padding: 20px;
+  }
+
+  #we1 {
+      font-size: 34px;
+  }
+
+  .p11 {
+      font-size: 24px;
+      margin: 3%;
+  }
+
+  .carousel-slide1 img {
+      width: 100%;
+      height: auto;
   }
 }
