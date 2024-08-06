@@ -143,10 +143,9 @@ const Home = () => {
                         <p className="design">To blossom the inner potential of the child in a creative and innovative atmosphere, nurture the self-<br />exploration to enquire, to experiment, to find the truth in the best spirit and indomitable will.</p>
                          */}
                          {/* Video Element */}
-                         <video width="1000" height="600" controls autoPlay loop muted>
-        <source src={yourVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+                         <video width="60%" height="40%" autoPlay loop muted>
+                            <source src={yourVideo} type="video/mp4" />
+                            Your browser does not support the video tag.</video>
                       
                     </div>
                 </div>
