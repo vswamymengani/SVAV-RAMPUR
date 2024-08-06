@@ -3,6 +3,13 @@
 #sdp {
   text-align: center;
   color: blue;
+  font-size: 42px;
+  /* text-shadow: 2px 2px 20px rgba(198, 217, 24, 0.3); Apply shadow */
+}
+
+#sdp1 {
+  text-align: center;
+  color: blue;
   font-size: 36px;
 }
 #ch1 {
@@ -48,6 +55,7 @@
 
 
 .custom-list {
+ 
   font-size: 24px;
   list-style-type: none;
   padding-left: 20px;
@@ -173,7 +181,7 @@
   /* background-color: #f9f9f9;
   border: 1px solid #ddd; */
   border-radius: 8px;
-  margin: 80px;
+  /* margin: 80px; */
   max-width: 100%;
   margin-top: 50px;
   font-size: 24px;
@@ -187,13 +195,13 @@
 } */
 
 #sdppara br {
-  display: none;
+  display: block;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   #sdppara {
-    padding: 15px;
+    /* padding: 15px; */
     font-size: 0.9rem;
   }
   
@@ -204,7 +212,47 @@
 
 @media (max-width: 480px) {
   #sdppara {
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 0.8rem;
+  }
+}
+
+
+
+.responsive-text {
+  display: flex;
+  align-items: center; /* Center text vertically with image */
+  margin-bottom: 10px; /* Space between items */
+  font-size: 24px; /* Default text size */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.responsive-text img {
+  width: 10%; /* Set the image width as a percentage */
+  max-width: 50px; /* Ensure the image doesn't grow too large */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between image and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 16px; /* Slightly smaller text size for tablets */
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .responsive-text img {
+    width: 15%; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-text {
+    font-size: 14px; /* Smaller text size for mobile devices */
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .responsive-text img {
+    width: 20%; /* Further adjust image size for very small screens */
   }
 }

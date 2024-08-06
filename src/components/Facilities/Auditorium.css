@@ -1,8 +1,9 @@
 /* Auditorium.css */
 #Auditorium {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
+  font-family: cursive;
+  color: palevioletred;
+  font-size: 40px;
+  /* background-color: green; */
   font-style: normal;
   width: 80%; /* Default to a larger width for small screens */
   padding: 15px;

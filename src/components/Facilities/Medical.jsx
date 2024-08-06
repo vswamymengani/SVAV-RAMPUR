@@ -47,32 +47,32 @@ const Medical = () => {
           <span id="medical">Medical / Vaidhya Vibhag</span><br></br><br></br><br></br>
           <div id="medicalcontents">
             <div className="facility-item">
-              <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />
-              <h4>Intense Pastoral Care</h4>
+              {/* <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" /> */}
+              <h4><img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />Intense Pastoral Care</h4>
             </div>
             <div className="facility-item">
-              <img src={dormsLogo} alt="Dorms" className="facility-logo" />
-              <h4>Spacious and Ventilated Dorms</h4>
+              {/* <img src={dormsLogo} alt="Dorms" className="facility-logo" /> */}
+              <h4><img src={dormsLogo} alt="Dorms" className="facility-logo" />Spacious and Ventilated Dorms</h4>
             </div>
             <div className="facility-item">
-              <img src={doctorLogo} alt="Doctor" className="facility-logo" />
-              <h4>	Well-equipped Medical Room</h4>
+              {/* <img src={doctorLogo} alt="Doctor" className="facility-logo" /> */}
+              <h4><img src={doctorLogo} alt="Doctor" className="facility-logo" />	Well-equipped Medical Room</h4>
             </div>
             <div className="facility-item">
-              <img src={airconLogo} alt="Air Conditioning" className="facility-logo" />
-              <h4>	Managed by an experienced staff nurse.</h4>
+              {/* <img src={airconLogo} alt="Air Conditioning" className="facility-logo" /> */}
+              <h4><img src={airconLogo} alt="Air Conditioning" className="facility-logo" />	Managed by an experienced staff nurse.</h4>
             </div>
             <div className="facility-item">
-              <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />
-              <h4>	Regular health check-ups of the students</h4>
+              {/* <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" /> */}
+              <h4><img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />Regular health check-ups of the students</h4>
             </div>
             <div className="facility-item">
-              <img src={dormsLogo} alt="Dorms" className="facility-logo" />
-              <h4> Tie-up Govt & private hospitals emergency</h4>
+              {/* <img src={dormsLogo} alt="Dorms" className="facility-logo" /> */}
+              <h4><img src={dormsLogo} alt="Dorms" className="facility-logo"/>Tie-up Govt & private hospitals emergency</h4>
             </div>
             <div className="facility-item">
-              <img src={doctorLogo} alt="Doctor" className="facility-logo" />
-              <h4>	Senior doctors visit the campus twice in a Month</h4>
+              {/* <img src={doctorLogo} alt="Doctor" className="facility-logo" /> */}
+              <h4><img src={doctorLogo} alt="Doctor" className="facility-logo" />Senior doctors visit the campus twice in a Month</h4>
             </div>
           </div>
         </div>

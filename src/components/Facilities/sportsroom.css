@@ -43,9 +43,10 @@
 
 
 #spo {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
+  font-family: cursive;
+  color: palevioletred;
+  font-size: 40px;
+  /* background-color: green; */
   font-style: normal;
   width: 60%;
   margin-bottom: 100px;

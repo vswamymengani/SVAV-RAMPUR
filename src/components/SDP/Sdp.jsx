@@ -7,18 +7,20 @@ import img11 from './sdp1.png';
 // import img5 from '../Facilities/sd5.png';
 // import img6 from '../Facilities/sd6.png';
 // import img7 from '../Facilities/s&p2.jpg';
+import img12 from './book1.png';
+
 
 
 const Sdp = () => {
   return (
     <div>
       <br></br><br></br>
-      <h1 id="sdp">Patashala Abhivrudhi Pranalika <br></br> (School Development Plan)</h1>
+      <h1 id="sdp" style={{ fontFamily: 'Cursive' }}>Patashala Abhivrudhi Pranalika <br></br> <h1 id ="sdp1" style={{ fontFamily: 'Cursive' }}>(School Development Plan)</h1></h1>
       <div>
         <div id="sdppara">
           <p>
-            The school improvement is first and foremost the responsibility of the school Management. <br></br>It is based on the premise that schools themselves are best placed to identify areas for improvement and to implement changes that can bring about better outcomes for pupiles.
-            <br></br><br></br>
+            The school improvement is first and foremost the responsibility of the school Management.It is based on the premise that schools themselves are best placed to identify areas for improvement and to implement changes that can bring about better outcomes for pupiles.
+           
             We bring to your kind Notice that Sri Vidyaranya Avasa Vidyalayam is a reputed non-profit NGO based School run by Sri Saraswathi Vidya Pettam.As you may kindly be aware, Vidya Pettam which is Affilliated to Vidya Bharathi-Akhil Bharatiya Shiksha Sansthan is running around 300 Shishumandir Schools in the state of telangana.Shishumandir Schools all over the country, are known for impacting value based education, with emphasis on
             ancient Bharatiya Culture & Imbibing Patriotism among it's students.
             <br></br>   <br></br>
@@ -35,13 +37,32 @@ const Sdp = () => {
             The SDP is a strategic plan for improvement. It should bring together, in a clear and simple way, the school’s priorities, the main measures it will take to raise standards, the resources dedicated to these, and the key outcomes and targets it intends to achieve.
           </p>
         </div>
-        <h2 id="ch1">Contribute in this noble mission of SDP-SVAV-RAMPUR</h2>
-        <ul className="custom-list">
-          <li>&nbsp;&nbsp;Contribute in the resource developments of Sri Vidyaranya Avasa Vidyalayam schools;</li>
-          <li>&nbsp;&nbsp;Associate with the Alumni Council of your respective school, if you are a former student of Sri Vidyaranya Avasa Vidyalayam.</li>
-          <li>&nbsp;&nbsp;Participate in various programmes, seminars, workshops etc. organized by Sri Vidyaranya Avasa Vidyalayam;</li>
+        <h2 id="ch1"style={{ fontFamily: 'Cursive' }}>Contribute in this noble mission of SDP-SVAV-RAMPUR</h2>
+        {/* <ul className="custom-list">
+        <br></br><br></br>
+        <li>&nbsp;&nbsp;Contribute in the resource developments of SVAV schools;</li>
+          <li>&nbsp;&nbsp;Associate with the Alumni Council of your respective school, if you are a former student of SVAV.</li>
+          <li>&nbsp;&nbsp;Participate in various programmes, seminars, workshops etc. organized by SVAV;</li>
           <li>&nbsp;&nbsp;Extend your valuable suggestions towards the development of various educational activities;</li>
-        </ul>
+        </ul> */}
+        
+        <div className="responsive-text">
+        <img src={img12} alt="student" className="link-icon" />
+        <span><h4>Contribute in the resource developments of SVAV schools.</h4></span>
+      </div>
+      <div className="responsive-text">
+        <img src={img12} alt="student" className="link-icon" />
+        <span><h4>Associate with the Alumni Council of your respective school, if you are a former student of SVAV.</h4></span>
+      </div>
+      <div className="responsive-text">
+        <img src={img12} alt="student" className="link-icon" />
+        <span><h4>Participate in various programmes, seminars, workshops etc. organized by SVAV.</h4></span>
+      </div>
+      <div className="responsive-text">
+        <img src={img12} alt="student" className="link-icon" />
+        <span><h4>Extend your valuable suggestions towards the development of various educational activities.</h4></span>
+      </div>
+
       </div><br></br>
       <div id="sdpimgs">
         <center>

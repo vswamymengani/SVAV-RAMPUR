@@ -44,28 +44,28 @@ const Art = () => {
           <span id="Art">Arts & Crafts</span>
           <div id="Artcontents">
             <div className="facility-item">
-              <FontAwesomeIcon icon={faMusic} className="facility-logo" />
-              <h3>Sangeet Education for Manasik Vikash</h3>
+              {/* <FontAwesomeIcon icon={faMusic} className="facility-logo" /> */}
+              <h3><FontAwesomeIcon icon={faMusic} className="facility-logo" />Sangeet Education for Manasik Vikash</h3>
             </div>
             <div className="facility-item">
-              <FontAwesomeIcon icon={faBookOpen} className="facility-logo" />
-              <h3>Sanskrit Education for Boudhik Vikash</h3>
+              {/* <FontAwesomeIcon icon={faBookOpen} className="facility-logo" /> */}
+              <h3><FontAwesomeIcon icon={faBookOpen} className="facility-logo" />Sanskrit Education for Boudhik Vikash</h3>
             </div>
             <div className="facility-item">
-              <FontAwesomeIcon icon={faPray} className="facility-logo" />
-              <h3>Moral and Spiritual Education</h3>
+              {/* <FontAwesomeIcon icon={faPray} className="facility-logo" /> */}
+              <h3><FontAwesomeIcon icon={faPray} className="facility-logo" />Moral and Spiritual Education</h3>
             </div>
             <div className="facility-item">
-              <FontAwesomeIcon icon={faSchool} className="facility-logo" />
-              <h3>All India Sanskriti Gyan Pariksha</h3>
+              {/* <FontAwesomeIcon icon={faSchool} className="facility-logo" /> */}
+              <h3><FontAwesomeIcon icon={faSchool} className="facility-logo" />All India Sanskriti Gyan Pariksha</h3>
             </div>
             <div className="facility-item">
-              <FontAwesomeIcon icon={faChalkboardTeacher} className="facility-logo" />
-              <h3>Prashan Manch (Quiz Competition)</h3>
+              {/* <FontAwesomeIcon icon={faChalkboardTeacher} className="facility-logo" /> */}
+              <h3><FontAwesomeIcon icon={faChalkboardTeacher} className="facility-logo" />Prashan Manch (Quiz Competition)</h3>
             </div>
             <div className="facility-item">
-              <FontAwesomeIcon icon={faPenFancy} className="facility-logo" />
-              <h3>Essay Writing Competition</h3>
+              {/* <FontAwesomeIcon icon={faPenFancy} className="facility-logo" /> */}
+              <h3><FontAwesomeIcon icon={faPenFancy} className="facility-logo" />Essay Writing Competition</h3>
             </div>
           </div>
         </div>

@@ -43,28 +43,28 @@ const Library = () => {
         <h1 id="Library">Library Facilities</h1><br></br>
         <div id="Librarycontents">
         <div className="facility-item-Library">
-        <FaBook style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Home Lending of Books</h3>
+        {/* <FaBook style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" /> */}
+        <h3><FaBook style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />Home Lending of Books</h3>
       </div>
       <div className="facility-item-Library">
-        <FaJournalWhills style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Periodical Journals & magazines are available</h3>
+        {/* <FaJournalWhills style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" /> */}
+        <h3><FaJournalWhills style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />Periodical Journals & magazines are available</h3>
       </div>
       <div className="facility-item-Library">
-        <FaNewspaper style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Daily Newspapers</h3>
+        {/* <FaNewspaper style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" /> */}
+        <h3><FaNewspaper style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />Daily Newspapers</h3>
       </div>
       <div className="facility-item-Library">
-        <FaRegClipboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Reference Services for projects & assignments</h3>
+        {/* <FaRegClipboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" /> */}
+        <h3><FaRegClipboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />Reference Services for projects & assignments</h3>
       </div>
       <div className="facility-item-Library">
-        <FaChalkboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Reading Room for self-study</h3>
+        {/* <FaChalkboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" /> */}
+        <h3><FaChalkboard style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />Reading Room for self-study</h3>
       </div>
       <div className="facility-item-Library">
-        <FaUserGraduate style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />
-        <h3>Services to ex-students</h3>
+        {/* <FaUserGraduate style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" /> */}
+        <h3><FaUserGraduate style={{ color: 'black', fontSize: '2rem' }} className="facility-logo-Library" />Services to ex-students</h3>
       </div>
         </div>
       </div>

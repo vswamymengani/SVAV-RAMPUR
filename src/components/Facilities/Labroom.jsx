@@ -30,40 +30,40 @@ const Labroom = () => {
           <span className="lab">Labroom Facilities</span>
           <div id="labcontents">
             <div className="facility-iteml">
-              <FaWifi className="facility-iconl" />
-              <h4>Dedicated Internet connection</h4>
+              {/* <FaWifi className="facility-iconl" /> */}
+              <h4> <FaWifi className="facility-iconl" />Dedicated Internet connection</h4>
             </div>
             <div className="facility-iteml">
-              <FaDesktop className="facility-iconl" />
-              <h4>30 high-quality LED monitors PCs</h4>
+              {/* <FaDesktop className="facility-iconl" /> */}
+              <h4><FaDesktop className="facility-iconl" />30 high-quality LED monitors PCs</h4>
             </div>
             <div className="facility-iteml">
-              <FaFileAlt className="facility-iconl" />
-              <h4>All latest licensed softwares</h4>
+              {/* <FaFileAlt className="facility-iconl" /> */}
+              <h4><FaFileAlt className="facility-iconl" />All latest licensed softwares</h4>
             </div>
             <div className="facility-iteml">
-              <GiLightBulb className="facility-iconl" />
-              <h4>Fluorescent and incandescent lighting</h4>
+              {/* <GiLightBulb className="facility-iconl" /> */}
+              <h4><GiLightBulb className="facility-iconl" />Fluorescent and incandescent lighting</h4>
             </div>
             <div className="facility-iteml">
-              <FaPrint className="facility-iconl" />
-              <h4>Equipped colour printers & projector</h4>
+              {/* <FaPrint className="facility-iconl" /> */}
+              <h4><FaPrint className="facility-iconl" />Equipped colour printers & projector</h4>
             </div>
             <div className="facility-iteml">
-              <FaChalkboard className="facility-iconl" />
-              <h4>Whiteboard, flip chart and markers.</h4>
+              {/* <FaChalkboard className="facility-iconl" /> */}
+              <h4><FaChalkboard className="facility-iconl" />Whiteboard, flip chart and markers.</h4>
             </div>
             <div className="facility-iteml">
-              <FaChair className="facility-iconl" />
-              <h4>Comfortable, ergonomic seating</h4>
+              {/* <FaChair className="facility-iconl" /> */}
+              <h4><FaChair className="facility-iconl" />Comfortable, ergonomic seating</h4>
             </div>
             <div className="facility-iteml">
-              <FaSnowflake className="facility-iconl" />
-              <h4>High-quality ACs for continuous cooling</h4>
+              {/* <FaSnowflake className="facility-iconl" /> */}
+              <h4><FaSnowflake className="facility-iconl" />High-quality ACs for continuous cooling</h4>
             </div>
             <div className="facility-iteml">
-              <FaTools className="facility-iconl" />
-              <h4>School has the separate IT helpdesk</h4>
+              {/* <FaTools className="facility-iconl" /> */}
+              <h4><FaTools className="facility-iconl" />School has the separate IT helpdesk</h4>
             </div>
 
 

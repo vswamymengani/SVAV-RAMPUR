@@ -35,7 +35,7 @@ const  Svavprathana = () => {
         </Slider> */}
       </div>
       <div className="Svavprathana-content">
-        <h1 id="Svavprathana">SVAV&nbsp;Prathana</h1>
+        {/* <h1 id="Svavprathana">SVAV&nbsp;Prathana</h1> */}
         <div id="Svavprathanacontents">
          
         <div className="facility-item-Svavprathana">
@@ -61,8 +61,9 @@ const  Svavprathana = () => {
         </div>
         </div>
       </div>
-    
+      
     </div><br></br><br></br><br></br><br></br><br></br>
+     <center><h1 id="Svavprathana">SVAV&nbsp;Prathana</h1> </center>      <br></br>
      <center><b style={{fontSize:"40px"}}>Deeparadhana</b></center> <br></br><br></br><br></br>
      <center><div id="Svavprathana1img"></div></center><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
      <center><b style={{fontSize:"40px"}}>Bhojana Mantra</b></center> <br></br><br></br><br></br>

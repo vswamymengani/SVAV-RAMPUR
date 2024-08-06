@@ -49,32 +49,32 @@ const Boardingroom = () => {
           <h1 id="boa">Residential Facilities</h1>
           <div id="boacontents">
             <div className="facility-item">
-              <img src={securityLogo} alt="Security" className="facility-logo" />
-              <h4>24/7 Security with CCTV Surveillance</h4>
+              {/* <img src={securityLogo} alt="Security" className="facility-logo" /> */}
+              <h4><img src={securityLogo} alt="Security" className="facility-logo" />24/7 Security with CCTV Surveillance</h4>
             </div>
             <div className="facility-item">
-              <img src={foodLogo} alt="Food" className="facility-logo" />
-              <h4>100% Vegetarian & Hygienic Food</h4>
+              {/* <img src={foodLogo} alt="Food" className="facility-logo" /> */}
+              <h4><img src={foodLogo} alt="Food" className="facility-logo" />100% Vegetarian & Hygienic Food</h4>
             </div>
             <div className="facility-item">
-              <img src={airconLogo} alt="Air Conditioning" className="facility-logo" />
-              <h4>Air-conditioned Hostel Rooms</h4>
+              {/* <img src={airconLogo} alt="Air Conditioning" className="facility-logo" /> */}
+              <h4><img src={airconLogo} alt="Air Conditioning" className="facility-logo" />Air-conditioned Hostel Rooms</h4>
             </div>
             <div className="facility-item">
-              <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />
-              <h4>Intense Pastoral Care</h4>
+              {/* <img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" /> */}
+              <h4><img src={pastoralCareLogo} alt="Pastoral Care" className="facility-logo" />Intense Pastoral Care</h4>
             </div>
             <div className="facility-item">
-              <img src={separateHostelsLogo} alt="Separate Hostels" className="facility-logo" />
-              <h4>Separate Boy's & Girl's Hostels</h4>
+              {/* <img src={separateHostelsLogo} alt="Separate Hostels" className="facility-logo" /> */}
+              <h4><img src={separateHostelsLogo} alt="Separate Hostels" className="facility-logo" />Separate Boy's & Girl's Hostels</h4>
             </div>
             <div className="facility-item">
-              <img src={dormsLogo} alt="Dorms" className="facility-logo" />
-              <h4>Spacious and Ventilated Dorms</h4>
+              {/* <img src={dormsLogo} alt="Dorms" className="facility-logo" /> */}
+              <h4><img src={dormsLogo} alt="Dorms" className="facility-logo" />Spacious and Ventilated Dorms</h4>
             </div>
             <div className="facility-item">
-              <img src={doctorLogo} alt="Doctor" className="facility-logo" />
-              <h4>24/7 Doctor on-call</h4>
+              {/* <img src={doctorLogo} alt="Doctor" className="facility-logo" /> */}
+              <h4><img src={doctorLogo} alt="Doctor" className="facility-logo" />24/7 Doctor on-call</h4>
             </div>
           </div>  </div>       </div>
       <div id="bpara">

@@ -4,5 +4,24 @@
    */
    .font-effect-fire {
     font-family: 'Sofia', sans-serif;
-    /* Other styles as needed */
-   }
+    /* Other styles as needed */
+  }
+  .font-effect-neon {
+    font-size: 2vw; /* Base size */
+    font-family: 'Sofia', sans-serif;
+    color: #f40;
+    text-shadow: 0 0 5px #fff, 0 0 10px #f40, 0 0 20px #f40, 0 0 40px #f40, 0 0 80px #f40;
+    margin: 0; /* Optional: Adjust spacing as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .font-effect-neon {
+      font-size: 3vw; /* Increase font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .font-effect-neon {
+      font-size: 5vw; /* Increase font size for even smaller screens */
+    }
+  }

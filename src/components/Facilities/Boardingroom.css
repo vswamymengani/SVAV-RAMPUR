@@ -111,9 +111,10 @@
 }
 
 #boa {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
+  font-family: cursive;
+  color: palevioletred;
+  font-size: 40px;
+  /* background-color: green; */
   font-style: normal;
   width: 80%;
   padding: 15px;

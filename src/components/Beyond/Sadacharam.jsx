@@ -27,15 +27,15 @@ const Sadacharam = () => {
 
   return (
     <div>
-    <div class="sadacharam-container">
+    <div className="sadacharam-container">
     <div className="sadacharam-slider">
       <div><img src={img3} alt="Sports ground 1" style={{height:"1000px",width:"1400px",marginLeft:"110px",marginTop:"120px"}}/></div>
       </div>
       <div className="sadacharam-content">
-        <h1 id="sadacharam">Sadacharam</h1>
+        {/* <h1 id="sadacharam">Sadacharam</h1> */}
         <div id="sadacharamlogo">
         </div>
-        <div id="sadacharamcontents">
+        <div id="sadacharamcontents"><br></br>
         <h3><FaLightbulb /> Worship God every day by lighting a lamp.</h3>
       <h3><FaPray /> Take blessings from Parents and Teachers.</h3>
       <h3><FaBook /> Study the scriptures, contemplate the wisdom of ancestors.</h3>
@@ -56,8 +56,8 @@ const Sadacharam = () => {
           <div><img src={img8} alt="Classroom 2" /></div>
          
         </Slider> */}
-    
-    </div><br></br><br></br><br></br>
+      <h1 id="sadacharam">Sadacharam</h1>
+    </div><br></br>
     <center><div id="sadacharamimg"></div></center>
     <div>
      

@@ -104,15 +104,16 @@
 
 
 #Transport {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
-  background-color: green;
+  font-family: cursive;
+  color: palevioletred;
+  font-size: 40px;
+  /* background-color: green; */
   display: flex;
 
   justify-content: center; /* Center the slider horizontally */
   align-items: center; /* Center the slider vertically if needed */
   font-style: normal;
-  width: 48%;
+  width: 58%;
   padding: 15px;
   border-radius: 15px; /* Curved border radius */
   margin: 90px 90px; /* Center horizontally */

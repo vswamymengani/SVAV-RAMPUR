@@ -1,4 +1,3 @@
-
 #yogapara {
   font-size: 24px;
   font-weight: 300; /* Use numerical values for font-weight */
@@ -24,11 +23,17 @@
       margin: 20px; /* Further reduce margins */
   }
 }
-#yogaimg{
-  width: 140%; /* Ensures images take the full width of the slider container */
-  height: 700px;
-  background-repeat: no-repeat;
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+  margin: 0 auto; /* Center container horizontally */
 }
+
+.image-container img {
+  max-width: 100%; /* Ensure image scales down to fit container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 #img2{
   height: 400px;
   width: 500px;
@@ -39,4 +44,30 @@
   width: 500px;
   float: left;
   margin-left: 30px;
+}
+
+/* Specific styles for larger screens */
+@media (min-width: 768px) {
+  #img2 {
+    height: 400px;
+    width: 500px;
+    margin-left: 150px;
+  }
+  
+  #img3 {
+    height: 400px;
+    width: 500px;
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+/* Specific styles for very small screens */
+@media (max-width: 480px) {
+  #img2, #img3 {
+    width: 100%; /* Full width for very small screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0; /* Remove margin */
+    float: none; /* Remove float */
+  }
 }

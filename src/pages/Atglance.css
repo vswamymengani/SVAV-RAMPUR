@@ -1,91 +1,80 @@
 #atp1{
-    color: black;
-    font-size: 50px;
-  
-   
+  color: maroon;
+  font-size: 50px;
+ 
+
+ 
 }
 #atimg{
-  height: 600px;
-  width: 100%;
-   background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(./atglanceimg.jpg);
-    background-position: center;
-  
+height: 550px;
+margin-top: 10px;
+width: 100%;
+ background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./atglanceimg.jpg);
+  background-position: center;
+
 }
 #atpara{
-    background-color: rgb(182, 182, 183);
-    height: 560px;
-    font-family: Common serif fonts include Times New Roman, Georgia, and Garamond;
-    margin-top: 10px;
+  /* background-color: rgb(182, 182, 183); */
+  height: 560px;
+  font-family: Common serif fonts include Times New Roman, Georgia, and Garamond;
+  margin-top: 10px;
 }
 
 #parat{
-    text-align: justify;
-   font-size: 24px;
-   margin-left: 20px;
-   margin-right: 20px;
-   text-align: justify;
-  text-justify: inter-word;
+  text-align: justify;
+ font-size: 24px;
+ margin-left: 20px;
+ margin-right: 20px;
+ text-align: justify;
+text-justify: inter-word;
+
  
-   
 }
-#at1img{
-    height: 600px;
-    width: 100%;
-     background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(./IMG-20240715-WA0061.jpg);
-      background-position: center;
-    
-  }
-  #at2img{
-    height: 600px;
-    width: 100%;
-     background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(./IMG-20240715-WA0062.jpg);
-      background-position: center;
-    
-  }
-  #at3img{
-    height: 600px;
-    width: 100%;
-     background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(./IMG-20240715-WA0064.jpg);
-      background-position: center;
-    
-  }
 
-  #at4img{
-    height: 600px;
-    width: 100%;
-     background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(./IMG-20240715-WA0063.jpg);
-      background-position: center;
-    
-  }
-  #at5img{
-    height: 600px;
-    width: 100%;
-     background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(./IMG-20240715-WA0065.jpg);
-      background-position: center;
-    
-  }
-  #at6img{
-    height: 600px;
-    width: 100%;
-     background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(./IMG-20240715-WA0066.jpg);
-      background-position: center;
-    
-  }
-  #atc{
-    background-color: rgb(182, 182, 183);
-  }
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 70%;
+  height: auto;
+  margin: auto;
+}
 
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  height: 900px; /* Adjust height as needed */
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide { height: 200px; }
+}
+
+@media (max-width: 480px) {
+  .slide { height: 150px; }
+}

@@ -33,40 +33,40 @@ const Sportsroom = () => {
         <span id="spo">Sportsroom Facilities</span>
         <div id="spocontents">
           <div className="facility-item">
-            <FaVolleyballBall className="facility-icon" />
-            <h4>Volleyball Court</h4>
+            {/* <FaVolleyballBall className="facility-icon" /> */}
+            <h4><FaVolleyballBall className="facility-icon" />Volleyball Court</h4>
           </div>
           <div className="facility-item">
-            <FaRunning className="facility-icon" />
-            <h4>Kabaddi Court</h4>
+            {/* <FaRunning className="facility-icon" /> */}
+            <h4><FaRunning className="facility-icon" />Kabaddi Court</h4>
           </div>
           <div className="facility-item">
-            <GiTeamDowngrade className="facility-icon" />
-            <h4>Kho-Kho Court</h4>
+            {/* <GiTeamDowngrade className="facility-icon" /> */}
+            <h4> <GiTeamDowngrade className="facility-icon" />Kho-Kho Court</h4>
           </div>
           <div className="facility-item">
-            <GiCricketBat className="facility-icon" />
-            <h4>Cricket Practice Net</h4>
+            {/* <GiCricketBat className="facility-icon" /> */}
+            <h4> <GiCricketBat className="facility-icon" />Cricket Practice Net</h4>
           </div>
           <div className="facility-item">
-            <FaFootballBall className="facility-icon" />
-            <h4>Football Field</h4>
+            {/* <FaFootballBall className="facility-icon" /> */}
+            <h4><FaFootballBall className="facility-icon" />Football Field</h4>
           </div>
           <div className="facility-item">
-            <FaTableTennis className="facility-icon" />
-            <h4>Track and field</h4>
+            {/* <FaTableTennis className="facility-icon" /> */}
+            <h4> <FaTableTennis className="facility-icon" />Track and field</h4>
           </div>
           <div className="facility-item">
-            <FaBasketballBall className="facility-icon" />
-            <h4>Basketball Court</h4>
+            {/* <FaBasketballBall className="facility-icon" /> */}
+            <h4><FaBasketballBall className="facility-icon" />Basketball Court</h4>
           </div>
           <div className="facility-item">
-            <GiTennisRacket className="facility-icon" />
-            <h4>Badminton Court</h4>
+            {/* <GiTennisRacket className="facility-icon" /> */}
+            <h4><GiTennisRacket className="facility-icon" />Badminton Court</h4>
           </div>
           <div className="facility-item">
-            <FaSkating className="facility-icon" />
-            <h4>Skating Rink</h4>
+            {/* <FaSkating className="facility-icon" /> */}
+            <h4><FaSkating className="facility-icon" />Skating Rink</h4>
           </div>
         </div>
       </div>

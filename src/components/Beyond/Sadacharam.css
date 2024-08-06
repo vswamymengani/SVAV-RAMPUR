@@ -1,9 +1,10 @@
 /* sadacharam.css */
 #sadacharam {
-  color: rgb(183, 234, 31);
-  font-size: 30px;
+  color: palevioletred;
+  font-family: cursive;
+  font-size: 45px;
   /* margin-top: 120px; */
-  background-color: green;
+  /* background-color: green; */
   font-style: normal;
   width: 100%; /* Set width to 100% for full width on small devices */
   max-width: 44%; /* Ensure it doesn't exceed 44% on larger screens */

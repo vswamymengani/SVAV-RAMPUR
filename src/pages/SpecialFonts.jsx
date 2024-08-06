@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div>
       {/* <h1 className="font-effect-fire">OUR HIGHLIGHTS</h1> */}
-      <h1 className="font-effect-neon">OUR HIGHLIGHTS</h1>
+      <h1 className="font-effect-neon" >OUR HIGHLIGHTS</h1>
 {/* <h1 class="font-effect-outline">Outline Effect</h1>
 <h1 class="font-effect-emboss">Emboss Effect</h1>
 <h1 class="font-effect-shadow-multiple">Multiple Shadow Effect</h1> */}

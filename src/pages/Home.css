@@ -635,7 +635,7 @@ overflow: hidden; /* Ensures text doesn't overflow */
 }
 
 .cards {
-  font-size: 0.8em;
+  font-size: 0.8em;
 }
 }
 
@@ -953,7 +953,7 @@ float: none;
   text-decoration: none;
   display: block;
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .float {
   position: fixed;
@@ -1040,6 +1040,6 @@ float: none;
   }
 
   .my-float {
-    font-size: 12px;
+    font-size: 12px;
   }
 }

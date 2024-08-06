@@ -1,4 +1,3 @@
-
 import './Yoga.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -12,7 +11,9 @@ const  Yoga = () => {
 
   return (
     <div> <br></br><br></br>
-       <center> <div><img src={img1} alt="Classroom 1" /></div></center>
+      <div className="image-container">
+      <img src={img1} alt="Classroom 1" />
+    </div>
       <div id="yogapara"> 
         <span>
         Derived from the Sanskrit word ‘yuj’ which means ‘to unite or integrate’, yoga is a 5,000-year-old Indian body of knowledge. Yoga is all about harmonizing the body with the mind and breath through the means of various breathing exercises, yoga poses (asanas) and meditation.
