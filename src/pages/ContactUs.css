@@ -20,7 +20,7 @@
   }
   
   #i2 {
-    background-image: url(./contact.jpg);
+    /* background-image: url(./contact.jpg); */
     height: 400px;
     width: 70%;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@
     color: red;
     font-size: 30px;
     margin-top: -400px;
-    margin-left: 1200px;
+    margin-left: 1100px;
   }
 
   #i4{
