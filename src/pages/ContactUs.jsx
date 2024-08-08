@@ -62,7 +62,7 @@ const ContactUs = () => {
     <div>
       <h2 id="i3">
         Write To Us On:<br></br><br></br>
-        <h3 id="i7">&nbsp;&nbsp;&nbsp;<a href="svavrampus.com">svavrampus.com</a></h3><br></br>
+        <h3 id="i7">&nbsp;&nbsp;&nbsp;<a href="svavrampus.com">svavrampur.com</a></h3><br></br>
 
         <h5 id="i4">Registered Address:</h5><br></br>
         <h4 id="i7">
