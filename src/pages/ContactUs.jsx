@@ -62,7 +62,18 @@ const ContactUs = () => {
     <div>
       <h2 id="i3">
         Write To Us On:<br></br><br></br>
-        <h4 id="i7">&nbsp;&nbsp;&nbsp;svavrampus.com</h4><br></br>
+        <h3 id="i7">&nbsp;&nbsp;&nbsp;svavrampus.com</h3><br></br>
+
+        <h5 id="i4">Registered Address:</h5><br></br>
+        <h4 id="i7">
+       &nbsp; Sri Vidyaranya Avasa Vidyalayam,<br></br>
+       &nbsp; Chokkaram Nagar, Rampur,<br></br>
+       &nbsp; Hazipur Mondal, Mancherial district<br></br>
+       &nbsp; Telangana state -500301<br></br>
+       &nbsp; Phone: 087362 32024
+
+     </h4><br></br>
+
         <h5 id="i4">Central Office:</h5><br></br>
        
         <h4 id="i7">
@@ -76,10 +87,10 @@ const ContactUs = () => {
       </h2>
     </div>
 
-      <br /><br /><br></br>
+      {/* <br /><br /><br></br> */}
 
       {/* Add the form here */}
-      <div className='hq'><br></br><br></br>
+      <div className='hq'>
     <center> <h2 id="kcf">Contact Form</h2></center> 
     <div>
         <form onSubmit={handleSubmit}>
