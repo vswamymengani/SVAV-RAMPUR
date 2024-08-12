@@ -1,31 +1,28 @@
 import  { useState } from 'react';
-import axios from 'axios';
 import UpdateStudentForm from './UpdateStudentForm';
 
 const SearchStudentForm = () => {
-  const [admissionId, setAdmissionId] = useState('');
-  const [student, setStudent] = useState(null);
+  const [stdadmid, setStdadmid] = useState('');
+  const [searchedId, setSearchedId] = useState('');
   const [error, setError] = useState('');
 
-  const handleSearch = async () => {
-    try {
-      const response = await axios.get(`http://localhost:3001/api/students/${admissionId}`);
-      setStudent(response.data);
-      setError(''); // Clear any previous errors
-    } catch (err) {
-      setError('Student not found');
-      setStudent(null); // Clear any previous student data
+  const handleSearch = () => {
+    if (!stdadmid) {
+      setError('Please enter an Admission ID');
+    } else {
+      setSearchedId(stdadmid);
+      setError('');
     }
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: 'auto', marginTop: '20px' }}>
+    <div style={{ maxWidth: '1200px', margin: 'auto', marginTop: '20px',marginLeft:"20px" }}>
       <center><h2>Search Student by Admission ID</h2></center>
       <br />
       <input
         type="text"
-        value={admissionId}
-        onChange={(e) => setAdmissionId(e.target.value)}
+        value={stdadmid}
+        onChange={(e) => setStdadmid(e.target.value)}
         placeholder="Enter Admission ID"
         style={{ width: '400px', padding: '10px', marginBottom: '10px' }}
       />
@@ -33,7 +30,7 @@ const SearchStudentForm = () => {
       <button onClick={handleSearch} style={{ padding: '10px 20px' }}>Search</button>
       {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
       <br />
-      {student && <UpdateStudentForm student={student} />}
+      {searchedId && <UpdateStudentForm stdadmid={searchedId} />}
     </div>
   );
 };

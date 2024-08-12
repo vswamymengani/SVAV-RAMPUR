@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -25,9 +25,13 @@ const schema = yup.object({
     .string()
     .oneOf(['male', 'female', 'other'], 'Gender is required')
     .required('Gender is required'),
+    adnissionyear: yup.string().required('Admissionyear is required')
 });
 
 const UpdateStudentForm = (props) => {
+  const { stdadmid } = props; // admissionId prop to fetch student data
+  const [student, setStudent] = useState(null);
+
   const {
     register,
     handleSubmit,
@@ -35,16 +39,31 @@ const UpdateStudentForm = (props) => {
     reset,
   } = useForm({
     resolver: yupResolver(schema),
-    defaultValues: props.student || {}, // Pre-fill the form with existing student data
   });
 
   useEffect(() => {
-    reset(props.student); // Reset form with student data when the student prop changes
-  }, [props.student, reset]);
+    if (stdadmid) {
+      // Fetch student data based on Admission ID
+      const fetchStudentData = async () => {
+        try {
+          const response = await axios.get(`http://localhost:3001/api/students/${stdadmid}`);
+          console.log('Fetched student data:', response.data);
+
+          // Assuming the response is an array, get the first item
+          const fetchedStudent = response.data[0];
+          setStudent(fetchedStudent);
+          reset(fetchedStudent); // Reset form with fetched data
+        } catch (error) {
+          console.error('Error fetching student data:', error);
+        }
+      };
+      fetchStudentData();
+    }
+  }, [stdadmid, reset]);
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.put(`http://localhost:3001/api/students/${props.student.stdadmid}`, data);
+      const response = await axios.put(`http://localhost:3001/api/students/${stdadmid}`, data);
       alert('Student updated successfully!');
       console.log('Student updated successfully:', response.data);
       reset();
@@ -110,7 +129,7 @@ const UpdateStudentForm = (props) => {
         </div>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', marginLeft: "80px" }}>
-        <div style={{ display: 'flex', alignItems: 'center', marginLeft: "140px" }}>
+        <div style={{ display: 'flex', alignItems: 'center',marginRight: '20px'  }}>
           <label style={{ width: '100px' }}>Gender:</label>
           <select {...register('gender')} style={{ width: '300px' }}>
             <option value="">Select Gender</option>
@@ -119,6 +138,11 @@ const UpdateStudentForm = (props) => {
             <option value="other">Other</option>
           </select>
           {errors.gender && <p style={{ color: 'red', marginLeft: '10px' }}>{errors.gender.message}</p>}
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', marginLeft: "140px" }}>
+          <label style={{ width: '100px' }}>Admission year:</label>
+          <input {...register('admissionyear')} style={{ width: '300px' }} />
+          {errors.admissionyear && <p style={{ color: 'red', marginLeft: '10px' }}>{errors.admissionyear.message}</p>}
         </div>
       </div>
       <br /><br />
@@ -130,17 +154,7 @@ const UpdateStudentForm = (props) => {
 
 // Prop validation
 UpdateStudentForm.propTypes = {
-  student: PropTypes.shape({
-    stdadmid: PropTypes.string.isRequired,
-    stdaadhar: PropTypes.string,
-    stdname: PropTypes.string,
-    studentclass: PropTypes.string,
-    section: PropTypes.string,
-    contactnum: PropTypes.string,
-    emailid: PropTypes.string,
-    address: PropTypes.string,
-    gender: PropTypes.string,
-  }).isRequired,
+  stdadmid: PropTypes.string.isRequired, // Expecting admissionId prop
 };
 
 export default UpdateStudentForm;

@@ -104,7 +104,7 @@ const StudentRegistrationForm = () => {
         </div>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', marginLeft: "80px" }}>
-        <div style={{ display: 'flex', alignItems: 'center', marginLeft: "140px" }}>
+        <div style={{ display: 'flex', alignItems: 'center',marginRight: '20px' }}>
           <label style={{ width: '100px' }}>Gender:</label>
           <select {...register('gender')} style={{ width: '300px' }}>
             <option value="">Select Gender</option>
@@ -113,6 +113,11 @@ const StudentRegistrationForm = () => {
             <option value="other">Other</option>
           </select>
           {errors.gender && <p style={{ color: 'red', marginLeft: '10px' }}>{errors.gender.message}</p>}
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', marginLeft: "140px" }}>
+          <label style={{ width: '100px' }}>Admission Year:</label>
+          <input {...register('admissionyear')} style={{ width: '300px' }} />
+          {errors.admissionyear && <p style={{ color: 'red', marginLeft: '10px' }}>{errors.admissionyear.message}</p>}
         </div>
       </div>
       <br /><br />

@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './Welcome.css';
-import UpdateStudentForm from './UpdateStudentForm';
 import Addstd from './Addstd';
 import Studentview from './Studentview';
 import FacultyView from './FacultyView'; 
 import AlumniView from './AlumniView';
 import ExecComityView from './ExecComityView';
 import ContactUsView from './ContactUsView';
+import SearchStudentForm from './SearchStudentForm';
 import { useNavigate } from 'react-router-dom';
 
 const Welcome = () => {
@@ -39,10 +39,10 @@ const Welcome = () => {
         <center><h1>Dashboard</h1></center> 
         <div className='box-container'>
           <div className='box'>
-            TOTAL STUDENTS<br /><br /><br /><br /><br />
+            TOTAL STUDENTS<br /><br />(COUNT)<br /><br />
             <a href="#" onClick={() => handleComponentView('Studentview')}>View</a>&nbsp;&nbsp;    
             <a href="#" onClick={() => handleComponentView('Addstd')}>Add</a>&nbsp;&nbsp;    
-            <a href="#" onClick={() => handleComponentView('UpdateStudentForm')}>Update</a>
+            <a href="#" onClick={() => handleComponentView('SearchStudentForm')}>Update</a>
           </div>
           <div className='box'>
             TOTAL FACULTY<br /><br /><br /><br /><br />
@@ -84,7 +84,8 @@ const Welcome = () => {
           {activeComponent === 'ContactUsView' && <ContactUsView />}
           {/* Add more components as needed */}
           {activeComponent === 'Addstd' && <Addstd />}
-          {activeComponent === 'UpdateStudentForm' && <UpdateStudentForm />}
+          {/* {activeComponent === 'UpdateStudentForm' && <UpdateStudentForm />} */}
+          {activeComponent === 'SearchStudentForm' && <SearchStudentForm />}
         </div>
       </div>
     </div>
