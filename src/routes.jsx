@@ -1,6 +1,3 @@
-
-
-
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout/Layout'; // Import the Layout component
 import Home from './pages/Home';
@@ -49,6 +46,15 @@ import ScrollToTop from './pages/ScrollToTop';
 import Holidays from './components/Academic/Holidays';
 import Gogglesheet from './components/Footer/Gogglesheet';
 import Downloads from './components/Academic/Downloads';
+import Login from './pages/Login';
+import Welcome from './pages/Welcome';
+import Addstd from './pages/Addstd';
+import Studentview from './pages/Studentview';
+import SearchStudentForm from './pages/SearchStudentForm';
+import FacultyView from './pages/FacultyView';
+import AlumniView from './pages/AlumniView';
+import ExecComityView from './pages/ExecComityView';
+import ContactUsView from './pages/ContactUsView';
 
 const AppRoutes = () => {
     return (
@@ -57,8 +63,17 @@ const AppRoutes = () => {
           <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
+                <Route path="SearchStudentForm" element={<SearchStudentForm />} />
+                <Route path="Studentview" element={<Studentview />} />
+                <Route path="FacultyView" element={<FacultyView />} />
+                <Route path="AlumniView" element={<AlumniView />} />
+                <Route path="ExecComityView" element={<ExecComityView />} />
+                <Route path="ContactUsView" element={<ContactUsView />} />
                 <Route path="Supportus" element={<Supportus />} />
                 <Route path="Vidhya" element={<Vidhya />} />
+                <Route path="Addstd" element={<Addstd />} />
+                <Route path="Login" element={<Login />} />
+                <Route path="Welcome" element={<Welcome/>} />
                 <Route path="Sdp" element={<Sdp />} />
                 <Route path="Commite" element={<Commite />} />
                 <Route path="Classroom" element={<Classroom />} />

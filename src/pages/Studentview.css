@@ -1,0 +1,269 @@
+/* Commite.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .c1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid black; 
+  }
+  
+  th, td ,tr {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    border: 2px solid black; /* Black border for table cells */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .c1 {
+      font-size: 1.5rem;
+    }
+    th, td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .c1 {
+      font-size: 1.2rem;
+  
+    }
+    table, th, td {
+      display: block;
+      width: 100%;
+    }
+    th, td {
+      padding: 5px;
+      font-size: 0.8rem;
+    }
+    tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    tr:not(:last-child) {
+      border-bottom: 2px solid black; /* Black border between rows */
+    }
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
+  
+  /* Base styles for the image */
+  .responsive-img {
+    height: 200px;
+    width: 90%; /* Set width to 100% to make it responsive */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .responsive-img {
+      height: 180px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .responsive-img {
+      height: 160px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-img {
+      height: 140px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .responsive-img {
+      height: 120px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .responsive-img {
+      height: 100px;
+      width: 90%;
+    }
+  }
+  
+  /* Base styles for the table */
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid black; 
+  }
+  
+  th, td, tr {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    border: 2px solid black;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    th, td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    table {
+      width: 100%;
+    }
+    th, td {
+      font-size: 0.85rem;
+      padding: 7px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    th, td {
+      font-size: 0.75rem;
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    th, td {
+      font-size: 0.7rem;
+      padding: 4px;
+    }
+    table {
+      width: 100%;
+    }
+  }
+  
+  /* Base styles for the table */
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid black; 
+  }
+  
+  th, td, tr {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    border: 2px solid black;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    th, td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    table {
+      width: 100%;
+    }
+    th, td {
+      font-size: 0.85rem;
+      padding: 7px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    th, td {
+      font-size: 0.75rem;
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    th, td {
+      font-size: 0.7rem;
+      padding: 4px;
+    }
+    table {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive table block display for small screens */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    th {
+      display: none; /* Hide table headers */
+    }
+  
+    tr {
+      margin-bottom: 10px; /* Space between rows */
+      border: 1px solid #ddd;
+    }
+  
+    td {
+      border: none; /* Remove borders from cells */
+      position: relative;
+      padding-left: 50%; /* Indent text */
+      text-align: left; /* Left-align text */
+      border-bottom: 1px solid #ddd; /* Add bottom border for cells */
+    }
+  
+    td:before {
+      content: attr(data-label); /* Display data-label attribute value */
+      position: absolute;
+      left: 10px; /* Adjusted left position to avoid overlap */
+      width: calc(50% - 20px); /* Adjusted width to fit label */
+      padding-right: 10px; /* Space after the label */
+      white-space: nowrap; /* Prevent text wrapping */
+      font-weight: bold;
+    }
+  
+    td:last-child {
+      border-bottom: 0; /* Remove bottom border for last cell */
+    }
+  }
+  

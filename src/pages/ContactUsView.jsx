@@ -1,39 +1,57 @@
 import  { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 import axios from 'axios'; // Import axios
-import './Commite.css';
-import img1 from './sdp1.png';
+import './Studentview.css';
+
 
 // Define the columns for the table
 const columns = [
   {
-    name: 'Id',
-    selector: (row) => row.sno,
+    name: 'id',
+    selector: (row) => row.id,
     sortable: true,
     width: '100px', // Control the width for better responsiveness
   },
  
   {
-    name: 'Designation',
-    selector: (row) => row.designation,
-    sortable: true,
-    wrap: true, // Enable text wrapping
-  },
-  {
     name: 'Name',
-    selector: (row) => row.name,
+    selector: (row) => row.Name,
     sortable: true,
     wrap: true, // Enable text wrapping
   },
   {
-    name: 'Address',
-    selector: (row) => row.address,
+    name: 'emailid',
+    selector: (row) => row.emailid,
+    sortable: true,
+    wrap: true, // Enable text wrapping
+  },
+  {
+    name: 'subject',
+    selector: (row) => row.subject,
+    sortable: true,
+    wrap: true, // Enable text wrapping
+  },
+  {
+    name: 'message',
+    selector: (row) => row.message,
+    sortable: true,
+    wrap: true, // Enable text wrapping
+  },
+  {
+    name: 'mobilnum',
+    selector: (row) => row.mobilenum,
+    sortable: true,
+    wrap: true, // Enable text wrapping
+  },
+  {
+    name: 'createdat',
+    selector: (row) => row.createdat,
     sortable: true,
     wrap: true, // Enable text wrapping
   },
 ];
 
-const Commite = () => {
+const ContactUsView = () => {
   const [data, setData] = useState([]); // State to hold the data
   const [loading, setLoading] = useState(true); // State to manage loading
 
@@ -41,7 +59,7 @@ const Commite = () => {
     // Fetch data from API when component mounts
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/committee_members');
+        const response = await axios.get('http://localhost:3001/api/svav_contact_us');
         setData(response.data); // Update state with the fetched data
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -59,8 +77,6 @@ const Commite = () => {
   return (
     <div className="committee-container">
       <center>
-        <h1 className="c1">Executive Committee</h1>
-        <img src={img1} alt="Executive Committee" className="responsive-img" />
         <div className="data-table-wrapper">
           <DataTable
             columns={columns}
@@ -77,4 +93,4 @@ const Commite = () => {
   );
 }
 
-export default Commite;
+export default ContactUsView;

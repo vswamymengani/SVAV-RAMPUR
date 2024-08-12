@@ -25,6 +25,15 @@ const Home = () => {
         navigate('/Classroom');
 
     };
+    // const Login = () => {
+    //     navigate('/Login');
+    // };
+    // const Welcome=()=>{
+    //     navigate('/Welcome');
+    // }
+    // const Add = () => {
+    //     navigate('/Add');
+    // };
     const handlegames = () => {
         navigate('/Sportsroom');
     };

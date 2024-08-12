@@ -168,6 +168,10 @@ const Header = () => {
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleNavigation('/contact')}>CONTACT US<i className="fa fa-caret-down"></i></button>
           </div>
+          
+          <div>
+            <button className="dropbtn" onClick={() => handleNavigation('/Login')} style={{marginTop:"5%"}}>LOGIN<i className="fa fa-caret-down"></i></button>
+          </div>
         </div>
       </div>
       <div className="color">

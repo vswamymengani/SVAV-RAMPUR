@@ -1,8 +1,8 @@
 import  { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 import axios from 'axios'; // Import axios
-import './Commite.css';
-import img1 from './sdp1.png';
+import './Studentview.css';
+
 
 // Define the columns for the table
 const columns = [
@@ -33,7 +33,7 @@ const columns = [
   },
 ];
 
-const Commite = () => {
+const Studentview = () => {
   const [data, setData] = useState([]); // State to hold the data
   const [loading, setLoading] = useState(true); // State to manage loading
 
@@ -59,8 +59,6 @@ const Commite = () => {
   return (
     <div className="committee-container">
       <center>
-        <h1 className="c1">Executive Committee</h1>
-        <img src={img1} alt="Executive Committee" className="responsive-img" />
         <div className="data-table-wrapper">
           <DataTable
             columns={columns}
@@ -77,4 +75,4 @@ const Commite = () => {
   );
 }
 
-export default Commite;
+export default Studentview;

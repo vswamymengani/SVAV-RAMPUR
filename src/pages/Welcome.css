@@ -1,0 +1,41 @@
+.button-forms{
+    max-width: 300px;
+    margin: 0 auto;
+   margin-left: 0px;
+   margin-top: 0px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 190px;
+   
+}
+.button-container button{
+    padding: 30px;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dashboard{
+   margin-top: -700px;
+   margin-left: 320px;
+    background-color: aqua;
+    width: 1300px;
+    height: 900px;
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.box{
+    flex: 1;
+   background-color: chartreuse;
+    border: 2px solid #ccc;
+    padding: 20px;
+    height: 150px;
+    text-align: center;
+}
