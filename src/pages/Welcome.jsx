@@ -3,6 +3,8 @@ import './Welcome.css';
 import Addstd from './Addstd';
 import Addfcty from './Addfcty';
 import Addalumini from './Addalumini';
+import AddExecComity from './AddExecComity';
+
 
 import Studentview from './Studentview';
 import FacultyView from './FacultyView'; 
@@ -11,6 +13,7 @@ import ExecComityView from './ExecComityView';
 import ContactUsView from './ContactUsView';
 import SearchStudentForm from './SearchStudentForm';
 import SearchAluminiForm  from './SearchAluminiForm';
+import SearchExecComityForm from './SearchExecComityForm';
 import SearchFactyForm from './SearchFactyForm';
 import { useNavigate } from 'react-router-dom';
 
@@ -64,14 +67,14 @@ const Welcome = () => {
           <div className='box'>
             TOTAL EXEC COMITY<br /><br /><br /><br /><br />
             <a href="#" onClick={() => handleComponentView('ExecComityView')}>View</a> &nbsp;&nbsp;   
-            <a href="#">Add</a> &nbsp;&nbsp;   
-            <a href="#">Update</a>
+            <a href="#" onClick={() => handleComponentView('AddExecComity')}>Add</a> &nbsp;&nbsp;   
+            <a href="#" onClick={() => handleComponentView('SearchExecComityForm')}>Update</a>
           </div>
           <div className='box'>
             TOTAL REQUESTS<br /><br /><br /><br /><br />
             <a href="#" onClick={() => handleComponentView('ContactUsView')}>View</a> &nbsp;&nbsp;   
-            <a href="#">Add</a> &nbsp;&nbsp;   
-            <a href="#">Update</a>
+            {/* <a href="#">Add</a> &nbsp;&nbsp;   
+            <a href="#">Update</a> */}
           </div>
           <div className='box'>
             TOTAL ACCOUNT<br /><br /><br /><br /><br />
@@ -91,10 +94,12 @@ const Welcome = () => {
           {activeComponent === 'Addstd' && <Addstd />}
           {activeComponent === 'Addfcty' && <Addfcty />}
           {activeComponent === 'Addalumini' && <Addalumini />}
+          {activeComponent === 'AddExecComity' && <AddExecComity />}
           {/* {activeComponent === 'UpdateStudentForm' && <UpdateStudentForm />} */}
           {activeComponent === 'SearchStudentForm' && <SearchStudentForm />}
           {activeComponent === 'SearchFactyForm' && <SearchFactyForm />}
           {activeComponent === 'SearchAluminiForm' && <SearchAluminiForm />}
+          {activeComponent === 'SearchExecComityForm' && <SearchExecComityForm />}
         </div>
       </div>
     </div>

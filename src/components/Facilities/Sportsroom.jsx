@@ -6,7 +6,7 @@ import './sportsroom.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import img1 from './Sports-ground-1.jpg';
-import img2 from './IMG-20240718-WA0044.jpg';
+import img2 from './spoimg5.jpg';
 import img3 from './spoimg1.jpg';
 import img4 from './spoimg2.jpg';
 import img5 from './spoimg3.jpg';

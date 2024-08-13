@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Footer.css';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import donationlogo from './donation.png';
 import aluminilogo from './alumini.png';
@@ -14,46 +15,62 @@ const Footer = () => {
   const handleFacebookClick = () => {
     window.location.href = 'https://www.facebook.com/profile.php?id=61563910378757';
   };
+
   const navigate = useNavigate();
   
   // State to handle form inputs and errors
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [emailid, setEmailid] = useState('');
+  const [mobilnum, setMobilnum] = useState('');
   const [errors, setErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   // Handlers for navigation buttons
   const handleClick = () => navigate('/Donate');
   const handleClickal = () => navigate('/Alumini');
   const handleClickte = () => navigate('/Ourfaculty');
-  const handleClicksl = () => navigate('/Students');
+  const handleClicksl = () => navigate('/Login');
 
   // Form submission handler
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     // Validate form inputs
     let validationErrors = {};
 
     if (!name.trim()) validationErrors.name = '*';
-    if (!email.trim()) {
-      validationErrors.email = '*';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      validationErrors.email = '*';
+    if (!emailid.trim()) {
+      validationErrors.emailid = '*';
+    } else if (!/\S+@\S+\.\S+/.test(emailid)) {
+      validationErrors.emailid = '*';
     }
-    if (!phone.trim()) {
-      validationErrors.phone = '*';
-    } else if (!/^\d{10}$/.test(phone)) {
-      validationErrors.phone = '*';
+    if (!mobilnum.trim()) {
+      validationErrors.mobilnum = '*';
+    } else if (!/^\d{10}$/.test(mobilnum)) {
+      validationErrors.mobilnum = '*';
     }
 
     setErrors(validationErrors);
 
-    // If no errors, show success message
+    // If no errors, send data to API
     if (Object.keys(validationErrors).length === 0) {
-      alert('Your form has been submitted successfully!');
-      setName('');
-      setEmail('');
-      setPhone('');
-      setErrors({});
+      setIsLoading(true);
+      setErrorMessage('');
+      setSuccessMessage('');
+
+      try {
+        await axios.post('http://localhost:3001/api/contact_us', { name, emailid, mobilnum });
+        alert('Your form has been submitted successfully!')
+        
+        setName('');
+        setEmailid('');
+        setMobilnum('');
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('There was an error submitting the form.');
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -73,16 +90,16 @@ const Footer = () => {
           <input
             type="text"
             placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={emailid}
+            onChange={(e) => setEmailid(e.target.value)}
           />
           {errors.email && <p className="error">{errors.email}</p>}
 
           <input
             type="text"
             placeholder="Phone"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            value={mobilnum}
+            onChange={(e) => setMobilnum(e.target.value)}
           />
           {errors.phone && <p className="error">{errors.phone}</p>}
 

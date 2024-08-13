@@ -349,12 +349,12 @@
 
 #spoi2 {
   box-shadow: 1px 10px 10px 30px rgba(165, 165, 179, 0.7); /* Shadow effect */
-  background-image: url(./spoimg2.jpg);
+  background-image: url(./spoimg5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%; /* Full width of the container */
-  max-width: 800px; /* Maximum width */
+  max-width: 900px; /* Maximum width */
   height: 0;
   padding-top: 50%; /* Aspect ratio: 50% of max-width height */
   border-radius: 8px; /* Optional rounded corners */

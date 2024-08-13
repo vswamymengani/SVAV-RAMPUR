@@ -17,6 +17,7 @@ import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
 // import { BsJustify } from'react-icons/bs';
+import Popup from './Popup';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -63,6 +64,7 @@ const Home = () => {
         <div>
 
             <div className="body">
+                <Popup/>
             <div className='newslider'>
                 <CarouselSlider />  
                 </div>

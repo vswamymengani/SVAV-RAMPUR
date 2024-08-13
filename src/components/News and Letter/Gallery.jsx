@@ -19,7 +19,7 @@ import img15 from '../Facilities/auditorium1.jpg';
 import img16 from '../Facilities/auditorium2.jpg';
 import img17 from '../Facilities/auditorium3.jpg';
 import img18 from '../Facilities/auditorium4.jpg';
-import img19 from '../Facilities/balanced-diet.png';
+
 import img20 from '../Facilities/bio.png';
 import img21 from '../Facilities/biolab1.jpg';
 import img22 from '../Facilities/Boarding campus-ayodya-2.jpg';
@@ -34,7 +34,7 @@ const Gallery = () => {
 
   const images = [
     img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12,
-    img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23,
+    img13, img14, img15, img16, img17, img18, img20, img21, img22, img23,
     img24, img25
   ];
 

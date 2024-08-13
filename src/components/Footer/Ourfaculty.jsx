@@ -16,7 +16,11 @@ The school while recruiting gives preference to those applicants with previous r
   certificates earned, and a passport size photo.
 
     </span>
-
+ <div>
+  <center><br></br>
+  <a href="Downloads"><b>Please click here for more about faculty information</b></a>
+  </center>
+  </div>
     </div>
   )
 }

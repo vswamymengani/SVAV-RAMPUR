@@ -176,7 +176,7 @@ const Sdp = () => {
       <br></br><br></br>
       <center>
         <b>Project status reports:</b>
-      <a href=""><b>Please click here</b></a>
+      <a href="Downloads"><b>Please click here</b></a>
       </center>
     </div>
   )

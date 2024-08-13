@@ -1,12 +1,14 @@
 import './Downloads.css';
 const Downloads = [
-  { id: '1', title: 'About SVAV-Rampur:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/Svav+About+us.pdf' },
+  { id: '1', title: 'Admission form :', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/ADMISSION+FORM.pdf' },
+  // { id: '1', title: 'About SVAV-Rampur:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/Svav+About+us.pdf' },
   { id: '2', title: 'SDP-School Development Plan:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/SVAV-RAMPUR-SDP+Document.pptx' },
   { id: '3', title: 'School Land details:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/School+Land+Survy+Area+Report.pdf' },
   { id: '4', title: 'School initial plan:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/SDP-Initial+Plan.pdf' },
   { id: '5', title: 'School Gateway design:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/School+New+Gateway+Design.pdf' },
   { id: '6', title: 'School Brochure:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/SVAV-Brochure.pdf' },
-  { id: '7', title: 'Admission form :', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/ADMISSION+FORM.pdf' },
+  { id: '7', title: 'About SVAV-Rampur:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/Svav+About+us.pdf' },
+  // { id: '7', title: 'Admission form :', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/ADMISSION+FORM.pdf' },
   { id: '8', title: 'Academic Calendar:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/Academic+Calendar.pdf' },
   { id: '9', title: 'Syllabus and Curriculum:', url: 'https://example.com/sample3.pdf' },
   { id: '10', title: 'SVAV Policies and Guidelines:', url: 'https://svavdocs.s3.ap-southeast-2.amazonaws.com/SVAV+School+Policies+and+Guidelines.pdf' },

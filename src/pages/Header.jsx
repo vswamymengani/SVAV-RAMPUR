@@ -11,6 +11,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbarRef = useRef(null);
 
+
   useEffect(() => {
     const handleScroll = () => {
       if (navbarRef.current) {
@@ -69,10 +70,10 @@ const Header = () => {
   className="section2"
   style={{ fontFamily: 'Cursive' }}
 >
-          <span className="title" onClick={() => handleNavigation('/Onlineenquiryform')}>Online Enquiry</span>
+          <span className="title" onClick={() => handleNavigation('/ContactUs')}>Online Enquiry</span>
           <span className="title" onClick={() => handleNavigation('/Alumini')}>Alumni Details</span>
           <span className="title" onClick={() => handleNavigation('/Download')}>Download Brochure</span>
-          <span className="title" onClick={() => handleNavigation('/Holidays')}>News Letter</span>
+          <span className="title" onClick={() => handleNavigation('/Newsletter')}>News Letter</span>
         </div>
         <div className="section3">
           <span className="contact-item">
@@ -82,7 +83,7 @@ const Header = () => {
             <FaEnvelope className="contact-icon" />&nbsp; info@svavrampur.com
           </span>
           <br />
-          <b className="code">Proc.No.RR-GDP007-0019</b>
+          <b className="code">SR.No:243 of 2015</b>
         </div>
         <img src={exa} alt="Candle Logo" style={{ width: '100px', height: '90px', marginTop: '60px', marginRight: '0px' }} />
       </div>
@@ -136,7 +137,7 @@ const Header = () => {
               <a href="#" onClick={() => handleNavigation('/AdmissionProcess')}>Admission Process</a>
               <a href="#" onClick={() => handleNavigation('/Onlineenquiryform')}>Online Enquiry Form</a>
               <a href="#" onClick={() => handleNavigation('/Feestructure')}>Fee Structure</a>
-              <a href="#" onClick={() => handleNavigation('/Studentenrollment')}>Student Enrollment</a>
+              <a href="#" onClick={() => handleNavigation('/Login')}>Student Enrollment</a>
               <a href="#" onClick={() => handleNavigation('/Faq')}>FAQs</a>
             </div>
           </div>
@@ -176,7 +177,9 @@ const Header = () => {
       </div>
       <div className="color">
         <div className="line">LATEST NEWS</div>
-        <div><marquee>Job Openings: Join our Team of teachers and admin by applying at careers@svav.ind.in or hr@svav.ind.in</marquee></div>
+        <div><marquee>Job Openings: Join our Team of teachers and admin by applying at careers@svav.ind.in or hr@svav.ind.in&nbsp;&nbsp;/&nbsp;&nbsp;
+        Latest Event: Laying Foundation for Bhumipuja Ceremony for School Modernization on 19th August 2024</marquee>
+        </div>
       </div>
     </header>
   );

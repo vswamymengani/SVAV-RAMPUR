@@ -15,7 +15,7 @@ const columns = [
  
   {
     name: 'Name',
-    selector: (row) => row.Name,
+    selector: (row) => row.name,
     sortable: true,
     wrap: true, // Enable text wrapping
   },
@@ -39,7 +39,7 @@ const columns = [
   },
   {
     name: 'mobilnum',
-    selector: (row) => row.mobilenum,
+    selector: (row) => row.mobilnum,
     sortable: true,
     wrap: true, // Enable text wrapping
   },
@@ -59,7 +59,7 @@ const ContactUsView = () => {
     // Fetch data from API when component mounts
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/svav_contact_us');
+        const response = await axios.get('http://localhost:3001/api/contact_us');
         setData(response.data); // Update state with the fetched data
       } catch (error) {
         console.error('Error fetching data:', error);

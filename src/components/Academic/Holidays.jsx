@@ -1,11 +1,11 @@
-import imgh from './holi.png';
+import imgh from './holidaysimg.jpeg';
 import './Holidays.css';
 
 const Holidays = () => {
   return (
     <div>
     <center>
-      <img src={imgh} className="responsive-img" alt="Responsive" />
+      <img src={imgh} className="img" alt="Responsive" />
     </center>
   </div>
   )

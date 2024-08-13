@@ -1,11 +1,11 @@
 import  { useState } from 'react';
 import './ContactUs.css';
-
+import axios from 'axios';
 const ContactUs = () => {
   // State management for form fields
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    emailid: '',
     subject: '',
     message: ''
   });
@@ -21,26 +21,32 @@ const ContactUs = () => {
       [name]: value
     });
   };
+// Handle form submission
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsLoading(true); // Set loading to true when form is submitted
 
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true); // Set loading to true when form is submitted
-
-    console.log('Form submitted:', formData);
-
-    // Simulate a network request with a timeout
-    setTimeout(() => {
-      // Reset the form and loading status after submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      setIsLoading(false); // Set loading to false once done
-      alert('Form submitted successfully!'); // Display a success message
-    }, 2000); // Adjust the timeout as needed
+  try {
+    const response = await axios.post('http://localhost:3001/api/contact_us', formData);
+    console.log('Form submitted:', response.data);
+    alert('Form submitted successfully!')
+    setSuccess('Form submitted successfully!');
+    setError('');
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    
+    setError('There was an error submitting the form.');
+    setSuccess('');
+  } finally {
+    // Reset the form and loading status
+    setFormData({
+      name: '',
+      emailid: '',
+      subject: '',
+      message: ''
+    });
+    setIsLoading(false);
+  }
   };
 
   return (
@@ -113,8 +119,8 @@ const ContactUs = () => {
             <input
               type="email"
               id="email"
-              name="email"
-              value={formData.email}
+              name="emailid"
+              value={formData.emailid}
               onChange={handleChange}
               required
               disabled={isLoading} // Disable input during submission

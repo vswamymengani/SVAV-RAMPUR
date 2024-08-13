@@ -51,7 +51,7 @@ const AluminiRegistrationForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: '1300px', margin: 'auto', marginTop: '20px' }}>
-      <center><h2>Faculty Registration Form</h2></center>
+      <center><h2>Alumni Registration Form</h2></center>
       <br />
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', marginLeft: "80px" }}>
         <div style={{ display: 'flex', alignItems: 'center', marginRight: '20px' }}>

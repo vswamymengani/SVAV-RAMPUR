@@ -55,6 +55,9 @@ import FacultyView from './pages/FacultyView';
 import AlumniView from './pages/AlumniView';
 import ExecComityView from './pages/ExecComityView';
 import ContactUsView from './pages/ContactUsView';
+// import Popup from './pages/Popup';
+import Newsletter from './pages/Newletter';
+import ContactUs from './pages/ContactUs';
 
 const AppRoutes = () => {
     return (
@@ -63,8 +66,10 @@ const AppRoutes = () => {
           <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
+                {/* <Route index element={<Popup />} /> */}
                 <Route path="SearchStudentForm" element={<SearchStudentForm />} />
                 <Route path="Studentview" element={<Studentview />} />
+                <Route path="Newsletter" element={<Newsletter />} />
                 <Route path="FacultyView" element={<FacultyView />} />
                 <Route path="AlumniView" element={<AlumniView />} />
                 <Route path="ExecComityView" element={<ExecComityView />} />
@@ -93,6 +98,7 @@ const AppRoutes = () => {
                 <Route path="Philosophy" element={<Philosophy />} />
                 <Route path="Onlineenquiryform" element={<Onlineenquiryform />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="ContactUs" element={<ContactUs />} />
                 <Route path="AdmissionProcess" element={<AdmissionProcess />} />
                 <Route path="Cirriculum" element={<Cirriculum />} />
                 <Route path="Halloffame" element={<Halloffame />} />
