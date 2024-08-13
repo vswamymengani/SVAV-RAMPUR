@@ -25,7 +25,7 @@ const schema = yup.object({
     .string()
     .oneOf(['male', 'female', 'other'], 'Gender is required')
     .required('Gender is required'),
-    adnissionyear: yup.string().required('Admissionyear is required')
+  admissionyear: yup.string().required('Admission year is required'), // Corrected typo
 });
 
 const UpdateStudentForm = (props) => {
@@ -62,11 +62,12 @@ const UpdateStudentForm = (props) => {
   }, [stdadmid, reset]);
 
   const onSubmit = async (data) => {
+    console.log('Submitting data:', data); // Debugging line
     try {
       const response = await axios.put(`http://localhost:3001/api/students/${stdadmid}`, data);
       alert('Student updated successfully!');
       console.log('Student updated successfully:', response.data);
-      reset();
+      reset(); // Consider passing the updated data if needed
     } catch (error) {
       console.error('Error updating student:', error);
     }
@@ -129,7 +130,7 @@ const UpdateStudentForm = (props) => {
         </div>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', marginLeft: "80px" }}>
-        <div style={{ display: 'flex', alignItems: 'center',marginRight: '20px'  }}>
+        <div style={{ display: 'flex', alignItems: 'center', marginRight: '20px' }}>
           <label style={{ width: '100px' }}>Gender:</label>
           <select {...register('gender')} style={{ width: '300px' }}>
             <option value="">Select Gender</option>
