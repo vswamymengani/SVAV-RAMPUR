@@ -58,12 +58,15 @@ import ContactUsView from './pages/ContactUsView';
 // import Popup from './pages/Popup';
 import Newsletter from './pages/Newletter';
 import ContactUs from './pages/ContactUs';
+import ScrollUpButton from './pages/ScrollUpButton';
 
 const AppRoutes = () => {
     return (
         <>
+        <ScrollUpButton />
         <ScrollToTop />
           <Routes>
+          
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 {/* <Route index element={<Popup />} /> */}
