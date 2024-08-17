@@ -7,6 +7,7 @@ import classImage1 from './6 to 8.webp';
 import classImage2 from './9 and 10.jpeg';
 import classImage3 from './11 and 12 1.jpeg';
 const Curriculum = () => {
+  
   return (
     <div>
       <div className="curriculum-container">

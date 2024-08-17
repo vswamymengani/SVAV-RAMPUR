@@ -90,7 +90,8 @@ const Header = () => {
       <div className={`navbar1 ${isFixed ? 'fixed' : ''}`}  ref={navbarRef}>
         <div className="menu-icon" onClick={toggleMenu}>&#9776;</div> {/* Menu icon */}
         <div className={`navbar-menu ${menuOpen ? 'show' : ''}`}>
-          <a href="#" onClick={() => handleNavigation('/')}>HOME</a>
+        <a href="#" onClick={() => handleNavigation('/')} style={{ textDecoration: 'none' }}>
+            HOME</a>
           <div className="dropdown">
             <button className="dropbtn">SDP<i className="fa fa-caret-down"></i></button>
             <div className="dropdown-content">

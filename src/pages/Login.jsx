@@ -34,7 +34,7 @@ const Login = () => {
     if (Object.keys(validationErrors).length === 0) {
       try {
         // API request to login
-        const response = await axios.post('http://localhost:3001/api/login', {
+        const response = await axios.post('http://18.60.190.183:3001/api/login', {
           userid: userId,
           password: password,
         });

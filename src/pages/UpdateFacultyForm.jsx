@@ -45,7 +45,7 @@ const UpdateFacultyForm = (props) => {
     const fetchFacultyData = async () => {
       if (facultyadmid) {
         try {
-          const response = await axios.get(`http://localhost:3001/api/faculty/${facultyadmid}`);
+          const response = await axios.get(`http://18.60.190.183:3001/api/faculty/${facultyadmid}`);
           console.log('Fetched faculty data:', response.data);
 
           const fetchedFaculty = response.data; // Assuming response is an object, not an array
@@ -62,7 +62,7 @@ const UpdateFacultyForm = (props) => {
   const onSubmit = async (data) => {
     console.log('Submitting data:', data);
     try {
-      const response = await axios.put(`http://localhost:3001/api/faculty/${facultyadmid}`, data);
+      const response = await axios.put(`http://18.60.190.183:3001/api/faculty/${facultyadmid}`, data);
       alert('Faculty updated successfully!');
       console.log('Faculty updated successfully:', response.data);
       reset(); // Consider passing the updated data if needed

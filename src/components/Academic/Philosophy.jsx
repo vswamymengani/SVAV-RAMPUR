@@ -43,9 +43,12 @@ const Philosophy = () => {
           are<br></br> embodiments of five distinct energy sheaths called “koshas” that surround our <br></br>
           jivatman. They are,</p>
         </div>
-        <img src={img1} style={{marginLeft:"65%",marginTop:"-10%",width:"30%",height:"auto"}}></img>
-        <div ><br></br><br></br><br></br>
-        <div style={{marginTop:"-20%"}}>
+        <div>
+        <img src={img1} className="responsive-image" style={{marginLeft:"65%",marginTop:"-10%",width:"30%",height:"auto"}}></img>
+        {/* <img src={img1} className="responsive-image" alt="Responsive Image"></img> */}
+        </div>
+     
+        <div className="phy1">
           <b>
        <ol>
     <li>Physical – Annamaya kosha</li>
@@ -55,8 +58,6 @@ const Philosophy = () => {
     <li>Bliss – Anandamaya kosha</li>
     <li>Self – Atman</li>
        </ol></b>
-      </div>
-
       </div>
           
           

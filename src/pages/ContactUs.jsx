@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
   setIsLoading(true); // Set loading to true when form is submitted
 
   try {
-    const response = await axios.post('http://localhost:3001/api/contact_us', formData);
+    const response = await axios.post('http://18.60.190.183:3001/api/contact_us', formData);
     console.log('Form submitted:', response.data);
     alert('Form submitted successfully!')
     setSuccess('Form submitted successfully!');

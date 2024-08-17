@@ -1,3 +1,87 @@
+.phy1 {
+  margin-top: -200px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.phy1 ol {
+  padding-left: 20px;
+}
+
+.phy1 ol li {
+  margin-bottom: 10px;
+}
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .phy1 {
+    font-size: 16px;
+    padding: 18px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  .phy1 {
+    font-size: 14px;
+    padding: 16px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .phy1 {
+    font-size: 12px;
+    padding: 14px;
+    margin-top: 20px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  .phy1 {
+    font-size: 10px;
+    padding: 12px;
+  }
+}
+
+/* For screens smaller than 400px */
+@media (max-width: 400px) {
+  .phy1 {
+    font-size: 8px;
+    padding: 10px;
+  
+  }
+}
+
+
+.responsive-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10%;
+  width: 100%;
+  max-width: 30%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .responsive-image {
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .responsive-image {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+
 .sp {
     font-size: 30px;
   
@@ -21,19 +105,12 @@
   line-height: 160%;
 }
 
-/* Styles for large devices (1024px and below) */
-@media (max-width: 1024px) {
-  .oil2 {
-    font-size: 18px; /* Adjust font size for large devices */
-    margin-left: -220px; /* Adjust margin for large devices */
-  }
-}
 
 /* Styles for medium devices (tablets) */
 @media (max-width: 768px) {
   .oil2 {
     font-size: 16px; /* Adjust font size for tablets */
-    margin-left: -100px; /* Adjust margin for tablets */
+    margin-left: 0px; /* Adjust margin for tablets */
   }
 }
 

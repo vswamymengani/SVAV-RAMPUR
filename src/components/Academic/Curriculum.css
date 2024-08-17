@@ -12,6 +12,46 @@ height: 0px;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  #t11 {
+    font-size: 30px;
+    padding: 18px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  #t11 {
+    font-size: 26px;
+    padding: 16px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  #t11 {
+    font-size: 20px;
+    padding: 14px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  #t11 {
+    font-size: 10px;
+    padding: 12px;
+  }
+}
+
+/* For screens smaller than 400px */
+@media (max-width: 400px) {
+  #t11 {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
   
 .curriculum-text {
   font-size: 20px; /* Default font size */
@@ -55,13 +95,50 @@ height: 0px;
   
 }
 
-
-
 .curriculum-logo {
-
   height: 50px; /* Default size */
   width: auto; /* Maintain aspect ratio */
   margin-right: 15px; /* Space between logo and text */
+}
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .curriculum-logo {
+    height: 45px;
+    margin-right: 12px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  .curriculum-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .curriculum-logo {
+    height: 35px;
+    margin-right: 8px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  .curriculum-logo {
+    height: 30px;
+    margin-right: 6px;
+  }
+}
+
+/* For screens smaller than 400px */
+@media (max-width: 400px) {
+  .curriculum-logo {
+    height: 25px;
+    margin-right: 4px;
+  }
 }
 
 

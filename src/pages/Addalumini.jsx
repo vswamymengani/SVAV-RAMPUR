@@ -36,7 +36,7 @@ const AluminiRegistrationForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://localhost:3001/api/alumni', data);
+      const response = await axios.post('http://18.60.190.183:3001/api/alumni', data);
       alert('Faculty registered successfully!'); // Show success message after form submission
       console.log('Faculty registered successfully:', response.data);
       reset();

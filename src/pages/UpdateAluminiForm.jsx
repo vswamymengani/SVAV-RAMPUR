@@ -44,7 +44,7 @@ const UpdateAluminiForm = (props) => {
       // Fetch student data based on Register ID
       const fetchStudentData = async () => {
         try {
-          const response = await axios.get(`http://localhost:3001/api/alumni/${registerid}`);
+          const response = await axios.get(`http://18.60.190.183:3001/api/alumni/${registerid}`);
           console.log('Fetched student data:', response.data);
 
           // Adjust if the response is not an array or has different structure
@@ -63,7 +63,7 @@ const UpdateAluminiForm = (props) => {
   const onSubmit = async (data) => {
     console.log('Submitting data:', data); // Debugging line
     try {
-      const response = await axios.put(`http://localhost:3001/api/alumni/${registerid}`, data);
+      const response = await axios.put(`http://18.60.190.183:3001/api/alumni/${registerid}`, data);
       alert('Student updated successfully!');
       console.log('Student updated successfully:', response.data);
       reset(); // Consider passing the updated data if needed
