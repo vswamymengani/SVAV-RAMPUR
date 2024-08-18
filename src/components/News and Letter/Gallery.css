@@ -7,7 +7,7 @@
 }
 
 .gallery-image {
-  width: 200px; /* Set a specific width */
+  width: 200px; 
   height: auto; /* Maintain aspect ratio */
   cursor: pointer;
   transition: transform 0.2s ease; /* Smooth transition for hover effect */
@@ -16,3 +16,4 @@
 .gallery-image:hover {
   transform: scale(1.05);
 }
+
