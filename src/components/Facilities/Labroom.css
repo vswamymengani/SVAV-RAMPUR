@@ -139,7 +139,8 @@
 
 @media (max-width: 480px) {
   .labroom-content {
-    margin-left: 0px;
+    margin-left: -60px;
+    
     margin-top: 250px;
   }
 }
@@ -248,8 +249,9 @@
 /* Small screens (phones) */
 @media (max-width: 480px) {
   #labcontents {
-    font-size: 14px;
-    margin-left: 0;
+    font-size: 12px;
+    margin-left: 0px;
+   
     margin-top: 20px;
     width: 100%;
     margin-bottom: 10px; /* Adjust based on content */
@@ -285,12 +287,8 @@
   margin-top: -180px;
   /* margin-left: 30px; */
   flex-direction: row; /* Default row layout */
+ 
 }
-/* 
-.labroom-content {
-  flex: 1;
-  padding: 20px;
-} */
 
 .labroom-slider {
 
@@ -299,6 +297,7 @@
   margin-left: 90px;
   margin-top: 50px; /* Adjust this value to move the slider downwards */
   padding-top: 20px; /* Optional: Add padding to separate images from the top content */
+  
 }
 
 .labroom-slider img {
@@ -350,7 +349,7 @@
   }
 
   .labroom-slider {
-    width: 100%;
+    width: 90%;
     height: 300px;
     margin-left: 10px;
     margin-top: 20px;
@@ -410,6 +409,7 @@
     width: 100%;
     height: auto; /* Adjust height based on content */
     margin-top: 10px;
+    border-radius: 15px;
   
   }
 
@@ -456,35 +456,49 @@
   }
 }
 
+
 #itlabimg1 {
-  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
+  box-shadow: 1px 10px 10px 30px rgba(165, 165, 179, 0.7); /* Shadow effect */
   background-image: url(./itlab1.jpg);
-  height: 400px;
-  width: 900px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Maximum width */
+  height: 0;
+  padding-top: 50%; /* Aspect ratio: 50% of max-width height */
+  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Ensures clean edges */
+  position: relative; /* For proper positioning of shadow */
 }
 
-/* For larger screens */
+/* Responsive adjustments */
 @media (max-width: 1200px) {
   #itlabimg1 {
-    height: 180px;
-    width: 360px;
+    box-shadow: 1px 8px 8px 20px rgba(165, 165, 179, 0.6); /* Adjusted shadow */
   }
 }
 
-/* For tablets and small desktops */
+@media (max-width: 992px) {
+  #itlabimg1 {
+    box-shadow: 1px 6px 6px 15px rgba(165, 165, 179, 0.5); /* Adjusted shadow */
+  }
+}
+
 @media (max-width: 768px) {
   #itlabimg1 {
-    height: 160px;
-    width: 320px;
+    box-shadow: 1px 4px 4px 10px rgba(165, 165, 179, 0.4); /* Adjusted shadow */
   }
 }
 
-/* For mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   #itlabimg1 {
-    height: 140px;
-    width: 280px;
+    box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
+  }
+}
+@media (max-width: 476px) {
+  #itlabimg1 {
+    height: 300px;
+    box-shadow: 1px 2px 2px 5px rgba(165, 165, 179, 0.3); /* Minimal shadow for small screens */
   }
 }

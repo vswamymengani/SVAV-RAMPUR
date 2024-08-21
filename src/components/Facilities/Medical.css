@@ -76,15 +76,23 @@
 
 .facility-item {
   display: flex;
-  
-  align-items: center;
-  margin-bottom: 10px;
+  align-items: center; /* Vertically center the image and text */
 }
 
-.facility-icon {
-  margin-right: 10px;
-  font-size: 24px; /* Adjust the size as needed */
+.facility-logo {
+  width: 30px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+  font-size: 24px;
 }
+
+.facility-item h4 {
+  margin: 0; /* Remove default margin for h4 */
+  display: flex; /* Ensure the image and text are on the same line */
+  align-items: center; /* Vertically align the text with the image */
+  
+}
+
 
 .medicalroom-slider {
   margin-top: 0px;
@@ -240,6 +248,6 @@
     font-size: 18px;
  margin-left: 20px;
  margin-right: 20px;
-    margin: 30px;
+    margin: 30px;
   }
 }

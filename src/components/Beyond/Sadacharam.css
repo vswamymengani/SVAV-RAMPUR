@@ -34,37 +34,21 @@
   }
 }
 
-  /* Base styles for the #sadacharamlogo element */
-#sadacharamlogo {
-  height: 100px;
-  width: 100px;
-  background-image: url(../);
-  background-size: cover; /* Ensure the background image covers the entire element */
-  background-position: center; /* Center the background image */
-}
 
-/* Responsive styles for screens with a max width of 768px */
-@media (max-width: 768px) {
-  #sadacharamlogo {
-    height: 80px; /* Smaller height */
-    width: 80px; /* Smaller width */
-  }
-}
-
-/* Responsive styles for screens with a max width of 480px */
-@media (max-width: 480px) {
-  #sadacharamlogo {
-    height: 60px; /* Even smaller height */
-    width: 60px; /* Even smaller width */
-  }
-}
 #sadacharamcontents {
+  text-align: right;
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
-  margin-top: -150px;
-  margin-left: 10px;
+ 
   color: #070707;
+  background-image: url('../Facilities/slide3.png');
+  background-size: 150% 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 10px;
+ /* margin-top: 10px; */
+  
 
   
 }
@@ -78,165 +62,29 @@
 /* Responsive styles for screens with a max width of 768px */
 @media (max-width: 768px) {
   #sadacharamcontents {
-    font-size: 18px;
-    margin-top: -100px;
-    margin-left: 40px;
+    font-size: 10px;
+    background-size: 150% 220px; 
+   
+  
   }
 }
 
 /* Responsive styles for screens with a max width of 480px */
 @media (max-width: 480px) {
   #sadacharamcontents {
-    font-size: 16px;
-    margin-top: -50px;
-    margin-left: 20px;
+    font-size: 8px;
+    background-size: 150% 220px; /* Adjust the background size */
+   
   }
 }
 
   
-#images {
-  width: 100%; /* Default width to be responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  #images {
-    width: 80%; /* Adjust width for medium-sized devices */
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  #images {
-    width: 100%; /* Adjust width for small devices */
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-
-
-
-
-.sadacharam-content {
-  flex: 1;
-  text-align: left;
-  padding: 0px;
-  font-size: 20px;
-  margin-left: 100px;
-  margin-top: 170px;
-  box-sizing: border-box; /* Ensures padding does not affect width */
-}
-
-
-
-.sadacharam-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  /* margin-left: -1440px; */
-  margin-top: -200px;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  .sadacharam-container {
-    width: 95%; /* Adjust width for medium-sized devices */
-    flex-direction: column; /* Stack items vertically */
-    align-items: stretch; /* Align items to fill the container width */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  .sadacharam-container {
-    width: 100%; /* Adjust width for small devices */
-    flex-direction: column; /* Stack items vertically */
-    align-items: stretch; /* Align items to fill the container width */
-  }
-}
-
-
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  .sadacharam-content {
-    padding: 15px; /* Reduce padding for medium-sized devices */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  .sadacharam-content {
-    padding: 10px; /* Further reduce padding for small devices */
-  }
-}
-.sadacharam-slider {
-  flex: 1;
-  max-width: 50%;
-  margin-top: 100px;
-  margin-right: -20px;
-  border-radius: 60px;
-  margin-left: -100px;
-  scroll-behavior: smooth;
-}
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  .sadacharam-slider {
-    max-width: 70%; /* Increase max-width for medium-sized devices */
-    margin-top: 80px; /* Reduce top margin for medium-sized devices */
-    margin-right: -10px; /* Reduce right margin for medium-sized devices */
-    border-radius: 40px; /* Decrease border radius for medium-sized devices */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  .sadacharam-slider {
-    max-width: 90%; /* Increase max-width for small devices */
-    margin-top: 60px; /* Further reduce top margin for small devices */
-    margin-right: 0; /* Reset right margin for small devices */
-    border-radius: 20px; /* Further decrease border radius for small devices */
-  }
-}
-
-.sadacharam-slider img {
-  width: 100%;
-  border-radius: 60px;
-  height: 500px; /* Maintain aspect ratio */
-  max-height: 400px; 
-  scroll-behavior: smooth;
-}
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  .sadacharam-slider img {
-    height: 400px; /* Adjust height for medium-sized devices */
-    max-height: 300px; /* Reduce max-height for medium-sized devices */
-    border-radius: 40px; /* Decrease border radius for medium-sized devices */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  .sadacharam-slider img {
-    height: 300px; /* Adjust height for small devices */
-    max-height: 200px; /* Further reduce max-height for small devices */
-    border-radius: 20px; /* Further decrease border radius for small devices */
-  }
-}
-
   /* Base styles for #sadacharampara */
 #sadacharampara {
   font-weight: 300; /* Corrected from 300px to 300 */
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
-  margin: 100px ; /* General margin for larger screens */
+  margin: 10px ; /* General margin for larger screens */
   margin-bottom: 0px;
   text-align: justify;
   text-justify: inter-word;
@@ -247,7 +95,7 @@
 @media (max-width: 768px) {
   #sadacharampara {
     font-size: 20px; /* Adjust font size for medium-sized devices */
-    margin: 80px; /* Reduce margin for better fit on medium-sized screens */
+    margin: 10px; /* Reduce margin for better fit on medium-sized screens */
   }
 }
 
@@ -255,91 +103,28 @@
 @media (max-width: 480px) {
   #sadacharampara {
     font-size: 16px; /* Further reduce font size for small devices */
-    margin: 40px; /* Further reduce margin for small screens */
+    margin: 10px; /* Further reduce margin for small screens */
   }
 }
 
-  /* Base styles for #sadacharamimg1 */
-#sadacharamimg1 {
-  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
-  background-image: url(../Facilities/slide6.jpg);
-  height: 500px;
-  width: 800px;
-  background-size: cover; /* Ensure the image covers the container */
-  background-repeat: no-repeat;
-  background-position: center; /* Center the image */
+
+/* Style the image with a shadow on all four sides */
+#sadacharamimg img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow on all four sides */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow changes */
 }
 
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  #sadacharamimg1 {
-    height: 300px; /* Adjust height for medium-sized devices */
-    width: 100%; /* Make width 100% for better fit */
-    background-size: cover; /* Ensure the image covers the container */
+/* Adjust shadow on larger screens if needed */
+@media (min-width: 768px) {
+  #sadacharamimg img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Larger shadow for medium screens and above */
   }
 }
 
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  #sadacharamimg1 {
-    height: 200px; /* Further reduce height for small devices */
-    width: 100%; /* Maintain width as 100% */
-    background-size: cover; /* Ensure the image covers the container */
-  }
-}
-/* Base styles for #sadacharamimg2 */
-#sadacharamimg2 {
-  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
-  background-image: url(../Facilities/slide2.png);
-  height: 400px;
-  width: 800px;
-  background-size: cover; /* Ensure the image covers the container */
-  background-repeat: no-repeat;
-  background-position: center; /* Center the image */
-}
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  #sadacharamimg2 {
-    height: 300px; /* Adjust height for medium-sized devices */
-    width: 100%; /* Make width 100% for better fit */
-    background-size: cover; /* Ensure the image covers the container */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  #sadacharamimg2 {
-    height: 200px; /* Further reduce height for small devices */
-    width: 100%; /* Maintain width as 100% */
-    background-size: cover; /* Ensure the image covers the container */
-  }
-}
-/* Base styles for #sadacharamimg */
-#sadacharamimg {
-  box-shadow: 1px 10px 10px 30px rgb(165, 165, 179);
-  background-image: url(../Facilities/slide5.png);
-  height: 100px;
-  width: 800px;
-  background-size: 800px 100px;
-  background-repeat: no-repeat;
-  background-position: center; /* Center the image */
-}
-
-/* Responsive styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-  #sadacharamimg {
-    height: 80px; /* Reduce height for medium-sized devices */
-    width: 100%; /* Adjust width to fit the container */
-    background-size: 100% 80px; /* Adjust background size to fit the new width and height */
-  }
-}
-
-/* Responsive styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-  #sadacharamimg {
-    height: 60px; /* Further reduce height for small devices */
-    width: 100%; /* Maintain width as 100% */
-    background-size: 100% 60px; /* Adjust background size to fit the new width and height */
+@media (min-width: 1200px) {
+  #sadacharamimg img {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Even larger shadow for larger screens */
   }
 }

@@ -4,10 +4,12 @@ import Slider from "react-slick";
 import './Popup.css';
 import img1 from './popupimg1.jpg';
 import img2 from './popupimg2.jpg';
+import img3 from './pooja1.jpg';
+import img4 from './eventbhumipooja.jpg';
 
 const Popup = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const images = [img1, img2];
+    const images = [img1, img2, img3, img4];
 
     useEffect(() => {
         // Show popup after 1 second

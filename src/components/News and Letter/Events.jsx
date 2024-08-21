@@ -2,7 +2,7 @@ import  { useState } from 'react';
 import './Events.css';
 import abc from './events1.jpg';
 import cd from './cricket.jpg';
-import abcd from './svav-new model.jpg';
+import abcd from './eventbhumipooja.jpg';
 
 
 const events = [
