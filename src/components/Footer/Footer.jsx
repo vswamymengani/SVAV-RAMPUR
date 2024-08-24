@@ -60,7 +60,7 @@ const Footer = () => {
       setSuccessMessage('');
 
       try {
-        await axios.post('http://18.60.190.183:3001/api/contact_us', { name, emailid, mobilnum });
+        await axios.post('http://www.svavrampur.com/api/contact_us', { name, emailid, mobilnum });
         alert('Your form has been submitted successfully!')
         
         setName('');
