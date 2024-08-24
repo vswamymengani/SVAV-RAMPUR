@@ -36,18 +36,21 @@
 
 
 #sadacharamcontents {
-  text-align: right;
-  font-size: 20px;
+ 
+  background-image: url('../Facilities/slide3.png');
+ 
+ font-size: 28px;
+  
+ text-align: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
- 
+  margin-top: 0px;
   color: #070707;
-  background-image: url('../Facilities/slide3.png');
-  background-size: 150% 320px;
+  
+  background-size: 100% 400px;
   background-repeat: no-repeat;
   background-position: center;
   padding-right: 10px;
- /* margin-top: 10px; */
   
 
   
@@ -109,7 +112,7 @@
 
 
 /* Style the image with a shadow on all four sides */
-#sadacharamimg img {
+.sadacharamimg img {
   max-width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow on all four sides */
@@ -118,13 +121,13 @@
 
 /* Adjust shadow on larger screens if needed */
 @media (min-width: 768px) {
-  #sadacharamimg img {
+  .sadacharamimg img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Larger shadow for medium screens and above */
   }
 }
 
 @media (min-width: 1200px) {
-  #sadacharamimg img {
+  .sadacharamimg img {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Even larger shadow for larger screens */
   }
 }

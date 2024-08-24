@@ -8,34 +8,16 @@ import "slick-carousel/slick/slick-theme.css";
 // import img2 from '../Facilities/p1.jpg';
 // import img3 from '../Facilities/p3.png';
 import img1 from '../Facilities/psimg.jpg'
+import img2 from '../Facilities/divyaimg1.png';
+import img3 from '../Facilities/Svavaprathana2.png';
+import img4 from './shan1.png';
 
 
 const  Svavprathana = () => {
-  // const sliderSettings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 1900,
-  //   interval: 1800,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 630
-  // };
 
   return (
     <div>
-    <div className="Svavprathana-container">
-      <div className="Svavprathana-slider">
-      <div><img src={img1} alt="Sports ground 1" style={{height:"700px",width:"1400px",marginLeft:"-60px"}}/></div>
-        {/* <Slider {...sliderSettings}>
-          // <div><img src={img1} alt="Sports ground 1" /></div>
-          <div><img src={img2} alt="Sports ground 2" /></div>
-          <div><img src={img3} alt="Sports ground 1" /></div>
-          <div><img src={img4} alt="Sports ground 2" /></div>
-        </Slider> */}
-      </div>
-      <div className="Svavprathana-content">
-        {/* <h1 id="Svavprathana">SVAV&nbsp;Prathana</h1> */}
+     
         <div id="Svavprathanacontents">
          
         <div className="facility-item-Svavprathana">
@@ -60,16 +42,19 @@ const  Svavprathana = () => {
           <h3><FaUtensils /> Bhojana Mantra</h3>
         </div>
         </div>
-      </div>
+     
       
-    </div><br></br><br></br><br></br><br></br><br></br>
+    <br></br><br></br><br></br><br></br><br></br>
      <center><h1 id="Svavprathana">SVAV&nbsp;Prathana</h1> </center>      <br></br>
-     <center><b style={{fontSize:"40px"}}>Deeparadhana</b></center> <br></br><br></br><br></br>
-     <center><div id="Svavprathana1img"></div></center><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-     <center><b style={{fontSize:"40px"}}>Bhojana Mantra</b></center> <br></br><br></br><br></br>
-     <center><div id="Svavprathana2img"></div></center><br></br><br></br><br></br><br></br>
-     <center><b style={{fontSize:"40px"}}>Shanti Mantram</b></center> <br></br><br></br><br></br>
-     <center><div id="Svavprathana3img"></div></center><br></br><br></br><br></br>
+     <center><b style={{fontSize:"200%"}}>Deeparadhana</b></center> <br></br><br></br><br></br>
+     <center><div className="Svavprathanaimg">
+     <img src={img2} alt="Image description" style={{ width: '60%', height: 'auto',marginTop:'10px',marginBottom:'50px' }} /></div></center><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+     <center><b style={{fontSize:"200%"}}>Bhojana Mantra</b></center> <br></br><br></br><br></br>
+     <center><div className="Svavprathanaimg">
+     <img src={img3} alt="Image description" style={{ width: '60%', height: 'auto',marginTop:'10px',marginBottom:'50px' }} /></div></center><br></br><br></br><br></br><br></br>
+     <center><b style={{fontSize:"200%"}}>Shanti Mantram</b></center> <br></br><br></br><br></br>
+     <center><div className="Svavprathanaimg">
+     <img src={img4} alt="Image description" style={{ width: '60%', height: 'auto',marginTop:'10px',marginBottom:'50px' }} /></div></center><br></br><br></br><br></br>
     </div>
     
   );

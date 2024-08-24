@@ -28,7 +28,7 @@ const Sadacharam = () => {
           
           <br></br><br></br>
           <center>
-            <div id="sadacharamimg">
+            <div className="sadacharamimg">
               <img src={img2} alt="Image description" style={{ width: '60%', height: 'auto',marginTop:'10px',marginBottom:'50px' }} />
             </div>
           </center>
@@ -40,7 +40,7 @@ const Sadacharam = () => {
             These classrooms are a part of the Additional Support for Learning (ASL approach) towards students with Special Educational Needs (SEN).
             <br></br><br></br>
             <center>
-              <div id="sadacharamimg">
+              <div className="sadacharamimg">
                 <img src={Sadacharamimg1} alt="Image description" style={{ width: '50%', height: 'auto',marginTop:'10px',marginBottom:'50px' }} />
               </div>
             </center>
@@ -51,7 +51,7 @@ const Sadacharam = () => {
             Every child gets a visual input on how it happens and the concepts are well understood. This results in a faster and accurate understanding of the concepts in class and helps improve the overall academic performance of students.
             <br></br><br></br>
             <center>
-              <div id="sadacharamimg">
+              <div className="sadacharamimg">
                 <img src={Sadacharamimg2} alt="Image description" style={{ width: '50%', height: 'auto' ,marginTop:'10px',marginBottom:'50px'}} />
               </div>
             </center>

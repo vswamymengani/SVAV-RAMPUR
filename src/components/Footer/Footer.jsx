@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Footer.css';
+import  VisitorCounter from './VisitorCounter';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import donationlogo from './donation.png';
@@ -134,6 +135,7 @@ const Footer = () => {
               <FaInstagramSquare size={25} />
               <FaLinkedinIn size={25} />
               <SiYoutubeshorts size={25} />
+              <VisitorCounter />
             </h2>
           </div>
         </div>
