@@ -15,7 +15,7 @@ import SearchAluminiForm from './SearchAluminiForm';
 import SearchExecComityForm from './SearchExecComityForm';
 import SearchFactyForm from './SearchFactyForm';
 import { useNavigate } from 'react-router-dom';
-
+//welcome screen
 const Welcome = () => {
   const [activeComponent, setActiveComponent] = useState(null);
   const [studentCount, setStudentCount] = useState(0);
