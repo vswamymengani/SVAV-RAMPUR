@@ -39,7 +39,7 @@ const ExecComityView = () => {
     // Fetch data from API when component mounts
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://www.svavrampur.com/api/committee_members'); // Adjust the API endpoint accordingly
+        const response = await axios.get('https://www.svavrampur.com/api/committee_members'); // Adjust the API endpoint accordingly
         setData(response.data); // Update state with the fetched data
       } catch (error) {
         console.error('Error fetching data:', error.message);

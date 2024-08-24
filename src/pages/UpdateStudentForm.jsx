@@ -46,7 +46,7 @@ const UpdateStudentForm = (props) => {
       // Fetch student data based on Admission ID
       const fetchStudentData = async () => {
         try {
-          const response = await axios.get(`http://www.svavrampur.com/api/students/${stdadmid}`);
+          const response = await axios.get(`https://www.svavrampur.com/api/students/${stdadmid}`);
           console.log('Fetched student data:', response.data);
 
           // Assuming the response is an array, get the first item
@@ -64,7 +64,7 @@ const UpdateStudentForm = (props) => {
   const onSubmit = async (data) => {
     console.log('Submitting data:', data); // Debugging line
     try {
-      const response = await axios.put(`http://www.svavrampur.com/api/students/${stdadmid}`, data);
+      const response = await axios.put(`https://www.svavrampur.com/api/students/${stdadmid}`, data);
       alert('Student updated successfully!');
       console.log('Student updated successfully:', response.data);
       reset(); // Consider passing the updated data if needed

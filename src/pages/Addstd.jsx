@@ -38,7 +38,7 @@ const StudentRegistrationForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://www.svavrampur.com/api/students', data);
+      const response = await axios.post('https://www.svavrampur.com/api/students', data);
       alert('Student registered successfully!'); // Show success message after form submission
       console.log('Student registered successfully:', response.data);
       reset();

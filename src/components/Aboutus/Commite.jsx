@@ -41,7 +41,7 @@ const Commite = () => {
     // Fetch data from API when component mounts
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://www.svavrampur.com/api/committee_members');
+        const response = await axios.get('https://www.svavrampur.com/api/committee_members');
         setData(response.data); // Update state with the fetched data
       } catch (error) {
         console.error('Error fetching data:', error);

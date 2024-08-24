@@ -27,7 +27,7 @@ const Welcome = () => {
 
   useEffect(() => {
     // Fetch the counts when the component mounts
-    axios.get('http://www.svavrampur.com/api/count/students')
+    axios.get('https://www.svavrampur.com/api/students/count')
       .then(response => {
         setStudentCount(response.data.totalStudents);
       })
@@ -35,7 +35,7 @@ const Welcome = () => {
         console.error('Error fetching the student count:', error);
       });
 
-    axios.get('http://www.svavrampur.com/api/count/faculty')
+    axios.get('https://www.svavrampur.com/api/faculty/count')
       .then(response => {
         setFacultyCount(response.data.totalFaculty);
       })
@@ -43,7 +43,7 @@ const Welcome = () => {
         console.error('Error fetching the faculty count:', error);
       });
 
-    axios.get('http://www.svavrampur.com/api/count/alumni')
+    axios.get('https://www.svavrampur.com/api/alumni/count')
       .then(response => {
         setAlumniCount(response.data.totalAlumni);
       })
@@ -51,14 +51,14 @@ const Welcome = () => {
         console.error('Error fetching the alumni count:', error);
       });
 
-    axios.get('http://www.svavrampur.com/api/count/committee_members')
+    axios.get('https://www.svavrampur.com/api/committee_members/count')
       .then(response => {
         setExecComityCount(response.data.totalCommitteeMembers);
       })
       .catch(error => {
         console.error('Error fetching the exec comity count:', error);
       });
-      axios.get('http://www.svavrampur.com/api/count/contact_us')
+      axios.get('https://www.svavrampur.com/api/count/contact_us')
       .then(response => {
         setRequestcount(response.data.totalContactRequests);
       })

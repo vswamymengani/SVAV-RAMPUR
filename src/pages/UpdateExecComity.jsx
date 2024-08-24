@@ -31,7 +31,7 @@ const UpdateExecComity = (props) => {
       // Fetch student data based on SNO
       const fetchStudentData = async () => {
         try {
-          const response = await axios.get(`http://www.svavrampur.com/api/committee_members/${sno}`);
+          const response = await axios.get(`https://www.svavrampur.com/api/committee_members/${sno}`);
           console.log('Fetched student data:', response.data);
 
           const fetchedStudent = response.data; // Adjust if the response structure differs
@@ -49,7 +49,7 @@ const UpdateExecComity = (props) => {
   const onSubmit = async (data) => {
     console.log('Submitting data:', data); // Debugging line
     try {
-      const response = await axios.put(`http://www.svavrampur.com/api/committee_members/${sno}`, data);
+      const response = await axios.put(`https://www.svavrampur.com/api/committee_members/${sno}`, data);
       alert('Student updated successfully!');
       console.log('Student updated successfully:', response.data);
       reset(); // Consider passing the updated data if needed
