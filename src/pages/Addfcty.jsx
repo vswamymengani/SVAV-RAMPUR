@@ -38,7 +38,7 @@ const FacultyRegistrationForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://18.60.190.183:3001/api/faculty', data);
+      const response = await axios.post('http://www.svavrampur.com/api/faculty', data);
       alert('Faculty registered successfully!'); // Show success message after form submission
       console.log('Faculty registered successfully:', response.data);
       reset();

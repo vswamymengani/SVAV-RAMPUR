@@ -23,7 +23,7 @@ const AddExecComity = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://18.60.190.183:3001/api/committee_members', data);
+      const response = await axios.post('http://www.svavrampur.com/api/committee_members', data);
       alert('Faculty registered successfully!');
       console.log('Faculty registered successfully:', response.data);
       reset();
