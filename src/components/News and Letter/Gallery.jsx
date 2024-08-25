@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import img1 from './galleryimg1.png';
+import img1 from './galleryimg1.jpg';
+
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
@@ -50,19 +51,20 @@ const Gallery = () => {
 
   return (
     <div>
-      <center>
-        <div>
-          <img className='galleryimg1' src={img1} alt='Gallery Image 1' />
-        </div>
+     <div className="image-container">
+  <img src={img1} alt="Classroom 1" />
+</div>
 
-        <div className="button-group" style={{ marginTop: '30px' }}>
-          <button onClick={() => fetchImages('sports')}>Sports</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('celebrations')}>Celebrations</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('annualDay')}>Annual Day</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('learning')}>Learning</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           
+        <div className="button-group" style={{ marginTop: '3%',textAlign:"center" }}>
+          <button onClick={() => fetchImages('sports')}>Sports</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button onClick={() => fetchImages('celebrations')}>Celebrations</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button onClick={() => fetchImages('annualDay')}>Annual Day</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button onClick={() => fetchImages('learning')}>Learning</button>&nbsp;&nbsp;&nbsp;&nbsp;
           <button onClick={() => fetchImages('kidsActivities')}>Kids Activities</button>
         </div>
-      </center>
+    
 
       <div>
         <h2>{category} Gallery</h2>
