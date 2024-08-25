@@ -6,10 +6,11 @@ import img1 from './popupimg1.jpg';
 import img2 from './popupimg2.jpg';
 import img3 from './pooja1.jpg';
 import img4 from './eventbhumipooja.jpg';
+import img5 from './popupimg3.jpg';
 
 const Popup = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const images = [img1, img2, img3, img4];
+    const images = [img1, img2, img3, img4, img5];
 
     useEffect(() => {
         // Show popup after 1 second
@@ -43,7 +44,11 @@ const Popup = () => {
                     <Slider {...settings}>
                         {images.map((image, index) => (
                             <div key={index}>
-                                <img src={image} alt={`Slide ${index}`} className="popup-image" />
+                                <img
+                                    src={image}
+                                    alt={`Slide ${index}`}
+                                    className={`popup-image ${index === 4 ? 'special-image' : ''}`}
+                                />
                             </div>
                         ))}
                     </Slider>
