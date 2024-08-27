@@ -64,16 +64,19 @@ const Curriculum = () => {
             <span className="g5">Learn the nuances of career guidance</span><br /><br />
             <span className="g4">School of common sciences</span><br />
             <span className="g5">Makerspace, Farming, Swimming, Music, Dance, Art, Sports etc.</span>
-          </div>
-          <div className="image-container">
+            <div className="image-container">
             <img src={classImage} alt="Classes 4 and 5" className="class-image" />
           </div>
+          </div>
+          {/* <div className="image-container">
+            <img src={classImage} alt="Classes 4 and 5" className="class-image" />
+          </div> */}
         </div>
       </div>
 
       <div>
       <div id="g21">
-        <h1 id="g11">Classes 6, 7 and 8</h1>
+        <h1 id="g1">Classes 6, 7 and 8</h1>
         <div id="bx1" className="class-info-container">
           <div className="image-container1">
             <img src={classImage1} alt="Classes 4 and 5" className="class-image1" />
@@ -96,7 +99,7 @@ const Curriculum = () => {
     </div>
 
     <div id="g2">
-        <h1 id="g12">Classes 9 and 10</h1>
+        <h1 id="g1">Classes 9 and 10</h1>
         <div id="bx2" className="class-info-container">
           <div className="text-container">
             <b id="g03">Secondary School</b><br /><br />
@@ -119,23 +122,23 @@ const Curriculum = () => {
 
       <div>
       <div id="g21">
-        <h1 id="g11">Classes 11 and 12</h1>
-        <div id="bx3" className="class-info-container">
-          <div className="image-container3">
+        <h1 id="g1">Classes 11 and 12</h1>
+        <div id="bx1" className="class-info-container">
+          <div className="image-container1">
             <img src={classImage3} alt="Classes 11 and 12" className="class-image1" />
           </div>
-          <div className="text-container13">
-            <b className="g33">Secondary School</b><br /><br />
-            <span className="g43">Curriculum</span><br />
-            <span className="g53">CBSE and STATE BOARD assessment curriculum</span><br /><br />
-            <span className="g43">Academics</span><br />
-            <span className="g53">Plan own Learning .Final Board selection,Learning and reflection, The balance of Board &
+          <div className="text-container1">
+            <b className="g31">Secondary School</b><br /><br />
+            <span className="g41">Curriculum</span><br />
+            <span className="g51">CBSE and STATE BOARD assessment curriculum</span><br /><br />
+            <span className="g41">Academics</span><br />
+            <span className="g51">Plan own Learning .Final Board selection,Learning and reflection, The balance of Board &
               Entrance
             </span><br /><br />
-            <span className="g43">Career Advancement</span><br />
-            <span className="g53">Career propogation and entrance exam guidance.</span><br /><br />
-            <span className="g43">School of common sciences</span><br />
-            <span className="g53">Makerspace, Farming, Swimming, Music, Dance, Art, Sports etc.</span>
+            <span className="g41">Career Advancement</span><br />
+            <span className="g51">Career propogation and entrance exam guidance.</span><br /><br />
+            <span className="g41">School of common sciences</span><br />
+            <span className="g51">Makerspace, Farming, Swimming, Music, Dance, Art, Sports etc.</span>
           </div>
         </div>
       </div>
