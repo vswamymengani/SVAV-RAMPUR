@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
@@ -105,24 +105,73 @@ const UploadForm = () => {
                             }}>
                                 <button
                                     type="button"
-                                    onClick={() => handleOptionClick('screenname', 'Screen 1')}
+                                    onClick={() => handleOptionClick('screenname', 'Latest News')}
                                     style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
                                 >
-                                    Screen 1
+                                    Latest News
                                 </button>
                                 <button
                                     type="button"
-                                    onClick={() => handleOptionClick('screenname', 'Screen 2')}
+                                    onClick={() => handleOptionClick('screenname', 'Home Slide')}
                                     style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
                                 >
-                                    Screen 2
+                                    Home Slide
                                 </button>
                                 <button
                                     type="button"
-                                    onClick={() => handleOptionClick('screenname', 'Screen 3')}
+                                    onClick={() => handleOptionClick('screenname', 'Pop Up')}
                                     style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
                                 >
-                                    Screen 3
+                                    Pop Up
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Career')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Career
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Gallery Sports')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Gallery Sports
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Gallery Celebrations')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Gallery Celebrations
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Gallery AnnualDay')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Gallery AnnualDay
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Gallery Learning')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Gallery Learning
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Gallery KidsActivities')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Gallery KidsActivities
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => handleOptionClick('screenname', 'Events')}
+                                    style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                                >
+                                    Events
                                 </button>
                             </div>
                         )}
@@ -221,6 +270,7 @@ const UploadForm = () => {
                     />
                     {errors.eventname && <p>Event name must be less than 30 characters.</p>}
                 </div>
+             
 
                 <div>
                     <label>Event Description:</label>
@@ -229,6 +279,19 @@ const UploadForm = () => {
                     />
                     {errors.eventdesc && <p>Event description must be less than 120 characters.</p>}
                 </div>
+               
+
+                {selectedScreenName === 'Latest News' && (
+                <div>
+                    <label>Latest News:</label>
+                    <textarea
+                        {...register('eventdesc', { maxLength: 120 })}
+                    />
+                    {errors.eventdesc && <p>Event description must be less than 120 characters.</p>}
+                </div>
+                 )}
+
+
 
                 <div>
                     <label>Event Date:</label>
