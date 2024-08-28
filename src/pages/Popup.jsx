@@ -12,7 +12,7 @@ import img7 from './popupimg5.jpg';
 
 const Popup = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const images = [img1, img2, img3, img4, img5, img6, img7];
+    const images = [img6, img7, img1, img2, img3, img4, img5];
 
     useEffect(() => {
         // Show popup after 1 second

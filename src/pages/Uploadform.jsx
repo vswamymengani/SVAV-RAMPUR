@@ -5,19 +5,19 @@ import axios from 'axios';
 const UploadForm = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm({
         defaultValues: {
-            screenname: 'select Screen Name',
-            imageorvideo: 'Image', // Default value for Image or Video field
+            screenname: '', // Default value set to empty string
+            imageorvideo: 'Image',
             imagename: '',
             videoname: '',
             eventname: '',
             eventdesc: '',
-            eventdate: '' // Default value for Event Date field
+            eventdate: ''
         }
     });
 
     const [showScreenNameDropdown, setShowScreenNameDropdown] = useState(false);
     const [showImageOrVideoDropdown, setShowImageOrVideoDropdown] = useState(false);
-    const [selectedScreenName, setSelectedScreenName] = useState('Default Screen Name');
+    const [selectedScreenName, setSelectedScreenName] = useState('');
     const [selectedImageOrVideo, setSelectedImageOrVideo] = useState('Image');
 
     const onSubmit = async (data) => {
@@ -29,26 +29,31 @@ const UploadForm = () => {
             formData.append('videoname', data.videoname);
             formData.append('eventname', data.eventname);
             formData.append('eventdesc', data.eventdesc);
-            formData.append('eventdate', data.eventdate); // Include event date in form data
+            formData.append('eventdate', data.eventdate);
 
             // Attach the uploaded file
             if (data.uploadfile.length > 0) {
                 formData.append('uploadfile', data.uploadfile[0]);
             }
 
+            // Log form data to check contents
+            for (let [key, value] of formData.entries()) {
+                console.log(`${key}: ${value}`);
+            }
+
             // Send form data to the backend
-            const response = await axios.post('http://localhost:3000/api/upload', formData, {
+            const response = await axios.post('https://www.svavrampur.com/api/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
             });
 
             console.log('Upload successful:', response.data);
-
-            // Reset form after successful upload
             reset();
+            alert('Upload successful!');
         } catch (error) {
             console.error('Upload failed:', error);
+            alert('Upload failed. Please try again.');
         }
     };
 
@@ -64,6 +69,7 @@ const UploadForm = () => {
         if (type === 'screenname') {
             setSelectedScreenName(value);
             setShowScreenNameDropdown(false);
+            console.log('Selected Screen Name:', value); // Debugging line
         } else if (type === 'imageorvideo') {
             setSelectedImageOrVideo(value);
             setShowImageOrVideoDropdown(false);
@@ -82,7 +88,7 @@ const UploadForm = () => {
                             onClick={() => toggleDropdown('screenname')} 
                             style={{ width: '100%', textAlign: 'left', padding: '8px', border: '1px solid #ccc', background: '#fff' }}
                         >
-                            {selectedScreenName}
+                            {selectedScreenName || 'Select Screen Name'}
                         </button>
                         {showScreenNameDropdown && (
                             <div style={{
@@ -118,7 +124,6 @@ const UploadForm = () => {
                                 >
                                     Screen 3
                                 </button>
-                                {/* Add more options as needed */}
                             </div>
                         )}
                     </div>
@@ -168,7 +173,6 @@ const UploadForm = () => {
                     {errors.imageorvideo && <p>Image or Video selection is required.</p>}
                 </div>
 
-                {/* Conditionally Render Fields Based on Selection */}
                 {selectedImageOrVideo === 'Image' && (
                     <div>
                         <label>Image Name:</label>
