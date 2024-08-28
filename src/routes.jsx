@@ -60,6 +60,7 @@ import Newsletter from './pages/Newletter';
 import ContactUs from './pages/ContactUs';
 import ScrollUpButton from './pages/ScrollUpButton';
 
+
 const AppRoutes = () => {
     return (
         <>

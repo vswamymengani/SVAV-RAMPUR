@@ -20,7 +20,7 @@ const Footer = () => {
     window.location.href = 'https://www.instagram.com/svav.rampur/?hl=en';
   };
   const handleLinkedInClick = () => {
-    window.location.href = 'www.linkedin.com/in/svavrampur-vidyapeetam-a3a2a2325';
+    window.location.href = 'https://www.linkedin.com/in/svavrampur-vidyapeetam-a3a2a2325/?trk=opento_sprofile_topcard';
   };
   const handleYoutubeshortsClick = () => {
     window.location.href = 'https://www.youtube.com/@SrividyaranyaAvasaVidyalayamVi';
@@ -140,10 +140,13 @@ const Footer = () => {
           <div id='a19'>
             <h2 style={{ color: 'aliceblue', textAlign: 'left',fontFamily: 'Cursive' }}>
               Copyright @Srividyaranyaavasavidyalayam
-              <FaFacebookF color='white' size={25} onClick={handleFacebookClick} />
-              <FaInstagramSquare  size={25} onClick={handleInstagramClick} />
-              <FaLinkedinIn size={25} onClick={handleLinkedInClick} />
-              <SiYoutubeshorts size={25} onClick={handleYoutubeshortsClick} />
+              
+              <span style={{ marginLeft: '10px', display: 'inline-flex', gap: '20px' }}>
+      <FaFacebookF color='white' size={25} onClick={handleFacebookClick} />
+      <FaInstagramSquare size={25} onClick={handleInstagramClick} />
+      <FaLinkedinIn size={25} onClick={handleLinkedInClick} />
+      <SiYoutubeshorts size={25} onClick={handleYoutubeshortsClick} />
+    </span>
               <VisitorCounter />
             </h2>
           </div>

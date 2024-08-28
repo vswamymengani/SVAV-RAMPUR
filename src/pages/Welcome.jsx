@@ -14,6 +14,7 @@ import SearchStudentForm from './SearchStudentForm';
 import SearchAluminiForm from './SearchAluminiForm';
 import SearchExecComityForm from './SearchExecComityForm';
 import SearchFactyForm from './SearchFactyForm';
+import Uploadform from './Uploadform';
 import { useNavigate } from 'react-router-dom';
 //welcome screen
 const Welcome = () => {
@@ -24,6 +25,8 @@ const Welcome = () => {
   const [execComityCount, setExecComityCount] = useState(0);
   const [requestcount, setRequestcount] = useState(0);
   const navigate = useNavigate();
+
+
 
   useEffect(() => {
     // Fetch the counts when the component mounts
@@ -81,11 +84,14 @@ const Welcome = () => {
       <button onClick={handleLogin}>Logout</button><br />
       <form className="button-forms">
         <div className='button-container'>
+          
+            <button type="button" onClick={() => handleComponentView('Uploadform')}>Uploadform</button>
           <button type="button" onClick={() => handleComponentView('Studentview')}>Std_dtl</button>
           <button type="button" onClick={() => handleComponentView('Facultyview')}>Faculty_dtl</button>
           <button type="button" onClick={() => handleComponentView('AlumniView')}>Alumni</button>
           <button type="button" onClick={() => handleComponentView('ExecComityView')}>Exec_Comity</button>
           <button type="button" onClick={() => handleComponentView('ContactUsView')}>Contact_Us</button>
+         
         </div> 
       </form> 
       
@@ -129,6 +135,7 @@ const Welcome = () => {
         </div>
         
         <div>
+        {activeComponent === 'Uploadform' && <Uploadform />}
           {activeComponent === 'Studentview' && <Studentview />}
           {activeComponent === 'Facultyview' && <FacultyView />}
           {activeComponent === 'AlumniView' && <AlumniView />}
