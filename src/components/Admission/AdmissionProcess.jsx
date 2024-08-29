@@ -1,13 +1,15 @@
 
   import logo from './admissionpage.png';
-  import './AdmissionProcess.css';
-  
-  const AdmissionProcess = () => {
-    return (
-      <div className="app-container">
-        <img src={logo} alt="Logo" className="responsive-image" />
-      </div>
-    );
-  };
-  
-  export default AdmissionProcess;   
+import './AdmissionProcess.css';
+
+const Holidays = () => {
+  return (
+    <div>
+    <center>
+      <img src={logo} className="aimg" alt="Responsive" />
+    </center>
+  </div>
+  )
+}
+
+export default Holidays;

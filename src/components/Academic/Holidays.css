@@ -1,24 +1,7 @@
-/* Styles for large devices (desktops) */
 .img {
-    margin-top: 3%;
-    width: 80%;
-    height: 10%;
-    margin-bottom: 3%;
-  }
-  
-  /* Styles for medium devices (tablets) */
-  /* @media (max-width: 768px) {
-    .responsive-img {
-      margin-top: 4%;
-      width: 80%;
-    }
-  }
-  
-  /* Styles for small devices (mobile) */
-  /* @media (max-width: 480px) {
-    .responsive-img {
-      margin-top: 5%;
-      width: 100%;
-    }
-  } */ 
-  
+  margin-top: 3%;
+  width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+  margin-bottom: 3%;
+}

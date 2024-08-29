@@ -16,8 +16,9 @@ const Footer = () => {
   const handleFacebookClick = () => {
     window.location.href = 'https://www.facebook.com/profile.php?id=61563910378757';
   };
+
   const handleInstagramClick = () => {
-    window.location.href = 'https://www.instagram.com/svav.rampur/?hl=en';
+    window.location.href = 'https://www.instagram.com/yourprofile'; // example link
   };
   const handleLinkedInClick = () => {
     window.location.href = 'https://www.linkedin.com/in/svavrampur-vidyapeetam-a3a2a2325/?trk=opento_sprofile_topcard';

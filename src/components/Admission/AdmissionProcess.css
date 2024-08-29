@@ -1,25 +1,7 @@
-/* Base styles */
-.app-container {
-  text-align: center; /* Center-aligns text and elements */
-}
-
-.responsive-image {
-  width: 90%; /* Makes the image take 90% of the container's width */
-  height: auto; /* Maintains the aspect ratio of the image */
-}
-
-/* Responsive styles for tablets and smaller devices */
-@media (max-width: 768px) {
-  .responsive-image {
-      width: 100%; /* Adjust width to 100% for tablets */
-      height: auto; /* Maintain aspect ratio */
-  }
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .responsive-image {
-      width: 100%; /* Adjust width to 100% for mobile devices */
-      height: auto; /* Maintain aspect ratio */
-  }
+.aimg {
+  margin-top: 3%;
+  width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+  margin-bottom: 0%;
 }

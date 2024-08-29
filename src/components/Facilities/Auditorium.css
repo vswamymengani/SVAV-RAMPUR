@@ -131,72 +131,68 @@
     height: 100px;
   }
   
-  .Auditorium-slider {
-    flex: 1;
-    max-width: 90%; /* Default to a larger width for small screens */
-    margin-top: 20px;
-    margin-right: 0; /* Remove negative margin for small screens */
-    border-radius: 20px; /* Adjust border radius for small screens */
-    scroll-behavior: smooth;
-  }
+  
+ .Auditorium-slider {
+  flex: 1;
+  max-width: 100%; /* Adjust width to full container width */
+  margin-top: 50px; /* Adjusted margin for responsiveness */
+  margin-right: -20px; /* Remove negative margin for small screens */
+  border-radius: 30px; /* Adjust border-radius for smaller screens */
+  scroll-behavior: smooth;
+  
+  overflow: hidden; /* Hide overflow to maintain clean appearance */
+}
 
-  @media (min-width: 504px) {
-    .Auditorium-slider {
-      max-width: 80%;
-      margin-left: 90px;
-      border-radius: 60px;
-      align-items: center;
-    }
+/* Responsive adjustments for the slider */
+@media (max-width: 1200px) {
+  .Auditorium-slider {
+    margin-top: 40px; /* Reduce top margin for medium screens */
+    border-radius: 40px; /* Adjust border-radius */
   }
-  
-  /* Adjustments for medium screens (e.g., tablets) */
-  @media (min-width: 768px) {
-    .Auditorium-slider {
-      max-width: 75%;
-      margin-top: 50px;
-      align-items: center;
-      border-radius: 40px;
-      margin-right: 20px; /* Remove negative margin for small screens */
-    }
+}
+
+@media (max-width: 992px) {
+  .Auditorium-slider {
+    margin-top: 30px; /* Further reduce top margin */
+    border-radius: 30px; /* Further adjust border-radius */
   }
-  
-  /* Adjustments for large screens (e.g., desktops) */
-  @media (min-width: 1024px) {
-    .Auditorium-slider {
-      max-width: 50%;
-      margin-top: 100px;
-      margin-right: -80px;
-      border-radius: 60px;
-      align-items: center;
-    }
+}
+
+@media (max-width: 768px) {
+  .Auditorium-slider {
+    margin-top: 20px; /* Smaller top margin for tablets */
+    border-radius: 20px; /* Adjust border-radius for smaller screens */
   }
-  
+}
+
+@media (max-width: 576px) {
+  .Auditorium-slider {
+    margin-top: 10px; /* Minimal top margin for mobile devices */
+    border-radius: 15px; /* Adjust border-radius for mobile devices */
+  }
+}
+
+.Auditorium-slider img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Ensure image does not exceed max-height */
+  border-radius: inherit; /* Inherit border-radius from parent */
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments for images */
+@media (max-width: 768px) {
   .Auditorium-slider img {
-    width: 100%;
-    align-items: center;
-    margin-top: 20px;
-    border-radius: 20px; /* Adjust border radius for small screens */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Reduce max height for small screens */
+    max-height: 300px; /* Adjust max-height for smaller screens */
   }
-  
-  /* Adjustments for medium screens */
-  @media (min-width: 768px) {
-    .Auditorium-slider img {
-      border-radius: 40px;
-      max-height: 400px;
-     
-    }
+}
+
+@media (max-width: 576px) {
+  .Auditorium-slider img {
+    max-height: 250px; /* Further adjust max-height for mobile devices */
   }
-  
-  /* Adjustments for large screens */
-  @media (min-width: 1024px) {
-    .Auditorium-slider img {
-      border-radius: 60px;
-      max-height: 500px;
-    }
-  }
-    
+}
+
 
 
   #Auditoriumpara {
