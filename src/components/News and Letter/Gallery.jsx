@@ -1,85 +1,73 @@
-import { useState } from 'react';
-import img1 from './galleryimg1.jpg';
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import img1 from './galleryimg1.jpg'; // Placeholder image
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [category, setCategory] = useState('');
+    const [filteredImages, setFilteredImages] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState('');
 
-  // Predefined image links for each category
-  const imageLinks = {
 
-    sports: [
-      'https://drive.google.com/file/d/1lJ28ZSuSGLDlrAc-BnXDirT3NPcS-g-f/view?usp',
-      // Add more image links for sports
-    ],
-    celebrations: [
-      'https://drive.google.com/uc?export=view&id=1PjiburW0ui3VwGEgA8LOXVpP3AjkRuU2',
-      // Add more image links for celebrations
-    ],
-    annualDay: [
-      'https://drive.google.com/uc?export=view&id=1MXmt8Z0XS6TAK4igRE2579_jmOWs4yx5',
-      // Add more image links for annual day
-    ],
-    learning: [
-      'https://drive.google.com/uc?export=view&id=1MXmt8Z0XS6TAK4igRE2579_jmOWs4yx5',
-    ],
-    kidsActivities: [
-      'https://drive.google.com/uc?export=view&id=1MXmt8Z0XS6TAK4igRE2579_jmOWs4yx5',
-    ],
+  // Function to fetch images from API based on selected category
+  const fetchImages = async (category = '') => {
+    try {
+        const response = await axios.get('http://localhost:3001/api/events');
+        setImages(response.data);
+        if (category) {
+            setFilteredImages(response.data.filter(image => image.screenname === category));
+        } else {
+            setFilteredImages(response.data);
+        }
+    } catch (error) {
+        setError(error);
+    } finally {
+        setLoading(false);
+    }
+};
+useEffect(() => {
+  fetchImages(); // Initial fetch without a category
+}, []);
 
-    otherActivites:[
-      'https://drive.google.com/file/d/1WVVL9CpTxhH760PipZvw8alOPKQJHd0y/view?usp=sharing'
-    ]
-  };
+useEffect(() => {
+  if (selectedCategory) {
+      fetchImages(selectedCategory);
+  }
+}, [selectedCategory]);
 
-  // Function to fetch images for a selected category
-  const fetchImages = (category) => {
-    setLoading(true);
-    setCategory(category);
-
-    // Use predefined links
-    const categoryImages = imageLinks[category] || [];
-
-    // Simulate loading delay
-    setTimeout(() => {
-      setImages(categoryImages);
-      setLoading(false);
-    }, 500); // Adjust delay as needed
-  };
+if (loading) return <p>Loading...</p>;
+if (error) return <p>Error loading images: {error.message}</p>;
 
   return (
     <div>
-     <div className="image-container">
-  <img src={img1} alt="Classroom 1" />
-</div>
+      <div className="image-container">
+        <img src={img1} alt="Placeholder" style={{ width: '100%', height: 'auto' }} />
+      </div>
 
-
-           
-        <div className="button-group" style={{ marginTop: '3%',textAlign:"center" }}>
-          <button onClick={() => fetchImages('sports')}>Sports</button>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('celebrations')}>Celebrations</button>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('annualDay')}>Annual Day</button>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('learning')}>Learning</button>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => fetchImages('kidsActivities')}>Kids Activities</button>
-        </div>
-    
+      
 
       <div>
-        <h2>{category} Gallery</h2>
-        {loading && <p>Loading images...</p>}
-        <div className="gallery">
-          {images.length > 0 &&
-            images.map((image, index) => (
-              <iframe
-                key={index}
-                src={image}
-                title={`${category}-img-${index}`}
-                style={{ width: '100%', height: '500px', border: 'none' }}
-              />
-            ))}
-        </div>
+      <h2>Image Gallery</h2>
+            <div className="button-group" style={{ marginTop: '3%', textAlign: 'center' }}>
+                <button onClick={() => setSelectedCategory('Sports')}>Sports</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onClick={() => setSelectedCategory('Celebrations')}>Celebrations</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onClick={() => setSelectedCategory('Annual Day')}>Annual Day</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onClick={() => setSelectedCategory('Learning')}>Learning</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onClick={() => setSelectedCategory('Kids Activities')}>Kids Activities</button>
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                {filteredImages.map((image) => (
+                    <div key={image.id} style={{ margin: '10px' }}>
+                        <img
+                            src={`http://localhost:3001/uploads/${image.uploadfile}`}
+                            alt={image.imagename}
+                            style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                        />
+                        <p>{image.imagename}</p>
+                    </div>
+                ))}
+            </div>
       </div>
     </div>
   );
