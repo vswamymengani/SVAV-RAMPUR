@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
@@ -42,7 +42,7 @@ const UploadForm = () => {
             }
 
             // Send form data to the backend
-            const response = await axios.post('http://localhost:3001/api/upload', formData, {
+            const response = await axios.post('https://www.svavrampur.com/api/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

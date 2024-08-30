@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import img1 from './galleryimg1.jpg'; // Placeholder image
 
@@ -13,7 +13,7 @@ const Gallery = () => {
   // Function to fetch images from API based on selected category
   const fetchImages = async (category = '') => {
     try {
-        const response = await axios.get('http://localhost:3001/api/events');
+        const response = await axios.get('https://www.svavrampur.com/api/events');
         setImages(response.data);
         if (category) {
             setFilteredImages(response.data.filter(image => image.screenname === category));
@@ -60,7 +60,7 @@ if (error) return <p>Error loading images: {error.message}</p>;
                 {filteredImages.map((image) => (
                     <div key={image.id} style={{ margin: '10px' }}>
                         <img
-                            src={`http://localhost:3001/uploads/${image.uploadfile}`}
+                            src={`https://www.svavrampur.com/uploads/${image.uploadfile}`}
                             alt={image.imagename}
                             style={{ width: '150px', height: '150px', objectFit: 'cover' }}
                         />
