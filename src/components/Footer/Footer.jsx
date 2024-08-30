@@ -143,10 +143,27 @@ const Footer = () => {
               Copyright @Srividyaranyaavasavidyalayam
               
               <span style={{ marginLeft: '10px', display: 'inline-flex', gap: '20px' }}>
-      <FaFacebookF color='white' size={25} onClick={handleFacebookClick} />
-      <FaInstagramSquare size={25} onClick={handleInstagramClick} />
-      <FaLinkedinIn size={25} onClick={handleLinkedInClick} />
-      <SiYoutubeshorts size={25} onClick={handleYoutubeshortsClick} />
+      <FaFacebookF
+        color="white"
+        size={25}
+        style={{ cursor: 'pointer' }} // Add pointer cursor
+        onClick={handleFacebookClick}
+      />
+      <FaInstagramSquare
+        size={25}
+        style={{ cursor: 'pointer' }} // Add pointer cursor
+        onClick={handleInstagramClick}
+      />
+      <FaLinkedinIn
+        size={25}
+        style={{ cursor: 'pointer' }} // Add pointer cursor
+        onClick={handleLinkedInClick}
+      />
+      <SiYoutubeshorts
+        size={25}
+        style={{ cursor: 'pointer' }} // Add pointer cursor
+        onClick={handleYoutubeshortsClick}
+      />
     </span>
               <VisitorCounter />
             </h2>

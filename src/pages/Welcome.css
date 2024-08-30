@@ -20,11 +20,11 @@
     cursor: pointer;
 }
 .dashboard{
-   margin-top: -700px;
+   margin-top: -800px;
    margin-left: 320px;
     background-color: aqua;
     width: 1300px;
-    height: 1000px;
+    height: 800px;
 }
 .box-container{
     display: flex;

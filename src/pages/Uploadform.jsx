@@ -105,12 +105,26 @@ const UploadForm = () => {
                             boxShadow: '0px 4px 8px rgba(0,0,0,0.1)',
                             borderRadius: '4px'
                         }}>
-                            <button
+                             <button
                                 type="button"
-                                onClick={() => handleOptionClick('screenname', 'Sports')}
+                                onClick={() => handleOptionClick('screenname', 'Latest News')}
                                 style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
                             >
-                                Sports
+                                Latest News
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => handleOptionClick('screenname', 'Home Slide')}
+                                style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                            >
+                                Home Slide
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => handleOptionClick('screenname', 'Popup Slide')}
+                                style={{ width: '100%', textAlign: 'left', padding: '8px', border: 'none', background: 'none' }}
+                            >
+                                Popup Slide
                             </button>
                             <button
                                 type="button"
