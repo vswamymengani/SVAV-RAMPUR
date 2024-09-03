@@ -77,13 +77,25 @@ const Home = () => {
                 </div>
 
                 <div className="bar">
-                    <div className='sectwo'>
-                        <video width="60%" height="%" autoPlay loop muted>
+                    <div className="card left-card">
+                       
+                        <h3>Left Card</h3>
+                        <p>Some content</p>
+                    </div>
+                    <div className="video-container">
+                        <video width="100%" height="auto" autoPlay loop muted>
                             <source src={yourVideo} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
+                    <div className="card right-card">
+                        {/* <!-- Right card content goes here --> */}
+                        <h3>Right Card</h3>
+                        <p>Some content</p>
+                    </div>
                 </div>
+
+
 
                 <div className='mainElement'>
                     <div className='subElementop'>

@@ -1,8 +1,14 @@
-import React from 'react'
+
+import logo from '../components/Admission/admissionpage.png';
+import './Os.css';
 
 const Os = () => {
   return (
-    <div>Os</div>
+    <div>
+    <center>
+      <img src={logo} className="osimg" alt="Responsive" />
+    </center>
+  </div>
   )
 }
 

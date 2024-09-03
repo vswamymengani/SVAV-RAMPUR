@@ -81,13 +81,6 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
   
 }
 
-
-/* .t1 {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box; 
-} */
-
 .t2 {
   width: 100%; /* Use relative width for responsiveness */
   max-width: 250%; /* Control maximum width */
@@ -184,17 +177,6 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
 }
 
 @media screen and (max-width: 768px) {
-/* .t2 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 10px;
-} */
-
-/* .container {
-    margin-right: 2%;
-    padding: 10px;
-} */
 
 .sectwo {
     width: 100%;
@@ -202,17 +184,7 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
 }
 
 @media screen and (max-width: 480px) {
-/* .t2 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 10px;
-} */
 
-/* .container {
-    margin-right: 2%;
-    padding: 10px;
-} */
 
 .sectwo {
     width: 100%;
@@ -222,7 +194,7 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
 
 
 
-.bar{
+/* .bar{
 
   text-align: center;
   background-color: blue;
@@ -232,7 +204,72 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
  
   background-size: cover;
   background-position: center; 
+} */
+
+
+.bar {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Center items horizontally */
+  background-color: blue;
+  color: whitesmoke;
+  margin-top: 0px;
+  padding: 12px 16px;
+  background-size: cover;
+  background-position: center;
+  gap: 16px; /* Space between cards and video */
 }
+
+.card {
+  width: 290px; /* Adjust width as needed */
+  height: 550px; /* Adjust height as needed */
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px; /* Optional: for rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid transparent; /* Initial border color is transparent */
+  transition: border-color 3.5s ease; /* Smooth transition for border color */
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  border-color: #ff0000; /* Color 1 for the border on hover */
+  animation: borderColorAnimation 2s infinite; /* Apply the animation */
+}
+
+@keyframes borderColorAnimation {
+  0% {
+    border-color: #ff0000; /* Color 1 */
+  }
+  50% {
+    border-color: yellow; /* Color 2 */
+  }
+  100% {
+    border-color: green; /* Color 1 */
+  }
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.video-container {
+  flex: 1; /* Allows the video to take up remaining space between cards */
+  display: flex;
+  justify-content: center; /* Center the video horizontally within the container */
+}
+
+
 
 
 
@@ -269,9 +306,6 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
   text-align: center;
   padding: 12px 16px;
 }
-/* .design{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-} */
 .color{
   background-color: blue;  
   color: whitesmoke;
@@ -1217,3 +1251,34 @@ float: none;
       height: auto;
   }
 }
+/* Home.css */
+
+
+
+/* .bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.videoContainer {
+  width: 55%;
+}
+
+.videoContainer video {
+  width: 100%;
+  height: auto;
+} */
+
+
+
+
+
+/* Add any other styles you need */

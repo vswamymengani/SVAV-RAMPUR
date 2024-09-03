@@ -1,0 +1,7 @@
+.osimg {
+    margin-top: 3%;
+    width: 80%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+    margin-bottom: 0%;
+  }
