@@ -1,4 +1,5 @@
 import './header.css';
+import { useNews } from './NewsContext'; // Import the custom hook
 import { useNavigate } from 'react-router-dom';
 import exampleImage from '../assets/school logo .jpg';
 import exa from './logocandle.png';
@@ -10,6 +11,7 @@ const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const navbarRef = useRef(null);
+  const { news } = useNews();
 
 
   useEffect(() => {
@@ -178,8 +180,9 @@ const Header = () => {
       </div>
       <div className="color">
         <div className="line">LATEST NEWS</div>
-        <div><marquee>Job Openings: Join our Team of teachers and admin by applying at careers@svav.ind.in or hr@svav.ind.in&nbsp;&nbsp;/&nbsp;&nbsp;
-        Latest Event: Laying Foundation for Bhumipuja Ceremony for School Modernization on 19th August 2024</marquee>
+        <div><marquee>
+        {news.jobOpenings} / {news.latestEvent}
+      </marquee>
         </div>
       </div>
     </header>

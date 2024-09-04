@@ -1,0 +1,54 @@
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .form-input, .form-button {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* styles.css */
+
+/* Container for existing images */
+.existing-image-container {
+  display: flex;               /* Use flexbox to layout images */
+  flex-wrap: wrap;             /* Wrap images to the next line if there's not enough space */
+  gap: 16px;                   /* Space between images */
+  justify-content: center;     /* Center images horizontally */
+  padding: 16px;               /* Padding around the container */
+  border: 1px solid #ddd;      /* Border around the container */
+  border-radius: 8px;          /* Rounded corners for the container */
+  background-color: #f9f9f9;   /* Background color */
+}
+
+.existing-image-container img {
+  max-width: 10%;             /* Make sure images don't overflow the container */
+  height: auto;                /* Maintain aspect ratio */
+  border-radius: 4px;          /* Rounded corners for images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}

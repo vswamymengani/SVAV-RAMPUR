@@ -1,3 +1,5 @@
+//Newsletter image present in Pages with the name as newsletterimg1.jpg
+
 import img1 from './newsletterimg1.jpg';
 import './Newsletter.css';
 

@@ -19,12 +19,14 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 .dashboard{
-   margin-top: -800px;
+   margin-top: -1000px;
    margin-left: 320px;
     background-color: aqua;
     width: 1300px;
-    height: 800px;
+    height: 1000px;
 }
 .box-container{
     display: flex;
@@ -39,4 +41,3 @@
     height: 150px;
     text-align: center;
 }
-
