@@ -1,5 +1,6 @@
 import './Sdp.css';
 import img11 from './sdp1.png';
+import sdpimg from './sdpimg1.jpg';
 // import img1 from '../Facilities/sd1.png';
 // import img2 from '../Facilities/sd2.png';
 // import img3 from '../Facilities/sd33.png';
@@ -22,8 +23,10 @@ const Sdp = () => {
             The school improvement is first and foremost the responsibility of the school Management.It is based on the premise that schools themselves are best placed to identify areas for improvement and to implement changes that can bring about better outcomes for pupiles.
            
             We bring to your kind Notice that Sri Vidyaranya Avasa Vidyalayam is a reputed non-profit NGO based School run by Sri Saraswathi Vidya Pettam.As you may kindly be aware, Vidya Pettam which is Affilliated to Vidya Bharathi-Akhil Bharatiya Shiksha Sansthan is running around 300 Shishumandir Schools in the state of telangana.Shishumandir Schools all over the country, are known for impacting value based education, with emphasis on
-            ancient Bharatiya Culture & Imbibing Patriotism among it's students.
-            <br></br>   <br></br>
+            ancient Bharatiya Culture & Imbibing Patriotism among it's students.</p>
+              
+            <img src={sdpimg} alt="SDP Image" className="sdp-image" />
+            <p>
             In our School, in addition to the academic education, we are also conducting activities & programs to install physical, Mental,
             Intellectual & spiritual skills in the students, which helps in all around development of the child, so that the students should be able to face any challenges in life and be useful to the nation at
             large.

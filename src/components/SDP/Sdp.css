@@ -256,3 +256,22 @@
     width: 20%; /* Further adjust image size for very small screens */
   }
 }
+
+
+.sdp-image {
+  width: 100%; /* Ensures the image takes up full width of its container */
+  max-width: 1000px; /* Limits the maximum width of the image */
+  height: auto; /* Maintains the aspect ratio */
+  display: block;
+  margin: 20px auto; /* Center the image horizontally */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for better appearance */
+}
+
+@media (max-width: 768px) {
+ 
+  
+  .sdp-image {
+    max-width: 100%; /* Ensure the image is responsive on smaller screens */
+  }
+}

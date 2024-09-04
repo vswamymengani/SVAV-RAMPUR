@@ -205,7 +205,17 @@ object-fit: cover; /* Maintain aspect ratio and cover entire slide */
   background-size: cover;
   background-position: center; 
 } */
+.card.right-card {
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.right-card-image {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+  margin-top: 70px;
+}
 
 .bar {
   display: flex; /* Use Flexbox for layout */

@@ -1,5 +1,5 @@
 
-import logo from '../components/Admission/admissionpage.png';
+import logo from './osimg.jpg';
 import './Os.css';
 
 const Os = () => {
