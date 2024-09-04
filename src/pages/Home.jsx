@@ -77,21 +77,18 @@ const Home = () => {
                 <div className='newslider'>
                     <CarouselSlider />
                 </div>
-
                 <div className="bar">
-                <div className="card left-card">
-       
-       
-        
-        {/* Video inside the left card */}
-        <video width="100%" height="auto" autoPlay loop muted>
-          <source src={videoleft} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        {/* Navigation Link */}
-        <Link to="/sdp" className="nav-link">Go to SDP</Link>
-      </div>
+                    <div className="card left-card">
+                        {/* Video inside the left card */}
+                        <video width="100%" height="auto" autoPlay loop muted>
+                            <source src={videoleft} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        {/* Navigation Link */}
+                        <br></br>
+                        <h2>Click here</h2>
+                        <Link to="/sdp" className="nav-link">Go to SDP</Link>
+                    </div>
                     <div className="video-container">
                         <video width="100%" height="auto" autoPlay loop muted>
                             <source src={yourVideo} type="video/mp4" />
@@ -99,15 +96,13 @@ const Home = () => {
                         </video>
                     </div>
                     <div className="card right-card">
-        
-
-        {/* Displaying the image inside the right card */}
-        <img src={rightimg} alt="Right Card Content" className="right-card-image" />
-        <Link to="/gallery" className="nav-link">Go to Gallery</Link>
-      </div>
+                        {/* Displaying the image inside the right card */}
+                        <img src={rightimg} alt="Right Card Content" className="right-card-image" />
+                        <br></br>
+                        <h2>Click here</h2>
+                        <Link to="/gallery" className="nav-link">Go to Gallery</Link>
+                    </div>
                 </div>
-
-
 
                 <div className='mainElement'>
                     <div className='subElementop'>

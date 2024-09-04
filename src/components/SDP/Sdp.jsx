@@ -70,13 +70,6 @@ const Sdp = () => {
       <div id="sdpimgs">
         <center>
           <div><img src={img11} style={{width:"90%"}} alt="sdp 1" /></div>
-          {/* <div><img src={img1} alt="Transport 1" /></div><br></br>
-          <div><img src={img2} alt="Transport 2"  /></div><br></br>
-          <div><img src={img3} alt="Transport 3"  /></div><br></br>
-          <div><img src={img4} alt="Transport 4"  /></div><br></br>
-          <div><img src={img5} alt="Transport 3" /></div><br></br>
-          <div><img src={img6} alt="Transport 4" /></div><br></br>
-          <div><img src={img7} alt="Transport 4"  /></div> */}
         </center>
       </div>
 
