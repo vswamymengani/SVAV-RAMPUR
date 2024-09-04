@@ -10,7 +10,7 @@ import img5 from './popupimg3.jpg';
 
 const Popup = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const images = [img1, img2, img3, "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/4.jpg", img5];
+    const images = ["https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/1.jpg", img2, img3, "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/4.jpg", img5];
 
     useEffect(() => {
         // Show popup after 1 second
