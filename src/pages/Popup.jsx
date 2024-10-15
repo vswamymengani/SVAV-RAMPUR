@@ -1,16 +1,16 @@
-// src/components/Popup.js
 import { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import './Popup.css';
-import img1 from './popupimg1.jpg';
-import img2 from './popupimg2.jpg';
-import img3 from './pooja1.jpg';
-import img4 from './eventbhumipooja.jpg';
-import img5 from './popupimg3.jpg';
 
 const Popup = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const images = ["https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/1.jpg", img2, img3, "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/4.jpg", img5];
+    const images = [
+        "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/1.jpg",
+        "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/2.jpg",
+        "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/3.jpg",
+        "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/4.jpg",
+        "https://svav-wesite-gallery.s3.ap-south-2.amazonaws.com/HomeScreenPopUpSlides/5.jpg"
+    ];
 
     useEffect(() => {
         // Show popup after 1 second
@@ -40,7 +40,7 @@ const Popup = () => {
             <div className="popup">
                 <div className="popup-content">
                     <span className="close" onClick={closePopup}>&times;</span>
-                    <h2>Laying the Foundation for a Brighter Future <br></br>Welcome To SVAV High School-Rampur</h2>
+                    <h2>Laying the Foundation for a Brighter Future: Bhumipuja Ceremony for School Modernization</h2>
                     <Slider {...settings}>
                         {images.map((image, index) => (
                             <div key={index}>
